@@ -29,6 +29,34 @@ Hipotesis utama membandingkan kondisi **R−S**. Prediksi tandingannya adalah ga
 | Alignment bahasa | Fusi relasional menjadi 64 embedding sensor, projector terstruktur, lalu Qwen2.5-1.5B-Instruct dengan seluruh parameter dibekukan. |
 | Keluaran | Label QA terstruktur untuk tren kelajuan pelvis serta perbandingan kelajuan lengan dan kaki relatif terhadap pelvis. |
 
+### Alur arsitektur
+
+```mermaid
+flowchart LR
+    X[Point cloud radar<br/>64 × titik × XYZ + intensity<br/>mask dan timestamp]
+    X --> ENC[Encoder spasial-temporal<br/>mmMind-based]
+    ENC --> Y[Fitur radar Y<br/>64 × 256]
+    Y --> POSE[Kepala pose]
+    POSE --> P[Posisi prediksi P<br/>64 × 22 × 3]
+    P --> DERIV[Turunan 7 titik<br/>berdasarkan timestamp]
+    DERIV --> V[Kecepatan prediksi V]
+    P --> DESC[Deskriptor kinematik<br/>node global/lokal<br/>dan 29 relasi tubuh]
+    V --> DESC
+    Y --> PROJ[Projector relasional<br/>gabungkan Y, node, dan edge]
+    DESC --> PROJ
+    PROJ --> H[Fusi sensor<br/>64 embedding]
+    H --> SPLICE[Splicing embedding sensor<br/>dengan prompt dan pertanyaan]
+    Q[Prompt dan pertanyaan QA] --> SPLICE
+    SPLICE --> LLM[Qwen2.5-1.5B-Instruct<br/>parameter dibekukan]
+    LLM --> A[Jawaban QA terstruktur]
+
+    GT[Target pose ground truth<br/>untuk supervisi training] -.-> LOSS[Loss fisik pose]
+    P -.-> LOSS
+    A -.-> QALOSS[Loss alignment QA<br/>pada training]
+```
+
+Jalur utama menggambarkan kondisi R. Target pose hanya memberi supervisi pada training; inference membentuk posisi dan kecepatan dari radar. Kondisi M melewati projector relasional dengan pemetaan fitur radar langsung, sedangkan S/F/E mengubah representasi node atau edge sesuai tabel pembanding.
+
 mmMind menjadi fondasi encoder, bukan protokol yang direproduksi persis. Adaptasi penelitian ini memakai point cloud dan joint M4Human, panjang jendela, serta backbone beku yang berbeda dari konfigurasi mmMind yang dirujuk. Seluruh klaim harus merujuk pada eksperimen M4Human dalam repo ini.
 
 Encoder memakai seluruh jendela secara bidirectional. Pada waktu nominal 12 Hz, 64 timestamp memiliki rentang endpoint 63 interval atau 5,25 detik; angka tersebut belum menggantikan timestamp hasil sinkronisasi yang terukur. Sistem menjawab setelah jendela lengkap tersedia dan tidak mengklaim prediksi streaming kausal, forecasting, estimasi gaya/torsi, niat, atau diagnosis.
