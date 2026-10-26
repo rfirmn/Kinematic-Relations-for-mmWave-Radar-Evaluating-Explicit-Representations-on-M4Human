@@ -18,6 +18,8 @@ eksternal tidak digunakan.
 | Pilot diagnostik 100 update fisik dan 10 update/projector | [report.md](docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/report.md) |
 | Review lengkap: fisik, QA, donor, probe, resource | [report.md](docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/reviews/validation12_v1/report.md) |
 | Hasil pilot dan pekerjaan berikutnya | [pilot_results.md](docs/pilot_results.md) |
+| Galeri radar, target, prediksi pose dan kurva training | [visual_evidence.md](docs/visual_evidence.md) |
+| Asal, resolusi dan hash gambar publikasi | [manifest.json](docs/figures/fresh_20261026_01/manifest.json) |
 | Catatan seluruh revisi | [diagnostic_findings.md](docs/diagnostic_findings.md) |
 | Bukti temuan pada run pertama | [report.md](docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_01/report.md) |
 

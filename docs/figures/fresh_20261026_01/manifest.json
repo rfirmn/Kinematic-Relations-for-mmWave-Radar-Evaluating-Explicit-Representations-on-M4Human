@@ -1,0 +1,73 @@
+{
+  "schema": "relational64_visual_documentation_1",
+  "artifact_generation_id": "fresh_20261026_01",
+  "images": [
+    {
+      "published_path": "docs/figures/fresh_20261026_01/coordinate_overlay.png",
+      "sha256": "cc8502c88870414985c6330515b8f4da0fe21db85bbff44bdb14a8a29e5de4e0",
+      "width_px": 1820,
+      "height_px": 2772,
+      "actual_M4Human": true,
+      "diagnostic_only": true,
+      "scientific_acceptance": false,
+      "source_path": "derived_data/m4human_relational64/fresh_20261026_01/meta/coordinate_overlay.png",
+      "source_sha256": "cc8502c88870414985c6330515b8f4da0fe21db85bbff44bdb14a8a29e5de4e0",
+      "publication_is_byte_identical": true,
+      "figure_id": "coordinate_audit",
+      "kind": "coordinate_overlay",
+      "run_id": null,
+      "evidence_paths": [
+        "docs/report_training/fresh_20261026_01/coordinate_visual_check.json"
+      ]
+    },
+    {
+      "published_path": "docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/physical_loss.png",
+      "sha256": "17344066c6026f5a35e525adf40bb4884a0b1bc3ab329785454b78e7b6a8149d",
+      "width_px": 1200,
+      "height_px": 600,
+      "actual_M4Human": true,
+      "diagnostic_only": true,
+      "scientific_acceptance": false,
+      "figure_id": "pilot100_loss",
+      "kind": "physical_loss",
+      "run_id": "diagnostic_20261026_05_complete",
+      "evidence_paths": [
+        "docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/physical_history.json"
+      ]
+    },
+    {
+      "published_path": "docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/reviews/validation12_v1/pose_overlay.png",
+      "sha256": "51da1b83c8c95a8b0c74be9704fea8a47b180e129b8663ed7ae669a926f9d579",
+      "width_px": 2080,
+      "height_px": 1280,
+      "actual_M4Human": true,
+      "diagnostic_only": true,
+      "scientific_acceptance": false,
+      "figure_id": "pilot_pose",
+      "kind": "pose_overlay",
+      "run_id": "diagnostic_20261026_05_complete",
+      "evidence_paths": [
+        "docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/reviews/validation12_v1/pose_visual_checks.json"
+      ]
+    },
+    {
+      "published_path": "docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_04_gain/physical_loss.png",
+      "sha256": "81c837a4e3f2e9d2236937645ad0c496d730fe2200b2720b2f75b25c341663b7",
+      "width_px": 1200,
+      "height_px": 600,
+      "actual_M4Human": true,
+      "diagnostic_only": true,
+      "scientific_acceptance": false,
+      "figure_id": "pilot20_loss",
+      "kind": "physical_loss",
+      "run_id": "diagnostic_20261026_04_gain",
+      "evidence_paths": [
+        "docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_04_gain/physical_history.json"
+      ]
+    }
+  ],
+  "G0_passed": false,
+  "target_status": "provisional_candidate_direct_joints",
+  "time_status": "nominal_12Hz_provisional",
+  "policy": "Images copied/referenced without visual alteration; captions preserve diagnostic limits."
+}

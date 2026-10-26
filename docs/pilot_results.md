@@ -4,6 +4,10 @@ Tanggal: 26 Oktober 2026. Run `diagnostic_20261026_05_complete`, review `validat
 
 **Seluruh jalur pilot diagnostik telah dieksekusi dan pemeriksaan teknis lulus.** Data menggunakan RPC M4Human aktual pada Windows/CUDA RTX 3060. Target direct joints dan waktu nominal 12 Hz tetap provisional; `scientific_acceptance=false` dan G0 tetap false.
 
+[Galeri visual penelitian](visual_evidence.md) menyediakan gambar audit, kurva,
+caption, dan sumber bukti. [Manifest gambar](figures/fresh_20261026_01/manifest.json)
+mencatat resolusi serta SHA-256 berkas yang dipublikasikan.
+
 ## Cakupan eksekusi
 
 - 8 window train dari 8 subjek dan 52 window validation dari 4 subjek terpisah. Panel validation mencakup 12 aktivitas bersama ditambah 4 window awal; pemilihan memakai identitas sensor sebelum target dibaca.
@@ -21,6 +25,13 @@ Tanggal: 26 Oktober 2026. Run `diagnostic_20261026_05_complete`, review `validat
 
 Penurunan loss train: 63.48%. Ini meluluskan pemeriksaan penurunan 50% untuk pilot diagnostik, tanpa meluluskan G2 ilmiah dengan target yang belum disahkan.
 
+![Loss train dan validation selama 100 update fisik pilot aktual](report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/physical_loss.png)
+
+*Gambar 1. Loss train (biru) dan validation (oranye) terhadap calon target pada
+8 window train dan 4 window validation awal. Kurva menggunakan nominal 12 Hz.
+Panel loss ini berbeda dari panel evaluasi fisik/QA yang diperluas menjadi
+52 window validation pada tabel berikut.*
+
 | Metrik terhadap calon target | Train | Validation | Satuan |
 |---|---:|---:|---|
 | global_mpjpe | 0.899750 | 0.997347 | m |
@@ -35,6 +46,13 @@ Penurunan loss train: 63.48%. Ini meluluskan pemeriksaan penurunan 50% untuk pil
 Agregasi menggunakan numerator/count seluruh window-endpoint-joint valid. Global MPJPE validation sekitar satu meter; visualisasi menunjukkan prediksi pose masih terkompresi dan meleset dari calon skeleton. Penurunan loss tidak membuktikan kualitas pose telah memadai.
 
 ![RPC aktual, calon target, dan prediksi pose](report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/reviews/validation12_v1/pose_overlay.png)
+
+*Gambar 2. Frame 63 dari dua contoh validation subjek 16 dan 17 dalam proyeksi
+XY, XZ, dan YZ. Abu-abu: RPC yang disampel untuk model; hijau putus-putus:
+calon target; oranye: prediksi pose; berlian: pelvis. Koordinat memakai meter
+setelah pengurangan centroid yang sama, tanpa registration atau koreksi offset.
+[Identitas window dan hash](report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/reviews/validation12_v1/pose_visual_checks.json)
+mencatat sumber kedua contoh.*
 
 ## QA terhadap calon target
 

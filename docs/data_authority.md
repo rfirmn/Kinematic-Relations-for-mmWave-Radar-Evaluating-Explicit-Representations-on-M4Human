@@ -12,6 +12,16 @@ Thirty-two examples from all 16 train/validation subjects were decoded independe
 
 These checks establish arithmetic consistency and spatial plausibility. They do **not** establish direct-joint equivalence to a particular SMPL-X mesh regressor, nor do they independently prove source axes, handedness or preprocessing. Published utilities also contain conflicting scale conventions between root and mesh paths. No constant Z offset is applied.
 
+![Six train and validation RPC examples with candidate transformed skeletons in XY, XZ and YZ](figures/fresh_20261026_01/coordinate_overlay.png)
+
+*Figure 1. Point colors follow intensity; red lines show the candidate transformed
+direct joints. The three columns show XY, XZ and YZ. This is a byte-identical
+publication copy of the local audit image, not a prediction accuracy result.
+The source keys and original image hash are in the
+[visual check](report_training/fresh_20261026_01/coordinate_visual_check.json).
+See the [visual evidence gallery](visual_evidence.md) and
+[image manifest](figures/fresh_20261026_01/manifest.json) for provenance.*
+
 ## G0 remains blocked
 
 The following artifacts are required to resolve G0; a previous `audited: true` flag or prose assertion is insufficient:

@@ -99,6 +99,18 @@ Belum ada hasil test ilmiah, akurasi yang diterima, ataupun bukti bahwa R mengun
 
 Pilot diagnostik kelima telah menyelesaikan 100 update fisik, 10 update per kondisi, serta review pada 52 window validasi dan 156 QA per kondisi di Windows/CUDA RTX 3060. Penurunan loss train mencapai 63,48% dan seluruh pemeriksaan eksekusi lulus. Namun, galat pose validasi masih sekitar satu meter, R belum mengungguli S atau mayoritas train, dan PairBothCorrect donor adalah 0/13. Hasil ini menunjukkan pipeline dapat dieksekusi sekaligus mengidentifikasi masalah estimasi fisik, cakupan label pelvis, dan grounding yang perlu ditangani. [Hasil pilot dan tindak lanjut](docs/pilot_results.md).
 
+## Dokumentasi visual
+
+![Kurva loss train dan validation pilot diagnostik dengan 100 update fisik](docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/physical_loss.png)
+
+*Training fisik pada RPC M4Human aktual: 100 update, 8 window train dan 4 window validation awal. Target dan waktu masih provisional. Kurva ini mencatat penurunan loss pada panel kecil; evaluasi review menggunakan panel yang diperluas menjadi 52 window validation.*
+
+![Radar aktual, calon target hijau, dan prediksi pose oranye pada dua contoh validation](docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/reviews/validation12_v1/pose_overlay.png)
+
+*Dua contoh validation pada frame 63: titik abu-abu adalah RPC, garis hijau putus-putus calon target, dan garis oranye prediksi radar. Prediksi masih terkompresi dan meleset; galat global MPJPE validation sekitar 0,997 meter. Tidak ada registration atau koreksi offset tambahan.*
+
+[Galeri visual penelitian](docs/visual_evidence.md) memuat audit radar–target, kurva training, prediksi pose, sumber setiap gambar, dan [manifest hash gambar](docs/figures/fresh_20261026_01/manifest.json).
+
 ## Reproduksibilitas
 
 Lingkungan menggunakan Python 3.12, PyTorch standar, `.venv`/uv, dan lock dependensi Windows. Sumber dataset dan repo referensi bersifat read-only. Metadata, data turunan, laporan, dan checkpoint generasi aktif dibangun baru dan disimpan pada drive C di dalam repo ini. Konfigurasi menentukan lokasi output; [indeks artefak](ARTEFAK.md) mencatat bukti dan checkpoint yang tersedia.

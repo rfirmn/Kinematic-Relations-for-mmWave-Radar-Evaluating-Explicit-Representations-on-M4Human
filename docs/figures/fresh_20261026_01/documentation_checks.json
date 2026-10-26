@@ -1,0 +1,42 @@
+{
+  "schema": "relational64_documentation_checks_1",
+  "artifact_generation_id": "fresh_20261026_01",
+  "status": "passed",
+  "documents": [
+    "README.md",
+    "ARTEFAK.md",
+    "docs/pilot_results.md",
+    "docs/data_authority.md",
+    "docs/visual_evidence.md"
+  ],
+  "broken_local_links": [],
+  "images": [
+    {
+      "figure_id": "coordinate_audit",
+      "path": "docs/figures/fresh_20261026_01/coordinate_overlay.png",
+      "bytes": 982231,
+      "hash_and_dimensions_valid": true
+    },
+    {
+      "figure_id": "pilot100_loss",
+      "path": "docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/physical_loss.png",
+      "bytes": 62584,
+      "hash_and_dimensions_valid": true
+    },
+    {
+      "figure_id": "pilot_pose",
+      "path": "docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/reviews/validation12_v1/pose_overlay.png",
+      "bytes": 233333,
+      "hash_and_dimensions_valid": true
+    },
+    {
+      "figure_id": "pilot20_loss",
+      "path": "docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_04_gain/physical_loss.png",
+      "bytes": 51852,
+      "hash_and_dimensions_valid": true
+    }
+  ],
+  "coordinate_copy_matches_local_audit": true,
+  "model_training_rerun": false,
+  "scope": "Documentation links, PNG dimensions and file hashes only; scientific acceptance unchanged."
+}
