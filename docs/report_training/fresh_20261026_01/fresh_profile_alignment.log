@@ -1,0 +1,26 @@
+{
+  "command": "profile",
+  "status": "completed",
+  "summary": {
+    "evidence": "pretrained_Qwen_synthetic_cached_sensors",
+    "actual_M4Human": false,
+    "condition": "R",
+    "warmup_steps": 10,
+    "measured_optimizer_steps": 30,
+    "accumulation": 16,
+    "microbatch": 1,
+    "generation_samples": 30,
+    "sequence_length": 1259,
+    "sensor_embeddings": 64,
+    "acceptance_eligible": false,
+    "note": "Synthetic resource diagnostic; real-data/prompt range and cold/warm I/O profile remain required."
+  }
+}
+
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+Loading weights:   8%|8         | 28/338 [00:00<00:01, 267.20it/s]
+Loading weights:  16%|#6        | 55/338 [00:00<00:03, 91.76it/s] 
+Loading weights:  21%|##        | 70/338 [00:00<00:02, 91.59it/s]
+Loading weights: 100%|##########| 338/338 [00:00<00:00, 480.32it/s]

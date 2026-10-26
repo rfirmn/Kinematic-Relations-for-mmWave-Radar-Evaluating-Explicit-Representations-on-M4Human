@@ -1,0 +1,225 @@
+{
+  "run_id": "diagnostic_20261026_03",
+  "diagnostic_only": true,
+  "scientific_acceptance": false,
+  "actual_M4Human": true,
+  "source_sha256": "51b0667e4794c31725019fcf6c25bb7ce13bfbf772dbcedd3003a8b18e367632",
+  "features_sha256": "d5de2f6a13335fb792a422e991280090630df1f0b919906b57495f469adc3717",
+  "rows": [
+    {
+      "condition": "M",
+      "qa_uid": "d72ee76c8e3b6ae1384738f05ff8095cdddb15750d266ba9ba3342971a2b4f10",
+      "prefix_identical": true,
+      "gold_token_id": 4913,
+      "gold_text": "{\"",
+      "teacher_fp32_head": {
+        "token_id": 4913,
+        "text": "{\"",
+        "gold_first_token_logprob": -0.597915768623352
+      },
+      "prefix_fp32_head": {
+        "token_id": 4913,
+        "text": "{\"",
+        "gold_first_token_logprob": -0.6621400713920593
+      },
+      "integer_mask_fp32_head": {
+        "token_id": 4913,
+        "text": "{\"",
+        "gold_first_token_logprob": -0.6621400713920593
+      },
+      "native_generation_head": {
+        "token_id": 4913,
+        "text": "{\"",
+        "gold_first_token_logprob": -0.6787036657333374
+      },
+      "teacher_prefix_hidden_max_error": 4.25,
+      "bool_integer_mask_hidden_max_error": 0.0,
+      "sensor_rms": 0.9999647736549377,
+      "text_embedding_rms": 0.02622128836810589,
+      "inference_only_gain_probe": [
+        {
+          "gain": 0.02622128836810589,
+          "raw_text": "{\"answer\": \"no_overall_trend\"}",
+          "parse_status": "valid"
+        },
+        {
+          "gain": 0.1,
+          "raw_text": "{\"answer\": \"no_overall_trend\"}",
+          "parse_status": "valid"
+        }
+      ]
+    },
+    {
+      "condition": "S",
+      "qa_uid": "d72ee76c8e3b6ae1384738f05ff8095cdddb15750d266ba9ba3342971a2b4f10",
+      "prefix_identical": true,
+      "gold_token_id": 4913,
+      "gold_text": "{\"",
+      "teacher_fp32_head": {
+        "token_id": 13,
+        "text": ".",
+        "gold_first_token_logprob": -12.036504745483398
+      },
+      "prefix_fp32_head": {
+        "token_id": 13,
+        "text": ".",
+        "gold_first_token_logprob": -12.007962226867676
+      },
+      "integer_mask_fp32_head": {
+        "token_id": 13,
+        "text": ".",
+        "gold_first_token_logprob": -12.007962226867676
+      },
+      "native_generation_head": {
+        "token_id": 13,
+        "text": ".",
+        "gold_first_token_logprob": -12.009053230285645
+      },
+      "teacher_prefix_hidden_max_error": 1.9375,
+      "bool_integer_mask_hidden_max_error": 0.0,
+      "sensor_rms": 0.9999646544456482,
+      "text_embedding_rms": 0.02622128836810589,
+      "inference_only_gain_probe": [
+        {
+          "gain": 0.02622128836810589,
+          "raw_text": "{\"answer\": \"no_overall_trend\"}",
+          "parse_status": "valid"
+        },
+        {
+          "gain": 0.1,
+          "raw_text": "{\"answer\": \"no_overall_trend\"}",
+          "parse_status": "valid"
+        }
+      ]
+    },
+    {
+      "condition": "F",
+      "qa_uid": "d72ee76c8e3b6ae1384738f05ff8095cdddb15750d266ba9ba3342971a2b4f10",
+      "prefix_identical": true,
+      "gold_token_id": 4913,
+      "gold_text": "{\"",
+      "teacher_fp32_head": {
+        "token_id": 785,
+        "text": "The",
+        "gold_first_token_logprob": -8.560766220092773
+      },
+      "prefix_fp32_head": {
+        "token_id": 785,
+        "text": "The",
+        "gold_first_token_logprob": -8.701305389404297
+      },
+      "integer_mask_fp32_head": {
+        "token_id": 785,
+        "text": "The",
+        "gold_first_token_logprob": -8.701305389404297
+      },
+      "native_generation_head": {
+        "token_id": 785,
+        "text": "The",
+        "gold_first_token_logprob": -8.691143035888672
+      },
+      "teacher_prefix_hidden_max_error": 1.25,
+      "bool_integer_mask_hidden_max_error": 0.0,
+      "sensor_rms": 0.9999642968177795,
+      "text_embedding_rms": 0.02622128836810589,
+      "inference_only_gain_probe": [
+        {
+          "gain": 0.02622128836810589,
+          "raw_text": "{\"answer\": \"no_overall_trend\"}",
+          "parse_status": "valid"
+        },
+        {
+          "gain": 0.1,
+          "raw_text": "{\"answer\": \"no_overall_trend\"}",
+          "parse_status": "valid"
+        }
+      ]
+    },
+    {
+      "condition": "E",
+      "qa_uid": "d72ee76c8e3b6ae1384738f05ff8095cdddb15750d266ba9ba3342971a2b4f10",
+      "prefix_identical": true,
+      "gold_token_id": 4913,
+      "gold_text": "{\"",
+      "teacher_fp32_head": {
+        "token_id": 4913,
+        "text": "{\"",
+        "gold_first_token_logprob": -0.6491326093673706
+      },
+      "prefix_fp32_head": {
+        "token_id": 4913,
+        "text": "{\"",
+        "gold_first_token_logprob": -0.6677725911140442
+      },
+      "integer_mask_fp32_head": {
+        "token_id": 4913,
+        "text": "{\"",
+        "gold_first_token_logprob": -0.6677725911140442
+      },
+      "native_generation_head": {
+        "token_id": 4913,
+        "text": "{\"",
+        "gold_first_token_logprob": -0.6609347462654114
+      },
+      "teacher_prefix_hidden_max_error": 0.75,
+      "bool_integer_mask_hidden_max_error": 0.0,
+      "sensor_rms": 0.9999644160270691,
+      "text_embedding_rms": 0.02622128836810589,
+      "inference_only_gain_probe": [
+        {
+          "gain": 0.02622128836810589,
+          "raw_text": "{\"answer\": \"no_overall_trend\"}",
+          "parse_status": "valid"
+        },
+        {
+          "gain": 0.1,
+          "raw_text": "{\"answer\": \"no_overall_trend\"}",
+          "parse_status": "valid"
+        }
+      ]
+    },
+    {
+      "condition": "R",
+      "qa_uid": "d72ee76c8e3b6ae1384738f05ff8095cdddb15750d266ba9ba3342971a2b4f10",
+      "prefix_identical": true,
+      "gold_token_id": 4913,
+      "gold_text": "{\"",
+      "teacher_fp32_head": {
+        "token_id": 4913,
+        "text": "{\"",
+        "gold_first_token_logprob": -0.4251916706562042
+      },
+      "prefix_fp32_head": {
+        "token_id": 4913,
+        "text": "{\"",
+        "gold_first_token_logprob": -0.4496786594390869
+      },
+      "integer_mask_fp32_head": {
+        "token_id": 4913,
+        "text": "{\"",
+        "gold_first_token_logprob": -0.4496786594390869
+      },
+      "native_generation_head": {
+        "token_id": 4913,
+        "text": "{\"",
+        "gold_first_token_logprob": -0.4532649517059326
+      },
+      "teacher_prefix_hidden_max_error": 0.9296875,
+      "bool_integer_mask_hidden_max_error": 0.0,
+      "sensor_rms": 0.99996417760849,
+      "text_embedding_rms": 0.02622128836810589,
+      "inference_only_gain_probe": [
+        {
+          "gain": 0.02622128836810589,
+          "raw_text": "{\"answer\": \"no_overall_trend\"}",
+          "parse_status": "valid"
+        },
+        {
+          "gain": 0.1,
+          "raw_text": "{\"answer\": \"no_overall_trend\"}",
+          "parse_status": "valid"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "artifact_generation_id": "fresh_20261026_01",
+  "review_utc": "2026-10-26T10:23:36.152597+00:00",
+  "status": "findings_require_followup",
+  "review_kind": "independent read-only source and active inventory review",
+  "scope": {
+    "read": [
+      "active src/config/tools",
+      "active source_inventory JSON"
+    ],
+    "excluded": [
+      "old D metadata",
+      "archived research outputs",
+      "old pipeline/cache/checkpoints"
+    ],
+    "source_edits": false,
+    "GPU_used": false,
+    "only_output": "this JSON"
+  },
+  "actual_data_validity": {
+    "active_inventory_source_only": true,
+    "all_four_databases_entries": 661132,
+    "missing_params_calib_indicator_keys": 0,
+    "source_size_mtime_unchanged_in_active_audit": true,
+    "G0_passed": false,
+    "actual_physical_training_authorized": false,
+    "note": "No evidence of direct old metadata reuse in the active default command path; this review does not grant coordinate, target or time authority."
+  },
+  "passed_checks": [
+    "runtime meta/report/checkpoint outputs are inside new repository on C:",
+    "active artifact helper rejects direct archive and external paths",
+    "legacy metadata_root inventory/config fields are rejected",
+    "old OfflineTargets cache bridge is absent",
+    "source_policy contains prior_metadata_inputs=[] and detects endian from source payload",
+    "SensorDataset and target readers retain G0 checks",
+    "environment writer preserves existing lock identity when executable and packages are unchanged"
+  ],
+  "findings": [
+    {
+      "id": "ISO-01",
+      "priority": 1,
+      "file": "src/relational64/config.py",
+      "symbol": "require_gate",
+      "summary": "Nested gate artifact paths bypass archive/external path isolation.",
+      "evidence": "In-memory mock gate with matching digest and artifact archive/synthetic_not_opened.json was accepted. No archive file was opened by the probe.",
+      "impact": "A current-generation gate could cite forbidden archived research evidence even though direct CLI paths are rejected. Current G0 remains false.",
+      "suggested_fix": "Apply active_artifact_path to research artifact entries before hashing and validate their generation where applicable.",
+      "suggested_test": "Reject a current-generation gate whose nested artifact points to archive or external old metadata."
+    },
+    {
+      "id": "ISO-02",
+      "priority": 1,
+      "file": "src/relational64/data.py",
+      "symbol": "SensorDataset.__init__",
+      "summary": "Window manifest generation is not checked against expected_generation.",
+      "evidence": "In-memory probe with current inventory/normalizer and different-generation JsonlSequence was accepted; source reads and hashes were mocked.",
+      "impact": "After G0 approval an otherwise valid current reader could consume stale windows supplied from another in-repository generation.",
+      "suggested_fix": "Validate manifest generation, source inventory/split/sampling hashes, and rows before exposing the dataset.",
+      "suggested_test": "Reject copied older windows with current inventory/normalizer before __getitem__ or any model invocation."
+    },
+    {
+      "id": "ISO-03",
+      "priority": 2,
+      "file": "src/relational64/cli.py",
+      "symbol": "dispatch build-qa / prepare",
+      "summary": "Some orchestration paths do not pass the expected runtime generation to their input validators.",
+      "evidence": "build-qa constructs TargetArrayStore(target_root) without expected_generation and stamps runtime generation into output provenance; prepare_data invokes assert_fresh_inventory without expected_generation.",
+      "impact": "Copied valid prior artifacts outside archive can be relabeled as the current generation. No actual relabeling was observed.",
+      "suggested_fix": "Thread expected_generation through inventory, target, manifest and QA validation; check nested evidence paths in direct/reference target provenance as well.",
+      "suggested_test": "Wrong-generation inventory/targets/manifest inside repository must fail prepare and build-qa."
+    },
+    {
+      "id": "ISO-04",
+      "priority": 2,
+      "file": "tools/finalize_evidence.py",
+      "symbol": "main source hash validation",
+      "summary": "Finalizer records a failed source integrity check but continues to finalize locks/report.",
+      "evidence": "After writing source_integrity_final.json the flow continues without rejecting any matches_new_audit=False entry.",
+      "impact": "If source changes, final summary could still present finalized artifacts despite a failed source snapshot check. Active inventory records unchanged source; no mismatch observed.",
+      "suggested_fix": "Stop finalization on any source hash mismatch and preserve failed evidence only.",
+      "suggested_test": "Mock one source hash mismatch and assert no new accepted runtime lock/registry is produced."
+    }
+  ],
+  "probes": {
+    "direct_external_path": "rejected",
+    "direct_archive_path": "rejected",
+    "nested_archived_gate_artifact": "accepted (synthetic mocks only)",
+    "wrong_generation_windows": "accepted (synthetic mocks only)"
+  },
+  "reviewed_source_hashes": {
+    "src/relational64/config.py": "048c0e3284cbeb4499d33921387d9652ddbe56e22d1a3937b5aa6601dab628a2",
+    "src/relational64/data.py": "15aa82d7020ed7264d07d0abcbaf9c117c3e6c9ccee4cb0fe88611d3b4751d08",
+    "src/relational64/cli.py": "793625f9c0281aec5a94d9b32fbc2e93695b47e3e4c4c56cdf0efd41423f519d",
+    "src/relational64/prepare.py": "8c7dab3dfed9cfd6aea0c4128e5d1057cb1d17ba2d60e7cc5c3eea387471d6ca",
+    "src/relational64/reference_targets.py": "5847ccc104d55eb1bdc0a8e74e649db7f1ef5794fc16faa82c5c59149d7eb88c",
+    "src/relational64/reporting.py": "4523d3b96b0209467790140e999d2e6fcaec2b4cd42635f1497cf3f0e133d81f",
+    "src/relational64/resources.py": "13abbc89aa7a02f4244f81cd7049ad60d0fdf9b17413ea43be4ac5b968c7fc8d",
+    "tools/rebuild_fresh.py": "55bbdef925acc2b02103aeff539aa4323e50458428f9d761652883bb01f71fee",
+    "tools/finalize_evidence.py": "d0338d2648a4445be9cf2584688492fc5e2d2402ac2f15e4ad095144e30a6e8a",
+    "configs/relational64/runtime.yaml": "9e5d5d6405457d381a3f87aad1a47764c4ed73502ce2f4f7ebe0d435d9a73452",
+    "configs/relational64/source_policy.json": "86d83c23cdea275d7825fcc580c1803370c61dcb6d96e25899c7c676358eec3c"
+  },
+  "active_inventory_sha256": "802312c3f0d126d86da8cb09e88a30eee45a6cc4a3d70c90a0e665db5ba5d0c2",
+  "limitations": [
+    "GPU profiles and pilot were running independently and were not verified here.",
+    "Native resource or scientific completion is not inferred from code review.",
+    "Findings describe guard gaps, not proof that current rebuilt outputs reused archived data."
+  ]
+}

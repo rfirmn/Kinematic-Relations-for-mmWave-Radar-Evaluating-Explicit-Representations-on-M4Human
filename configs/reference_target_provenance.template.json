@@ -1,0 +1,29 @@
+{
+  "protocol_id": "m4human_relational64",
+  "artifact_generation_id": "fresh_20261026_01",
+  "evidence": null,
+  "model_output_unit": null,
+  "parameter_translation_unit": null,
+  "direct_joint_unit": null,
+  "source_frame": null,
+  "coordinate_audit_path": null,
+  "coordinate_audit_sha256": null,
+  "ordered_names": ["pelvis", "left_hip", "right_hip", "spine1", "left_knee", "right_knee", "spine2", "left_ankle", "right_ankle", "spine3", "left_foot", "right_foot", "neck", "left_collar", "right_collar", "head", "left_shoulder", "right_shoulder", "left_elbow", "right_elbow", "left_wrist", "right_wrist"],
+  "source_row_indices": null,
+  "num_betas": null,
+  "num_expression_coeffs": null,
+  "default_hand_face_audit": null,
+  "default_hand_face_values": {
+    "left_hand_pose": null,
+    "right_hand_pose": null,
+    "jaw_pose": null,
+    "leye_pose": null,
+    "reye_pose": null,
+    "expression": null
+  },
+  "gender_mapping": null,
+  "assets": {
+    "female": {"path": null, "sha256": null, "regressor_path": null, "regressor_sha256": null, "trusted_distribution": null},
+    "male": {"path": null, "sha256": null, "regressor_path": null, "regressor_sha256": null, "trusted_distribution": null}
+  }
+}

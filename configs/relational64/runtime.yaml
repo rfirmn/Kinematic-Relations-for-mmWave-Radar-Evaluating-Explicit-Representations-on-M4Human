@@ -1,0 +1,15 @@
+runtime:
+  artifact_generation_id: fresh_20261026_01
+  artifact_policy: fresh_from_source_only
+  dataset_root: 'C:/Users/Rio Aslab/Documents/pemrograman/Tugas_Akhir/datasets/m4human'
+  source_policy: configs/relational64/source_policy.json
+  meta_root: derived_data/m4human_relational64/fresh_20261026_01/meta
+  source_inventory: derived_data/m4human_relational64/fresh_20261026_01/meta/source_inventory.json
+  device: cuda
+  derived_root: derived_data/m4human_relational64/fresh_20261026_01
+  report_root: docs/report_training/fresh_20261026_01
+  checkpoint_root: checkpoints/m4human_relational64/fresh_20261026_01
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  model_commit: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  tokenizer_commit: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  model_path: 'C:/Users/Rio Aslab/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306'

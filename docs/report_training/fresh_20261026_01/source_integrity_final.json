@@ -1,0 +1,31 @@
+{
+  "artifact_generation_id": "fresh_20261026_01",
+  "status": "passed",
+  "checks": [
+    {
+      "database": "calib",
+      "path": "C:\\Users\\Rio Aslab\\Documents\\pemrograman\\Tugas_Akhir\\datasets\\m4human\\calib.lmdb",
+      "sha256": "1cbf604dff9fd8e0494179babb985e6f48068092d13f04d8d1a418e1a75b4427",
+      "matches_new_audit": true
+    },
+    {
+      "database": "indicator",
+      "path": "C:\\Users\\Rio Aslab\\Documents\\pemrograman\\Tugas_Akhir\\datasets\\m4human\\indicator.lmdb",
+      "sha256": "4ad26b6ddc54786ee889ec0ae18aaea2e2546acbc542b8ee8b970d2aab2dd4c6",
+      "matches_new_audit": true
+    },
+    {
+      "database": "params",
+      "path": "C:\\Users\\Rio Aslab\\Documents\\pemrograman\\Tugas_Akhir\\datasets\\m4human\\params.lmdb",
+      "sha256": "afbe5bd71ef518153e24eb11738fe26aa18fc05507457f50074e6e0043c029a5",
+      "matches_new_audit": true
+    },
+    {
+      "database": "rpc",
+      "path": "C:\\Users\\Rio Aslab\\Documents\\pemrograman\\Tugas_Akhir\\datasets\\m4human\\radar_pc.lmdb",
+      "sha256": "19a591bd3c90b8ace3abd86e83d5e9c7c9b33be74dde6d4cef98c31b0f92fca7",
+      "matches_new_audit": true
+    }
+  ],
+  "prior_metadata_read": false
+}

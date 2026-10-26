@@ -1,0 +1,168 @@
+{
+  "predictions": [
+    {
+      "qa_uid": "d72ee76c8e3b6ae1384738f05ff8095cdddb15750d266ba9ba3342971a2b4f10",
+      "part": "root",
+      "sensor_embeddings": 64,
+      "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0000s",
+      "parse": {
+        "status": "truncated",
+        "answer": null,
+        "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0000s",
+        "reason": "generation_token_limit",
+        "json_parse_valid": false
+      }
+    },
+    {
+      "qa_uid": "7db0a2df7ae8ab26dfdf4353b76d90477ad1abf92c0501ccc01fdb827f4230cd",
+      "part": "arms",
+      "sensor_embeddings": 64,
+      "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:0s",
+      "parse": {
+        "status": "truncated",
+        "answer": null,
+        "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:0s",
+        "reason": "generation_token_limit",
+        "json_parse_valid": false
+      }
+    },
+    {
+      "qa_uid": "9f3f7df3c5c7e3cb6526c79faadd97eb63e4335f420ea99d41b2016655f107e4",
+      "part": "legs",
+      "sensor_embeddings": 64,
+      "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:0s",
+      "parse": {
+        "status": "truncated",
+        "answer": null,
+        "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:0s",
+        "reason": "generation_token_limit",
+        "json_parse_valid": false
+      }
+    },
+    {
+      "qa_uid": "117eacaaa82a3a7d3d49194eaf561a8c80fc584e6386356d7cc13bc85a2fa89d",
+      "part": "root",
+      "sensor_embeddings": 64,
+      "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0000s",
+      "parse": {
+        "status": "truncated",
+        "answer": null,
+        "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0000s",
+        "reason": "generation_token_limit",
+        "json_parse_valid": false
+      }
+    },
+    {
+      "qa_uid": "22d30b80cb34035d8c1e774b9f6c4110c6c975bf27fa52993313d3546a70139c",
+      "part": "arms",
+      "sensor_embeddings": 64,
+      "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:0s",
+      "parse": {
+        "status": "truncated",
+        "answer": null,
+        "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:0s",
+        "reason": "generation_token_limit",
+        "json_parse_valid": false
+      }
+    },
+    {
+      "qa_uid": "31436a0fe6b44d39e0d84c8a54f56851aa28f2dc5b2e9add8a03c2be4513d5fc",
+      "part": "legs",
+      "sensor_embeddings": 64,
+      "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:0s",
+      "parse": {
+        "status": "truncated",
+        "answer": null,
+        "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:0s",
+        "reason": "generation_token_limit",
+        "json_parse_valid": false
+      }
+    },
+    {
+      "qa_uid": "fc61d21efb3ce449d14274ed060d0c27ab35146733122c4d0beec6c7f2a815f5",
+      "part": "root",
+      "sensor_embeddings": 64,
+      "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0000s",
+      "parse": {
+        "status": "truncated",
+        "answer": null,
+        "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0000s",
+        "reason": "generation_token_limit",
+        "json_parse_valid": false
+      }
+    },
+    {
+      "qa_uid": "7a87521ead0224dc2accd4f5d1c0ae7a70a4b1542d1500245e5d5cfaa1cc41ba",
+      "part": "arms",
+      "sensor_embeddings": 64,
+      "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:0s",
+      "parse": {
+        "status": "truncated",
+        "answer": null,
+        "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:0s",
+        "reason": "generation_token_limit",
+        "json_parse_valid": false
+      }
+    },
+    {
+      "qa_uid": "4590518c103b14f69e18f8c2341c8615fa321c18880c3fed31256c445e445a60",
+      "part": "legs",
+      "sensor_embeddings": 64,
+      "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:0s",
+      "parse": {
+        "status": "truncated",
+        "answer": null,
+        "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:0s",
+        "reason": "generation_token_limit",
+        "json_parse_valid": false
+      }
+    },
+    {
+      "qa_uid": "58549060cddb83e5349becd92505471bc68c8c056061de8f636b6a62b0396489",
+      "part": "root",
+      "sensor_embeddings": 64,
+      "raw_text": " 60s000s: 10:0000s:0s:0000s:0000",
+      "parse": {
+        "status": "truncated",
+        "answer": null,
+        "raw_text": " 60s000s: 10:0000s:0s:0000s:0000",
+        "reason": "generation_token_limit",
+        "json_parse_valid": false
+      }
+    },
+    {
+      "qa_uid": "50b3da01209353bad9939e76eadee27bbf48b1169b141af80fead17ae1994a9a",
+      "part": "arms",
+      "sensor_embeddings": 64,
+      "raw_text": " 60s: 10:0000s:0s:3000s:0s:0000s",
+      "parse": {
+        "status": "truncated",
+        "answer": null,
+        "raw_text": " 60s: 10:0000s:0s:3000s:0s:0000s",
+        "reason": "generation_token_limit",
+        "json_parse_valid": false
+      }
+    },
+    {
+      "qa_uid": "521500761e1dc61c5f084cd9d2d82d787550c5bcd1ef9bff8754e89ea0fb5318",
+      "part": "legs",
+      "sensor_embeddings": 64,
+      "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:00",
+      "parse": {
+        "status": "truncated",
+        "answer": null,
+        "raw_text": " 60s: 10:0000s:0s:0s:0s:0s:0s:00",
+        "reason": "generation_token_limit",
+        "json_parse_valid": false
+      }
+    }
+  ],
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false
+}

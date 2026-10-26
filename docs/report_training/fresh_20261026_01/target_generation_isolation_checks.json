@@ -1,0 +1,138 @@
+{
+  "schema_id": "relational64_stage_check_1",
+  "artifact_generation_id": "fresh_20261026_01",
+  "artifact_policy": "fresh_from_source_only",
+  "stage": "target_and_nested_cache_generation_artifact_isolation",
+  "status": "fixture_passed",
+  "evidence": "synthetic_software_fixture",
+  "actual_M4Human": false,
+  "native_windows": true,
+  "tested_device": "cpu",
+  "cuda_executed": false,
+  "prior_artifacts_read": [],
+  "source_dataset_opened": false,
+  "licensed_assets_opened": false,
+  "test_count": 22,
+  "test_results": [
+    {
+      "test_id": "tests.test_target_generation_isolation.test_reference_current_generation_accepts_only_local_fresh_inputs",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_reference_nested_forbidden_paths_rejected_before_any_hash[archive-coordinate_audit_path]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_reference_nested_forbidden_paths_rejected_before_any_hash[archive-path]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_reference_nested_forbidden_paths_rejected_before_any_hash[archive-regressor_path]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_reference_nested_forbidden_paths_rejected_before_any_hash[outside-coordinate_audit_path]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_reference_nested_forbidden_paths_rejected_before_any_hash[outside-path]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_reference_nested_forbidden_paths_rejected_before_any_hash[outside-regressor_path]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_reference_rejects_legacy_inventory_before_opening_reference_inputs",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_qa_generation_is_inherited_only_from_verified_fresh_rows",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_qa_prior_rows_or_target_metadata_cannot_be_restamped[prior-fresh_20261026_01]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_qa_prior_rows_or_target_metadata_cannot_be_restamped[fresh_20261026_01-prior]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_qa_prior_rows_or_target_metadata_cannot_be_restamped[None-fresh_20261026_01]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_qa_prior_rows_or_target_metadata_cannot_be_restamped[fresh_20261026_01-None]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_target_generation_isolation.test_qa_manifest_checksum_change_rejected_before_target_read",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_nested_cache_isolation.test_current_cache_generation_and_canonical_members_load",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_nested_cache_isolation.test_nested_cache_paths_rejected_before_any_hash[parent]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_nested_cache_isolation.test_nested_cache_paths_rejected_before_any_hash[absolute]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_nested_cache_isolation.test_nested_cache_paths_rejected_before_any_hash[archive]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_nested_cache_isolation.test_versioned_cache_root_rejected_before_metadata_open[external]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_nested_cache_isolation.test_versioned_cache_root_rejected_before_metadata_open[archive]",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_nested_cache_isolation.test_versioned_metadata_cannot_enable_unversioned_external_cache",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_nested_cache_isolation.test_nested_cache_preflight_runs_even_when_checksum_verification_disabled",
+      "status": "passed"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "timestamp_utc": "2026-10-26T10:29:54.196440+00:00",
+  "command": ".venv/Scripts/python.exe -m pytest tests/test_target_generation_isolation.py tests/test_nested_cache_isolation.py -q --basetemp=docs/report_training/fresh_20261026_01/target_cache_isolation_fixture_tmp --junitxml=docs/report_training/fresh_20261026_01/target_cache_generation_isolation_junit.xml",
+  "artifact_hashes": {
+    "src/relational64/reference_targets.py": "6866644aa5aeaf518f829b81e973deb282fe9c958f50e3335ac8c215eb103ac6",
+    "src/relational64/pipeline_targets.py": "fc8bad51fd6ef81eb5a56b8a2094cd093bcc317d917ca9b06d30f31b836c7753",
+    "tests/test_target_generation_isolation.py": "296e0412de6756d5d5840c865200f0cf46bf7b4c7ef4c1b3a3ff30c75e38e280",
+    "src/relational64/config.py": "65fd2dd46cbb562aa382b0edcd1c757cd8051436743ff904a44ca5e99a2f7644",
+    "src/relational64/data.py": "a0df62188226edd8f24abd350021c0908ad0105a1149657eeeb6a9c3fe7d74f3",
+    "src/relational64/cache.py": "663a336c17d47357b738c311f48bbe1bd990b48e808e338fa0158398eb19ae7c",
+    "tests/test_nested_cache_isolation.py": "c7e6806df4762aab4d47b7556139a6d601d283c5d9c82480f7aac40e820f581f"
+  },
+  "capabilities": [
+    "reference_inventory_freshness_before_nested_input_reads",
+    "coordinate_asset_regressor_archive_external_path_rejection_before_hash",
+    "manifest_summary_and_every_row_generation_validation",
+    "target_reader_generation_validation_before_QA_output",
+    "QA_generation_inherited_from_verified_source_rows",
+    "versioned_cache_root_guard_before_metadata_open",
+    "cache_nested_filename_whitelist_and_directory_confinement_before_hash_or_index_read",
+    "cache_path_preflight_even_with_verify_files_false",
+    "cache_generation_shard_count_shape_dtype_index_validation"
+  ],
+  "limitations": [
+    "Synthetic fixtures validate path/generation isolation only; G0/G1 are not accepted.",
+    "Body-model and dataset source readers were not run; source snapshot verification was mocked in initialization tests.",
+    "Initial synthetic-only test run used pytest default temporary directory; final recorded run places fixtures inside the active report root.",
+    "Generic explicitly unversioned cache fixtures remain supported; production CLI must supply expected_generation, which guards the root before metadata read."
+  ]
+}

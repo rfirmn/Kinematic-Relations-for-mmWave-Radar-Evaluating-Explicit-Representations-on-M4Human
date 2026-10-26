@@ -1,0 +1,111 @@
+{
+  "schema": "relational64_qwen_check_1",
+  "date_utc": "2026-10-26T10:13:04.050117+00:00",
+  "evidence": "native pretrained Qwen + synthetic sensor fixtures",
+  "actual_m4human_data": false,
+  "platform": "Windows-11-10.0.22631-SP0",
+  "native_windows": true,
+  "snapshot": "C:\\Users\\Rio Aslab\\.cache\\huggingface\\hub\\models--Qwen--Qwen2.5-1.5B-Instruct\\snapshots\\989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "model_commit": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "tokenizer_commit": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "checks": {
+    "input_ids_inputs_embeds": {
+      "max_absolute_logit_error": 0.0,
+      "passed": true
+    },
+    "selected_head_equivalence": {
+      "full_loss": 10.518486022949219,
+      "selected_loss": 10.518486022949219,
+      "absolute_loss_error": 0.0,
+      "max_absolute_gradient_error": 0.0,
+      "relative_gradient_norm_error": 0.0,
+      "full_gradient_max_abs": 3.828125,
+      "combined_tolerance_ratio_max": 0.0,
+      "atol": 0.001,
+      "rtol": 0.001,
+      "passed": true
+    },
+    "splicing_freeze_and_input_gradient": {
+      "sensor_embeddings": 64,
+      "training_tokens": 1261,
+      "generation_prefix_tokens": 1255,
+      "prefix_identical": true,
+      "answer_loss": 1.0519951581954956,
+      "projector_gradient_norm": 52.38962173461914,
+      "qwen_gradients_none": true,
+      "projector_changed": true,
+      "passed": true
+    },
+    "cached_vs_uncached_8_tokens": {
+      "cached_ids": [
+        220,
+        20,
+        11,
+        220,
+        23,
+        11,
+        220,
+        16
+      ],
+      "uncached_ids": [
+        220,
+        20,
+        11,
+        220,
+        23,
+        11,
+        220,
+        16
+      ],
+      "forced_eight_steps_for_check": true,
+      "passed": true
+    },
+    "frozen_weight_hash": {
+      "before": "1681565377768a8356947832b87ec1933e28cf8bc3ca8340766daa362017c097",
+      "after": "1681565377768a8356947832b87ec1933e28cf8bc3ca8340766daa362017c097",
+      "passed": true
+    }
+  },
+  "status": "passed",
+  "source_hashes": {
+    "models.py": "7138c52837f59790cee7e0320a55401011ee630b8e875961899c06d78618381d",
+    "language.py": "605dd74c45a010e882f6a19dba8ce734ee1059421d968abb822a2219eaf6fb8f",
+    "verify_qwen.py": "16c81db37ccb3194dbeb08838bd18bfd780725c001d0ed594264dc1d080dbf4f"
+  },
+  "torch": "2.6.0+cu124",
+  "transformers": "5.17.0",
+  "dtype": "torch.bfloat16",
+  "head_mode": "canonical_fp32",
+  "cuda": "12.4",
+  "device": "NVIDIA GeForce RTX 3060",
+  "native_cuda": true,
+  "snapshot_file_hashes": {
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "chat_template_hash": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "generation_software_sample": {
+    "new_token_ids": [
+      4913,
+      9217,
+      3252,
+      69,
+      2300,
+      10539,
+      9207,
+      151645
+    ],
+    "raw_text": "{\"answer\":\"faster_right\"}",
+    "terminated": true,
+    "truncated": false,
+    "interpretation": "software evidence only; no QA accuracy inference from synthetic sensors"
+  },
+  "cuda_peak_allocated_mib": 8778.130859375,
+  "cuda_peak_reserved_mib": 9486.0,
+  "elapsed_seconds": 16.747874600001524
+}

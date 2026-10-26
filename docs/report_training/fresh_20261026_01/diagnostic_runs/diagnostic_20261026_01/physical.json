@@ -1,0 +1,147 @@
+{
+  "stage": "physical",
+  "run_id": "diagnostic_20261026_01",
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false,
+  "artifact_generation_id": "fresh_20261026_01",
+  "plan_hash": "7d983d73ca04488f389dec6fd445ea5456b21766b449a9107195184e158b6146",
+  "module_sha256": "851a828741791eea525718d534b79ce88ac478f52f5fc4df55f21dda08fd8a69",
+  "started_utc": "2026-10-26T12:31:21.495640+00:00",
+  "optimizer_steps": 20,
+  "initial": {
+    "train": {
+      "components": {
+        "position": {
+          "numerator": 93054.181640625,
+          "denominator": 165312.0,
+          "mean": 0.5629003438384691
+        },
+        "root_velocity": {
+          "numerator": 226.74944496154785,
+          "denominator": 1872.0,
+          "mean": 0.1211268402572371
+        },
+        "relative_velocity": {
+          "numerator": 49268.0859375,
+          "denominator": 151632.0,
+          "mean": 0.3249187898167933
+        },
+        "bone_length": {
+          "numerator": 3088.4095764160156,
+          "denominator": 14112.0,
+          "mean": 0.21884988495011448
+        }
+      },
+      "L_phys": 4.855422213192816,
+      "no_supervision": false
+    },
+    "val": {
+      "components": {
+        "position": {
+          "numerator": 46003.59765625,
+          "denominator": 82656.0,
+          "mean": 0.5565669480285763
+        },
+        "root_velocity": {
+          "numerator": 124.61063575744629,
+          "denominator": 936.0,
+          "mean": 0.1331310211083828
+        },
+        "relative_velocity": {
+          "numerator": 24739.3447265625,
+          "denominator": 75816.0,
+          "mean": 0.3263077018909267
+        },
+        "bone_length": {
+          "numerator": 1592.7845458984375,
+          "denominator": 7056.0,
+          "mean": 0.22573477124410962
+        }
+      },
+      "L_phys": 4.936768614967977,
+      "no_supervision": false
+    }
+  },
+  "final": {
+    "step": 20,
+    "gradient_norm": 1.346253752708435,
+    "train": {
+      "components": {
+        "position": {
+          "numerator": 65759.06884765625,
+          "denominator": 165312.0,
+          "mean": 0.39778763095030156
+        },
+        "root_velocity": {
+          "numerator": 55.06870675086975,
+          "denominator": 1872.0,
+          "mean": 0.02941704420452444
+        },
+        "relative_velocity": {
+          "numerator": 34770.837646484375,
+          "denominator": 151632.0,
+          "mean": 0.22931068406724422
+        },
+        "bone_length": {
+          "numerator": 212.76590156555176,
+          "denominator": 14112.0,
+          "mean": 0.01507694880708275
+        }
+      },
+      "L_phys": 2.8681335902595313,
+      "no_supervision": false
+    },
+    "val": {
+      "components": {
+        "position": {
+          "numerator": 36586.732421875,
+          "denominator": 82656.0,
+          "mean": 0.44263855523948653
+        },
+        "root_velocity": {
+          "numerator": 26.614854335784912,
+          "denominator": 936.0,
+          "mean": 0.02843467343566764
+        },
+        "relative_velocity": {
+          "numerator": 16637.379150390625,
+          "denominator": 75816.0,
+          "mean": 0.21944416944168282
+        },
+        "bone_length": {
+          "numerator": 124.61897277832031,
+          "denominator": 7056.0,
+          "mean": 0.01766141904454653
+        }
+      },
+      "L_phys": 2.814576454923746,
+      "no_supervision": false
+    }
+  },
+  "parameters_changed_in_this_invocation": true,
+  "checkpoint_reload_passed": true,
+  "precision": "torch.bfloat16",
+  "resource": {
+    "wall_seconds": 20.229681400000118,
+    "device": "cuda",
+    "peak_allocated_bytes": 584147968,
+    "peak_reserved_bytes": 729808896,
+    "minimum_free_cuda_bytes": 11019485184,
+    "minimum_available_ram_bytes": 6512640000,
+    "peak_process_rss_bytes_sampled": 1586229248,
+    "resource_guard_passed": true,
+    "sampling": "At each microbatch/optimizer boundary; not continuous OS telemetry."
+  },
+  "files": {
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\checkpoints\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_01\\physical\\diagnostic.pt": "b2eb5e8a0e63a8fc1c3b296c949977ca53d35305ef4cbdb246d49d74e74d48ff",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_01\\physical_history.json": "be1a07e20d8e1d4067893eaec705a0db7d56ac0577de8916e1af910a01e51ade"
+  },
+  "status": "passed",
+  "completed_utc": "2026-10-26T12:31:44.102408+00:00"
+}

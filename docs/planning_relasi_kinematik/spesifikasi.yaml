@@ -1,0 +1,283 @@
+protocol_id: m4human_relational64
+schema_id: relational64_spec_1
+status: specification
+scientific:
+  primary_contrast: R_minus_S
+  primary_metric: S_atomic
+  conditions: [M, S, F, E, R, T, Maj, Rule, Probe]
+  trained_sensor_conditions: [M, S, F, E, R]
+  seeds: [42, 43, 44]
+  observation_only: true
+  streaming_causal_claim: false
+runtime:
+  dataset_root: null
+  source_inventory: null
+  coordinate_audit: null
+  target_provenance: null
+  split_lock: null
+  exposure_ledger: null
+  model_commit: null
+  tokenizer_commit: null
+  chat_template_hash: null
+  dependency_lock: null
+  environment_report: null
+  acceptance_report: null
+  device: cuda
+  precision: null
+  derived_root: derived_data/m4human_relational64
+  report_root: docs/report_training
+data:
+  channels: [x, y, z, intensity]
+  xyz_unit: meter
+  joint_count: 22
+  root_joint: 0
+  expected_subjects: 20
+  train_subject_count: 12
+  val_subject_count: 4
+  test_subject_count: 4
+  split_seed: 42
+  split_hash_prefix: m4human_relational64/split/42/
+  split_order: [test, val, train]
+  nominal_hz: 12.0
+  max_gap_s: 0.125
+  timestamps_dtype: float64
+  measured_time_preferred: true
+  nominal_time_requires_metadata_proof: true
+  min_clean_points: 8
+  max_points: 150
+  max_source_points: 100000
+  max_payload_bytes: 1600012
+  source_byte_order: null
+  source_sentinel_policy: null
+  source_immutable_snapshot: null
+  window_frames: 64
+  stride: {train: 8, val: 16, test: 16}
+  start_index_in_segment: 0
+  pad_end_windows: false
+  sensor_context_outside_window: false
+  reset_phase_on_segment: true
+  annotation_missing_changes_windows: false
+  center_first_frame_xy: true
+  geometric_augmentation: none
+  sampling_seed: 42
+  intensity_normalization:
+    transform: signed_log1p
+    scale: train_median_abs
+    center: train_median
+    denominator: train_iqr
+    floor: 1.0e-6
+    clip: [-10.0, 10.0]
+    max_stat_points: 1000000
+kinematics:
+  derivative: causal_quadratic_seven_point
+  support_points: 7
+  derivative_solve_dtype: float64
+  time_scaling: support_span
+  max_design_condition_number: 1.0e+6
+  candidate_endpoints: 58
+  minimum_valid_endpoints: 44
+  task_interval: [6, 63]
+  ridge: 0.0
+  fill_missing_targets: false
+  parents: [-1, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 12, 13, 14, 16, 17, 18, 19]
+  joint_names: [pelvis, left_hip, right_hip, spine1, left_knee, right_knee, spine2, left_ankle, right_ankle, spine3, left_foot, right_foot, neck, left_collar, right_collar, head, left_shoulder, right_shoulder, left_elbow, right_elbow, left_wrist, right_wrist]
+  joint_loss_weights: [1, 2, 2, 1, 4, 4, 1, 8, 8, 1, 8, 8, 1, 2, 2, 1, 2, 2, 4, 4, 8, 8]
+  bilateral_edges: [[1, 2], [4, 5], [7, 8], [10, 11], [13, 14], [16, 17], [18, 19], [20, 21]]
+  edge_count: 29
+  arms_left: [18, 20]
+  arms_right: [19, 21]
+  legs_left: [4, 7]
+  legs_right: [5, 8]
+  alignment_epsilon_length_m: 1.0e-6
+  alignment_epsilon_speed_mps: 1.0e-6
+label_policy:
+  root_delta_mps2: 0.05
+  root_guard_mps2: 0.01
+  root_residual_max_mps: 0.15
+  limb_delta_mps: 0.05
+  limb_guard_mps: 0.01
+  root_slope: all_pairs_theil_sen
+  root_residual: scaled_mad_1_4826
+  limb_reduction: mean_of_joint_median_relative_speeds
+  exact_boundaries: unknown
+  statuses: [defined, unknown, undefined]
+  root_classes: [speeding_up, slowing_down, no_overall_trend]
+  limb_classes: [faster_left, faster_right, tie]
+  unknown_label: unknown
+encoder:
+  input_dim: 4
+  dim: 256
+  point_embedding_hidden: 256
+  position_embedding_hidden: 256
+  spatial_layers: 3
+  temporal_layers: 8
+  attention_heads: 4
+  feedforward_dim: 1024
+  dropout: 0.1
+  pre_layernorm: true
+  layernorm_eps: 1.0e-5
+  temporal_attention: bidirectional_window
+  temporal_position: continuous_time_rope
+  rope_base: 10000.0
+  rope_time_scale_hz: 12.0
+  frame_pool_queries: 1
+  pose_head_hidden: 256
+  pose_output_dim: 66
+  initialization: scratch
+descriptor:
+  node_dim: 7
+  edge_dim: 14
+  node_hidden: 128
+  edge_hidden: 128
+  normalizer: train_prediction_role_channel_mean_std
+  normalizer_floor: 1.0e-6
+  clip: [-10.0, 10.0]
+  unavailable_channels_zero_after_normalization: true
+projector:
+  output_sensor_embeddings: 64
+  node_mlp_dims: [7, 128, 128]
+  edge_mlp_dims: [14, 128, 128]
+  joint_embeddings: 22
+  edge_embeddings: 29
+  edge_types: 2
+  availability_embeddings_per_branch: 2
+  pool_query_count_per_branch: 1
+  fusion_dims: [512, 256, 256]
+  fusion_residual_from_Y: true
+  dropout: 0.0
+  language_mlp: [256, model_hidden_size, model_hidden_size]
+  expected_params_at_d1536:
+    M: 2761728
+    S: 3003392
+    F: 3003392
+    E: 3003392
+    R: 3003392
+language:
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  expected_hidden_size: 1536
+  frozen_all_weights: true
+  lora: false
+  sensor_marker: '[[RADAR_BLOCK]]'
+  frame_text_template: 'Frame {t:02d} at {elapsed:.4f}s: '
+  max_training_sequence: 3072
+  max_generation_input: 3040
+  max_new_tokens: 32
+  do_sample: false
+  num_beams: 1
+  constrained_decoding: false
+  task_weights: {root: 0.50, arms: 0.25, legs: 0.25}
+  train_unknown_references: true
+  train_undefined_references: false
+  train_paraphrases: false
+  answer_loss_reduction: mean_tokens_per_example_then_mean_examples
+  training_logits: selected_target_predecessor_positions_after_equivalence
+  train_use_cache: false
+  extension:
+    model_id: Qwen/Qwen3-8B
+    expected_hidden_size: 4096
+    enable_thinking: false
+    automatic_hardware_or_quantization_fallback: false
+training:
+  physical:
+    optimizer: AdamW
+    learning_rate: 0.0006
+    minimum_learning_rate: 0.000001
+    betas: [0.9, 0.999]
+    eps: 1.0e-6
+    weight_decay: 0.01
+    no_decay: [bias, layernorm, embedding, query]
+    effective_batch: 16
+    initial_microbatch: 1
+    initial_accumulation: 16
+    epochs_max: 100
+    warmup_epochs: 3
+    scheduler: cosine_no_restarts
+    clip_grad_norm: 1.0
+    early_stop_patience: 15
+    selection: minimum_validation_L_phys
+    loss_weights: {position: 1.0, root_velocity: 5.0, relative_velocity: 10.0, bone_length: 2.0}
+    position_unit_scale_m: 1.0
+    velocity_unit_scale_mps: 1.0
+    tail_weight_start: 54
+    tail_weight_end: 63
+    tail_weight_range: [1.0, 5.0]
+  alignment:
+    optimizer: AdamW
+    learning_rate: 0.0003
+    minimum_learning_rate: 0.000003
+    betas: [0.9, 0.999]
+    eps: 1.0e-6
+    weight_decay: 0.01
+    no_decay: [bias, layernorm, embedding, query]
+    effective_batch: 16
+    initial_microbatch: 1
+    initial_accumulation: 16
+    epochs_max: 20
+    warmup_step_fraction: 0.05
+    scheduler: cosine_no_restarts
+    clip_grad_norm: 1.0
+    early_stop_patience: 5
+    selection: [maximum_S_atomic, maximum_schema_valid_rate, earliest_epoch]
+    tie_tolerance: 1.0e-8
+    eval_generation_every_epochs: 1
+  probe:
+    input_dim: 512
+    hidden_dim: 128
+    output_dim: 12
+    optimizer: AdamW
+    learning_rate: 0.001
+    weight_decay: 0.01
+    batch: 128
+    epochs_max: 50
+    early_stop_patience: 8
+cache:
+  format: npy_mmap_shards
+  windows_per_shard_max: 1024
+  feature_dtype: float32
+  pose_dtype: float32
+  velocity_dtype: float32
+  duplicate_per_qa: false
+evaluation:
+  primary_reference_status: defined
+  secondary_reference_status: [defined, unknown]
+  zero_division: 0
+  fixed_class_count_primary: 3
+  fixed_class_count_secondary: 4
+  missing_prediction: incorrect
+  invalid_prediction: incorrect
+  truncated_prediction: incorrect
+  bootstrap_unit: subject
+  bootstrap_draws: 5000
+  bootstrap_seed: 42
+  confidence_level: 0.95
+  minimum_subjects_for_ci: 2
+  diagnostic_ci_max_subjects: 4
+  undefined_bootstrap_fraction_warning: 0.05
+  donor:
+    same_activity_offline: true
+    distinct_subjects: true
+    distinct_recordings: true
+    reference_discordant: true
+    reuse_window: false
+    subject_pair_blocks_disjoint: true
+    duration_relative_tolerance: 0.05
+    grid_tolerance_median_dt_fraction: 0.25
+    shared_text_grid: arithmetic_mean_elapsed_times
+    minimum_blocks_for_inference: 5
+    seed: 42
+resources:
+  target_gpu: NVIDIA_GeForce_RTX_3060_12GB
+  target_cpu: AMD_Ryzen_7_7700
+  target_ram_gb: 16
+  target_os: Windows
+  python: '3.12'
+  initial_workers: 0
+  cpu_threads: 4
+  prefetch_factor_if_workers: 2
+  vram_reserve_mib: 1024
+  system_ram_reserve_mib: 2048
+  disk_reserve_gib: 10
+  profile_warmup_steps: 10
+  profile_measured_optimizer_steps: 30
+  profile_generation_samples: 30
+  pure_pytorch_model: true

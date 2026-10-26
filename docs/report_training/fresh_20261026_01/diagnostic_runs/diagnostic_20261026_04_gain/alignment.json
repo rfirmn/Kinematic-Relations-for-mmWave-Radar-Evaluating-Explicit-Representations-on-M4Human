@@ -1,0 +1,3234 @@
+{
+  "stage": "alignment",
+  "run_id": "diagnostic_20261026_04_gain",
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false,
+  "artifact_generation_id": "fresh_20261026_01",
+  "plan_hash": "e5187208c759ff9e036bd2ae7d495d2d478ce056171ede81956b119ef4dfcc30",
+  "module_sha256": "8a18c03fe0dd18e7126bac54874d35857a3a49099e45bd16b9b982c6dc499064",
+  "source_snapshot": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\source_snapshots\\8a18c03fe0dd18e7126bac54874d35857a3a49099e45bd16b9b982c6dc499064.txt",
+  "started_utc": "2026-10-26T12:54:47.891415+00:00",
+  "conditions": {
+    "M": {
+      "optimizer_steps": 2,
+      "projector_changed_in_this_invocation": true,
+      "metrics_against_candidate_targets": {
+        "S_atomic": 0.23809523809523808,
+        "primary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0
+            },
+            "macro_f1": 0.3333333333333333,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.8571428571428571,
+              "tie": 0.0
+            },
+            "macro_f1": 0.2857142857142857,
+            "accuracy": 0.75,
+            "coverage_ceiling_macro_f1": 0.6666666666666666
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          }
+        },
+        "secondary_4class_weighted_f1": 0.17857142857142858,
+        "secondary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.25,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.25
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.8571428571428571,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.21428571428571427,
+            "accuracy": 0.75,
+            "coverage_ceiling_macro_f1": 0.5
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.25
+          }
+        },
+        "accuracy_weighted": 0.6875,
+        "accuracy_macro": 0.5833333333333334,
+        "generation": {
+          "count": 12.0,
+          "json_parse_rate": 1.0,
+          "schema_enum_valid_rate": 1.0,
+          "substantive_answer_rate": 1.0,
+          "unknown_rate": 0.0,
+          "status_counts": {
+            "valid": 12.0
+          }
+        },
+        "reference_coverage": {
+          "defined": 12
+        },
+        "undefined_reasons": {},
+        "support": {
+          "subject_id": 4,
+          "recording_id": 4,
+          "window_uid": 4,
+          "qa_uid": 12
+        }
+      }
+    },
+    "S": {
+      "optimizer_steps": 2,
+      "projector_changed_in_this_invocation": true,
+      "metrics_against_candidate_targets": {
+        "S_atomic": 0.23809523809523808,
+        "primary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0
+            },
+            "macro_f1": 0.3333333333333333,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.8571428571428571,
+              "tie": 0.0
+            },
+            "macro_f1": 0.2857142857142857,
+            "accuracy": 0.75,
+            "coverage_ceiling_macro_f1": 0.6666666666666666
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          }
+        },
+        "secondary_4class_weighted_f1": 0.17857142857142858,
+        "secondary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.25,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.25
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.8571428571428571,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.21428571428571427,
+            "accuracy": 0.75,
+            "coverage_ceiling_macro_f1": 0.5
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.25
+          }
+        },
+        "accuracy_weighted": 0.6875,
+        "accuracy_macro": 0.5833333333333334,
+        "generation": {
+          "count": 12.0,
+          "json_parse_rate": 1.0,
+          "schema_enum_valid_rate": 1.0,
+          "substantive_answer_rate": 1.0,
+          "unknown_rate": 0.0,
+          "status_counts": {
+            "valid": 12.0
+          }
+        },
+        "reference_coverage": {
+          "defined": 12
+        },
+        "undefined_reasons": {},
+        "support": {
+          "subject_id": 4,
+          "recording_id": 4,
+          "window_uid": 4,
+          "qa_uid": 12
+        }
+      }
+    },
+    "F": {
+      "optimizer_steps": 2,
+      "projector_changed_in_this_invocation": true,
+      "metrics_against_candidate_targets": {
+        "S_atomic": 0.23809523809523808,
+        "primary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0
+            },
+            "macro_f1": 0.3333333333333333,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.8571428571428571,
+              "tie": 0.0
+            },
+            "macro_f1": 0.2857142857142857,
+            "accuracy": 0.75,
+            "coverage_ceiling_macro_f1": 0.6666666666666666
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          }
+        },
+        "secondary_4class_weighted_f1": 0.17857142857142858,
+        "secondary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.25,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.25
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.8571428571428571,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.21428571428571427,
+            "accuracy": 0.75,
+            "coverage_ceiling_macro_f1": 0.5
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.25
+          }
+        },
+        "accuracy_weighted": 0.6875,
+        "accuracy_macro": 0.5833333333333334,
+        "generation": {
+          "count": 12.0,
+          "json_parse_rate": 1.0,
+          "schema_enum_valid_rate": 1.0,
+          "substantive_answer_rate": 1.0,
+          "unknown_rate": 0.0,
+          "status_counts": {
+            "valid": 12.0
+          }
+        },
+        "reference_coverage": {
+          "defined": 12
+        },
+        "undefined_reasons": {},
+        "support": {
+          "subject_id": 4,
+          "recording_id": 4,
+          "window_uid": 4,
+          "qa_uid": 12
+        }
+      }
+    },
+    "E": {
+      "optimizer_steps": 2,
+      "projector_changed_in_this_invocation": true,
+      "metrics_against_candidate_targets": {
+        "S_atomic": 0.23809523809523808,
+        "primary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0
+            },
+            "macro_f1": 0.3333333333333333,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.8571428571428571,
+              "tie": 0.0
+            },
+            "macro_f1": 0.2857142857142857,
+            "accuracy": 0.75,
+            "coverage_ceiling_macro_f1": 0.6666666666666666
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          }
+        },
+        "secondary_4class_weighted_f1": 0.17857142857142858,
+        "secondary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.25,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.25
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.8571428571428571,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.21428571428571427,
+            "accuracy": 0.75,
+            "coverage_ceiling_macro_f1": 0.5
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.25
+          }
+        },
+        "accuracy_weighted": 0.6875,
+        "accuracy_macro": 0.5833333333333334,
+        "generation": {
+          "count": 12.0,
+          "json_parse_rate": 1.0,
+          "schema_enum_valid_rate": 1.0,
+          "substantive_answer_rate": 1.0,
+          "unknown_rate": 0.0,
+          "status_counts": {
+            "valid": 12.0
+          }
+        },
+        "reference_coverage": {
+          "defined": 12
+        },
+        "undefined_reasons": {},
+        "support": {
+          "subject_id": 4,
+          "recording_id": 4,
+          "window_uid": 4,
+          "qa_uid": 12
+        }
+      }
+    },
+    "R": {
+      "optimizer_steps": 2,
+      "projector_changed_in_this_invocation": true,
+      "metrics_against_candidate_targets": {
+        "S_atomic": 0.23809523809523808,
+        "primary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0
+            },
+            "macro_f1": 0.3333333333333333,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.8571428571428571,
+              "tie": 0.0
+            },
+            "macro_f1": 0.2857142857142857,
+            "accuracy": 0.75,
+            "coverage_ceiling_macro_f1": 0.6666666666666666
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          }
+        },
+        "secondary_4class_weighted_f1": 0.17857142857142858,
+        "secondary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.25,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.25
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.8571428571428571,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.21428571428571427,
+            "accuracy": 0.75,
+            "coverage_ceiling_macro_f1": 0.5
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.25
+          }
+        },
+        "accuracy_weighted": 0.6875,
+        "accuracy_macro": 0.5833333333333334,
+        "generation": {
+          "count": 12.0,
+          "json_parse_rate": 1.0,
+          "schema_enum_valid_rate": 1.0,
+          "substantive_answer_rate": 1.0,
+          "unknown_rate": 0.0,
+          "status_counts": {
+            "valid": 12.0
+          }
+        },
+        "reference_coverage": {
+          "defined": 12
+        },
+        "undefined_reasons": {},
+        "support": {
+          "subject_id": 4,
+          "recording_id": 4,
+          "window_uid": 4,
+          "qa_uid": 12
+        }
+      }
+    },
+    "T": {
+      "metrics_against_candidate_targets": {
+        "S_atomic": 0.0,
+        "primary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                3.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.6666666666666666
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          }
+        },
+        "secondary_4class_weighted_f1": 0.0,
+        "secondary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.25
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                3.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.5
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "coverage_ceiling_macro_f1": 0.25
+          }
+        },
+        "accuracy_weighted": 0.0,
+        "accuracy_macro": 0.0,
+        "generation": {
+          "count": 12.0,
+          "json_parse_rate": 1.0,
+          "schema_enum_valid_rate": 1.0,
+          "substantive_answer_rate": 0.0,
+          "unknown_rate": 1.0,
+          "status_counts": {
+            "valid": 12.0
+          }
+        },
+        "reference_coverage": {
+          "defined": 12
+        },
+        "undefined_reasons": {},
+        "support": {
+          "subject_id": 4,
+          "recording_id": 4,
+          "window_uid": 4,
+          "qa_uid": 12
+        }
+      }
+    },
+    "Maj": {
+      "metrics_against_candidate_targets": {
+        "S_atomic": 0.3214285714285714,
+        "primary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0
+            },
+            "macro_f1": 0.3333333333333333,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.8571428571428571,
+              "tie": 0.0
+            },
+            "macro_f1": 0.2857142857142857,
+            "accuracy": 0.75,
+            "coverage_ceiling_macro_f1": 0.6666666666666666
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 1.0
+            },
+            "macro_f1": 0.3333333333333333,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          }
+        },
+        "secondary_4class_weighted_f1": 0.24107142857142858,
+        "secondary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.25,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.25
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.8571428571428571,
+              "tie": 0.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.21428571428571427,
+            "accuracy": 0.75,
+            "coverage_ceiling_macro_f1": 0.5
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 1.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.25,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.25
+          }
+        },
+        "accuracy_weighted": 0.9375,
+        "accuracy_macro": 0.9166666666666666,
+        "generation": {
+          "count": 12.0,
+          "json_parse_rate": 1.0,
+          "schema_enum_valid_rate": 1.0,
+          "substantive_answer_rate": 1.0,
+          "unknown_rate": 0.0,
+          "status_counts": {
+            "valid": 12.0
+          }
+        },
+        "reference_coverage": {
+          "defined": 12
+        },
+        "undefined_reasons": {},
+        "support": {
+          "subject_id": 4,
+          "recording_id": 4,
+          "window_uid": 4,
+          "qa_uid": 12
+        }
+      }
+    },
+    "Rule": {
+      "metrics_against_candidate_targets": {
+        "S_atomic": 0.2833333333333333,
+        "primary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0
+            },
+            "macro_f1": 0.3333333333333333,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.4
+            },
+            "macro_f1": 0.13333333333333333,
+            "accuracy": 0.25,
+            "coverage_ceiling_macro_f1": 0.6666666666666666
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 1.0
+            },
+            "macro_f1": 0.3333333333333333,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.3333333333333333
+          }
+        },
+        "secondary_4class_weighted_f1": 0.2125,
+        "secondary": {
+          "root": {
+            "count": 4.0,
+            "classes": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "speeding_up",
+              "slowing_down",
+              "no_overall_trend",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "speeding_up": 0.0,
+              "slowing_down": 0.0,
+              "no_overall_trend": 1.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.25,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.25
+          },
+          "arms": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 3.0,
+              "tie": 1.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 0.4,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.1,
+            "accuracy": 0.25,
+            "coverage_ceiling_macro_f1": 0.5
+          },
+          "legs": {
+            "count": 4.0,
+            "classes": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown"
+            ],
+            "confusion_columns": [
+              "faster_left",
+              "faster_right",
+              "tie",
+              "unknown",
+              "invalid",
+              "missing/truncated"
+            ],
+            "confusion": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "class_support": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 4.0,
+              "unknown": 0.0
+            },
+            "per_class_f1": {
+              "faster_left": 0.0,
+              "faster_right": 0.0,
+              "tie": 1.0,
+              "unknown": 0.0
+            },
+            "macro_f1": 0.25,
+            "accuracy": 1.0,
+            "coverage_ceiling_macro_f1": 0.25
+          }
+        },
+        "accuracy_weighted": 0.8125,
+        "accuracy_macro": 0.75,
+        "generation": {
+          "count": 12.0,
+          "json_parse_rate": 1.0,
+          "schema_enum_valid_rate": 1.0,
+          "substantive_answer_rate": 1.0,
+          "unknown_rate": 0.0,
+          "status_counts": {
+            "valid": 12.0
+          }
+        },
+        "reference_coverage": {
+          "defined": 12
+        },
+        "undefined_reasons": {},
+        "support": {
+          "subject_id": 4,
+          "recording_id": 4,
+          "window_uid": 4,
+          "qa_uid": 12
+        }
+      }
+    }
+  },
+  "engineering_checks_passed": true,
+  "quality_review": {
+    "status": "passed",
+    "failures": [],
+    "criterion": "Every validation generation must terminate with the strict schema/enum; no parser repair."
+  },
+  "frozen_Qwen_unchanged": true,
+  "resource": {
+    "wall_seconds": 61.63657629999943,
+    "device": "cuda",
+    "peak_allocated_bytes": 9422616064,
+    "peak_reserved_bytes": 10053746688,
+    "minimum_free_cuda_bytes": 1601949696,
+    "minimum_available_ram_bytes": 6607634432,
+    "peak_process_rss_bytes_sampled": 1883185152,
+    "resource_guard_passed": true,
+    "sampling": "At each microbatch/optimizer boundary; not continuous OS telemetry."
+  },
+  "files": {
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\features.diagnostic.pt": "d12a65d077752739b4fcb1c23d60981f88bf76b77efa93b50cbb724a1a8828b7",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\checkpoints\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\M\\diagnostic.pt": "051d548feda762269d82a8c2f382d8a6e8ac1558e12fcfef56bb7c5253642323",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\alignment_M_history.json": "72ef963a4894bdbce65071184672da6adea782491889d6d772c12a3db726734a",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\predictions_M.diagnostic.json": "699a3cbfd98d7461f8b2d197c263f1dceec7f156a6c5a52a39b5fcae23f1a63e",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\descriptor_S.diagnostic.json": "6c3a232c7a9d5528aff6304c740193998ca95ae877dcb188f902b811eea82bbd",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\checkpoints\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\S\\diagnostic.pt": "0133a182725d286bfe60cc71d90d38c343cb03e03ce24dd3952c4783e105729a",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\alignment_S_history.json": "d88928f5fac1ae588a4738d5b389511e04482e9782c9561998897cb53b1cd2d6",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\predictions_S.diagnostic.json": "699a3cbfd98d7461f8b2d197c263f1dceec7f156a6c5a52a39b5fcae23f1a63e",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\descriptor_F.diagnostic.json": "25b2e9e67a90a59f4fe058d12c35435dc08b56b938f2e5d375e7ce6e958f6772",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\checkpoints\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\F\\diagnostic.pt": "23d1f58120755eb9482ce81dc47b47a12155a19f8533645b9b3050c15832376f",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\alignment_F_history.json": "23bf931daf5e6cc9922e64020a1a3cd63ae59856d33bf41defc95bf615731be1",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\predictions_F.diagnostic.json": "699a3cbfd98d7461f8b2d197c263f1dceec7f156a6c5a52a39b5fcae23f1a63e",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\descriptor_E.diagnostic.json": "ea506e9b3ec17f23bbea64dc4bfcee40b1ba5a7329ac0bd632ebf95a7a650fcd",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\checkpoints\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\E\\diagnostic.pt": "ffe5499d62aa71a5cc577c5fe31076a5ddd48e79481ef372918b4101506e70ba",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\alignment_E_history.json": "b5a0b56b7883dd4f64926cb6f8491b843a49a639c634ed67d96ad356f9bace83",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\predictions_E.diagnostic.json": "699a3cbfd98d7461f8b2d197c263f1dceec7f156a6c5a52a39b5fcae23f1a63e",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\descriptor_R.diagnostic.json": "6c2639d68e15be4966d27cc5cbf3cbc0ff11624fc1e68481105d0d85eef5fcfc",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\checkpoints\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\R\\diagnostic.pt": "713b050f97b934e9606f4e2b9f994bac6581cee4a326afabf5da0a4164e211c7",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\alignment_R_history.json": "d4a94408fa69571c63c1d106b518c1fe99abad6f6638a7260c7382b1f15d343f",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\predictions_R.diagnostic.json": "699a3cbfd98d7461f8b2d197c263f1dceec7f156a6c5a52a39b5fcae23f1a63e",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\predictions_T.diagnostic.json": "8c3792dd276e9ec59eb7bec4e99aaabf93069ff5bdfbd0c655384f28ea2ac665",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_04_gain\\quality_review.json": "9e580b42f1fd73ca48fcd68106d92b2ff35a5c871066be372398dc25e5747cc9"
+  },
+  "limitation": "Small provisional train/val panel; metrics are numerical diagnostics, not scientific accuracy.",
+  "status": "passed",
+  "completed_utc": "2026-10-26T12:56:00.319914+00:00"
+}

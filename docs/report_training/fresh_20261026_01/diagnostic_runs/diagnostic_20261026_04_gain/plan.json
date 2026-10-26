@@ -1,0 +1,37 @@
+{
+  "schema": "relational64_diagnostic_plan_1",
+  "run_id": "diagnostic_20261026_04_gain",
+  "artifact_generation_id": "fresh_20261026_01",
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false,
+  "source_inventory_sha256": "802312c3f0d126d86da8cb09e88a30eee45a6cc4a3d70c90a0e665db5ba5d0c2",
+  "config_hash": "9dce05a776ee2b447060460da04788c323f4c1d1f5c5b168817c9c88840e8f3a",
+  "seed": 42,
+  "train_windows": 8,
+  "val_windows": 4,
+  "physical_steps": 20,
+  "alignment_steps_per_condition": 2,
+  "conditions": [
+    "M",
+    "S",
+    "F",
+    "E",
+    "R"
+  ],
+  "intensity_fit_scope": "selected_train_panel_only",
+  "physical_accumulation": 8,
+  "alignment_accumulation": 3,
+  "test_target_access": false,
+  "alignment_optimizer_override": {
+    "learning_rate": 1e-05,
+    "warmup_steps": 2
+  },
+  "sensor_embedding_gain": 0.026,
+  "experimental_spec_deviation": "Multiply H after final LayerNorm before frozen Qwen; diagnostic variant only. Normative specification/defaultgain1 unchanged."
+}

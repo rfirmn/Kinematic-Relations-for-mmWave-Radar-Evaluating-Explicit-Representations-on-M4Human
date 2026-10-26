@@ -1,0 +1,245 @@
+{
+  "schema_id": "relational64_independent_isolation_recheck_1",
+  "artifact_generation_id": "fresh_20261026_01",
+  "created_utc": "2026-10-26T12:13:11.266324+00:00",
+  "status": "passed_scoped_isolation_review",
+  "evidence": "static_source_review_and_synthetic_CPU_tests",
+  "review_scope": [
+    "AGENTS.md",
+    "active src/",
+    "active configs/",
+    "active tools/",
+    "docs/artifact_policy.md",
+    "owned synthetic QA isolation test"
+  ],
+  "read_scope_declaration": {
+    "prior_research_artifacts_read": false,
+    "archive_contents_read": false,
+    "D_drive_contents_read": false,
+    "actual_dataset_read": false,
+    "pretrained_weights_loaded": false
+  },
+  "source_changes_in_this_subtask": [
+    "src/relational64/alignment.py",
+    "tests/test_qa_generation_isolation.py"
+  ],
+  "resolved_findings": [
+    "active_runtime_roots",
+    "cli_requires_active_generation",
+    "source_only_inventory_policy",
+    "source_reader_readonly",
+    "prepare_nested_scan_guard",
+    "manifest_inventory_generation_binding",
+    "QA_reader_isolation",
+    "actual_QA_calls_supply_generation",
+    "actual_lock_calls_supply_generation",
+    "nested_test_plan_preflight",
+    "cache_nested_filename_preflight",
+    "target_nested_filename_preflight",
+    "probe_checkpoint_generation",
+    "nested_gate_artifact_preflight",
+    "finalizer_source_mismatch_hard_failure",
+    "current_python_sources_parse"
+  ],
+  "remaining_material_findings": [],
+  "checks": [
+    {
+      "id": "active_runtime_roots",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": {
+        "derived_root": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01",
+        "meta_root": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\meta",
+        "report_root": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01",
+        "checkpoint_root": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\checkpoints\\m4human_relational64\\fresh_20261026_01",
+        "source_inventory": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\meta\\source_inventory.json"
+      }
+    },
+    {
+      "id": "cli_requires_active_generation",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "CLI stage dispatch requires fresh policy and a nonempty generation before accepting artifact arguments."
+    },
+    {
+      "id": "source_only_inventory_policy",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "Inventory producer scans named raw source LMDBs; prior metadata inputs are prohibited. No dataset was opened by this review."
+    },
+    {
+      "id": "source_reader_readonly",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "Static LMDB read-only/create-disabled producer and explicit empty-prior-input policy."
+    },
+    {
+      "id": "prepare_nested_scan_guard",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "Fresh inventory, output and nested sensor scan paths are preflighted before scan hashing/opening."
+    },
+    {
+      "id": "manifest_inventory_generation_binding",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "Frame/window bytes are pinned by current preparation summary and inventory hash; window rows carry generation."
+    },
+    {
+      "id": "QA_reader_isolation",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "QA path and sidecar checked before rows; complete schema/identity/hash/count/provenance and all row generation tags required."
+    },
+    {
+      "id": "actual_QA_calls_supply_generation",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": {
+        "call_count": 5,
+        "all_expected_generation_keywords": true
+      }
+    },
+    {
+      "id": "actual_lock_calls_supply_generation",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": {
+        "cli": {
+          "call_count": 5,
+          "all_expected_generation_keywords": true
+        },
+        "data": {
+          "call_count": 2,
+          "all_expected_generation_keywords": true
+        },
+        "pipeline_targets": {
+          "call_count": 1,
+          "all_expected_generation_keywords": true
+        },
+        "evaluation_pipeline": {
+          "call_count": 1,
+          "all_expected_generation_keywords": true
+        }
+      }
+    },
+    {
+      "id": "nested_test_plan_preflight",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "Study locks preflight nested run checkpoints and plan artifacts, pin active config/generation and validate checkpoint provenance."
+    },
+    {
+      "id": "cache_nested_filename_preflight",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "Canonical cache members/shards and generation checked before nested hash/index/array reads."
+    },
+    {
+      "id": "target_nested_filename_preflight",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "Canonical target filenames, directory containment and current generation precede target member hashing."
+    },
+    {
+      "id": "probe_checkpoint_generation",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "Fresh probe caches/QA generation is propagated to checkpoint provenance and header."
+    },
+    {
+      "id": "nested_gate_artifact_preflight",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "Current-generation gate report and each nested artifact path remain inside the repository and outside archive."
+    },
+    {
+      "id": "finalizer_source_mismatch_hard_failure",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "Finalization stops on freshly audited raw-source hash mismatch instead of writing an accepted runtime lock."
+    },
+    {
+      "id": "current_python_sources_parse",
+      "status": "passed",
+      "evidence": "static_source_review",
+      "detail": "All reviewed active Python source/tool files parse as Python; no source or dataset code executed for this static check."
+    }
+  ],
+  "synthetic_test_execution": {
+    "status": "passed",
+    "count": 14,
+    "duration_seconds": 1.48,
+    "actual_M4Human": false,
+    "cuda_executed": false,
+    "command": ".venv/Scripts/python.exe -m pytest tests/test_qa_generation_isolation.py -q --basetemp docs/report_training/fresh_20261026_01/qa_isolation_tmp_rerun --junitxml docs/report_training/fresh_20261026_01/qa_generation_isolation.xml",
+    "coverage": [
+      "fresh QA rows and sidecar",
+      "old-generation QA in current folder",
+      "sidecar-only relabel rejection",
+      "old filtered row rejection",
+      "hash/identity/count/provenance/complete rejection",
+      "archive/external paths rejected before read",
+      "generationless synthetic helper compatibility",
+      "direct alignment stale QA/cache rejection before gate/output"
+    ]
+  },
+  "coordinator_reported_full_suite": {
+    "status": "passed",
+    "test_count": 201,
+    "independently_rerun_by_this_reviewer": false,
+    "origin": "parent agent completion message; no prior report read"
+  },
+  "actual_M4Human_validation_performed_by_this_review": false,
+  "native_Windows_CUDA_test_performed_by_this_review": false,
+  "GPU_used": false,
+  "G0_passed": false,
+  "scientific_acceptance_granted": false,
+  "limitations": [
+    "Static isolation checks and synthetic CPU tests do not prove dataset target/coordinate/time authority.",
+    "G0 remains blocked; this report grants no dependent scientific training/evaluation gate.",
+    "Generationless helper fixtures remain intentional; actual CLI dispatch requires fresh policy and generation."
+  ],
+  "reviewed_file_sha256": {
+    "AGENTS.md": "2fc569ad058bb95f8cc0fb880323747214779b27e095243b8606a72e17d1d19f",
+    "configs/data_authority.template.json": "9134591cc9d98ae4519aadb31fe2a3ada9b93f289bc7b910aa90aae4a66e8493",
+    "configs/reference_target_provenance.template.json": "243f2ba5c54bd248f132040798ea5ebdb29e36a44409c64b453e9f17b17ffbad",
+    "configs/relational64/label_policy.json": "ef6a14f9931cbd1f524861c01cd2cd89429ae8a5815fbfa62b01a45d3e016063",
+    "configs/relational64/runtime.yaml": "9e5d5d6405457d381a3f87aad1a47764c4ed73502ce2f4f7ebe0d435d9a73452",
+    "configs/relational64/source_policy.json": "86d83c23cdea275d7825fcc580c1803370c61dcb6d96e25899c7c676358eec3c",
+    "docs/artifact_policy.md": "0450fd0559de9a1953271af891d1d89b24c5c5461dc55c0a0863747902129d04",
+    "src/eksperimen_model/__init__.py": "97c1acf7d5528b8723efff5598616678719615a1b187003d77029e43dca9da75",
+    "src/eksperimen_model/relational64/__init__.py": "026a2914af206a5871c8246c11b3d242121a1fac339daf4bdd566724dfb2c85e",
+    "src/eksperimen_model/relational64/cli.py": "b70265390d3e6f1634cb37e1827809235b58137c6a19784e03c528cf7fb1c1f6",
+    "src/relational64/__init__.py": "3f17ae5669332666b4831e07d98e674f4cf270d0209fb0bdc9ba995046a41efa",
+    "src/relational64/alignment.py": "d517605e992ad32e32b30716a4cffcde5a9f18f551f0bbabb5294057b383abcf",
+    "src/relational64/audit.py": "1600418d679a69fb8dcfcde9f8d580629f37178328aa9f7c24693f757aa3f3a5",
+    "src/relational64/cache.py": "663a336c17d47357b738c311f48bbe1bd990b48e808e338fa0158398eb19ae7c",
+    "src/relational64/checkpoint.py": "70e6f21e91d84b910ab49ad1d22fb7efa253e84a351488a2ed3cbba14f3b27af",
+    "src/relational64/cli.py": "5493aade62655d21d27a03cda891947b093452c9685720e0287817cd8a1ae542",
+    "src/relational64/config.py": "e73783fddcc9d7e53aa104d0f6c0d73b198e598f084bf3aabe1d9713facff51d",
+    "src/relational64/data.py": "a4d8b42f7243f8a252d7df2d8fce6a87498c25c44031708af3ef4cdbf22dd54b",
+    "src/relational64/evaluation.py": "e0582b4ac3756fb43f03eda95aed9fb2448a795b9a91d63ea0efa63b50c01eec",
+    "src/relational64/evaluation_pipeline.py": "2aea8e3f7181a415f15a14d966626ae7914c6d3e20886f5957a9f4e9f859651d",
+    "src/relational64/kinematics.py": "aab7027a6f344cc7de129e102bd012d95dfaedcc4354e9ef21add581d70e01b8",
+    "src/relational64/language.py": "605dd74c45a010e882f6a19dba8ce734ee1059421d968abb822a2219eaf6fb8f",
+    "src/relational64/models.py": "7138c52837f59790cee7e0320a55401011ee630b8e875961899c06d78618381d",
+    "src/relational64/physical.py": "1e110a64d047e85c782b1bb5ec57efe274d48321e103147a5f0bc75d4e613dd1",
+    "src/relational64/pilot.py": "4fa9d5ea8388dda3a8cfde6ae0e553fefa979713cf582ca4f2aee3a130abcca7",
+    "src/relational64/pipeline_targets.py": "fc453b1fcbb0c09b390afce3adc0bd1249c4d9d96a986403872a13a2959641e8",
+    "src/relational64/prepare.py": "550aae3d8d05ad0660b0d2674228015b057b2c437887d4e44e05fcb7d6366ed0",
+    "src/relational64/qa.py": "ab3840171ff2f32e9238228eac1ec9bd04c732d7debddcff41bc388b49908db6",
+    "src/relational64/reference_targets.py": "6866644aa5aeaf518f829b81e973deb282fe9c958f50e3335ac8c215eb103ac6",
+    "src/relational64/reporting.py": "f1296e7ed21a2ab9fceb78fedcbdcc1c5b709475c9f76b2716c28344b22df972",
+    "src/relational64/resources.py": "13abbc89aa7a02f4244f81cd7049ad60d0fdf9b17413ea43be4ac5b968c7fc8d",
+    "src/relational64/study.py": "3597ff5e14b36fd8085ecdcf601274389520b735f3e12838c6a7b735c1899ec2",
+    "src/relational64/training.py": "a435053ab2ded6a710d610ca3f1f2602ff1410ba3c24b01a9a290abbcb873885",
+    "src/relational64/verify_qwen.py": "16c81db37ccb3194dbeb08838bd18bfd780725c001d0ed594264dc1d080dbf4f",
+    "tests/test_qa_generation_isolation.py": "a45c2e8517118bd4d75664ec655fa5a70596dbaabd99e8937453b0fba9eed1e5",
+    "tools/check_artifact_isolation.py": "f06481e6613b34e824173ee7adf785ba0e77d1a6ed8dde9525693549c14cbc87",
+    "tools/extend_coordinate_audit.py": "90c2757077ddfe304e2b86ef948421daab7285cfe808308180ec147f7dc419ac",
+    "tools/fetch_official_provenance.py": "3aee0701e87340b8f288571af3ff55945098c86ba8800ada4a6fa220bf5985b0",
+    "tools/finalize_evidence.py": "9984c536d23fc6ed1672b5c61b00b53279fdda9c46d51c41ec8d039cc75efe60",
+    "tools/rebuild_fresh.py": "55bbdef925acc2b02103aeff539aa4323e50458428f9d761652883bb01f71fee"
+  }
+}

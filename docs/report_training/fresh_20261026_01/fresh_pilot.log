@@ -1,0 +1,29 @@
+{
+  "command": "pilot",
+  "status": "completed",
+  "summary": {
+    "protocol": "m4human_relational64",
+    "evidence": "synthetic_software_fixture",
+    "actual_M4Human": false,
+    "native_windows": true,
+    "cuda_executed": true,
+    "frozen_Qwen_unchanged": true,
+    "frozen_physical_unchanged": true,
+    "physical_initialization": "scratch untrained; software pilot only",
+    "train_steps_per_condition": 1,
+    "diagnostic_accumulation": 3,
+    "scientific_G4_accepted": false,
+    "status": "passed",
+    "interpretation": "Raw synthetic points -> physical predictions -> descriptor -> 64 embeddings -> frozen pretrained Qwen. No accuracy or dataset validation claim."
+  }
+}
+
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+Loading weights:   1%|1         | 4/338 [00:00<00:09, 34.35it/s]
+Loading weights:   4%|4         | 15/338 [00:00<00:04, 75.65it/s]
+Loading weights:   7%|6         | 23/338 [00:00<00:04, 72.23it/s]
+Loading weights:   9%|9         | 31/338 [00:00<00:05, 60.66it/s]
+Loading weights:  11%|#1        | 38/338 [00:00<00:08, 37.13it/s]
+Loading weights: 100%|##########| 338/338 [00:00<00:00, 374.31it/s]

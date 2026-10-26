@@ -1,0 +1,37 @@
+{
+  "artifact_generation_id": "fresh_20261026_01",
+  "status": "passed",
+  "prior_artifacts_read": [],
+  "actual_M4Human_manifest_checked": true,
+  "raw_data_read_by_this_check": false,
+  "source_inventory_sha256": "802312c3f0d126d86da8cb09e88a30eee45a6cc4a3d70c90a0e665db5ba5d0c2",
+  "source_policy_sha256": "86d83c23cdea275d7825fcc580c1803370c61dcb6d96e25899c7c676358eec3c",
+  "paths": {
+    "meta_root": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\meta",
+    "source_inventory": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\meta\\source_inventory.json",
+    "derived_root": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01",
+    "report_root": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01",
+    "checkpoint_root": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\checkpoints\\m4human_relational64\\fresh_20261026_01"
+  },
+  "checks": {
+    "all_active_outputs_inside_repository": true,
+    "prior_metadata_inputs_empty": true,
+    "inventory_source_only": true,
+    "frames_hash_matches_fresh_summary": true,
+    "windows_hash_matches_fresh_summary": true,
+    "all_window_rows_current_generation": true,
+    "sensor_scan_hash_matches_fresh_inventory": true
+  },
+  "frame_counts": {
+    "test": 132292,
+    "train": 394718,
+    "val": 134122
+  },
+  "window_counts": {
+    "test": 7583,
+    "train": 44517,
+    "val": 7541
+  },
+  "scientific_authority_passed": false,
+  "limitation": "Artifact isolation does not establish target/coordinate/time authority."
+}

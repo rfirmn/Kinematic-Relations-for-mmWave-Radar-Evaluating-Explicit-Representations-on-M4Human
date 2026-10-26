@@ -1,0 +1,469 @@
+"""Bounded, revisable engineering training on actual RPC and provisional targets.
+
+This runner never approves G0 or writes canonical targets/scientific checkpoints.
+It intentionally has a separate artifact schema, journal and checkpoint status.
+"""
+from __future__ import annotations
+
+import argparse
+from collections import Counter
+from dataclasses import asdict
+import datetime as dt
+import hashlib
+import json
+from pathlib import Path
+import re
+import traceback
+
+import numpy as np
+import torch
+from torch.utils.data import default_collate
+
+from .config import ROOT,active_artifact_path,resolve,read_json,write_json,file_hash,identity
+from .data import (RPCOnlyReader,assert_fresh_inventory,validate_manifest_generation,
+                   verify_snapshot,parse_source_key,decode_msgpack,make_sensor_batch)
+from .prepare import fit_intensity_normalizer
+from .qa import generate_qa,parse_answer,canonical_answer,fit_train_majority,rule_predictions,TASKS
+from .training import seed_everything,choose_precision,optimizer_update,validate_physical
+from .models import (RadarPoseModel,SensorProjector,DescriptorNormalizer,build_descriptors,
+                     parameter_hash,freeze_for_inference,adamw_parameter_groups)
+from .checkpoint import save_checkpoint,load_checkpoint
+from .resources import ResourceMonitor,environment_report
+from .physical import window_operators
+from .kinematics import differentiate_torch
+from .evaluation import evaluate_qa
+
+SOURCE_BYTES=Path(__file__).read_bytes()
+SOURCE_DIGEST=hashlib.sha256(SOURCE_BYTES).hexdigest()
+
+
+def diagnostic_flags():
+    return {'actual_M4Human':True,'synthetic_data':False,'diagnostic_only':True,
+            'target_status':'candidate_direct_joints_first22_not_reference_verified',
+            'time_status':'provisional_nominal_12Hz','G0_passed':False,
+            'scientific_acceptance':False,'eligible_for_test_selection':False}
+
+
+def alignment_quality(results):
+    failures=[]
+    for name,result in results.items():
+        if name not in ('M','S','F','E','R','T'):continue
+        rate=result.get('metrics_against_candidate_targets',{}).get('generation',{}).get('schema_enum_valid_rate')
+        if rate!=1.:failures.append({'condition':name,'schema_enum_valid_rate':rate,'reason':'invalid_or_truncated_generation'})
+    return {'status':'passed' if not failures else 'needs_revision','failures':failures,
+            'criterion':'Every validation generation must terminate with the strict schema/enum; no parser repair.'}
+
+
+def select_panel(rows,train_count=8,val_count=4):
+    if not 1<=train_count<=12 or not 1<=val_count<=4:
+        raise ValueError('Diagnostic panel supports 1..12 train and 1..4 validation subjects')
+    selected=[];seen={'train':set(),'val':set()};limits={'train':train_count,'val':val_count}
+    for row in rows:
+        split=row['split'];subject=str(row['subject_id'])
+        if split not in limits or subject in seen[split] or len(seen[split])>=limits[split]:continue
+        if len(row['source_keys'])!=64:raise ValueError('Diagnostic window must have64 source keys')
+        if any(parse_source_key(key)[0]!=int(subject) for key in row['source_keys']):
+            raise ValueError('Diagnostic source-key subject mismatch')
+        if any(subject in other for name,other in seen.items() if name!=split):
+            raise ValueError('Diagnostic subject split leakage')
+        seen[split].add(subject);selected.append(row)
+        if all(len(seen[name])==limits[name] for name in limits):break
+    if any(len(seen[name])!=limits[name] for name in limits):raise ValueError('Insufficient diagnostic subjects')
+    return selected
+
+
+class CandidateTargets:
+    """Fresh direct decode for diagnostics only; no canonical reader bypass."""
+    def __init__(self,inventory,allowed_subjects):
+        from .audit import _readonly
+        self.allowed=set(map(int,allowed_subjects));self.envs={}
+        try:
+            for name in ('params','calib'):self.envs[name]=_readonly(inventory['databases'][name])
+        except Exception:
+            self.close();raise
+
+    def read(self,key):
+        from .audit import transform_to_radar
+        if parse_source_key(key)[0] not in self.allowed:
+            raise ValueError('Diagnostic target access outside selected train/val subjects')
+        payloads={}
+        for name,env in self.envs.items():
+            with env.begin(write=False) as transaction:payloads[name]=transaction.get(key.encode())
+        if payloads['calib'] is None:raise ValueError('Missing calibration: '+key)
+        calib=decode_msgpack(payloads['calib'])
+        transform_to_radar(np.zeros((1,3)),calib)
+        if payloads['params'] is None:return np.zeros((22,3),np.float32),np.zeros(22,bool)
+        params=decode_msgpack(payloads['params'])
+        if 'joints' not in params:return np.zeros((22,3),np.float32),np.zeros(22,bool)
+        joints=np.asarray(params['joints'],np.float64)
+        if joints.ndim!=2 or joints.shape[0]<22 or joints.shape[1]!=3:
+            raise ValueError('Candidate joint shape must cover22 XYZ rows')
+        joints=joints[:22];mask=np.isfinite(joints).all(-1);mapped=np.zeros((22,3),np.float32)
+        mapped[mask]=transform_to_radar(joints[mask],calib).astype(np.float32)
+        mask &= np.isfinite(mapped).all(-1);mapped[~mask]=0
+        return mapped,mask
+
+    def close(self):
+        for env in self.envs.values():env.close()
+        self.envs={}
+
+
+class DiagnosticRun:
+    def __init__(self,config,run_id,*,steps=20,alignment_steps=2,conditions='M,S,F,E,R',alignment_lr=3e-4,alignment_warmup=0):
+        if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_-]{0,79}',run_id):raise ValueError('Safe run ID required')
+        if type(steps)is not int or not 1<=steps<=100:raise ValueError('Physical diagnostic budget:1..100 steps')
+        if type(alignment_steps)is not int or not 1<=alignment_steps<=10:raise ValueError('Alignment diagnostic budget:1..10 steps per condition')
+        if not isinstance(alignment_lr,(float,int)) or not np.isfinite(alignment_lr) or not 1e-7<=alignment_lr<=3e-4:
+            raise ValueError('Diagnostic alignment LR must be finite in [1e-7,3e-4]')
+        if type(alignment_warmup)is not int or not 0<=alignment_warmup<=alignment_steps:
+            raise ValueError('Diagnostic warmup must be0..alignment_steps')
+        conditions=conditions.split(',') if isinstance(conditions,str) else list(conditions)
+        if not conditions or len(set(conditions))!=len(conditions) or set(conditions)-set('MSFER'):
+            raise ValueError('Unique diagnostic conditions from M,S,F,E,R required')
+        self.config=config;self.runtime=config['runtime'];self.run_id=run_id
+        self.derived=active_artifact_path(Path(self.runtime['derived_root'])/'diagnostic_runs'/run_id)
+        self.reports=active_artifact_path(Path(self.runtime['report_root'])/'diagnostic_runs'/run_id)
+        self.checkpoints=active_artifact_path(Path(self.runtime['checkpoint_root'])/'diagnostic_runs'/run_id)
+        self.inventory_path=active_artifact_path(self.runtime['source_inventory'])
+        self.inventory=read_json(self.inventory_path)
+        assert_fresh_inventory(self.inventory,self.runtime['artifact_generation_id'])
+        self.plan={'schema':'relational64_diagnostic_plan_1','run_id':run_id,
+                   'artifact_generation_id':self.runtime['artifact_generation_id'],**diagnostic_flags(),
+                   'source_inventory_sha256':file_hash(self.inventory_path),'config_hash':identity(config),
+                   'seed':42,'train_windows':8,'val_windows':4,'physical_steps':steps,
+                   'alignment_steps_per_condition':alignment_steps,'conditions':conditions,
+                   'intensity_fit_scope':'selected_train_panel_only','physical_accumulation':8,
+                   'alignment_accumulation':3,'test_target_access':False}
+        # Historical run1 used the implicit3e-4/no-warmup settings. Overrides
+        # change the immutable plan, and therefore require their own new run ID.
+        if alignment_lr!=3e-4 or alignment_warmup!=0:
+            self.plan['alignment_optimizer_override']={'learning_rate':float(alignment_lr),'warmup_steps':alignment_warmup}
+        for path in (self.derived,self.reports,self.checkpoints):path.mkdir(parents=True,exist_ok=True)
+        plan_path=self.reports/'plan.json'
+        if plan_path.exists() and read_json(plan_path)!=self.plan:
+            raise ValueError('Diagnostic plan changed: use a new run ID; outputs cannot be silently reused')
+        write_json(plan_path,self.plan)
+        self.source_snapshot=self.reports/'source_snapshots'/(SOURCE_DIGEST+'.txt')
+        self.source_snapshot.parent.mkdir(parents=True,exist_ok=True)
+        if not self.source_snapshot.exists():self.source_snapshot.write_bytes(SOURCE_BYTES)
+
+    def stage_path(self,name):return self.reports/f'{name}.json'
+
+    def accepted_stage(self,name):
+        report=read_json(self.stage_path(name))
+        if report.get('status')!='passed' or report.get('plan_hash')!=identity(self.plan):
+            raise ValueError(f'Diagnostic {name} must pass before dependent execution')
+        if name=='alignment' and (self.reports/'quality_review.json').exists() and read_json(self.reports/'quality_review.json')['status']!='passed':
+            raise ValueError('Diagnostic alignment generation requires revision; use a new run plan')
+        if report.get('source_snapshot') and file_hash(active_artifact_path(report['source_snapshot']))!=report['module_sha256']:
+            raise ValueError('Diagnostic execution source snapshot mismatch')
+        for path,digest in report.get('files',{}).items():
+            if file_hash(active_artifact_path(path))!=digest:raise ValueError('Diagnostic dependency hash mismatch: '+path)
+        return report
+
+    def execute(self,name):
+        # Existing successful stages are reused only within the same authored run,
+        # after checking every dependency hash. Failed steps retain their journal.
+        path=self.stage_path(name)
+        if path.exists() and read_json(path).get('status')=='passed':return self.accepted_stage(name)
+        common={'stage':name,'run_id':self.run_id,**diagnostic_flags(),
+                'artifact_generation_id':self.runtime['artifact_generation_id'],'plan_hash':identity(self.plan),
+                'module_sha256':SOURCE_DIGEST,'source_snapshot':str(self.source_snapshot),
+                'started_utc':dt.datetime.now(dt.timezone.utc).isoformat()}
+        write_json(path,{**common,'status':'running'})
+        print('RUN '+name,flush=True)
+        try:
+            result=getattr(self,name)()
+            status='needs_revision' if result.get('engineering_checks_passed') is False else 'passed'
+            report={**common,**result,'status':status,'completed_utc':dt.datetime.now(dt.timezone.utc).isoformat()}
+            write_json(path,report)
+            print(('PASS ' if status=='passed' else 'REVISE ')+name,flush=True)
+            return report
+        except Exception as error:
+            failure={**common,'status':'failed','error_type':type(error).__name__,'error':str(error),'traceback':traceback.format_exc()}
+            write_json(path,failure)
+            with (self.reports/'failures.jsonl').open('a',encoding='utf-8') as handle:
+                handle.write(json.dumps(failure,allow_nan=False)+'\n')
+            print('FAIL '+name+': '+str(error),flush=True)
+            raise
+
+    def provenance(self,phase,**extra):
+        return {'schema':'relational64_diagnostic_provenance_1','phase':phase,'run_id':self.run_id,
+                'artifact_generation_id':self.runtime['artifact_generation_id'],**diagnostic_flags(),
+                'plan_hash':identity(self.plan),**extra}
+
+    def prepare(self):
+        manifest=active_artifact_path(Path(self.runtime['derived_root'])/'windows.jsonl')
+        validate_manifest_generation(manifest,self.inventory_path,expected_generation=self.runtime['artifact_generation_id'])
+        verify_snapshot(self.inventory,('rpc','params','calib'))
+        with manifest.open(encoding='utf-8') as stream:
+            panel=select_panel((json.loads(line) for line in stream if line.strip()))
+        panel_path=self.derived/'panel.diagnostic.json';write_json(panel_path,{'plan_hash':identity(self.plan),'windows':panel,**diagnostic_flags()})
+        # A separate train-panel fit; validation points cannot influence statistics.
+        frames=[];seen=set()
+        for window in panel:
+            if window['split']!='train':continue
+            for key in window['source_keys']:
+                if key not in seen:
+                    seen.add(key);frames.append({'source_key':key,'frame_uid':identity(['m4human_relational64',key]),'split':'train','sensor_valid':True})
+        rpc=RPCOnlyReader(self.inventory);targets=None
+        try:
+            norm=fit_intensity_normalizer(frames,rpc,max_points=1000000)
+            norm.update(diagnostic_only=True,fit_scope='selected_train_panel_only',artifact_generation_id=self.runtime['artifact_generation_id'])
+            norm.pop('normalizer_hash',None);norm['normalizer_hash']=identity(norm)
+            norm_path=self.derived/'intensity_normalizer.diagnostic.json';write_json(norm_path,norm)
+            targets=CandidateTargets(self.inventory,[row['subject_id'] for row in panel])
+            samples=[];qa=[];valid_count=0
+            for row in panel:
+                sensor=make_sensor_batch(rpc,row,norm)
+                pairs=[targets.read(key) for key in row['source_keys']]
+                positions=np.stack([p for p,m in pairs])-sensor['centroid'].numpy()
+                mask=np.stack([m for p,m in pairs]);positions[~mask]=0;valid_count+=int(mask.sum())
+                if not torch.isfinite(sensor['X']).all() or not np.isfinite(positions).all():raise ValueError('Nonfinite diagnostic batch')
+                sample={**sensor,'positions':torch.from_numpy(positions),'target_mask':torch.from_numpy(mask),
+                        'split':row['split'],'subject_id':str(row['subject_id']),'recording_id':row['recording_id']}
+                samples.append(sample)
+                qa.extend(generate_qa(row['window_uid'],row['time_s'],positions,mask,
+                    protocol_id='relational64_provisional_diagnostic',metadata=sample))
+            if not valid_count:raise ValueError('No candidate supervision in selected panel')
+        finally:
+            rpc.close()
+            if targets:targets.close()
+        data_path=self.derived/'batches.diagnostic.pt';torch.save(samples,data_path)
+        qa_path=self.derived/'qa.diagnostic.json';write_json(qa_path,{'schema':'relational64_diagnostic_qa_1',**diagnostic_flags(),'records':qa})
+        summary={'frame_count':len(samples)*64,'candidate_valid_joints':valid_count,
+                 'window_counts':dict(Counter(row['split'] for row in panel)),
+                 'qa_statuses':dict(Counter(row['reference_status'] for row in qa)),
+                 'train_subjects':sorted({r['subject_id'] for r in samples if r['split']=='train'}),
+                 'val_subjects':sorted({r['subject_id'] for r in samples if r['split']=='val'}),
+                 'sensor_shape_per_window':[64,150,4],'target_shape_per_window':[64,22,3],
+                 'assumptions':['First22 params.joints treated as candidate ordered joints; no regressor equivalence claim.',
+                                'Published root transform formula and identity RPC transform are provisional.',
+                                'Velocity/QA thresholds use provisional nominal12Hz, not measured time.']}
+        return {**summary,'files':{str(p):file_hash(p) for p in (panel_path,norm_path,data_path,qa_path)}}
+
+    def batches(self):
+        self.accepted_stage('prepare')
+        # Authored local tensors only; never accepts a user or reference checkpoint.
+        return torch.load(self.derived/'batches.diagnostic.pt',map_location='cpu',weights_only=False)
+
+    def physical(self):
+        samples=self.batches();seed_everything(42);device=self.runtime['device'];dtype=choose_precision(device)
+        train=[default_collate([r]) for r in samples if r['split']=='train']
+        val=[default_collate([r]) for r in samples if r['split']=='val']
+        model=RadarPoseModel().to(device);optimizer=torch.optim.AdamW(adamw_parameter_groups(model),lr=6e-4,eps=1e-6)
+        scaler=torch.amp.GradScaler('cuda',enabled=dtype==torch.float16)
+        checkpoint=self.checkpoints/'physical/diagnostic.pt';history_path=self.reports/'physical_history.json'
+        provenance=self.provenance('physical',data_hash=file_hash(self.derived/'batches.diagnostic.pt'),precision=str(dtype))
+        history=[];step=0
+        if checkpoint.exists():
+            state=load_checkpoint(checkpoint,model,provenance=provenance,optimizer=optimizer,scaler=scaler)
+            step=state['step'];history=read_json(history_path)['history'][:step] if history_path.exists() else []
+            if len(history)!=step:raise ValueError('Diagnostic checkpoint/history mismatch')
+        initial={'train':validate_physical(model,train,device,dtype),'val':validate_physical(model,val,device,dtype)} if not history else read_json(history_path)['initial']
+        before=parameter_hash(model);monitor=ResourceMonitor(device)
+        while step<self.plan['physical_steps']:
+            model.train();update=optimizer_update(model,optimizer,train,device,dtype,scaler,monitor)
+            if update.get('optimizer_updated') is not True:raise ValueError('Diagnostic optimizer did not update')
+            step+=1
+            record={'step':step,'gradient_norm':update['gradient_norm'],
+                    'train':validate_physical(model,train,device,dtype),
+                    'val':validate_physical(model,val,device,dtype)}
+            history.append(record)
+            write_json(history_path,{'initial':initial,'history':history,**diagnostic_flags()})
+            save_checkpoint(checkpoint,model,optimizer,provenance=provenance,epoch=0,step=step,scaler=scaler)
+            print(f"physical {step}/{self.plan['physical_steps']} train={record['train']['L_phys']:.6f} val={record['val']['L_phys']:.6f}",flush=True)
+        final=history[-1]
+        # Reloading verifies the authored checkpoint is usable, including optimizer/RNG.
+        load_checkpoint(checkpoint,model,provenance=provenance,optimizer=optimizer,scaler=scaler,restore_random=False)
+        changed=before!=parameter_hash(model)
+        resource=monitor.report()
+        if not resource['resource_guard_passed']:raise RuntimeError('Physical diagnostic memory reserve failed')
+        return {'optimizer_steps':step,'initial':initial,'final':final,'parameters_changed_in_this_invocation':changed,
+                'checkpoint_reload_passed':True,'precision':str(dtype),'resource':resource,
+                'files':{str(p):file_hash(p) for p in (checkpoint,history_path)}}
+
+    def alignment(self):
+        self.accepted_stage('physical');samples=self.batches();device=self.runtime['device'];seed_everything(42)
+        physical_path=self.checkpoints/'physical/diagnostic.pt';physical_state=torch.load(physical_path,map_location='cpu',weights_only=False)
+        model=freeze_for_inference(RadarPoseModel().to(device));model.load_state_dict(physical_state['model'])
+        physical_hash=parameter_hash(model);states={}
+        with torch.no_grad():
+            for sample in samples:
+                times=sample['time_s'][None].to(device)
+                prediction=model(sample['X'][None].to(device),sample['point_mask'][None].to(device),times)
+                w,available=window_operators(times)
+                states[sample['uid']]={'Y':prediction.features.detach().cpu(),'P':prediction.positions.detach().cpu(),
+                    'V':differentiate_torch(prediction.positions,w).detach().cpu(),'available':available.cpu(),
+                    'time_s':sample['time_s'],'split':sample['split']}
+        model.to('cpu');del model,physical_state,prediction
+        if torch.device(device).type=='cuda':torch.cuda.empty_cache()
+        cache_path=self.derived/'features.diagnostic.pt';torch.save({'schema':'relational64_diagnostic_features_1','states':states,'physical_hash':physical_hash,**diagnostic_flags()},cache_path)
+        records=read_json(self.derived/'qa.diagnostic.json')['records']
+        train=[r for r in records if r['split']=='train' and r['reference_status'] in ('defined','unknown')]
+        val=[r for r in records if r['split']=='val']
+        pools={part:sorted([r for r in train if r['part']==part],key=lambda r:r['qa_uid']) for part in TASKS}
+        if any(not pool for pool in pools.values()):raise ValueError('Diagnostic train panel lacks one QA task')
+        from .alignment import load_language
+        from .language import collate_spliced
+        language_path=active_artifact_path(Path(self.runtime['report_root'])/'language.lock.json')
+        language=read_json(language_path);bridge,splicer,tokenizer,dtype=load_language(self.config,language)
+        qwen_hash=parameter_hash(bridge);monitor=ResourceMonitor(device);results={};files={str(cache_path):file_hash(cache_path)}
+        for condition in self.plan['conditions']:
+            seed_everything(42);projector=SensorProjector(condition).to(device);norm=None
+            if condition!='M':
+                norm=DescriptorNormalizer(condition,physical_hash,identity([r['uid'] for r in samples if r['split']=='train']))
+                norm.fit([('train',build_descriptors(s['P'],s['V'],s['available'],condition)) for s in states.values() if s['split']=='train'])
+                norm_path=self.derived/f'descriptor_{condition}.diagnostic.json'
+                write_json(norm_path,{**norm.artifact(),**diagnostic_flags()});files[str(norm_path)]=file_hash(norm_path);norm.to(device)
+            recipe=self.plan.get('alignment_optimizer_override',{'learning_rate':3e-4,'warmup_steps':0})
+            optimizer=torch.optim.AdamW(projector.parameters(),lr=recipe['learning_rate'],eps=1e-6)
+            provenance=self.provenance('alignment',condition=condition,physical_checkpoint_hash=file_hash(physical_path),language_lock_hash=file_hash(language_path),qa_hash=file_hash(self.derived/'qa.diagnostic.json'))
+            checkpoint=self.checkpoints/condition/'diagnostic.pt';history_path=self.reports/f'alignment_{condition}_history.json'
+            history=[];step=0;loss=None
+            if checkpoint.exists():
+                saved=load_checkpoint(checkpoint,projector,provenance=provenance,optimizer=optimizer)
+                step=saved['step'];history=read_json(history_path)['history'][:step] if history_path.exists() else []
+                if len(history)!=step:raise ValueError('Diagnostic alignment checkpoint/history mismatch')
+            def embedding(record):
+                state=states[record['window_uid']]
+                descriptor=None if norm is None else norm(build_descriptors(state['P'].to(device),state['V'].to(device),state['available'].to(device),condition))
+                return projector(state['Y'].to(device),descriptor).sensor_embeddings[0]
+            before=parameter_hash(projector)
+            while step<self.plan['alignment_steps_per_condition']:
+                learning_rate=recipe['learning_rate']*min(1.,(step+1)/recipe['warmup_steps']) if recipe['warmup_steps'] else recipe['learning_rate']
+                for group in optimizer.param_groups:group['lr']=learning_rate
+                projector.train();optimizer.zero_grad(set_to_none=True);losses=[]
+                draws=[pools[part][step%len(pools[part])] for part in TASKS]
+                for record in draws:
+                    example=splicer.build(uid=record['qa_uid'],task=record['part'],time_s=states[record['window_uid']]['time_s'].to(device),
+                        sensor_embeddings=embedding(record),answer=canonical_answer(record['answer']))
+                    loss=bridge.selected_answer_loss(collate_spliced([example]))
+                    if not torch.isfinite(loss):raise FloatingPointError('Nonfinite diagnostic alignment loss')
+                    (loss/len(draws)).backward();losses.append(float(loss.detach()));monitor.sample()
+                norm_value=float(torch.nn.utils.clip_grad_norm_(projector.parameters(),1.,error_if_nonfinite=True))
+                optimizer.step();step+=1
+                if any(p.grad is not None for p in bridge.parameters()):raise RuntimeError('Frozen Qwen received gradient')
+                history.append({'step':step,'losses':losses,'learning_rate':learning_rate,'gradient_norm':norm_value,'qa_uids':[r['qa_uid'] for r in draws]})
+                write_json(history_path,{'history':history,**diagnostic_flags()})
+                save_checkpoint(checkpoint,projector,optimizer,provenance=provenance,epoch=0,step=step)
+                print(f'alignment {condition} {step}/{self.plan["alignment_steps_per_condition"]}',flush=True)
+            predictions={};generations=[];projector.eval()
+            with torch.no_grad():
+                for record in val:
+                    example=splicer.build(uid=record['qa_uid'],task=record['part'],time_s=states[record['window_uid']]['time_s'].to(device),sensor_embeddings=embedding(record))
+                    generated=bridge.greedy_generate(example,tokenizer,splicer.end_token_id)
+                    parsed=parse_answer(generated.raw_text,record['part'],truncated=generated.truncated)
+                    predictions[record['qa_uid']]=parsed
+                    generations.append({'qa_uid':record['qa_uid'],'part':record['part'],'sensor_embeddings':len(example.sensor_positions),
+                                        'raw_text':generated.raw_text,'parse':asdict(parsed)})
+            generation_path=self.reports/f'predictions_{condition}.diagnostic.json'
+            write_json(generation_path,{'predictions':generations,**diagnostic_flags()})
+            results[condition]={'optimizer_steps':step,'projector_changed_in_this_invocation':before!=parameter_hash(projector),
+                                'metrics_against_candidate_targets':evaluate_qa(val,predictions)}
+            files.update({str(p):file_hash(p) for p in (checkpoint,history_path,generation_path)})
+            del projector,norm,optimizer,example,loss
+            if torch.device(device).type=='cuda':torch.cuda.empty_cache()
+        # Text-only inference shares the validation questions; no sensor tokens.
+        text_predictions={};text_rows=[]
+        with torch.no_grad():
+            for record in val:
+                example=splicer.build(uid=record['qa_uid'],task=record['part'],time_s=None,sensor_embeddings=None,text_only=True)
+                generated=bridge.greedy_generate(example,tokenizer,splicer.end_token_id)
+                parsed=parse_answer(generated.raw_text,record['part'],truncated=generated.truncated)
+                text_predictions[record['qa_uid']]=parsed
+                text_rows.append({'qa_uid':record['qa_uid'],'raw_text':generated.raw_text,'parse':asdict(parsed),'sensor_embeddings':len(example.sensor_positions)})
+        text_path=self.reports/'predictions_T.diagnostic.json';write_json(text_path,{'predictions':text_rows,**diagnostic_flags()});files[str(text_path)]=file_hash(text_path)
+        results['T']={'metrics_against_candidate_targets':evaluate_qa(val,text_predictions)}
+        try:
+            majority=fit_train_majority(train)
+            results['Maj']={'metrics_against_candidate_targets':evaluate_qa(val,{r['qa_uid']:canonical_answer(majority[r['part']]) for r in val})}
+        except ValueError as error:results['Maj']={'status':'unsupported_panel','reason':str(error)}
+        rule={}
+        for record in val:
+            state=states[record['window_uid']]
+            rows={r['part']:r for r in rule_predictions(record['window_uid'],state['time_s'].numpy(),state['P'][0].numpy())}
+            answer=rows[record['part']]['answer'];rule[record['qa_uid']]=canonical_answer(answer) if answer is not None else None
+        results['Rule']={'metrics_against_candidate_targets':evaluate_qa(val,rule)}
+        unchanged=qwen_hash==parameter_hash(bridge)
+        if not unchanged:raise RuntimeError('Frozen Qwen parameter hash changed')
+        resource=monitor.report()
+        if not resource['resource_guard_passed']:raise RuntimeError('Alignment diagnostic memory reserve failed')
+        quality=alignment_quality(results);quality_path=self.reports/'quality_review.json'
+        write_json(quality_path,{**quality,**diagnostic_flags()});files[str(quality_path)]=file_hash(quality_path)
+        return {'conditions':results,'engineering_checks_passed':quality['status']=='passed','quality_review':quality,
+                'frozen_Qwen_unchanged':unchanged,'resource':resource,'files':files,
+                'limitation':'Small provisional train/val panel; metrics are numerical diagnostics, not scientific accuracy.'}
+
+    def summary(self):
+        stages={name:read_json(self.stage_path(name)) for name in ('prepare','physical','alignment') if self.stage_path(name).exists()}
+        report={'schema':'relational64_diagnostic_summary_1','run_id':self.run_id,
+                'artifact_generation_id':self.runtime['artifact_generation_id'],**diagnostic_flags(),
+                'status':'passed' if len(stages)==3 and all(r['status']=='passed' for r in stages.values()) else 'incomplete',
+                'stages':{name:{'status':r['status'],'report':str(self.stage_path(name))} for name,r in stages.items()},
+                'derived_root':str(self.derived),'checkpoint_root':str(self.checkpoints)}
+        if (self.reports/'quality_review.json').exists():
+            quality=read_json(self.reports/'quality_review.json');report['quality_review']=quality
+            if quality['status']!='passed':report['status']='needs_revision'
+        write_json(self.reports/'summary.json',report)
+        lines=['# Training diagnostik M4Human aktual','',
+               f'Run `{self.run_id}`; status **{report["status"]}**. RPC aktual, calon target direct joints, waktu nominal12Hz. '
+               'G0 tetap false; hasil ini bukan akurasi penelitian yang disahkan.','',
+               '| Tahap | Status |','|---|---|',*[f'| {name} | {row["status"]} |' for name,row in stages.items()],'']
+        if report.get('quality_review',{}).get('status')=='needs_revision':
+            lines+=['## Temuan yang perlu direvisi','',*[f'- {row["condition"]}: {row["reason"]}; valid schema rate={row["schema_enum_valid_rate"]}.' for row in report['quality_review']['failures']],'']
+        if stages.get('physical',{}).get('status')=='passed':
+            physical=stages['physical'];history=read_json(self.reports/'physical_history.json')
+            lines+=['| Panel | L_phys awal | L_phys akhir |','|---|---|---|',
+                    *[f'| {part} | {physical["initial"][part]["L_phys"]:.6f} | {physical["final"][part]["L_phys"]:.6f} |' for part in ('train','val')],'',
+                    f'{physical["optimizer_steps"]} optimizer updates; checkpoint dimuat ulang: {physical["checkpoint_reload_passed"]}.','']
+            import os
+            os.environ.setdefault('MPLCONFIGDIR',str(ROOT/'.cache/matplotlib'))
+            import matplotlib
+            matplotlib.use('Agg')
+            import matplotlib.pyplot as plt
+            fig,axis=plt.subplots(figsize=(8,4))
+            x=[0]+[row['step'] for row in history['history']]
+            for part in ('train','val'):
+                axis.plot(x,[history['initial'][part]['L_phys']]+[row[part]['L_phys'] for row in history['history']],label=part)
+            axis.set(xlabel='Optimizer updates',ylabel='L_phys against provisional targets',
+                     title='Actual RPC diagnostic: provisional targets and nominal 12 Hz')
+            axis.legend();axis.grid(alpha=.2);fig.tight_layout();fig.savefig(self.reports/'physical_loss.png',dpi=150);plt.close(fig)
+            lines+=['![Loss diagnostik](physical_loss.png)','']
+        if stages.get('alignment',{}).get('status') in ('passed','needs_revision'):
+            align=stages['alignment']
+            lines+=['| Kondisi/kontrol | Optimizer updates | Schema valid rate pada val |','|---|---|---|']
+            for name,result in align['conditions'].items():
+                metrics=result.get('metrics_against_candidate_targets',{});rate=metrics.get('generation',{}).get('schema_enum_valid_rate')
+                lines.append(f'| {name} | {result.get("optimizer_steps",0)} | {rate if rate is not None else result.get("status","n/a")} |')
+            lines+=['',f'Hash parameter Qwen tetap sama: **{align["frozen_Qwen_unchanged"]}**.','',
+                    'Panel val hanya4 window. Label/kecepatan masih provisional; parser yang valid bukan bukti jawaban benar. '
+                    'Metrik numerik terhadap calon label tersimpan di alignment.json dan belum menjadi bukti generalisasi atau hipotesis riset.','']
+        lines+=['Checkpoint per update dan optimizer berada di `'+str(self.checkpoints)+'`.','',
+                'Jika suatu tahap gagal, baca failures.jsonl, perbaiki, dan ulangi tahap itu. '
+                'Jangan meluluskan gate ilmiah atau memakai checkpoint diagnostic untuk pemilihan test.','']
+        (self.reports/'report.md').write_text('\n'.join(lines),encoding='utf-8')
+        return report
+
+
+def main(argv=None):
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--config',default='configs/relational64/runtime.yaml')
+    parser.add_argument('--run-id',required=True)
+    parser.add_argument('--stage',choices=['prepare','physical','alignment','all'],required=True)
+    parser.add_argument('--steps',type=int,default=20)
+    parser.add_argument('--alignment-steps',type=int,default=2)
+    parser.add_argument('--conditions',default='M,S,F,E,R')
+    parser.add_argument('--alignment-lr',type=float,default=3e-4)
+    parser.add_argument('--alignment-warmup',type=int,default=0)
+    args=parser.parse_args(argv)
+    run=DiagnosticRun(resolve(args.config),args.run_id,steps=args.steps,alignment_steps=args.alignment_steps,conditions=args.conditions,
+                      alignment_lr=args.alignment_lr,alignment_warmup=args.alignment_warmup)
+    try:
+        for name in ('prepare','physical','alignment') if args.stage=='all' else (args.stage,):
+            result=run.execute(name)
+            if result['status']!='passed':raise SystemExit('Diagnostic step completed with findings; revise the run plan')
+    finally:run.summary()
+
+
+if __name__=='__main__':main()

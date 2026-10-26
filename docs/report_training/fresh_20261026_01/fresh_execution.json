@@ -1,0 +1,54 @@
+{
+  "artifact_generation_id": "fresh_20261026_01",
+  "prior_artifacts_reused": [],
+  "checks": [
+    {
+      "command": [
+        "verify",
+        "--suite",
+        "all"
+      ],
+      "exit_code": 0,
+      "log": "docs\\report_training\\fresh_20261026_01\\fresh_verify.log"
+    },
+    {
+      "command": [
+        "overfit",
+        "--synthetic"
+      ],
+      "exit_code": 0,
+      "log": "docs\\report_training\\fresh_20261026_01\\fresh_overfit.log"
+    },
+    {
+      "command": [
+        "profile",
+        "--stage",
+        "physical",
+        "--synthetic"
+      ],
+      "exit_code": 0,
+      "log": "docs\\report_training\\fresh_20261026_01\\fresh_profile_physical.log"
+    },
+    {
+      "command": [
+        "profile",
+        "--stage",
+        "alignment",
+        "--condition",
+        "R",
+        "--synthetic"
+      ],
+      "exit_code": 0,
+      "log": "docs\\report_training\\fresh_20261026_01\\fresh_profile_alignment.log"
+    },
+    {
+      "command": [
+        "pilot",
+        "--synthetic"
+      ],
+      "exit_code": 0,
+      "log": "docs\\report_training\\fresh_20261026_01\\fresh_pilot.log"
+    }
+  ],
+  "status": "passed"
+}

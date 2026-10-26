@@ -1,0 +1,10 @@
+{
+  "artifact_generation_id": "fresh_20261026_01",
+  "status": "configuration_consistent",
+  "source_spec_sha256": "f350e0a3f21a3b0e1ba05ee2c110facf19b2e7822dff38703300c593e0360324",
+  "runtime_config_sha256": "9e5d5d6405457d381a3f87aad1a47764c4ed73502ce2f4f7ebe0d435d9a73452",
+  "source_policy_sha256": "86d83c23cdea275d7825fcc580c1803370c61dcb6d96e25899c7c676358eec3c",
+  "prior_metadata_inputs": [],
+  "all_output_roots_repository_local": true,
+  "prior_research_artifacts_reused": []
+}

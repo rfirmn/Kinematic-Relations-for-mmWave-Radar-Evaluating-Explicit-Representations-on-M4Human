@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "m4human-relational64"
+version = "0.1.0"
+description = "Explicit kinematic relations for radar-grounded QA"
+requires-python = ">=3.12,<3.13"
+dependencies = ["torch>=2.6,<2.7", "numpy>=2.0", "lmdb>=1.5", "PyYAML>=6", "transformers>=4.51", "safetensors>=0.5", "matplotlib>=3.9", "psutil>=6", "msgpack>=1", "accelerate>=1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+relational64 = "relational64.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true

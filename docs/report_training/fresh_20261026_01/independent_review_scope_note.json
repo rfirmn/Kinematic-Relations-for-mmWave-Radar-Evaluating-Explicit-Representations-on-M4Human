@@ -1,0 +1,4 @@
+{
+  "note": "The independent isolation review predates the added diagnostic runner. It is preserved as a historical scoped review. Current diagnostic isolation/recovery/quality tests are included in verify_all.json; actual CUDA engineering runs are separately reported. No claim of a new independent agent review of these additions.",
+  "verify_report_sha256": "a13c91c645059604ab53d02d0e56ed2ceeed0a6d4d0d2629ccc4121a49e20243"
+}

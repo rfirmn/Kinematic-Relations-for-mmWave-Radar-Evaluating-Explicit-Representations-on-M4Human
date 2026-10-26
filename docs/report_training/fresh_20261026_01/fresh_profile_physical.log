@@ -1,0 +1,20 @@
+{
+  "command": "profile",
+  "status": "completed",
+  "summary": {
+    "evidence": "synthetic_software_fixture",
+    "stage": "physical",
+    "points": 150,
+    "frames": 64,
+    "microbatch": 1,
+    "accumulation": 16,
+    "warmup_optimizer_steps": 10,
+    "measured_optimizer_steps": 30,
+    "precision": "torch.bfloat16",
+    "seconds_per_step_p50": 0.950293400001101,
+    "seconds_per_step_p95": 0.9634726999982377,
+    "windows_per_second": 16.821687158313956,
+    "acceptance_eligible": false
+  }
+}
+

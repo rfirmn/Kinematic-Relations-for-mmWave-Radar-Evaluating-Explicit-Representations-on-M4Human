@@ -1,0 +1,162 @@
+{
+  "history": [
+    {
+      "step": 1,
+      "losses": [
+        0.37738943099975586,
+        1.1642001867294312,
+        1.0898336172103882
+      ],
+      "learning_rate": 2e-07,
+      "gradient_norm": 460.4096374511719,
+      "qa_uids": [
+        "3bde9168118323c3d998f7cf69040c9d1a9183e520f210b11fd7f47d0351096b",
+        "0330185462b402ab35dfa63e814d83db5367440144250b35ed34009c0137ae2f",
+        "0243d12896d162b20278d79099eb28c72c16c42764564b5b237d93965d09f9bc"
+      ]
+    },
+    {
+      "step": 2,
+      "losses": [
+        0.20566077530384064,
+        0.5236620903015137,
+        0.8180540204048157
+      ],
+      "learning_rate": 4e-07,
+      "gradient_norm": 1023.166748046875,
+      "qa_uids": [
+        "7c0d93573189f9295027d4d2c6a34188ee98a002fa936b7610db1c3ad22e1c23",
+        "18151c828f15e4854c3aea9fe5f68f7fe12a4a241cda8fc175115deed01be84e",
+        "13c369eb4ab406891a2a58ad36f8abfa7884fe53bafb15778363bf833fbf8299"
+      ]
+    },
+    {
+      "step": 3,
+      "losses": [
+        0.22055605053901672,
+        0.1771882176399231,
+        0.9719514846801758
+      ],
+      "learning_rate": 6e-07,
+      "gradient_norm": 266.64642333984375,
+      "qa_uids": [
+        "81a3e23695433e4a0af977b98469c968bd32d238ef8f6ef5246c634c152126dc",
+        "34d092efe8d9012b170a4433faeddc7dca56e907b9811d430cdd4c75678af85d",
+        "894fd57f25fa2e1cfdb38bbe2df1bf6a74e0ddc89111a4a15dfae7d7ccfc7c16"
+      ]
+    },
+    {
+      "step": 4,
+      "losses": [
+        0.15971696376800537,
+        0.12440458685159683,
+        0.5991879105567932
+      ],
+      "learning_rate": 8e-07,
+      "gradient_norm": 375.71435546875,
+      "qa_uids": [
+        "8faad738a4e9f4bc97d99f3b0f63b5ab6677e39a1ca22282453b57ceb8b5ce17",
+        "5206eed0f3db0240bd5b7fedfeba4f9d7662089bbd380c4e86c77f840f716799",
+        "958ba1d1e37fd03c8b0863c631936bb3dd2309057ecf63ff70ce828fe3cf79d1"
+      ]
+    },
+    {
+      "step": 5,
+      "losses": [
+        0.4007836878299713,
+        0.505394697189331,
+        0.9304161071777344
+      ],
+      "learning_rate": 1e-06,
+      "gradient_norm": 379.9284362792969,
+      "qa_uids": [
+        "a496c0c7b0e93584254c3c8253dff4f29c947c6c6b5678bbc863f44d6b5b5d56",
+        "6477b47609ba4a7d2eefec7b6f941ecf408692d57cfd584bf5c3e5f46f877703",
+        "9ca36eb2da985cc8a9d9b364a550883d9cc638347b2814eb471f6297bcf60e01"
+      ]
+    },
+    {
+      "step": 6,
+      "losses": [
+        0.3621302545070648,
+        0.7077692747116089,
+        2.0218546390533447
+      ],
+      "learning_rate": 1e-06,
+      "gradient_norm": 1097.6925048828125,
+      "qa_uids": [
+        "ac8a5f25f9db912f13c9b8f66c0d1250e33dcce0f8f934f0f9412d720cf551b6",
+        "d3106425f078c9e25148c56ad7d490ea3ddf08d4054e9a1fcc947d31eb25c3d7",
+        "a33cec51d36eda2334164af1c55cd5af41f648ad6f9f751bfe03628ec90c471b"
+      ]
+    },
+    {
+      "step": 7,
+      "losses": [
+        1.0153576135635376,
+        1.088349461555481,
+        2.000213623046875
+      ],
+      "learning_rate": 1e-06,
+      "gradient_norm": 1317.635498046875,
+      "qa_uids": [
+        "d951887bff92280ff281f412a837a5bc29f42ef90d14464fa3a0cad537ff3d71",
+        "df6ae64864a9bda90770cd107326844db6fe7ed4a9bf665dd73948bc4eb3f515",
+        "c7a5ba6bfa1b96d23e616c2e49cf80919ef5777148e13c7b5040e29956bd75e1"
+      ]
+    },
+    {
+      "step": 8,
+      "losses": [
+        1.0650277137756348,
+        2.7129440307617188,
+        1.5012688636779785
+      ],
+      "learning_rate": 1e-06,
+      "gradient_norm": 1624.5072021484375,
+      "qa_uids": [
+        "dc052da232697cd7cc0b3d482d73d77046356037668daba77e71226983576c96",
+        "eeb5daccc7beb052e0107a2406a3692574f016b015e2f8a53a3da5add828a064",
+        "fd5a4394a75c8eef4beafaa0f35183416833cde02811663854b3259ee1b93df8"
+      ]
+    },
+    {
+      "step": 9,
+      "losses": [
+        0.34199514985084534,
+        1.4982881546020508,
+        2.3664610385894775
+      ],
+      "learning_rate": 1e-06,
+      "gradient_norm": 1280.7188720703125,
+      "qa_uids": [
+        "3bde9168118323c3d998f7cf69040c9d1a9183e520f210b11fd7f47d0351096b",
+        "0330185462b402ab35dfa63e814d83db5367440144250b35ed34009c0137ae2f",
+        "0243d12896d162b20278d79099eb28c72c16c42764564b5b237d93965d09f9bc"
+      ]
+    },
+    {
+      "step": 10,
+      "losses": [
+        0.35013604164123535,
+        0.6275378465652466,
+        2.1637473106384277
+      ],
+      "learning_rate": 1e-06,
+      "gradient_norm": 531.337646484375,
+      "qa_uids": [
+        "7c0d93573189f9295027d4d2c6a34188ee98a002fa936b7610db1c3ad22e1c23",
+        "18151c828f15e4854c3aea9fe5f68f7fe12a4a241cda8fc175115deed01be84e",
+        "13c369eb4ab406891a2a58ad36f8abfa7884fe53bafb15778363bf833fbf8299"
+      ]
+    }
+  ],
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false
+}

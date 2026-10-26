@@ -1,0 +1,23 @@
+{
+  "reason": "M/S/F produce truncated validation output after2 updates; M/F training CE rises sharply after first update.",
+  "hypothesis": "Diagnostic optimizer needs a smaller initial step and warmup; canonical scientific recipe is unchanged.",
+  "original_optimizer": {
+    "learning_rate": 0.0003,
+    "warmup_steps": 0
+  },
+  "next_run": "diagnostic_20261026_02",
+  "trial_optimizer": {
+    "learning_rate": 1e-05,
+    "warmup_steps": 2
+  },
+  "original_alignment_report_sha256": "66ffcf022e50e839816afbc3296202f5c77d0b39f443bb9590101e4bb841f625",
+  "original_outputs_preserved": true,
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false
+}

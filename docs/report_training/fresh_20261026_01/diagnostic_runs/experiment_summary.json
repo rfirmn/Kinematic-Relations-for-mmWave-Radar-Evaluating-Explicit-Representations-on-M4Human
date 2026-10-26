@@ -1,0 +1,124 @@
+{
+  "artifact_generation_id": "fresh_20261026_01",
+  "actual_M4Human": true,
+  "native_windows_cuda": true,
+  "scientific_acceptance": false,
+  "G0_passed": false,
+  "test_labels_read": false,
+  "canonical_design_ready": false,
+  "trials": [
+    {
+      "run_id": "diagnostic_20261026_01",
+      "status": "needs_revision",
+      "alignment_steps": 2,
+      "alignment_optimizer": {
+        "learning_rate": 0.0003,
+        "warmup_steps": 0
+      },
+      "sensor_gain": 1.0,
+      "experimental_spec_deviation": null,
+      "train_loss_initial": 4.855422213192816,
+      "train_loss_final": 2.8681335902595313,
+      "val_loss_initial": 4.936768614967977,
+      "val_loss_final": 2.814576454923746,
+      "schema_valid_rates": {
+        "M": 0.0,
+        "S": 0.0,
+        "F": 0.0,
+        "E": 1.0,
+        "R": 1.0,
+        "T": 1.0,
+        "Maj": 1.0,
+        "Rule": 1.0
+      },
+      "Qwen_frozen": true,
+      "resource_guard_passed": true,
+      "alignment_report_sha256": "66ffcf022e50e839816afbc3296202f5c77d0b39f443bb9590101e4bb841f625"
+    },
+    {
+      "run_id": "diagnostic_20261026_02",
+      "status": "needs_revision",
+      "alignment_steps": 2,
+      "alignment_optimizer": {
+        "learning_rate": 1e-05,
+        "warmup_steps": 2
+      },
+      "sensor_gain": 1.0,
+      "experimental_spec_deviation": null,
+      "train_loss_initial": 4.855422213192816,
+      "train_loss_final": 2.866580724443853,
+      "val_loss_initial": 4.936768614967977,
+      "val_loss_final": 2.813657305926932,
+      "schema_valid_rates": {
+        "M": 1.0,
+        "S": 0.0,
+        "F": 1.0,
+        "E": 1.0,
+        "R": 0.5,
+        "T": 1.0,
+        "Maj": 1.0,
+        "Rule": 1.0
+      },
+      "Qwen_frozen": true,
+      "resource_guard_passed": true,
+      "alignment_report_sha256": "84866367ef105f7007d3bf1a68408db3c7dcb7f5542e2d7a102cfe37c7409acf"
+    },
+    {
+      "run_id": "diagnostic_20261026_03",
+      "status": "needs_revision",
+      "alignment_steps": 10,
+      "alignment_optimizer": {
+        "learning_rate": 1e-06,
+        "warmup_steps": 5
+      },
+      "sensor_gain": 1.0,
+      "experimental_spec_deviation": null,
+      "train_loss_initial": 4.855422213192816,
+      "train_loss_final": 2.8652664762748175,
+      "val_loss_initial": 4.936768614967977,
+      "val_loss_final": 2.8129153183647166,
+      "schema_valid_rates": {
+        "M": 0.5,
+        "S": 0.0,
+        "F": 0.16666666666666666,
+        "E": 1.0,
+        "R": 1.0,
+        "T": 1.0,
+        "Maj": 1.0,
+        "Rule": 1.0
+      },
+      "Qwen_frozen": true,
+      "resource_guard_passed": true,
+      "alignment_report_sha256": "fb08323f567a78e84f57719a3bdb748f154fba97c64147ce29d4369c5d3add39"
+    },
+    {
+      "run_id": "diagnostic_20261026_04_gain",
+      "status": "passed",
+      "alignment_steps": 2,
+      "alignment_optimizer": {
+        "learning_rate": 1e-05,
+        "warmup_steps": 2
+      },
+      "sensor_gain": 0.026,
+      "experimental_spec_deviation": "Multiply H after final LayerNorm before frozen Qwen; diagnostic variant only. Normative specification/defaultgain1 unchanged.",
+      "train_loss_initial": 4.855422213192816,
+      "train_loss_final": 2.8641223619881497,
+      "val_loss_initial": 4.936768614967977,
+      "val_loss_final": 2.8141214634236666,
+      "schema_valid_rates": {
+        "M": 1.0,
+        "S": 1.0,
+        "F": 1.0,
+        "E": 1.0,
+        "R": 1.0,
+        "T": 1.0,
+        "Maj": 1.0,
+        "Rule": 1.0
+      },
+      "Qwen_frozen": true,
+      "resource_guard_passed": true,
+      "alignment_report_sha256": "32aa92c218a91fed8358f7d914a3d4782e0d85b216b7632f8b97d056d4c385be"
+    }
+  ],
+  "limitation": "Provisional labels/time, small train/val panel, separately refitted physical models, no bitwise GPU determinism claim. Gain variant does not change normative default."
+}

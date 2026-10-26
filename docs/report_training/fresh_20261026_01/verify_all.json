@@ -1,0 +1,930 @@
+{
+  "suite": "all",
+  "status": "passed",
+  "command": [
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests",
+    "-q",
+    "--junitxml=docs\\report_training\\fresh_20261026_01\\verify_all.xml",
+    "--basetemp=C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\.cache\\pytest\\fresh_20261026_01\\all"
+  ],
+  "artifact_generation_id": "fresh_20261026_01",
+  "prior_artifacts_reused": [],
+  "timestamp_utc": "2026-10-26T12:58:41.620274+00:00",
+  "returncode": 0,
+  "data_source": "synthetic software fixtures, including temporary LMDBs",
+  "actual_M4Human_used": false,
+  "native_windows": true,
+  "cuda_executed": false,
+  "test_count": 210,
+  "tests": [
+    {
+      "id": "tests.test_alignment::test_weighted_sampler_same_seed_stream_and_task_probabilities",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_sampler_rejects_missing_task_instead_of_renormalizing",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_cached_window_projector_matches_direct_path_and_is_deterministic[M]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_cached_window_projector_matches_direct_path_and_is_deterministic[S]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_cached_window_projector_matches_direct_path_and_is_deterministic[F]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_cached_window_projector_matches_direct_path_and_is_deterministic[E]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_cached_window_projector_matches_direct_path_and_is_deterministic[R]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_M_cached_window_path_does_not_open_pose_or_velocity",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_cached_alignment_gradient_changes_projector_and_keeps_qwen_frozen",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_effective_language_batch_is_mean_of_example_means",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_language_lock_rejects_missing_or_unverified_compute_mode[head_mode-None]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_language_lock_rejects_missing_or_unverified_compute_mode[head_mode-unverified]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_language_lock_rejects_missing_or_unverified_compute_mode[precision-None]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_language_lock_rejects_missing_or_unverified_compute_mode[precision-float32]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_language_load_passes_pinned_head_mode_and_precision",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_required_profile_defaults_match_protocol",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_QA_registry_keeps_unknown_excludes_undefined_and_rejects_duplicate_uid",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_alignment::test_generation_receives_sensor_only_and_preserves_runtime_failures",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_cli_data::test_data_commands_parser_smoke[audit-extra0]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_cli_data::test_data_commands_parser_smoke[prepare-extra1]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_cli_data::test_data_commands_parser_smoke[export-targets-extra2]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_cli_data::test_data_commands_parser_smoke[build-qa-extra3]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_cli_data::test_data_commands_parser_smoke[verify-extra4]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_cli_data::test_data_commands_parser_smoke[overfit-extra5]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_cli_data::test_data_commands_parser_smoke[profile-extra6]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_cli_data::test_unapproved_real_data_commands_reject_before_output[prepare]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_cli_data::test_unapproved_real_data_commands_reject_before_output[export-targets]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_cli_data::test_build_qa_checks_g0_before_target_open",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_cli_data::test_explicit_synthetic_routes_never_open_real_data[overfit-extra0]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_cli_data::test_explicit_synthetic_routes_never_open_real_data[profile-extra1]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_rpc_endian_and_bounds[<-little]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_rpc_endian_and_bounds[>-big]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_keys_reject_expressions_bool_oversized",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_clean_sentinel_nonfinite_and_padding",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_window_counts[63-0-0]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_window_counts[64-1-1]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_window_counts[80-3-2]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_annotation_does_not_change_window_uid_or_phase",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_sensor_gap_boundary_and_leakage",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_split_stable_disjoint_exact20",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_centroid_all_first_frame_points_before_sampling_and_sensor_isolation",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_train_only_normalizer_hash_and_order",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_msgpack_unsafe_arrays_extensions_depth",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_real_reader_spawn_and_source_readonly",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_authority_fail_closed_before_target_access",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_snapshot_hash_change_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_data::test_new_target_export_masks_and_test_lock",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_diagnostic_pilot::test_panel_is_sensor_determined_and_excludes_test",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_diagnostic_pilot::test_candidate_reader_rejects_unselected_subject_before_data_access",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_diagnostic_pilot::test_truncated_generation_is_not_a_passed_engineering_pilot",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_diagnostic_pilot::test_experimental_embedding_gain_preserves_gradient_and_does_not_change_shape",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_diagnostic_pilot::test_diagnostic_normalizer_and_checkpoint_cannot_enter_scientific_paths",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_diagnostic_pilot::test_real_reader_path_with_fixture_is_provisional_and_never_changes_g0",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_diagnostic_pilot::test_failure_is_journaled_and_dependents_stop",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_diagnostic_pilot::test_plan_changes_require_new_run_id",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_diagnostic_pilot::test_completed_alignment_checkpoint_resumes_generation_without_extra_updates",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_eval_pipeline::test_physical_evaluation_restores_centroid",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_eval_pipeline::test_donor_text_hash_uses_common_grid_and_question",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_eval_pipeline::test_comparison_averages_seed_scores_without_adding_clusters",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_strict_parser[{\"answer\":\"tie\"}-valid]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_strict_parser[{\"answer\":\"unknown\"}-valid]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_strict_parser[{\"answer\":\"tie\",\"extra\":1}-invalid_schema]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_strict_parser[{\"answer\":\"tie\",\"answer\":\"tie\"}-invalid_json]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_strict_parser[[\"tie\"]-invalid_schema]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_strict_parser[{\"answer\":\"tie\"} extra-invalid_json]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_strict_parser[```json\\n{\"answer\":\"tie\"}\\n```-invalid_json]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_strict_parser[{\"answer\":\"speeding_up\"}-invalid_label]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_strict_parser[{\"answer\":\"Tie\"}-invalid_label]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_strict_parser[{\"answer\":null}-invalid_schema]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_strict_parser[{\"answer\":NaN}-invalid_json]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_strict_parser[{\"answer\":Infinity}-invalid_json]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_parser_missing_truncated_and_explicit_eot",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_fixed_classes_and_missing_denominators",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_subject_bootstrap_is_paired_and_multiplicity_preserved",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_bootstrap_nonzero_matches_confusion_reduction_and_reports_null_draws",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_physical_metrics_numerator_count_and_nonfinite_fail",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_donor_determinism_no_reuse_and_two_block_descriptive",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_donor_constraints[recording_id-same]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_donor_constraints[answer-tie]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_donor_constraints[time_source-other]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_donor_constraints[sensor_frame_mask-value3]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_probe_mean_max_and_frozen_source",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_evaluation::test_prespecified_contrasts_and_interaction",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_finalize_isolation::test_source_mismatch_stops_before_any_finalization",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_finalize_isolation::test_environment_hash_mismatch_stops_before_locks",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_finalize_isolation::test_blocked_stage_failure_stops_before_locks",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_finalize_isolation::test_registry_includes_completed_blocked_stage_checks",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_nested_gate_artifacts_cannot_reference_archive_or_external",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_sensor_rejects_wrong_generation_window_before_opening_rpc",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_prepare_rejects_other_generation_before_reading_source",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_prepare_rejects_nested_scan_in_archive_before_creating_output",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_cli_build_qa_rejects_prior_generation_before_output[inventory]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_cli_build_qa_rejects_prior_generation_before_output[targets]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_direct_target_nested_artifacts_reject_archive[reference_asset]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_direct_target_nested_artifacts_reject_archive[reference_regressor]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_direct_target_nested_artifacts_reject_archive[equivalence_evidence]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_direct_target_nested_artifacts_reject_archive[coordinate_audit]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_active_config_is_repository_local_and_source_only",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_fresh_policy_cannot_disable_generation[None]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_fresh_policy_cannot_disable_generation[]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_fresh_policy_cannot_disable_generation[../old]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_archived_and_external_artifact_paths_are_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_legacy_inventory_rejected_before_open[metadata_root]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_legacy_inventory_rejected_before_open[metadata_hashes]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_cache_targets_and_sensor_reject_other_generation",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_nested_target_files_rejected_before_hashing[../old/positions.npy]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_nested_target_files_rejected_before_hashing[C:/old/positions.npy]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_nested_target_files_rejected_before_hashing[archive/positions.npy]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_same_sensor_support_has_generation_specific_window_identity",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_fresh_artifacts::test_full_audit_builds_metadata_without_prior_metadata",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_language::test_splice_exact_sensor_positions_prefix_labels_and_gradients",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_language::test_splice_marker_template_and_limits_reject_without_truncating",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_language::test_selected_ce_and_gradient_equal_full_logits_with_per_example_mean",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_language::test_frozen_qwen_keeps_input_gradients_and_only_projector_updates",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_language::test_actual_qwen_architecture_embeddings_and_cached_eight_tokens_equal",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_language::test_eval_checkpointing_preserves_gradient_and_target_changes_it",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_models::test_encoder_shape_padding_and_point_permutation[1]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_models::test_encoder_shape_padding_and_point_permutation[2]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_models::test_encoder_backward_and_frozen_determinism",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_models::test_rope_nominal_actual_time_and_translation",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_models::test_sensor_input_validation",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_models::test_descriptor_conditions_channels_and_geometry",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_models::test_normalizer_train_only_and_warmup_zero_after_normalization[S]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_models::test_normalizer_train_only_and_warmup_zero_after_normalization[F]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_models::test_normalizer_train_only_and_warmup_zero_after_normalization[E]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_models::test_normalizer_train_only_and_warmup_zero_after_normalization[R]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_models::test_explicit_alignment_zero_and_limb_translation_invariance",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_models::test_projector_exact_counts_initialization_equality_and_shapes",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_nested_cache_isolation::test_current_cache_generation_and_canonical_members_load",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_nested_cache_isolation::test_nested_cache_paths_rejected_before_any_hash[parent]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_nested_cache_isolation::test_nested_cache_paths_rejected_before_any_hash[absolute]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_nested_cache_isolation::test_nested_cache_paths_rejected_before_any_hash[archive]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_nested_cache_isolation::test_versioned_cache_root_rejected_before_metadata_open[external]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_nested_cache_isolation::test_versioned_cache_root_rejected_before_metadata_open[archive]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_nested_cache_isolation::test_versioned_metadata_cannot_enable_unversioned_external_cache",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_nested_cache_isolation::test_nested_cache_preflight_runs_even_when_checksum_verification_disabled",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_physical::test_accumulation_exact_denominators_and_backward",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_physical::test_root_only_and_no_supervision",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_physical::test_atomic_checkpoint_and_provenance",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pipeline::test_cache_is_deterministic_eval_and_sensor_only",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pipeline::test_cache_tamper_is_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pipeline::test_cache_shards_1024_windows_and_closes_before_publish",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pipeline::test_cache_rejects_stochastic_training_sampling",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pipeline::test_effective_denominators_ignore_microbatch_partition_and_missing_gt",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pipeline::test_resume_restores_rng_optimizer_scheduler_and_sampler",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pipeline::test_null_runtime_is_preparation_only_and_gates_fail_closed",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pipeline::test_build_qa_registry_uses_canonical_reader_and_preserves_undefined",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pipeline::test_build_qa_registry_g0_and_test_lock_are_required",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pipeline::test_qa_registry_rejects_duplicate_windows_and_timestamp_gaps",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pipeline::test_qa_registry_locked_test_keeps_label_diagnostics_disabled",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_fresh_registry_checked_before_split_and_eligibility",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_old_qa_in_current_folder_rejected_before_qa_hash_or_rows",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_relabelling_only_sidecar_does_not_relabel_old_rows",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_old_row_in_filtered_split_is_also_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_sidecar_and_file_tampering_rejected[hash]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_sidecar_and_file_tampering_rejected[identity]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_sidecar_and_file_tampering_rejected[count]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_sidecar_and_file_tampering_rejected[provenance]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_sidecar_and_file_tampering_rejected[complete]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_archived_path_rejected_without_opening_any_sidecar",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_outside_repository_path_rejected_without_opening",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_generationless_software_fixture_remains_usable",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_direct_alignment_rejects_stale_QA_before_output_or_gate_read",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_qa_generation_isolation::test_direct_alignment_rejects_stale_cache_before_output_or_gate_read",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_reference_targets::test_reference_transform_once_units_pelvis_and_comparison",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_reference_targets::test_reference_asset_gate_and_no_silent_defaults",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_study_generation_isolation::test_valid_versioned_lock_pins_all_lineage",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_study_generation_isolation::test_nested_forbidden_paths_rejected_before_hash_or_checkpoint_load[checkpoint]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_study_generation_isolation::test_nested_forbidden_paths_rejected_before_hash_or_checkpoint_load[inventory]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_study_generation_isolation::test_generation_or_config_mismatch_rejected[metadata]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_study_generation_isolation::test_generation_or_config_mismatch_rejected[checkpoint]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_study_generation_isolation::test_generation_or_config_mismatch_rejected[checkpoint_config]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_study_generation_isolation::test_generation_or_config_mismatch_rejected[gate]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_study_generation_isolation::test_lock_missing_generation_cannot_bypass_explicit_expectation",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_study_generation_isolation::test_lock_rejects_extra_archived_artifact_before_hash",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_study_generation_isolation::test_unversioned_synthetic_lock_stays_compatible",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_study_generation_isolation::test_probe_rejects_generation_mixing_before_training[cache]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_study_generation_isolation::test_probe_rejects_generation_mixing_before_training[qa]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_reference_current_generation_accepts_only_local_fresh_inputs",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_reference_nested_forbidden_paths_rejected_before_any_hash[archive-coordinate_audit_path]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_reference_nested_forbidden_paths_rejected_before_any_hash[archive-path]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_reference_nested_forbidden_paths_rejected_before_any_hash[archive-regressor_path]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_reference_nested_forbidden_paths_rejected_before_any_hash[outside-coordinate_audit_path]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_reference_nested_forbidden_paths_rejected_before_any_hash[outside-path]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_reference_nested_forbidden_paths_rejected_before_any_hash[outside-regressor_path]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_reference_rejects_legacy_inventory_before_opening_reference_inputs",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_qa_generation_is_inherited_only_from_verified_fresh_rows",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_qa_prior_rows_or_target_metadata_cannot_be_restamped[prior-fresh_20261026_01]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_qa_prior_rows_or_target_metadata_cannot_be_restamped[fresh_20261026_01-prior]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_qa_prior_rows_or_target_metadata_cannot_be_restamped[None-fresh_20261026_01]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_qa_prior_rows_or_target_metadata_cannot_be_restamped[fresh_20261026_01-None]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_target_generation_isolation::test_qa_manifest_checksum_change_rejected_before_target_read",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_constant_linear_quadratic_derivative[False]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_constant_linear_quadratic_derivative[True]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_mask_is_local_and_time_gaps_have_reasons",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_root_theil_sen_and_mad[accelerate-speeding_up]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_root_theil_sen_and_mad[decelerate-slowing_down]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_root_theil_sen_and_mad[constant-no_overall_trend]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_exact_root_boundary[0.05-unknown]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_exact_root_boundary[0.04-unknown]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_exact_root_boundary[0.06-unknown]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_exact_root_boundary[-0.04-unknown]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_exact_root_boundary[-0.06-unknown]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_exact_root_boundary[0.039999-no_overall_trend]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_relative_limb_common_support_and_translation_invariance",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_torch_prediction_derivative_backward_without_gt_masks",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_majority_train_only_and_class_order_tiebreak",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_qa_hash_and_rule_oracle_diagnostic",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_label_audit_is_train_val_only_and_not_an_automatic_policy_lock",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_targets::test_prompt_registry_matches_language_boundary_registry",
+      "status": "passed"
+    }
+  ],
+  "junit_sha256": "917fe78ee7ba124813039027bcfddec054fd7f5bddb8f6e18b5ef659a4507604",
+  "source_hashes": {
+    "src\\eksperimen_model\\__init__.py": "97c1acf7d5528b8723efff5598616678719615a1b187003d77029e43dca9da75",
+    "src\\eksperimen_model\\relational64\\__init__.py": "026a2914af206a5871c8246c11b3d242121a1fac339daf4bdd566724dfb2c85e",
+    "src\\eksperimen_model\\relational64\\cli.py": "b70265390d3e6f1634cb37e1827809235b58137c6a19784e03c528cf7fb1c1f6",
+    "src\\relational64\\__init__.py": "3f17ae5669332666b4831e07d98e674f4cf270d0209fb0bdc9ba995046a41efa",
+    "src\\relational64\\alignment.py": "d517605e992ad32e32b30716a4cffcde5a9f18f551f0bbabb5294057b383abcf",
+    "src\\relational64\\audit.py": "1600418d679a69fb8dcfcde9f8d580629f37178328aa9f7c24693f757aa3f3a5",
+    "src\\relational64\\cache.py": "663a336c17d47357b738c311f48bbe1bd990b48e808e338fa0158398eb19ae7c",
+    "src\\relational64\\checkpoint.py": "70e6f21e91d84b910ab49ad1d22fb7efa253e84a351488a2ed3cbba14f3b27af",
+    "src\\relational64\\cli.py": "5493aade62655d21d27a03cda891947b093452c9685720e0287817cd8a1ae542",
+    "src\\relational64\\config.py": "e73783fddcc9d7e53aa104d0f6c0d73b198e598f084bf3aabe1d9713facff51d",
+    "src\\relational64\\data.py": "1d9fdeeceab17c919dede90584b85f6c2e36e8b7b85974017168017e7890bf08",
+    "src\\relational64\\diagnostic_pilot.py": "8a18c03fe0dd18e7126bac54874d35857a3a49099e45bd16b9b982c6dc499064",
+    "src\\relational64\\evaluation.py": "e0582b4ac3756fb43f03eda95aed9fb2448a795b9a91d63ea0efa63b50c01eec",
+    "src\\relational64\\evaluation_pipeline.py": "2aea8e3f7181a415f15a14d966626ae7914c6d3e20886f5957a9f4e9f859651d",
+    "src\\relational64\\kinematics.py": "aab7027a6f344cc7de129e102bd012d95dfaedcc4354e9ef21add581d70e01b8",
+    "src\\relational64\\language.py": "605dd74c45a010e882f6a19dba8ce734ee1059421d968abb822a2219eaf6fb8f",
+    "src\\relational64\\models.py": "7138c52837f59790cee7e0320a55401011ee630b8e875961899c06d78618381d",
+    "src\\relational64\\physical.py": "1e110a64d047e85c782b1bb5ec57efe274d48321e103147a5f0bc75d4e613dd1",
+    "src\\relational64\\pilot.py": "4fa9d5ea8388dda3a8cfde6ae0e553fefa979713cf582ca4f2aee3a130abcca7",
+    "src\\relational64\\pipeline_targets.py": "fc453b1fcbb0c09b390afce3adc0bd1249c4d9d96a986403872a13a2959641e8",
+    "src\\relational64\\prepare.py": "550aae3d8d05ad0660b0d2674228015b057b2c437887d4e44e05fcb7d6366ed0",
+    "src\\relational64\\qa.py": "ab3840171ff2f32e9238228eac1ec9bd04c732d7debddcff41bc388b49908db6",
+    "src\\relational64\\reference_targets.py": "6866644aa5aeaf518f829b81e973deb282fe9c958f50e3335ac8c215eb103ac6",
+    "src\\relational64\\reporting.py": "c4581dca0d8d59c5df9a53f25df60fde1024d260a550d07f34e524f9aba093e6",
+    "src\\relational64\\resources.py": "13abbc89aa7a02f4244f81cd7049ad60d0fdf9b17413ea43be4ac5b968c7fc8d",
+    "src\\relational64\\study.py": "3597ff5e14b36fd8085ecdcf601274389520b735f3e12838c6a7b735c1899ec2",
+    "src\\relational64\\training.py": "a435053ab2ded6a710d610ca3f1f2602ff1410ba3c24b01a9a290abbcb873885",
+    "src\\relational64\\verify_qwen.py": "16c81db37ccb3194dbeb08838bd18bfd780725c001d0ed594264dc1d080dbf4f"
+  },
+  "test_hashes": {
+    "tests\\test_alignment.py": "85fdf3f4cfc9efc860cf6d751d7b05f07315e091a26a8ec533c391af59049bec",
+    "tests\\test_cli_data.py": "9f44c5d7e9221c6dacedd706417f64d302f5eced8e04bc2b585ddd8ebd01556a",
+    "tests\\test_data.py": "f59c04dfa4233a7fd8dfb54a7c0a7f096b79b0fc636f5f6414b5424bfbfa7065",
+    "tests\\test_diagnostic_pilot.py": "773c57fd7d0095ce688ceeb19cd47b4847cc3c2a97b149b87bb641cc5a23fab3",
+    "tests\\test_eval_pipeline.py": "cf7dc8cf7a0f63b5bb329b99551e2dbf038a112ea2e320e24cb443ab0a9c45e9",
+    "tests\\test_evaluation.py": "02b7f48b45c518802d70e525e2053dd83db2e8e96695f7fc26fdc01ffc1124c2",
+    "tests\\test_finalize_isolation.py": "f18cbf5b247b0124a39d1eb16a1f7ea2870f397f54b17b714655d47f48224fc7",
+    "tests\\test_fresh_artifacts.py": "50e46c21fcb4d413cfe7ece0ec7752d56cd13036e72ffcef1977b721431d7d8a",
+    "tests\\test_language.py": "52e5bfa366cb44bdfd9d0467ff933f9b2b329c522030c49a75528c27fc0c69b1",
+    "tests\\test_models.py": "45ffeb9bf7af90081ea8d952b188c899c822a28557bcc0ca6f85ecd15e1cdb14",
+    "tests\\test_nested_cache_isolation.py": "c7e6806df4762aab4d47b7556139a6d601d283c5d9c82480f7aac40e820f581f",
+    "tests\\test_physical.py": "d88390cc96aadebc56c91710546eeb12834591b7c7a2cda088fdbb43f9305f8b",
+    "tests\\test_pipeline.py": "fdc87c447b37703e7c18f67a545f7ce2787297b7de05b4acc11dead9610d268d",
+    "tests\\test_qa_generation_isolation.py": "a45c2e8517118bd4d75664ec655fa5a70596dbaabd99e8937453b0fba9eed1e5",
+    "tests\\test_reference_targets.py": "c86119789555a9dc8f88193889702a8abd07461242bf8f39252ee53ac1208a43",
+    "tests\\test_study_generation_isolation.py": "67f3e0d30461bb044ac7456fdb22c46304bf577639d14885eec873ba28f2572b",
+    "tests\\test_target_generation_isolation.py": "296e0412de6756d5d5840c865200f0cf46bf7b4c7ef4c1b3a3ff30c75e38e280",
+    "tests\\test_targets.py": "ba8919e5bb4191404ac1b6caae0d16154c6cb81d39bf9e4166209b76246cd79f"
+  },
+  "tool_hashes": {
+    "tools\\check_artifact_isolation.py": "f06481e6613b34e824173ee7adf785ba0e77d1a6ed8dde9525693549c14cbc87",
+    "tools\\diagnose_prefix.py": "51b0667e4794c31725019fcf6c25bb7ce13bfbf772dbcedd3003a8b18e367632",
+    "tools\\extend_coordinate_audit.py": "90c2757077ddfe304e2b86ef948421daab7285cfe808308180ec147f7dc419ac",
+    "tools\\fetch_official_provenance.py": "3aee0701e87340b8f288571af3ff55945098c86ba8800ada4a6fa220bf5985b0",
+    "tools\\finalize_evidence.py": "ec04ae58fb3027afaf2a246928a883eaf160e9fc58071d17ed4b77c0b43131f9",
+    "tools\\rebuild_fresh.py": "55bbdef925acc2b02103aeff539aa4323e50458428f9d761652883bb01f71fee"
+  },
+  "config_hashes": {
+    "configs\\data_authority.template.json": "9134591cc9d98ae4519aadb31fe2a3ada9b93f289bc7b910aa90aae4a66e8493",
+    "configs\\reference_target_provenance.template.json": "243f2ba5c54bd248f132040798ea5ebdb29e36a44409c64b453e9f17b17ffbad",
+    "configs\\relational64\\label_policy.json": "ef6a14f9931cbd1f524861c01cd2cd89429ae8a5815fbfa62b01a45d3e016063",
+    "configs\\relational64\\runtime.yaml": "9e5d5d6405457d381a3f87aad1a47764c4ed73502ce2f4f7ebe0d435d9a73452",
+    "configs\\relational64\\source_policy.json": "86d83c23cdea275d7825fcc580c1803370c61dcb6d96e25899c7c676358eec3c"
+  }
+}

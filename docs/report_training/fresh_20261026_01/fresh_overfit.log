@@ -1,0 +1,18 @@
+{
+  "command": "overfit",
+  "status": "completed",
+  "summary": {
+    "evidence": "synthetic_software_fixture",
+    "native_windows": true,
+    "cuda": true,
+    "window_count": 8,
+    "initial_loss": 1.3725140196503431,
+    "final_loss": 0.6422230962404061,
+    "reduction_fraction": 0.5320826694331205,
+    "passed": true,
+    "optimizer_steps": 3,
+    "dropout_mode": "eval; gradients enabled; fixed sample optimization diagnostic",
+    "scientific_G2_accepted": false
+  }
+}
+

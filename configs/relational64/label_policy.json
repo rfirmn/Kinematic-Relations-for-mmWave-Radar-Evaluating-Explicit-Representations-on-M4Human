@@ -1,0 +1,12 @@
+{
+  "policy": {
+    "root_delta_mps2": 0.05,
+    "root_guard_mps2": 0.01,
+    "root_residual_max_mps": 0.15,
+    "limb_delta_mps": 0.05,
+    "limb_guard_mps": 0.01,
+    "minimum_valid_endpoints": 44
+  },
+  "status": "candidate_not_locked",
+  "actual_trainval_review_completed": false
+}

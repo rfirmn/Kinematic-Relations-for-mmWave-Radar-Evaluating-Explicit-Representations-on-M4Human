@@ -1,0 +1,18 @@
+{
+  "command": "verify",
+  "status": "completed",
+  "summary": {
+    "suite": "all",
+    "status": "passed",
+    "artifact_generation_id": "fresh_20261026_01",
+    "timestamp_utc": "2026-10-26T10:14:09.221776+00:00",
+    "returncode": 0,
+    "data_source": "synthetic software fixtures, including temporary LMDBs",
+    "actual_M4Human_used": false,
+    "native_windows": true,
+    "cuda_executed": false,
+    "test_count": 133,
+    "junit_sha256": "333a6c05a17c193754d9f0ca8afd9a0f89815dc9ece554c20d30b6ee6dab7d63"
+  }
+}
+

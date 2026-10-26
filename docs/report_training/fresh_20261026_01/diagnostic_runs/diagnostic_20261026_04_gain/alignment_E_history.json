@@ -1,0 +1,42 @@
+{
+  "history": [
+    {
+      "step": 1,
+      "losses": [
+        0.2041918933391571,
+        1.1752870082855225,
+        1.41452157497406
+      ],
+      "learning_rate": 5e-06,
+      "gradient_norm": 12.441644668579102,
+      "qa_uids": [
+        "3bde9168118323c3d998f7cf69040c9d1a9183e520f210b11fd7f47d0351096b",
+        "0330185462b402ab35dfa63e814d83db5367440144250b35ed34009c0137ae2f",
+        "0243d12896d162b20278d79099eb28c72c16c42764564b5b237d93965d09f9bc"
+      ]
+    },
+    {
+      "step": 2,
+      "losses": [
+        0.17556890845298767,
+        0.49163302779197693,
+        1.3709298372268677
+      ],
+      "learning_rate": 1e-05,
+      "gradient_norm": 8.169624328613281,
+      "qa_uids": [
+        "7c0d93573189f9295027d4d2c6a34188ee98a002fa936b7610db1c3ad22e1c23",
+        "18151c828f15e4854c3aea9fe5f68f7fe12a4a241cda8fc175115deed01be84e",
+        "13c369eb4ab406891a2a58ad36f8abfa7884fe53bafb15778363bf833fbf8299"
+      ]
+    }
+  ],
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false
+}

@@ -1,0 +1,15 @@
+{
+  "schema_id": "relational64_source_policy_1",
+  "protocol_id": "m4human_relational64",
+  "artifact_generation_id": "fresh_20261026_01",
+  "artifact_policy": "fresh_from_source_only",
+  "prior_metadata_inputs": [],
+  "database_names": {"rpc": "radar_pc.lmdb", "params": "params.lmdb", "calib": "calib.lmdb", "indicator": "indicator.lmdb"},
+  "serializer": {"byte_order": "detect_from_payload", "max_source_points": 100000, "max_payload_bytes": 1600012, "sentinel_policy": "none"},
+  "source_access": {"readonly": true, "create": false, "writemap": false, "lock": false, "verify_snapshot_sha256": true},
+  "immutable_session_policy": "This research process never writes source LMDBs; source size/mtime is checked before and after audit, SHA256 is regenerated and checked at reader construction. Concurrent writer exclusion beyond the observed audit interval is not claimed.",
+  "producer_commit": "e01b8fed6132306c3553ed6680be912c21594dce",
+  "producer_reference_root": "docs/reference/upstream/pinned/dataset",
+  "coordinate_hypothesis": "Vicon-to-camera-to-radar with translation units from pinned producer; numerical diagnostic only until reference targets and axes are verified",
+  "time_hypothesis": "nominal 12Hz from producer frame index, provisional until source mapping is verified"
+}

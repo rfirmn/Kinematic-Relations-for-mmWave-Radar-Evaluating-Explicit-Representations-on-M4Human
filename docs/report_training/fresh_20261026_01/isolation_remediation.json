@@ -1,0 +1,17 @@
+{
+  "artifact_generation_id": "fresh_20261026_01",
+  "status": "implemented_and_software_tested",
+  "initial_review_sha256": "f0c6611343f489159a40317be53432d5ae630927171d883e572216309690e21c",
+  "verify_report_sha256": "a13c91c645059604ab53d02d0e56ed2ceeed0a6d4d0d2629ccc4121a49e20243",
+  "test_count": 210,
+  "resolved_findings": {
+    "ISO01": "Nested gate references are preflighted with repository/archive path guards.",
+    "ISO02": "Window summary, source inventory hash, file hash and every window generation checked before sensor access.",
+    "ISO03": "CLI prepare/export/QA/evaluation enforce generation; nested target/cache/reference/QA/test-lock paths are guarded; probe checkpoints carry generation.",
+    "ISO04": "Finalizer fails on source hash, language environment hash or expected blocking-check failure before runtime lock/registry finalization."
+  },
+  "native_windows_software_suite": true,
+  "cuda_used_in_isolation_tests": false,
+  "G0_accepted": false,
+  "limitation": "Isolation prevents artifact mixing; it does not establish scientific target/time correctness."
+}

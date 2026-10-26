@@ -1,0 +1,24 @@
+{
+  "artifact_generation_id": "fresh_20261026_01",
+  "prior_artifacts_reused": [],
+  "model_commit": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "tokenizer_commit": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "chat_template_hash": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "snapshot_file_hashes": {
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "safetensors_manifest_hash": "14ea9227729c796e148ea8dc6b0c635708f8cfda700089a84aa468cce9dd33b9",
+  "dependency_lock": "a7260f6e3a6226024d17581bb6ce16b2a11d81e81810d1cda1367242a7c053e6",
+  "environment_report": "6746a54217c7b68656899c873eb18418ddda03f7d89c8e8c9e2850baead2a6c5",
+  "precision": "bfloat16",
+  "head_mode": "canonical_fp32",
+  "verified_qwen_report_sha256": "05422ce5493c41355346d75e0687b257653a05c87c7eff76b88bd4ee1c161969",
+  "actual_M4Human": false,
+  "note": "Freshly measured language software lock, not G4 scientific acceptance"
+}

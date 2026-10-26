@@ -1,0 +1,19 @@
+{
+  "artifact_generation_id": "fresh_20261026_01",
+  "evidence": "actual local M4Human cache; train/validation diagnostic only",
+  "image_sha256": "cc8502c88870414985c6330515b8f4da0fe21db85bbff44bdb14a8a29e5de4e0",
+  "coordinate_audit_sha256": "c2f6bca8a07146a320a049ad805e2baebfe70727b94a5deae49205ff6fa50189",
+  "source_inventory_sha256": "802312c3f0d126d86da8cb09e88a30eee45a6cc4a3d70c90a0e665db5ba5d0c2",
+  "reviewed_examples": [
+    "[1, 10, 0]",
+    "[1, 11, 0]",
+    "[10, 1, 0]",
+    "[16, 1, 0]",
+    "[16, 10, 0]",
+    "[17, 1, 0]"
+  ],
+  "visual_check": "XYZ projections and candidate skeleton are legible; candidate joints overlap the body region in these examples.",
+  "target_equivalence_proven": false,
+  "coordinate_time_authority_accepted": false,
+  "limitation": "Visual agreement cannot prove the licensed SMPL-X/regressor recipe, RawPoints preprocessing or source-frame synchronization."
+}

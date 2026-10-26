@@ -1,0 +1,181 @@
+{
+  "protocol": "m4human_relational64",
+  "evidence": "synthetic_software_fixture",
+  "actual_M4Human": false,
+  "native_windows": true,
+  "cuda_executed": true,
+  "conditions": {
+    "M": {
+      "loss_per_task": [
+        0.426369845867157,
+        1.29779851436615,
+        1.877811074256897
+      ],
+      "gradient_norm": 59.44205856323242,
+      "projector_changed": true,
+      "trainable_parameters": 2761728,
+      "generations": [
+        {
+          "part": "root",
+          "tokens": 1259,
+          "sensor_embeddings": 64,
+          "raw_text": "Frame 63 at 5.0000s:  63 at 5.0000s:  63",
+          "parse": {
+            "status": "truncated",
+            "answer": null,
+            "raw_text": "Frame 63 at 5.0000s:  63 at 5.0000s:  63",
+            "reason": "generation_token_limit",
+            "json_parse_valid": false
+          }
+        },
+        {
+          "part": "arms",
+          "tokens": 1255,
+          "sensor_embeddings": 64,
+          "raw_text": " Frame 63 at 5.0000s:  63 at 5.0000s:  63",
+          "parse": {
+            "status": "truncated",
+            "answer": null,
+            "raw_text": " Frame 63 at 5.0000s:  63 at 5.0000s:  63",
+            "reason": "generation_token_limit",
+            "json_parse_valid": false
+          }
+        },
+        {
+          "part": "legs",
+          "tokens": 1255,
+          "sensor_embeddings": 64,
+          "raw_text": "Frame 63 at 5.0000s:  63 at 5.0000s:  63",
+          "parse": {
+            "status": "truncated",
+            "answer": null,
+            "raw_text": "Frame 63 at 5.0000s:  63 at 5.0000s:  63",
+            "reason": "generation_token_limit",
+            "json_parse_valid": false
+          }
+        }
+      ]
+    },
+    "S": {
+      "loss_per_task": [
+        0.4568041265010834,
+        1.2152950763702393,
+        1.8186801671981812
+      ],
+      "gradient_norm": 59.44642639160156,
+      "projector_changed": true,
+      "trainable_parameters": 3003392,
+      "generations": [
+        {
+          "part": "root",
+          "tokens": 1259,
+          "sensor_embeddings": 64,
+          "raw_text": "Frame 63 at 6.6667s: 67 at 68 at 6.6667s: ",
+          "parse": {
+            "status": "truncated",
+            "answer": null,
+            "raw_text": "Frame 63 at 6.6667s: 67 at 68 at 6.6667s: ",
+            "reason": "generation_token_limit",
+            "json_parse_valid": false
+          }
+        },
+        {
+          "part": "arms",
+          "tokens": 1255,
+          "sensor_embeddings": 64,
+          "raw_text": "Frame 63 at 6.6667s: 67 at 68 at 6.6667s: ",
+          "parse": {
+            "status": "truncated",
+            "answer": null,
+            "raw_text": "Frame 63 at 6.6667s: 67 at 68 at 6.6667s: ",
+            "reason": "generation_token_limit",
+            "json_parse_valid": false
+          }
+        },
+        {
+          "part": "legs",
+          "tokens": 1255,
+          "sensor_embeddings": 64,
+          "raw_text": "Frame 63 at 6.6667s: 67 at 68 at 6.6667s: ",
+          "parse": {
+            "status": "truncated",
+            "answer": null,
+            "raw_text": "Frame 63 at 6.6667s: 67 at 68 at 6.6667s: ",
+            "reason": "generation_token_limit",
+            "json_parse_valid": false
+          }
+        }
+      ]
+    },
+    "R": {
+      "loss_per_task": [
+        0.4084891378879547,
+        1.2409420013427734,
+        1.7755306959152222
+      ],
+      "gradient_norm": 56.49148178100586,
+      "projector_changed": true,
+      "trainable_parameters": 3003392,
+      "generations": [
+        {
+          "part": "root",
+          "tokens": 1259,
+          "sensor_embeddings": 64,
+          "raw_text": "```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ``` ",
+          "parse": {
+            "status": "truncated",
+            "answer": null,
+            "raw_text": "```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ``` ",
+            "reason": "generation_token_limit",
+            "json_parse_valid": false
+          }
+        },
+        {
+          "part": "arms",
+          "tokens": 1255,
+          "sensor_embeddings": 64,
+          "raw_text": "```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ``` ",
+          "parse": {
+            "status": "truncated",
+            "answer": null,
+            "raw_text": "```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ``` ",
+            "reason": "generation_token_limit",
+            "json_parse_valid": false
+          }
+        },
+        {
+          "part": "legs",
+          "tokens": 1255,
+          "sensor_embeddings": 64,
+          "raw_text": "```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ``` ",
+          "parse": {
+            "status": "truncated",
+            "answer": null,
+            "raw_text": "```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ```  ``` ",
+            "reason": "generation_token_limit",
+            "json_parse_valid": false
+          }
+        }
+      ]
+    }
+  },
+  "frozen_Qwen_unchanged": true,
+  "frozen_physical_unchanged": true,
+  "physical_initialization": "scratch untrained; software pilot only",
+  "train_steps_per_condition": 1,
+  "diagnostic_accumulation": 3,
+  "scientific_G4_accepted": false,
+  "resource": {
+    "wall_seconds": 18.969337800001085,
+    "device": "cuda",
+    "peak_allocated_bytes": 9324360704,
+    "peak_reserved_bytes": 9927917568,
+    "minimum_free_cuda_bytes": 1697050624,
+    "minimum_available_ram_bytes": 6983507968,
+    "peak_process_rss_bytes_sampled": 1885036544,
+    "resource_guard_passed": true,
+    "sampling": "At each microbatch/optimizer boundary; not continuous OS telemetry."
+  },
+  "status": "passed",
+  "interpretation": "Raw synthetic points -> physical predictions -> descriptor -> 64 embeddings -> frozen pretrained Qwen. No accuracy or dataset validation claim."
+}

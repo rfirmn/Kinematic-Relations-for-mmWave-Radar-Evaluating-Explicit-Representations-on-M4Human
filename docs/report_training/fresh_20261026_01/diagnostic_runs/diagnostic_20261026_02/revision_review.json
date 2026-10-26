@@ -1,0 +1,45 @@
+{
+  "observed_quality": {
+    "status": "needs_revision",
+    "failures": [
+      {
+        "condition": "S",
+        "schema_enum_valid_rate": 0.0,
+        "reason": "invalid_or_truncated_generation"
+      },
+      {
+        "condition": "R",
+        "schema_enum_valid_rate": 0.5,
+        "reason": "invalid_or_truncated_generation"
+      }
+    ],
+    "criterion": "Every validation generation must terminate with the strict schema/enum; no parser repair.",
+    "actual_M4Human": true,
+    "synthetic_data": false,
+    "diagnostic_only": true,
+    "target_status": "candidate_direct_joints_first22_not_reference_verified",
+    "time_status": "provisional_nominal_12Hz",
+    "G0_passed": false,
+    "scientific_acceptance": false,
+    "eligible_for_test_selection": false
+  },
+  "next_run": "diagnostic_20261026_03",
+  "hypothesis": "S remains unstable after2 updates; test a smaller LR and longer bounded alignment.",
+  "trial_optimizer": {
+    "learning_rate": 1e-06,
+    "warmup_steps": 5,
+    "optimizer_steps_per_condition": 10
+  },
+  "seed_and_sensor_panel_fixed": true,
+  "physical_models_refit_separately": true,
+  "bitwise_GPU_determinism_claimed": false,
+  "scientific_recipe_changed": false,
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false
+}

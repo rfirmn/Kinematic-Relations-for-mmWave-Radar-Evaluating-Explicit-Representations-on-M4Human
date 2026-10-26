@@ -1,0 +1,26 @@
+{
+  "artifact_generation_id": "fresh_20261026_01",
+  "status": "passed",
+  "checks": [
+    {
+      "command": "prepare",
+      "exit_code": 3,
+      "stderr": "prepare: G0 unresolved: only explicit diagnostic manifests permitted; training remains blocked"
+    },
+    {
+      "command": "build-qa",
+      "exit_code": 3,
+      "stderr": "build-qa: G0 data authority unresolved; QA target generation blocked"
+    },
+    {
+      "command": "train-physical",
+      "exit_code": 3,
+      "stderr": "train-physical: G0 not accepted in docs\\report_training\\fresh_20261026_01\\acceptance.json; dependent execution blocked"
+    },
+    {
+      "command": "train-alignment",
+      "exit_code": 3,
+      "stderr": "train-alignment: G0 not accepted in docs\\report_training\\fresh_20261026_01\\acceptance.json; dependent execution blocked"
+    }
+  ]
+}

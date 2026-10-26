@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+derived_data/
+checkpoints/
+*.safetensors
+.cache/
+docs/report_training/**/sensor_scan.jsonl
+docs/report_training/**/frames.jsonl
+docs/report_training/**/windows.jsonl
+*.egg-info/
+archive/
