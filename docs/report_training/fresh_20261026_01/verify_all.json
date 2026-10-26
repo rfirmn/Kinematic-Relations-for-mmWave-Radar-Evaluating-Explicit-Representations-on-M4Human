@@ -12,13 +12,13 @@
   ],
   "artifact_generation_id": "fresh_20261026_01",
   "prior_artifacts_reused": [],
-  "timestamp_utc": "2026-10-26T12:58:41.620274+00:00",
+  "timestamp_utc": "2026-10-26T13:41:07.120548+00:00",
   "returncode": 0,
   "data_source": "synthetic software fixtures, including temporary LMDBs",
   "actual_M4Human_used": false,
   "native_windows": true,
   "cuda_executed": false,
-  "test_count": 210,
+  "test_count": 218,
   "tests": [
     {
       "id": "tests.test_alignment::test_weighted_sampler_same_seed_stream_and_task_probabilities",
@@ -577,6 +577,38 @@
       "status": "passed"
     },
     {
+      "id": "tests.test_pilot_review::test_panel_is_order_independent_uses_sensor_ids_and_common_activities_only",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pilot_review::test_validation_selection_refuses_cross_subject_and_cross_activity_windows",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pilot_review::test_panel_coverage_shortfall_is_not_silently_reduced",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pilot_review::test_physical_aggregation_weights_valid_observations_and_keeps_nonfinite_failures",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pilot_review::test_review_budget_and_paths_checked_before_any_data_or_device_access[kwargs0]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pilot_review::test_review_budget_and_paths_checked_before_any_data_or_device_access[kwargs1]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pilot_review::test_review_budget_and_paths_checked_before_any_data_or_device_access[kwargs2]",
+      "status": "passed"
+    },
+    {
+      "id": "tests.test_pilot_review::test_saved_diagnostic_review_never_becomes_scientific_acceptance_and_detects_stale_input",
+      "status": "passed"
+    },
+    {
       "id": "tests.test_pipeline::test_cache_is_deterministic_eval_and_sensor_only",
       "status": "passed"
     },
@@ -861,7 +893,7 @@
       "status": "passed"
     }
   ],
-  "junit_sha256": "917fe78ee7ba124813039027bcfddec054fd7f5bddb8f6e18b5ef659a4507604",
+  "junit_sha256": "f5a99fcd55c4e47f905bf631b472c3a7e014ca57e30d925fde979b7346b2061d",
   "source_hashes": {
     "src\\eksperimen_model\\__init__.py": "97c1acf7d5528b8723efff5598616678719615a1b187003d77029e43dca9da75",
     "src\\eksperimen_model\\relational64\\__init__.py": "026a2914af206a5871c8246c11b3d242121a1fac339daf4bdd566724dfb2c85e",
@@ -882,11 +914,12 @@
     "src\\relational64\\models.py": "7138c52837f59790cee7e0320a55401011ee630b8e875961899c06d78618381d",
     "src\\relational64\\physical.py": "1e110a64d047e85c782b1bb5ec57efe274d48321e103147a5f0bc75d4e613dd1",
     "src\\relational64\\pilot.py": "4fa9d5ea8388dda3a8cfde6ae0e553fefa979713cf582ca4f2aee3a130abcca7",
+    "src\\relational64\\pilot_review.py": "2e73f3e14744ae349b37352ac936d2f071113b6b3a56e39c2c550ad2f6205443",
     "src\\relational64\\pipeline_targets.py": "fc453b1fcbb0c09b390afce3adc0bd1249c4d9d96a986403872a13a2959641e8",
     "src\\relational64\\prepare.py": "550aae3d8d05ad0660b0d2674228015b057b2c437887d4e44e05fcb7d6366ed0",
     "src\\relational64\\qa.py": "ab3840171ff2f32e9238228eac1ec9bd04c732d7debddcff41bc388b49908db6",
     "src\\relational64\\reference_targets.py": "6866644aa5aeaf518f829b81e973deb282fe9c958f50e3335ac8c215eb103ac6",
-    "src\\relational64\\reporting.py": "c4581dca0d8d59c5df9a53f25df60fde1024d260a550d07f34e524f9aba093e6",
+    "src\\relational64\\reporting.py": "e07628090ad34ab8bfeb4a6bfd8bd06ae348f3ead6a7689d688314f90bce1971",
     "src\\relational64\\resources.py": "13abbc89aa7a02f4244f81cd7049ad60d0fdf9b17413ea43be4ac5b968c7fc8d",
     "src\\relational64\\study.py": "3597ff5e14b36fd8085ecdcf601274389520b735f3e12838c6a7b735c1899ec2",
     "src\\relational64\\training.py": "a435053ab2ded6a710d610ca3f1f2602ff1410ba3c24b01a9a290abbcb873885",
@@ -905,6 +938,7 @@
     "tests\\test_models.py": "45ffeb9bf7af90081ea8d952b188c899c822a28557bcc0ca6f85ecd15e1cdb14",
     "tests\\test_nested_cache_isolation.py": "c7e6806df4762aab4d47b7556139a6d601d283c5d9c82480f7aac40e820f581f",
     "tests\\test_physical.py": "d88390cc96aadebc56c91710546eeb12834591b7c7a2cda088fdbb43f9305f8b",
+    "tests\\test_pilot_review.py": "a97300d6b5d4bcd0f1b14896c30c416a84d81c38cff74ef02d672727cd7f32b0",
     "tests\\test_pipeline.py": "fdc87c447b37703e7c18f67a545f7ce2787297b7de05b4acc11dead9610d268d",
     "tests\\test_qa_generation_isolation.py": "a45c2e8517118bd4d75664ec655fa5a70596dbaabd99e8937453b0fba9eed1e5",
     "tests\\test_reference_targets.py": "c86119789555a9dc8f88193889702a8abd07461242bf8f39252ee53ac1208a43",

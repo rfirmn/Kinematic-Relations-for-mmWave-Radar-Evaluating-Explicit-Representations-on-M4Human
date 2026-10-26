@@ -91,11 +91,13 @@ Pemeriksaan numerik transformasi kandidat dan visualisasi mendukung konsistensi 
 
 ## Bukti yang tersedia
 
-Pengujian software memakai fixture sintetis membuktikan jalur tensor, mask, loss, backward, pembekuan Qwen, splicing token, parser, dan metrik pada lingkungan Windows/CUDA. Pengujian tersebut bukan validasi ilmiah M4Human. Data aktual memang digunakan dalam eksekusi diagnostik di Windows/CUDA RTX 3060, dengan panel 8 window train dari 8 subjek dan 4 window validasi dari 4 subjek serta target/waktu provisional.
+Sebanyak 218 pengujian software dengan fixture sintetis lulus pada Windows/CPU untuk jalur tensor, mask, loss, backward, splicing token, parser, metrik, dan isolasi artefak. Overfit, profil, pembekuan Qwen, dan integrasi sensor sintetis juga diperiksa pada Windows/CUDA. Bukti software tersebut bukan validasi ilmiah M4Human. Data aktual memang digunakan dalam eksekusi diagnostik di Windows/CUDA RTX 3060, dengan panel awal 8 window train dari 8 subjek dan 4 window validasi dari 4 subjek serta target/waktu provisional.
 
 Tiga run awal menemukan generation tidak stabil. Run diagnostik keempat menghasilkan 12/12 keluaran yang valid menurut JSON/schema untuk masing-masing kondisi M/S/F/E/R pada panel validasi. Ini hanya mengukur keberhasilan format; ketepatan jawaban dan grounding belum dibuktikan. Run tersebut memakai gain embedding 0,026 sebagai varian diagnostik yang menyimpang dari spesifikasi H langsung, sehingga bukan konfigurasi penelitian yang telah dipilih. Model fisik menjalankan 20 update; penurunan loss dari 4,8554 ke 2,8641 belum memenuhi kriteria overfit yang direncanakan. Rincian dan kegagalan tiap tahap disimpan di [temuan diagnostik](docs/diagnostic_findings.md).
 
 Belum ada hasil test ilmiah, akurasi yang diterima, ataupun bukti bahwa R mengungguli S. Gerbang target dan waktu G0 masih tertutup. Training penuh dijalankan sebagai pekerjaan eksperimen terpisah setelah authority dan konfigurasi ilmiah disahkan; eksekusi diagnostik tidak membuka label test dan tidak meluluskan gerbang itu.
+
+Pilot diagnostik kelima telah menyelesaikan 100 update fisik, 10 update per kondisi, serta review pada 52 window validasi dan 156 QA per kondisi di Windows/CUDA RTX 3060. Penurunan loss train mencapai 63,48% dan seluruh pemeriksaan eksekusi lulus. Namun, galat pose validasi masih sekitar satu meter, R belum mengungguli S atau mayoritas train, dan PairBothCorrect donor adalah 0/13. Hasil ini menunjukkan pipeline dapat dieksekusi sekaligus mengidentifikasi masalah estimasi fisik, cakupan label pelvis, dan grounding yang perlu ditangani. [Hasil pilot dan tindak lanjut](docs/pilot_results.md).
 
 ## Reproduksibilitas
 

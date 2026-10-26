@@ -6,7 +6,7 @@ from pathlib import Path
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
-from .config import ROOT,file_hash,identity,read_json,write_json,resolve,require_gate
+from .config import ROOT,file_hash,identity,read_json,write_json,resolve,require_gate,active_artifact_path
 from .resources import save_environment
 
 def verify(suite='all',output_dir=None):
@@ -42,6 +42,27 @@ def verify(suite='all',output_dir=None):
     write_json(output/f'verify_{suite}.json',report)
     return report
 
+def diagnostic_review_rows(output,generation):
+    """Saved diagnostic completion is separate from scientific acceptance."""
+    reviews=[]
+    for path in sorted(Path(output).glob('diagnostic_runs/*/reviews/*/summary.json')):
+        row=read_json(path);plan_path=path.with_name('plan.json');plan=read_json(plan_path)
+        if plan.get('artifact_generation_id')!=generation:continue
+        if row.get('diagnostic_only') is not True or row.get('scientific_acceptance') is not False:
+            raise ValueError('Diagnostic review cannot claim scientific acceptance')
+        valid=row.get('plan_hash')==identity(plan)
+        try:
+            valid &= all(file_hash(active_artifact_path(member))==digest for member,digest in plan['dependencies'].items())
+            valid &= file_hash(Path(__file__).with_name('pilot_review.py'))==plan['module_sha256']
+        except (FileNotFoundError,ValueError):valid=False
+        reviews.append({'run_id':row['run_id'],'review_id':row['review_id'],
+                        'status':row['status'] if valid else 'stale_dependencies',
+                        'execution_complete':row.get('execution_complete') is True and valid,
+                        'hashes_valid':bool(valid),'summary_path':str(path.resolve()),
+                        'validation_QA_count':row.get('validation_QA_count')})
+    return reviews
+
+
 def build_status(output_dir=None,*,inventory_path=None):
     runtime=resolve(ROOT/'configs/relational64/runtime.yaml')['runtime']
     output_dir=output_dir or runtime['report_root']
@@ -64,6 +85,7 @@ def build_status(output_dir=None,*,inventory_path=None):
             diagnostic.append({'run_id':row['run_id'],'status':row['status'],'stages':row['stages'],'summary_path':str(path.resolve())})
     diagnostic_physical=any(row['stages'].get('physical',{}).get('status')=='passed' for row in diagnostic)
     diagnostic_alignment=any(row['stages'].get('alignment',{}).get('status')=='passed' for row in diagnostic)
+    reviews=diagnostic_review_rows(output,runtime.get('artifact_generation_id'))
     environment=save_environment(output)
     artifacts={}
     for name in ('verify_all.json',
@@ -97,6 +119,8 @@ def build_status(output_dir=None,*,inventory_path=None):
             'synthetic_overfit_passed':bool(overfit and overfit['passed']),'synthetic_physical_profile_complete':profile is not None,
             'synthetic_alignment_profile_complete':alignment_profile is not None,'synthetic_pilot_passed':bool(pilot and pilot['status']=='passed'),
             'actual_diagnostic_training_run':diagnostic_physical,'actual_diagnostic_alignment_run':diagnostic_alignment,'diagnostic_runs':diagnostic,
+            'diagnostic_reviews':reviews,'diagnostic_review_execution_complete':any(row['execution_complete'] for row in reviews),
+            'diagnostic_review_passed':any(row['status']=='passed' for row in reviews),
             'scientific_training_run':False,'pilot_actual_data_run':diagnostic_physical,
             'scientifically_accepted_pilot_run':False,'full_training_run':False,'test_evaluation_run':False,
             'dependency_lock_hash':environment['dependency_lock_sha256']}
@@ -115,6 +139,7 @@ def build_status(output_dir=None,*,inventory_path=None):
            f'| Training fisik diagnostik aktual | {"selesai; provisional, G0 tetap false" if diagnostic_physical else "belum selesai"} |',
            f'| Alignment diagnostik aktual | {"selesai; provisional, G0 tetap false" if diagnostic_alignment else "belum selesai"} |','',
            *['- Run diagnostik ['+row['run_id']+']('+__import__('os').path.relpath(row['summary_path'],output.resolve()).replace('\\','/')+') — '+row['status'] for row in diagnostic],'',
+           *['- Review diagnostik ['+row['run_id']+'/'+row['review_id']+']('+__import__('os').path.relpath(row['summary_path'],output.resolve()).replace('\\','/')+') — '+row['status']+'; scientific_acceptance=false' for row in reviews],'',
            '## Penghambat data','',*['- '+b for b in blocker],'',
            '## Gerbang','', '| Gate | Lulus | Alasan |','|---|---|---|',
            *[f'| {k} | {v["passed"]} | {v["reason"]} |' for k,v in gates.items()],'',

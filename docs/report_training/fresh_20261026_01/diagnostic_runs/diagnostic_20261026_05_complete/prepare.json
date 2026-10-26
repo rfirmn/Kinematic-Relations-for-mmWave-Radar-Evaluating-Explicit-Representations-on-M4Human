@@ -1,0 +1,65 @@
+{
+  "stage": "prepare",
+  "run_id": "diagnostic_20261026_05_complete",
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false,
+  "artifact_generation_id": "fresh_20261026_01",
+  "plan_hash": "621765149b4dec385ef0c36eed3c98e2e1471dfac78cea1ef07a6d25021c3d99",
+  "module_sha256": "8a18c03fe0dd18e7126bac54874d35857a3a49099e45bd16b9b982c6dc499064",
+  "source_snapshot": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_05_complete\\source_snapshots\\8a18c03fe0dd18e7126bac54874d35857a3a49099e45bd16b9b982c6dc499064.txt",
+  "started_utc": "2026-10-26T13:31:21.148296+00:00",
+  "frame_count": 768,
+  "candidate_valid_joints": 16896,
+  "window_counts": {
+    "train": 8,
+    "val": 4
+  },
+  "qa_statuses": {
+    "defined": 36
+  },
+  "train_subjects": [
+    "1",
+    "10",
+    "2",
+    "4",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "val_subjects": [
+    "16",
+    "17",
+    "19",
+    "5"
+  ],
+  "sensor_shape_per_window": [
+    64,
+    150,
+    4
+  ],
+  "target_shape_per_window": [
+    64,
+    22,
+    3
+  ],
+  "assumptions": [
+    "First22 params.joints treated as candidate ordered joints; no regressor equivalence claim.",
+    "Published root transform formula and identity RPC transform are provisional.",
+    "Velocity/QA thresholds use provisional nominal12Hz, not measured time."
+  ],
+  "files": {
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_05_complete\\panel.diagnostic.json": "b49ff97de59c6d870b2b45a4e9baf09caa7cacfc6c93d224d0db9d1189463969",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_05_complete\\intensity_normalizer.diagnostic.json": "5aadcb2b836b7bbf44c50795f5b7ce55a294968a816c8ec8c895467264077121",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_05_complete\\batches.diagnostic.pt": "ebf92a69975c508e533ece43339d9511a5dc2acdbde8dfa7cef790d99af346a2",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\derived_data\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_05_complete\\qa.diagnostic.json": "f825dd912dde8e304604e5e5fdef55454e1901d8d3e596d8c84d8b16282fa6e4"
+  },
+  "status": "passed",
+  "completed_utc": "2026-10-26T13:31:31.388393+00:00"
+}

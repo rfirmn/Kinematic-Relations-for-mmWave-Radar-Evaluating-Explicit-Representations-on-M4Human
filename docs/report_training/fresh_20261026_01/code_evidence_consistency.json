@@ -1,10 +1,10 @@
 {
   "artifact_generation_id": "fresh_20261026_01",
   "status": "passed",
-  "verified_file_count": 57,
-  "verify_report_sha256": "a13c91c645059604ab53d02d0e56ed2ceeed0a6d4d0d2629ccc4121a49e20243",
-  "test_count": 210,
+  "verified_file_count": 59,
+  "verify_report_sha256": "c66a63b1d9ee7da0f5e2cf95536014860a11db383a603eba98089ecfddd2fced",
+  "test_count": 218,
   "hash_mismatches": [],
   "actual_M4Human_used": false,
-  "evidence": "Synthetic software verification; actual training evidence is separate in diagnostic_runs."
+  "evidence": "Synthetic software verification; actual CUDA training/evaluation evidence is separate in diagnostic_runs."
 }

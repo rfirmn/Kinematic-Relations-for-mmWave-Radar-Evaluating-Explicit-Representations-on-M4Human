@@ -10,6 +10,60 @@ Generasi aktif `fresh_20261026_01` memakai output baru di dalam repo pada C.
 `checkpoint_root`. Tidak ada `metadata_root` eksternal atau dependency metadata
 penelitian lama. [Kebijakan artefak](artifact_policy.md).
 
+## Pilot diagnostik end-to-end
+
+Pilot diagnostik lengkap mencakup persiapan data aktual, training fisik terbatas,
+alignment seluruh M/S/F/E/R, serta review evaluasi pada train/validation.
+Run `diagnostic_20261026_05_complete` menetapkan 100 update fisik dan 10 update
+per projector. Gain sensor 0,026 tetap merupakan varian diagnostik yang
+menyimpang dari input H langsung pada spesifikasi. Target direct joints dan
+waktu nominal 12 Hz masih provisional; `scientific_acceptance=false`.
+
+Jalankan perintah berikut secara berurutan. Periksa exit code dan laporan setiap
+tahap sebelum tahap berikutnya. Prepare/physical/alignment yang selesai hanya
+digunakan kembali setelah plan dan seluruh hash dependensinya diperiksa; ini
+tidak menambah update training. Perintah review mengeksekusi inference/evaluasi
+lagi; baca laporan yang tersedia untuk memeriksa hasil tanpa menjalankan ulang.
+Untuk review baru gunakan review ID baru. Untuk training dari awal atau perubahan budget, gunakan run ID baru
+yang sama pada seluruh perintah.
+
+```powershell
+$taskCompleteArgs = @('--run-id','diagnostic_20261026_05_complete','--steps','100','--alignment-steps','10','--alignment-lr','0.00001','--alignment-warmup','2','--sensor-gain','0.026')
+& .\.venv\Scripts\python.exe -m relational64.diagnostic_pilot @taskCompleteArgs --stage prepare
+& .\.venv\Scripts\python.exe -m relational64.diagnostic_pilot @taskCompleteArgs --stage physical
+& .\.venv\Scripts\python.exe -m relational64.diagnostic_pilot @taskCompleteArgs --stage alignment
+& .\.venv\Scripts\python.exe -m relational64.pilot_review --run-id diagnostic_20261026_05_complete --review-id validation12_v1 --activities 12 --probe-steps 50
+```
+
+Review memilih satu window per kombinasi subjek/aktivitas pada 12 aktivitas yang
+tersedia di seluruh empat subjek validation. Pemilihan memakai hash identitas
+sensor sebelum membaca target. Window validation awal tetap disertakan.
+Normalizer intensity dan descriptor tetap berasal dari panel train; tidak ada
+fitting pada validation atau pembukaan target test.
+
+Review memeriksa kesetaraan cache dengan forward langsung, metrik fisik dan
+ZeroVelocity, QA seluruh kondisi dan kontrol T/Maj/Rule, probe fitur Y/Z_R dengan
+50 update, kontrol donor aktual, jumlah 64 embedding, pembekuan parameter,
+checkpoint reload, resource CUDA, dan integritas sumber. Donor memakai pasangan
+subjek berbeda dengan aktivitas sama dan kelas calon target berbeda. Hash token
+serta embedding teks harus sama di kedua sisi; hanya embedding sensor berubah.
+Donor dinilai dari ketepatan kedua jawaban, bukan perubahan jawaban semata.
+
+Buka [laporan review](report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/reviews/validation12_v1/report.md)
+dan `summary.json` pada folder yang sama. `execution_complete=true` berarti semua
+jalur review dieksekusi; `status=passed` juga memerlukan seluruh pemeriksaan
+teknis berhasil, termasuk penurunan loss train minimal 50%, schema valid pada
+seluruh generation dan pasangan donor aktual tersedia. Temuan menghasilkan
+`needs_revision` dengan rincian, bukan pelulusan otomatis. Skor QA dan fisik tetap
+dinilai terhadap target provisional dan tidak meluluskan G0 atau membuktikan
+hipotesis penelitian.
+
+Metadata/tensor review berada di
+`derived_data/m4human_relational64/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/reviews/validation12_v1/`;
+laporan berada di `docs/report_training/...` dan checkpoint di `checkpoints/...`
+dengan struktur run/review yang sama. Semua output berada di repo pada C.
+Jalankan satu proses GPU pada satu waktu; training penuh tetap pekerjaan terpisah.
+
 ## Training diagnostik bertahap dengan data aktual
 
 Runner berikut menjalankan training kecil memakai RPC M4Human aktual dan calon

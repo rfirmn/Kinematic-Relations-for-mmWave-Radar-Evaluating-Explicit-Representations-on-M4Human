@@ -1,0 +1,2848 @@
+{
+  "qa": [
+    {
+      "qa_uid": "d72ee76c8e3b6ae1384738f05ff8095cdddb15750d266ba9ba3342971a2b4f10",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 601.8781999955536
+    },
+    {
+      "qa_uid": "7db0a2df7ae8ab26dfdf4353b76d90477ad1abf92c0501ccc01fdb827f4230cd",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 556.5384000001359
+    },
+    {
+      "qa_uid": "9f3f7df3c5c7e3cb6526c79faadd97eb63e4335f420ea99d41b2016655f107e4",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 555.2844000048935
+    },
+    {
+      "qa_uid": "117eacaaa82a3a7d3d49194eaf561a8c80fc584e6386356d7cc13bc85a2fa89d",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 608.0457999996725
+    },
+    {
+      "qa_uid": "22d30b80cb34035d8c1e774b9f6c4110c6c975bf27fa52993313d3546a70139c",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 575.9720999994897
+    },
+    {
+      "qa_uid": "31436a0fe6b44d39e0d84c8a54f56851aa28f2dc5b2e9add8a03c2be4513d5fc",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.3108000044012
+    },
+    {
+      "qa_uid": "fc61d21efb3ce449d14274ed060d0c27ab35146733122c4d0beec6c7f2a815f5",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 605.6449999960023
+    },
+    {
+      "qa_uid": "7a87521ead0224dc2accd4f5d1c0ae7a70a4b1542d1500245e5d5cfaa1cc41ba",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.3009999991045
+    },
+    {
+      "qa_uid": "4590518c103b14f69e18f8c2341c8615fa321c18880c3fed31256c445e445a60",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.1811999998172
+    },
+    {
+      "qa_uid": "58549060cddb83e5349becd92505471bc68c8c056061de8f636b6a62b0396489",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 602.4325999969733
+    },
+    {
+      "qa_uid": "50b3da01209353bad9939e76eadee27bbf48b1169b141af80fead17ae1994a9a",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 552.4254000047222
+    },
+    {
+      "qa_uid": "521500761e1dc61c5f084cd9d2d82d787550c5bcd1ef9bff8754e89ea0fb5318",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.7790999977733
+    },
+    {
+      "qa_uid": "1f00a22c63d3a18604c497d041bf0902a81f040429d637c62e3986dcb58c80df",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 598.2006000049296
+    },
+    {
+      "qa_uid": "64c59914eaf16e74eac76997298bda525f8111ccf4ea89b70dd91b35ddeac831",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.8698000010336
+    },
+    {
+      "qa_uid": "1cbeb33bd36e0b4ab2f23f7a1fabaa4bf6f5f0f647471e95047f7c0bf38a29cb",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 555.174300003273
+    },
+    {
+      "qa_uid": "baa2583880462c70a9e4c8ddfeb1cf628f9114e7fb37d46af0196bfc1a103483",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 596.897399998852
+    },
+    {
+      "qa_uid": "dcc68d50039a91eea5d137c59b1d60376aabfb07e46eeeff0cdb2c67c3267625",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 560.8920000013313
+    },
+    {
+      "qa_uid": "2fba3473cd8bd6a57aa21aa59c46f16bba795cbd09df35fab5144a38742ec188",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 554.0653999996721
+    },
+    {
+      "qa_uid": "4a70505a5f441bbec3fb8522a98cdea0047c8c795420f42e42d07c2a2aed7bdc",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 598.5278000007384
+    },
+    {
+      "qa_uid": "eb4be061fb1f5d1462cd85e8089b6627216c5c3a62f127a68fe8e6797fd3b384",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.9084000039147
+    },
+    {
+      "qa_uid": "030581e17a44f731223059f50b73e5cb3f36fe5832cf46a382115ac66a80d10e",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.3604000002961
+    },
+    {
+      "qa_uid": "45dd437399b696c96dbc4912f1603c327b7dba0cd2dd7d91e8abf4bca3d10062",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 596.6248999975505
+    },
+    {
+      "qa_uid": "5b275c88adcbced8fb9fc0d4ac6122b2e8e96241adedf40ce301fff258ab21a5",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 547.5239000006695
+    },
+    {
+      "qa_uid": "cee6f3df91d95d1296a4e18c20300dd6fe1a49db3c0a4a087d6d7f8eaa8cfe67",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 554.6489999978803
+    },
+    {
+      "qa_uid": "88a52a65d8c6d9f26cbed067e76ca8a1e515a7e7ff3ac80a0ab279fb6bb94cdc",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 602.9475999966962
+    },
+    {
+      "qa_uid": "94f5ef04841008727729bc6b78b3023620ec212ae396a3069dba23decf13418e",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 568.6989999958314
+    },
+    {
+      "qa_uid": "699781505b8085301dee6cc87453b78de2a60e42f2733bc098420bfbd6dd7295",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.5818999950425
+    },
+    {
+      "qa_uid": "0528ddbb26d87e07dacd979df109fa2d6f7685e3e5ba1d17a3878f0e5f2ca09e",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 598.8155000013649
+    },
+    {
+      "qa_uid": "21d92ca95e17ce23845dbd75e3a7b3bfaaae85af1d111da610d11ad202d2d1b2",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.7854000020889
+    },
+    {
+      "qa_uid": "c4096c93b8e63f76da79c938f5bb32487e4b157d0d22805a54e6ac87a1947d95",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.1060999954934
+    },
+    {
+      "qa_uid": "81e48b008d49a14ba9f2d7d5fbcd63146b251dfaf849ccd976ad3f5fdd79566a",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 604.2170000000624
+    },
+    {
+      "qa_uid": "c7ae0ad89271790d832c6c82b874d63a6f9b0f6bc8f6642c112338dee7fbc632",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 554.656200001773
+    },
+    {
+      "qa_uid": "3bf3891fb385f0ccc859e0dff177e179b803f70bb233d54e2c1efe7027f70095",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 547.8309000027366
+    },
+    {
+      "qa_uid": "dfe848132faef3c6c4bd010f88f4c27c4cca800ba8b96814e0e2f6898a4f717b",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 598.6503000021912
+    },
+    {
+      "qa_uid": "c551ae13a4dfa0292dbe6b099ce4fe66e9662aa95351881e78b67d605d3d5151",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.5859999971581
+    },
+    {
+      "qa_uid": "d8a2274017b6df8181e64c7c948c42883f5699b09fc2bb14352ea6b573e91daa",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 547.69810000289
+    },
+    {
+      "qa_uid": "83cd4be0702847be56df49312ba557ab83bd2f19c8b24bb2fe7b5e12429aba6e",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 596.3980000014999
+    },
+    {
+      "qa_uid": "3214463626f221118a14c1558d4c7d540464453cc10e49204ab6f0b1e8ccadf1",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 553.4745000040857
+    },
+    {
+      "qa_uid": "20dfffba55fd3b7812dc86d1de068e844372807d34ec1afb72a6079b361ade16",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 557.6424000028055
+    },
+    {
+      "qa_uid": "b978028ac46aeefb9911aee44d61c594f1dd68b50dbd9f9c6cd58bb98c3fddd5",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 598.4791999944719
+    },
+    {
+      "qa_uid": "f3dfd1c0cd86f0354ca7bbbb61b459ca59551cd655ba81c4be243d0972bce725",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.8073999988264
+    },
+    {
+      "qa_uid": "6facfb15d455156cb2ffae51f0c578d7a5a464697f4e174394cf821c278146ab",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.4008999958169
+    },
+    {
+      "qa_uid": "b01905ee87f832a87484fc7f9a7ee012921112e52fec55fc99cbf7696d794369",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 597.8227000014158
+    },
+    {
+      "qa_uid": "87976320b79897c2b89a4a0ec0589f8c539bd5d3a34695270d1777a0159190f1",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 547.9713000022457
+    },
+    {
+      "qa_uid": "d8b930d0615fbedacb6701be1b1ed0135b91fbe1464dbd8a0115aa602df0f9f5",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 552.4584000013419
+    },
+    {
+      "qa_uid": "1c2d901c46aea494564ab731f8cfb647d5ae305a83e8ed3f5887e2728cadc4da",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 602.252500000759
+    },
+    {
+      "qa_uid": "9d163f8934adece66b72b969f6a9c359c51a0bde68f219c5a04ee17483d33ef2",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.2471999968984
+    },
+    {
+      "qa_uid": "6c9c1caa5fa042de3261ef4f137bca62d6e8851243f651bb953b6d7f2c210c35",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.2693999947514
+    },
+    {
+      "qa_uid": "c9b1b0665ab85d318602c46d4f99c2bc99d0ae4628826a19b0f225eab58d7346",
+      "raw_text": "{\"answer\":\"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\":\"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 573.7596999970265
+    },
+    {
+      "qa_uid": "613ff4b65025ed3fbe80da702940678d604b64a6008f1605a9261cb39c5045bd",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.9826999983052
+    },
+    {
+      "qa_uid": "ec03faaf8bd2e42e4e7b423b726210c4a81bd5a99bc242b026c3615ca2fea8a8",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 551.0796000016853
+    },
+    {
+      "qa_uid": "0e0067c684e95a469783927cb5774080db3b76e6af4f6b0783ee50ed95cebf73",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 605.2374999999302
+    },
+    {
+      "qa_uid": "fde500dcc4e35dd7974db748e0cd7e19b26f700f40593e365102477c36fa0eda",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 553.8689999957569
+    },
+    {
+      "qa_uid": "d221cbf2bde5a8780b79c2164918a17f5de2d766e8d98e3a5cdc660e947d8a11",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.5498000018415
+    },
+    {
+      "qa_uid": "750cfd1d6ae35a32c824866bb9ed72bf70776208a95de8786230ecb00e2061f5",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 606.6337000011117
+    },
+    {
+      "qa_uid": "860d2d5114fb2d4c348595c0bcebbc77bc39122447d177980d16b16e29b82a54",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.6496000050684
+    },
+    {
+      "qa_uid": "02504abd2a91420fabedf9eee9c84f0562222b4432e88f0cca8ce13a83c03b6b",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 551.6757000004873
+    },
+    {
+      "qa_uid": "36fb444a774bda3c66a6f1412f7002ce2f48d5cc72a39e1e89228b9f8c66221f",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 601.8604999990202
+    },
+    {
+      "qa_uid": "ee6ce4e6d4b12bd8f770704e954e15cfdfa8069cfa04c3bcda040f358b181716",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 559.2993000027491
+    },
+    {
+      "qa_uid": "e6b6d88c7749902181f91d8609ede48b9852bb5474df6a6049c0b03893c41288",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.3539000017336
+    },
+    {
+      "qa_uid": "2283e32211310220fee574d132af60f416745893fc93b06ab0d608f53272a34e",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 601.8668000033358
+    },
+    {
+      "qa_uid": "6803ba114c314270e6b8952b67b2e839d45569fab6f3a805ad2bbadf705cfbde",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 551.386499995715
+    },
+    {
+      "qa_uid": "7bb491e4525f1104c72881dcad4597467447ee56ae9c29809db0a5c727eda564",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 544.3519999971613
+    },
+    {
+      "qa_uid": "319da03aa1a8acbb8ffc649cdfe45f5585e045733fcd1d1a94bb4a597876eb35",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 593.476299996837
+    },
+    {
+      "qa_uid": "69094ef3aa0b6390813ab80663d750f67f728dddadb70f85e25a36a222c86bee",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 543.3531000016956
+    },
+    {
+      "qa_uid": "1fc2c003f9f822d9db1665710bc8d1de61bddc5af2e0bf5aef8a15780fdc81e3",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 546.3291999985813
+    },
+    {
+      "qa_uid": "b2b7702cf83db770189fb9a6a2a95a47b27db2b54b82a108eb2e4e79e5eb2878",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 599.2743999959202
+    },
+    {
+      "qa_uid": "fd2ff2b3298564e5d671a59d7825290bb801888f86e5638269af4fe13c600198",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 550.5005000013625
+    },
+    {
+      "qa_uid": "e76225d5c437c994761941fa02eb6151422d1605e8a7b6be107f5eda19d29531",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 545.9393999990425
+    },
+    {
+      "qa_uid": "76dd26fb44b6e0438788d2efc796ca578b435fd2100058874cf18d1a85a9117e",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 602.0500000013271
+    },
+    {
+      "qa_uid": "ae0ecd7b98fe457f38640dae669b098a71c9dc689c2287bd5ff2e2359324daa9",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 543.6368000009679
+    },
+    {
+      "qa_uid": "7d8705609d731b19d42572d38d25ec402f443738912b11c1345ce0eb3a2b778d",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 543.0172999986098
+    },
+    {
+      "qa_uid": "2dae757ec8eae22aac37d5ac2341d3706edf5fd845592e14f27d5845d1bc65d5",
+      "raw_text": "{\"answer\":\"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\":\"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 577.1576000042842
+    },
+    {
+      "qa_uid": "7fc2c0a26fdf7479eab4e976511ccbbd4d533e432bfe76648430c65c55fffce2",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 547.4203999983729
+    },
+    {
+      "qa_uid": "a2afed12a0a04ca3da902b72be320ef8d1e6da4961b2dd4bfd957e93855f55f4",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 544.5111000008183
+    },
+    {
+      "qa_uid": "da4bdd6090a2c1384636cc8a3de82231aca232565e1aa04c611917ee62fd50da",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 591.6373999934876
+    },
+    {
+      "qa_uid": "f7d9ce019f6e767431931446649d920a5bce09cb29666370c0d137dba5ee7c61",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 543.2291999968584
+    },
+    {
+      "qa_uid": "4e507ff20a69a01ffed37443e9f45e90e9b971800e787c21f6f7c9fa93cda8fb",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 544.206699996721
+    },
+    {
+      "qa_uid": "c86acef6d3ecad7dafa75cc0677e090fc63bd2850a50b261ee8abd0cde3cc45e",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 592.3369999945862
+    },
+    {
+      "qa_uid": "16b6d18c544d997805f662da39be498cfda476c2b2c6ec6a1cc0a55631b08998",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 546.2082999947597
+    },
+    {
+      "qa_uid": "d00ee8b8bcebcb1e8a5795c900bdb8c02327c90bcc2409f253a7892eb658754c",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 558.5290000017267
+    },
+    {
+      "qa_uid": "8a66ed89242cd4331c7ac638a1c9a8e20b46620a5805812f62f33f2190f9b146",
+      "raw_text": "{\"answer\":\"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\":\"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 574.3422999948962
+    },
+    {
+      "qa_uid": "3b002a9943d5c7286026acc8478cc2465ef33aa595591250a0d26d339f141958",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 558.0030999990413
+    },
+    {
+      "qa_uid": "2258dfb7f6b19785401ad63da09a1c313cd26e074095825e2ebb6a06740d0ecf",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 550.4724999991595
+    },
+    {
+      "qa_uid": "586ce8a68ab617708136ca6e69808316ddbe6ab5e4755c7f1fe51279ee88e447",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 591.4990000019316
+    },
+    {
+      "qa_uid": "501a4967f1fb246b581e2b36f0eb018b063f5d69b4ea66d8b635aa931426b591",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 551.5496000007261
+    },
+    {
+      "qa_uid": "942b801090b01ba13e1df56f9f1109ca47aa96f5bc93c3506924114b1fe32a64",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 542.7235999959521
+    },
+    {
+      "qa_uid": "bca0aa5e4ca6ed06e58f2af2ae66b81ed259a8d1e1ea16df8c46cefb12fb26a5",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 595.5132000017329
+    },
+    {
+      "qa_uid": "d1f2b729868c1c443e7f7aefc250475865d40d14b9a6bb1f01d39ee843ca740b",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 553.6388000036823
+    },
+    {
+      "qa_uid": "eed27b463d9be425aa734982420d28b702cd94c7e8e979d6b39f3fe2cd947d5a",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 545.9891999998945
+    },
+    {
+      "qa_uid": "d74299e3371248237f59c49a0faaae57e8a19491d1d95d13f7deb79027102340",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 592.8835999948205
+    },
+    {
+      "qa_uid": "713e50b888431cf4a4d16704414d170c66f46f0f1448dfb20949ff0266274a42",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 554.0141999954358
+    },
+    {
+      "qa_uid": "2109fc06766913967412710a6b33af9087a7be75b4dd07d74d78969fe2896352",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 542.4896999975317
+    },
+    {
+      "qa_uid": "ef3d1c402066b6dd94c81021c392f67044bc40aad6dc022ccaaed9b05c72e567",
+      "raw_text": "{\"answer\":\"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\":\"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 569.3879999962519
+    },
+    {
+      "qa_uid": "09e34cd631b56204986bfaceddb4528daae68645a3230596854b5572a2730eef",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 555.8583999954863
+    },
+    {
+      "qa_uid": "3d4456a4ce6fe2bc045d69cac53d0152179673392881b0b5b017317bacd68265",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 546.0097000031965
+    },
+    {
+      "qa_uid": "135c387687ba2fb265d9af9c4e18e35ec01bc6fa694cc97a3642ec78ea923772",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 592.8607999958331
+    },
+    {
+      "qa_uid": "a1b20fbe7e0b6487a3a6796895543594d2d15ed2ce16b39a37fbe19a798c11e2",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 543.4864999988349
+    },
+    {
+      "qa_uid": "8bff26405302bea718b15b2ce43c2e2759ee72f322e71ccb3b24ee7ca4d5f921",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 544.4150999974227
+    },
+    {
+      "qa_uid": "6db3ad8b56dbcbc68ef09c40e5f0cf56c460369d68518e3772e557e80b9d6a23",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 598.0253999950946
+    },
+    {
+      "qa_uid": "4d5b1b6962f491f0a624e798c11b8d985fdcbf1a397deb7f6cc810f5a9d211b0",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 556.4125999953831
+    },
+    {
+      "qa_uid": "b1501540b13167b3541840064b27c62ae7b253607f43405c081dbacbf46a5897",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 565.0362999949721
+    },
+    {
+      "qa_uid": "ce3fe646b840593d00d6f0a2703bdb20df3c30813df10b406c656ec0df7a8572",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 605.6215000062366
+    },
+    {
+      "qa_uid": "1cf2f357e3681db715e406d5cd0f12e065ee4ec30fc5512d8b01e7c1b1668643",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.0433999982779
+    },
+    {
+      "qa_uid": "2376a903cbc350a26661daad74be3094c723032bb6a5f21adde2cc1b7d0c83a5",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 547.8589000049396
+    },
+    {
+      "qa_uid": "50ae77e8acad0a7a66b909fa51ea6aefb431c09d43243f4c6bad3332c9caa929",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 598.0338000008487
+    },
+    {
+      "qa_uid": "2671cad42a54e01e175dfe696da8f9394956ba68dab44ed4e1cf2b83833d51da",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 547.3772999976063
+    },
+    {
+      "qa_uid": "fe2a4a7d3c577a6c2a65b80340c630da75814af5265de49ca6e4ace2a5e7260e",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.4908000036958
+    },
+    {
+      "qa_uid": "4e5d78b3f6933cc2cbd1fc94911f774cd1131abe2cdb3dde6925dbf97f437c1c",
+      "raw_text": "{\"answer\":\"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\":\"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 581.2084999997751
+    },
+    {
+      "qa_uid": "6140e89ff0e81d4b05f1f8ac466e44d66d024663504b49d531610206238773b0",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 552.7241000017966
+    },
+    {
+      "qa_uid": "2916eed37dee1d1d295b8b6e85b622e6dccd24cc02af183a14d6d6afef76faff",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 552.681199995277
+    },
+    {
+      "qa_uid": "7f917c6718adc70c50766a7685507dfbe256989e3421bb4452192ff3fd26fe8b",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 602.796600003785
+    },
+    {
+      "qa_uid": "ce2b072cf359845aaa52f61bb74cfd694ae3d373f8fd45831850f1bf9345b692",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 550.9499000036158
+    },
+    {
+      "qa_uid": "48e1961a41bdbc53c6c92e0443448705856d804d0d71d56495c5a4493aca7a88",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 547.8961999979219
+    },
+    {
+      "qa_uid": "c609aad63e9811a7c962b8aad8921272248cfb9e18c7105fba15e4be7a072bc6",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 598.345899998094
+    },
+    {
+      "qa_uid": "5dec22e7dd0d6146d6c8b58d5dc970ac928c318cb7a3521c9457ef06b3e2ae24",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 557.1170999974129
+    },
+    {
+      "qa_uid": "7669cc0ee2dbb1e3706438d71b5698df10dfa679bbbf4ad6704e0e063eb3f8fc",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 551.147400001355
+    },
+    {
+      "qa_uid": "a7120942d3e41ffdeb58452540e06b3f4c29cafc2a6e50a8cf7260a65c367c1e",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 595.975999996881
+    },
+    {
+      "qa_uid": "47db0557e316164550966e09b016811e104f0b89ee394de68766f2cbae723cd5",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 557.3769000038737
+    },
+    {
+      "qa_uid": "72f15a0a427f382cb31a3c1a5aa2593dd260a52ab027c016d65db0505e8c42e0",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 553.3186000029673
+    },
+    {
+      "qa_uid": "88e966f7dcc9428eb7daf4704e2e827389cc533b60fc01b9a6015855e8e57aba",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 606.5486000006786
+    },
+    {
+      "qa_uid": "d16ebbf6ab9b5cce146a11cd63fcf6ab54366d2496b437e0a73838409a59dbbb",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 559.1865000023972
+    },
+    {
+      "qa_uid": "7e174bb7cb40749b41322836dab4b31f40524e43024d21c71a50b7830d37d802",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 553.3266000056756
+    },
+    {
+      "qa_uid": "165073a3e65421d0fbf113e590ef97eac577542ca530766b339b7ba116d7be8f",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 600.6197000024258
+    },
+    {
+      "qa_uid": "f28985238c210cba9f06f4f2c29a873ece73e8e407416912b00be97e0be79f70",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.2016000023577
+    },
+    {
+      "qa_uid": "32d137caa2e69140ab257ebf6c2ee120c235ae5c7da500c2a6bc0ab9e6c6785c",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 547.2198999996181
+    },
+    {
+      "qa_uid": "73f304a0234dd72e3a2322eb51e171adb9683e2a8ec92a4d8213b3f658fb2f6f",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 609.1945000007399
+    },
+    {
+      "qa_uid": "8eab03783b15fcb773a3f68b653ba1bcd5bad61ee0077cd532f16daf932adee9",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.374700000044
+    },
+    {
+      "qa_uid": "88a844ed0f2a8d0991ae5ae8a2299598b71a019c475e46c4490d01201f8df857",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 546.7352999985451
+    },
+    {
+      "qa_uid": "6ed642d1f8906d827fc72be37c773ee6e7de24307fdcf98ab8088a1267ed0f5b",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 595.0233999974444
+    },
+    {
+      "qa_uid": "99273f61f4c94cb0a025465562c93a00f5bf70bc81a14b53d40382506688e9d4",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 547.6780000026338
+    },
+    {
+      "qa_uid": "25db9071e6c115cb35b1cee0736d39ccc17705f905dadd981954e1a811bb075a",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 546.9081999981427
+    },
+    {
+      "qa_uid": "47b44c63e19452e7a9d946146f4ad2f47bc3f10d76364000cd69c94496ec0bab",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 594.5267999995849
+    },
+    {
+      "qa_uid": "e7396793f91dff9de5ca9ce0f8401b4eaf25632b0ffef79268a50845d7ce16d8",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 545.2022000026773
+    },
+    {
+      "qa_uid": "25e4728ae1661055979f53a02e156c63cd95c79da2cfa10157c2daa7c34ff68d",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 552.9047000018181
+    },
+    {
+      "qa_uid": "ca0c480fd7019ef77849310a219eb7177910d823c0c7dc89ad8f765e32835e37",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 599.2030000052182
+    },
+    {
+      "qa_uid": "9f317c8dc86276a3c63f34b9b2563caf883fe4da59075e928b3cec1c6f4c49b2",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 546.1757000011858
+    },
+    {
+      "qa_uid": "977877aef2084a2989b9fe6da01f5b1a8e0ccde7ae5f0d68b331e2641f5644fb",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 551.332299997739
+    },
+    {
+      "qa_uid": "4dc7510c560a799f5dbaef1d34aeb8414534c861db9204f4b94ec7be442fe562",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 598.3764000047813
+    },
+    {
+      "qa_uid": "d932592d00f078643b852993d83f9c178a844e62786d7ceb1dea82f0126d19b5",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 569.2410000046948
+    },
+    {
+      "qa_uid": "740f19617b77bf70a0d55eb0f90449841deb0f282df942535b824e7c0a45d228",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 546.0937000025297
+    },
+    {
+      "qa_uid": "cff31b24c1c5bfd947ecf7fe40f87d86a8a658c5c651791cb5a00a39ace82785",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 598.0109000010998
+    },
+    {
+      "qa_uid": "009d6042b827504abb99e2846f24c0d2fcf89bf8639d2e9e4791842878b29e0f",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 547.2392000010586
+    },
+    {
+      "qa_uid": "2ce8e27e9213e42e3ead1628983c90d4bd83d3b97833c472253de102610b1688",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.1962999983807
+    },
+    {
+      "qa_uid": "e67e508120f7e0e36b24d30c2cf69b8b2470617e26f0bddf1281aae9d9cbcd43",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 597.7753000042867
+    },
+    {
+      "qa_uid": "43b2083def355b27b8626eb70f9c955927d127ffbdf1a585087d4c36fbf12f6e",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.6338999946602
+    },
+    {
+      "qa_uid": "7dd004f511ac305b61fc9cd0ab3f0c1602ced5a871a561bc2471561118ed270e",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 548.5305999973207
+    },
+    {
+      "qa_uid": "f45af6c660126a2ebbb512b5c1af69edd38cb3b448c14c85c81f9d7033806070",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 592.37949999806
+    },
+    {
+      "qa_uid": "eba6b09a317ee75875b0f3241391e7e52242707fc70b93f73ded13dee1f50d27",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 543.1494999938877
+    },
+    {
+      "qa_uid": "a8e66c62d169e68b309ae68efd2aad9fc821e3e394f98f657f389340ba106142",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 549.050100002205
+    },
+    {
+      "qa_uid": "6848222ef657d1374c07129d0bcccea2fa1fa9fe35ef87bde1d6862e6a9012d0",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 595.2076999965357
+    },
+    {
+      "qa_uid": "e4ba82500f2d9bb503734555d781e987755db7fd2a1d8547d616d6b6cd8d7f00",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 546.5209999965737
+    },
+    {
+      "qa_uid": "5ce73ba2809fdbbac6f8c6261fd321c1678bf0ed60f52343cfb1be6bc63b3da4",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 550.784900005965
+    },
+    {
+      "qa_uid": "d3022a02dcf272a8b5332c97be2e174912f346f795d5929f3c2b737dd5f979b7",
+      "raw_text": "{\"answer\": \"no_overall_trend\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "no_overall_trend",
+        "raw_text": "{\"answer\": \"no_overall_trend\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1259,
+      "latency_ms": 592.4360999997589
+    },
+    {
+      "qa_uid": "f7ef72990b1b9ecc2288c5d2ebe5aeb664ff41d687f4543f9be24b55b9f8badd",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 543.9693000007537
+    },
+    {
+      "qa_uid": "9944e9c69879558717aae3b9af0decb18e0cf8d374fbb794b871f77c14999e70",
+      "raw_text": "{\"answer\": \"faster_right\"}",
+      "parse": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "sensor_embeddings": 64,
+      "input_tokens": 1255,
+      "latency_ms": 542.9688000003807
+    }
+  ],
+  "donors": {
+    "0002a76a1104172e4c5af82940e2fe7f1e7a16109229212da3f646518c077fdf": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "d7b1957f1b35492f8cebd5cdb9f2ce658606d638c61dabf631434f0de177534b",
+      "text_token_hash_b": "d7b1957f1b35492f8cebd5cdb9f2ce658606d638c61dabf631434f0de177534b",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 544.5862999986275,
+          "actual_text_embedding_hash": "23c62f1e0c488cac51cc82dc235529544ed4d9e269d2286338178939c841b614",
+          "actual_sensor_embedding_hash": "101e6cbb5d4f380cddee363ac27dac4443b85216c295ba66eff9d4094175bda9"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 544.6264000056544,
+          "actual_text_embedding_hash": "23c62f1e0c488cac51cc82dc235529544ed4d9e269d2286338178939c841b614",
+          "actual_sensor_embedding_hash": "2fb0cb2885fcb8ce8f6016216e42976a39da15957e7d9e789bc1cab7de95d2e2"
+        }
+      }
+    },
+    "328ed91f2a0612c29561067a8705c6e4c2718511a3e19923827cfa3cc695ffd7": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "text_token_hash_b": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 554.4721000042045,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "829d1dd2cf91234c63ac2882866d4b214c9ca5a30a4da2ba9eecbac817943edd"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 558.4060000037425,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "68338fd5e0a03941eedb5966277a87dd48d55fcdb502e48d44cbc94639c3f410"
+        }
+      }
+    },
+    "3f273e449c22641d745c8fd09e4fd3c6bd2221f00dddeedd6bcfc48b66d3e166": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "text_token_hash_b": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 585.4828000010457,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "feb35f2f0e7056c098c68edf81ad7e63c9691fb4860f37d70867cac12b474337"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 552.0197000005282,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "dc027e1bb4e479569a4dc1ff76f850ec5fa26d90c8da78f6a2d49a53fdf5a15d"
+        }
+      }
+    },
+    "40735bdf16ee68b3806d33d7d6e77be973e6a3f6950745a262e55b0ac5021386": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "d7b1957f1b35492f8cebd5cdb9f2ce658606d638c61dabf631434f0de177534b",
+      "text_token_hash_b": "d7b1957f1b35492f8cebd5cdb9f2ce658606d638c61dabf631434f0de177534b",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 551.153799999156,
+          "actual_text_embedding_hash": "23c62f1e0c488cac51cc82dc235529544ed4d9e269d2286338178939c841b614",
+          "actual_sensor_embedding_hash": "33de54e3162867e6eb92d2cdb84ff2b2b1b17e0c9b659faf2208613474c95137"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 551.8778999976348,
+          "actual_text_embedding_hash": "23c62f1e0c488cac51cc82dc235529544ed4d9e269d2286338178939c841b614",
+          "actual_sensor_embedding_hash": "1c8245cb5ea734c0f4200ead8b2f2bfafbb7d34680b773e9aeba7210e9e29103"
+        }
+      }
+    },
+    "5848edb5388a74827f99b2f3fd1eb809d4e0b078a0e599a964dcefc438fed72a": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "text_token_hash_b": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 554.2018999985885,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "c150703534b4a58f9cc53ab3a7127ed2f63539e7d42633a963dada0567f1f78e"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 552.4780999985524,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "c544cd8a96c4fe72c5b8174585729e659a3b2ac18848ac065414855a85e59c94"
+        }
+      }
+    },
+    "60e0e41374176ec08fcfcb622f82329a4096483a6bad979832d26b10f2a19575": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "text_token_hash_b": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 552.855299996736,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "606197834b2028c35259a6b7112c7eda48ea1334f081f907a0d2ee652de11085"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 558.4081999986665,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "4c2547c3275f347143f78f3c7dc2971b002eb57e8eccea469cf91e4eddfa578b"
+        }
+      }
+    },
+    "8158cdf502b32442d644804f3d4c3f1c0eab07254ce270d5165f1594772b8e6f": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "d7b1957f1b35492f8cebd5cdb9f2ce658606d638c61dabf631434f0de177534b",
+      "text_token_hash_b": "d7b1957f1b35492f8cebd5cdb9f2ce658606d638c61dabf631434f0de177534b",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 550.4985000006855,
+          "actual_text_embedding_hash": "23c62f1e0c488cac51cc82dc235529544ed4d9e269d2286338178939c841b614",
+          "actual_sensor_embedding_hash": "9af9e5ae75649e11318bb7504a28f4eda92fe6ce63dee58ea6750a5e5a25b27d"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 544.8799000005238,
+          "actual_text_embedding_hash": "23c62f1e0c488cac51cc82dc235529544ed4d9e269d2286338178939c841b614",
+          "actual_sensor_embedding_hash": "b71c85474f52ab4794c8908e595431a4e2b8901a387390a1b9d275ad5116a9c1"
+        }
+      }
+    },
+    "b885d375aefa06fb11d9ce503e3c68fe3b5299c5fa685f979a0f724c8728f428": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "text_token_hash_b": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 545.4849000016111,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "60cb7db5be2facb27a562de39132b007c7f6af4be056361cbceffd502d5a5a4c"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 555.1412999993772,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "e39665c80e7eea91e0a71b36d239a25510849d3c741c25b843cd35e3030d77b0"
+        }
+      }
+    },
+    "0f83bffdfccbfa7e43d44036d3e8cb531a713ad666bee656e955a04195544655": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "text_token_hash_b": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 546.5231999987736,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "f9354cbb69c7d4ed5d8988b91c1bdcda1628a7ccafd4866a3c11c317c507ad13"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 545.3729000000749,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "7716e8b151842fa938a120463ebe9eba3e5abeb4d64fe23e4639f2272bc6a710"
+        }
+      }
+    },
+    "135d005bf784f9cb00f44ca66bc9c2fd0ad69b7936cf9f5760fd99da5fa20509": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "d7b1957f1b35492f8cebd5cdb9f2ce658606d638c61dabf631434f0de177534b",
+      "text_token_hash_b": "d7b1957f1b35492f8cebd5cdb9f2ce658606d638c61dabf631434f0de177534b",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 545.3478999988874,
+          "actual_text_embedding_hash": "23c62f1e0c488cac51cc82dc235529544ed4d9e269d2286338178939c841b614",
+          "actual_sensor_embedding_hash": "bdb6faaba85b2b7339562219adc80e9ea13851d523b29d1c00c7f9f91037e892"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 544.3109999978333,
+          "actual_text_embedding_hash": "23c62f1e0c488cac51cc82dc235529544ed4d9e269d2286338178939c841b614",
+          "actual_sensor_embedding_hash": "1303f70133eb939c4a61adf64ccdb7b6a8c831dce01fc07ce601b842281cda2e"
+        }
+      }
+    },
+    "17f157c2288e82d7ae1452a3f1d550a0a2405ff87fb91a9dd9b49f32f9887723": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "d7b1957f1b35492f8cebd5cdb9f2ce658606d638c61dabf631434f0de177534b",
+      "text_token_hash_b": "d7b1957f1b35492f8cebd5cdb9f2ce658606d638c61dabf631434f0de177534b",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 574.7009999977308,
+          "actual_text_embedding_hash": "23c62f1e0c488cac51cc82dc235529544ed4d9e269d2286338178939c841b614",
+          "actual_sensor_embedding_hash": "213350f09ab8abe56191fd4c09a990784155d98d300b61f25e922e4d4831eccd"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 546.9736999948509,
+          "actual_text_embedding_hash": "23c62f1e0c488cac51cc82dc235529544ed4d9e269d2286338178939c841b614",
+          "actual_sensor_embedding_hash": "f981d0daa37ea0f601e8c5b7074a813973e73bc2ad7347c696f81cfb0ecfe30f"
+        }
+      }
+    },
+    "2ff3d1e1b306de951feb52ba3a9bcfce5608ba08fb4283a413a5f18aab6d0e0e": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "text_token_hash_b": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 545.0630999985151,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "c4f3dc6997f08ad6f093ed2e2e8efeea15da7717e9bb5670f9fd7460263d3fd2"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 548.436999997648,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "0bb8c6c7fecbb8ab6a4436bd0f6113df37200cccdbc562a0253616b32a82efc7"
+        }
+      }
+    },
+    "51d52e78304f0afbf49a430924a80312d83bb5437f164b7090cc45b367ed5064": {
+      "a": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "b": {
+        "status": "valid",
+        "answer": "faster_right",
+        "raw_text": "{\"answer\": \"faster_right\"}",
+        "reason": null,
+        "json_parse_valid": true
+      },
+      "text_token_hash_a": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "text_token_hash_b": "f78effaccaec1e5086a8791fa437dc998d7be45b7a406b50f15a9ceadc2e6484",
+      "generations": {
+        "a": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 547.0031000004383,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "e7c20f042e7a167a30fa89e15a503ecf2033fb1a0ca9bf2d058f07dd745b83ec"
+        },
+        "b": {
+          "raw_text": "{\"answer\": \"faster_right\"}",
+          "parse": {
+            "status": "valid",
+            "answer": "faster_right",
+            "raw_text": "{\"answer\": \"faster_right\"}",
+            "reason": null,
+            "json_parse_valid": true
+          },
+          "sensor_embeddings": 64,
+          "input_tokens": 1255,
+          "latency_ms": 544.8165999987395,
+          "actual_text_embedding_hash": "ffba180bbd4ef0875c9a6fd42e2b4e373d252f1f3183717dd12ea6c2298f0e0a",
+          "actual_sensor_embedding_hash": "9f7ec83a14cc96a4ca9b8e7159555cc61ac23e0451e9105730ea0ca099600cb6"
+        }
+      }
+    }
+  },
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false
+}

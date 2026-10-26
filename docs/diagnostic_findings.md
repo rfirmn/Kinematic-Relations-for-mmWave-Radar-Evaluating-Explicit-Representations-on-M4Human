@@ -2,7 +2,8 @@
 
 Semua run berikut memakai RPC M4Human aktual pada Windows/CUDA RTX3060,
 8 window train dari8 subjek dan4 window validation dari4 subjek terpisah.
-Masing-masing menjalankan20 update fisik dari awal. Tidak ada label test dibuka.
+Run1–4 menjalankan20 update fisik dari awal; run5 menjalankan100 update dan
+memperluas review menjadi52 window validation. Tidak ada label test dibuka.
 Target first22 direct joints, transformasi kandidat dan waktu nominal12Hz
 masih provisional. Ini bukan hasil akurasi ilmiah yang telah disahkan.
 
@@ -12,6 +13,7 @@ masih provisional. Ini bukan hasil akurasi ilmiah yang telah disahkan.
 | diagnostic_20261026_02 | 1e-5 | 2 | 2 | 1 | S dan sebagian R masih gagal schema; needs_revision |
 | diagnostic_20261026_03 | 1e-6 | 5 | 10 | 1 | Penambahan update/LR kecil belum menstabilkan seluruh kondisi; needs_revision |
 | diagnostic_20261026_04_gain | 1e-5 | 2 | 2 | 0.026 | Seluruh M/S/F/E/R:12/12 generation val valid; varian diagnostik |
+| diagnostic_20261026_05_complete | 1e-5 | 2 | 10 | 0.026 | 100 update fisik; review lengkap52 window val,156 QA/kondisi dan13 pasangan donor |
 
 Hasil run1–3 disimpan lengkap. Status eksekusi numerik dan keberhasilan format
 dibedakan; optimizer yang berhasil berjalan tidak otomatis meluluskan generation.
@@ -61,6 +63,7 @@ dimulai oleh run diagnostik ini.
 
 ## Bukti
 
+- [Hasil pilot diagnostik lengkap dan tindak lanjut](pilot_results.md)
 - [Runbook langkah demi langkah](runbook.md)
 - [Laporan varian run4](report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_04_gain/report.md)
 - [Probe prefix dan gain](report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_03/prefix_diagnosis.json)

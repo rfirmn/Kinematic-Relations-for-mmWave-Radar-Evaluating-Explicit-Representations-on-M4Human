@@ -15,6 +15,9 @@ eksternal tidak digunakan.
 | Checkpoint eksperimen aktual | [checkpoints/](checkpoints/m4human_relational64/fresh_20261026_01/) |
 | Artefak yang belum dapat dibangun | [pending_artifacts.json](derived_data/m4human_relational64/fresh_20261026_01/meta/pending_artifacts.json) |
 | Training diagnostik aktual varian gain | [report.md](docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_04_gain/report.md) |
+| Pilot diagnostik 100 update fisik dan 10 update/projector | [report.md](docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/report.md) |
+| Review lengkap: fisik, QA, donor, probe, resource | [report.md](docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_05_complete/reviews/validation12_v1/report.md) |
+| Hasil pilot dan pekerjaan berikutnya | [pilot_results.md](docs/pilot_results.md) |
 | Catatan seluruh revisi | [diagnostic_findings.md](docs/diagnostic_findings.md) |
 | Bukti temuan pada run pertama | [report.md](docs/report_training/fresh_20261026_01/diagnostic_runs/diagnostic_20261026_01/report.md) |
 

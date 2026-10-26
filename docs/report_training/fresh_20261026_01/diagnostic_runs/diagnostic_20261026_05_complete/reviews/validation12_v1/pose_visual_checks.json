@@ -1,0 +1,19 @@
+{
+  "source_windows": [
+    "8375748d18732c83373d1551fcc33953df2828687d8d1e540a175422474898cf",
+    "c5b39d6cca0a9a34359e6b28538e1d167bdd9e05e4c4ad92535c2bd3ecfeda80"
+  ],
+  "frame": 63,
+  "source_batches_sha256": "ebf92a69975c508e533ece43339d9511a5dc2acdbde8dfa7cef790d99af346a2",
+  "source_features_sha256": "f6f9fc5983310963f0c870cc020856357a71c5cea704ba15bff3b50c77ee2440",
+  "figure_sha256": "51da1b83c8c95a8b0c74be9704fea8a47b180e129b8663ed7ae669a926f9d579",
+  "coordinate_alignment": "none; shared window centroid already subtracted from RPC and both poses",
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false
+}

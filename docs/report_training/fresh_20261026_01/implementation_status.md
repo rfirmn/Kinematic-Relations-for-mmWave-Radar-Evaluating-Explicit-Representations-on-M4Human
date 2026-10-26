@@ -5,7 +5,7 @@ Implementasi perangkat lunak tersedia. Gerbang data G0 belum lulus; training dan
 | Bukti | Status |
 |---|---|
 | Audit M4Human aktual | 661,132 frame; read-only |
-| Fixture perangkat lunak | 210 tests; passed |
+| Fixture perangkat lunak | 218 tests; passed |
 | Qwen pretrained Windows/CUDA | passed; sensor sintetis |
 | Overfit8 sintetis | lulus |
 | Profil fisik sintetis | tersimpan |
@@ -18,6 +18,9 @@ Implementasi perangkat lunak tersedia. Gerbang data G0 belum lulus; training dan
 - Run diagnostik [diagnostic_20261026_02](diagnostic_runs/diagnostic_20261026_02/summary.json) — needs_revision
 - Run diagnostik [diagnostic_20261026_03](diagnostic_runs/diagnostic_20261026_03/summary.json) — needs_revision
 - Run diagnostik [diagnostic_20261026_04_gain](diagnostic_runs/diagnostic_20261026_04_gain/summary.json) — passed
+- Run diagnostik [diagnostic_20261026_05_complete](diagnostic_runs/diagnostic_20261026_05_complete/summary.json) — passed
+
+- Review diagnostik [diagnostic_20261026_05_complete/validation12_v1](diagnostic_runs/diagnostic_20261026_05_complete/reviews/validation12_v1/summary.json) — passed; scientific_acceptance=false
 
 ## Penghambat data
 

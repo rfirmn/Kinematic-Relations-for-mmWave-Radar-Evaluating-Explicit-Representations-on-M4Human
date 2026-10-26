@@ -1,0 +1,5490 @@
+{
+  "panels": {
+    "train": {
+      "global_mpjpe": {
+        "numerator": 10134.781494140625,
+        "count": 11264,
+        "nonfinite_prediction_count": 0,
+        "unit": "m",
+        "mean": 0.8997497775337913,
+        "mean_mm": 899.7497775337913
+      },
+      "root_position_error": {
+        "numerator": 505.19315338134766,
+        "count": 512,
+        "nonfinite_prediction_count": 0,
+        "unit": "m",
+        "mean": 0.9867053776979446,
+        "mean_mm": 986.7053776979446
+      },
+      "relative_mpjpe": {
+        "numerator": 5546.133728027344,
+        "count": 10752,
+        "nonfinite_prediction_count": 0,
+        "unit": "m",
+        "mean": 0.5158234494073051,
+        "mean_mm": 515.823449407305
+      },
+      "absolute_velocity_error": {
+        "numerator": 2037.6297752120233,
+        "count": 10208,
+        "nonfinite_prediction_count": 0,
+        "unit": "m/s",
+        "mean": 0.19961106732092704
+      },
+      "relative_velocity_error": {
+        "numerator": 2038.643135669272,
+        "count": 9744,
+        "nonfinite_prediction_count": 0,
+        "unit": "m/s",
+        "mean": 0.20922035464586125
+      },
+      "root_speed_mae": {
+        "numerator": 13.185475659978398,
+        "count": 464,
+        "nonfinite_prediction_count": 0,
+        "unit": "m/s",
+        "mean": 0.028416973405125858
+      },
+      "bone_length_mae": {
+        "numerator": 157.9028835296631,
+        "count": 10752,
+        "nonfinite_prediction_count": 0,
+        "unit": "m",
+        "mean": 0.014685908066374915,
+        "mean_mm": 14.685908066374916
+      },
+      "zero_velocity_error": {
+        "numerator": 3262.549507182109,
+        "count": 10208,
+        "nonfinite_prediction_count": 0,
+        "unit": "m/s",
+        "mean": 0.31960712256878027
+      }
+    },
+    "val": {
+      "global_mpjpe": {
+        "numerator": 73021.72564697266,
+        "count": 73216,
+        "nonfinite_prediction_count": 0,
+        "unit": "m",
+        "mean": 0.9973465587709334,
+        "mean_mm": 997.3465587709334
+      },
+      "root_position_error": {
+        "numerator": 3372.371603012085,
+        "count": 3328,
+        "nonfinite_prediction_count": 0,
+        "unit": "m",
+        "mean": 1.0133328134050736,
+        "mean_mm": 1013.3328134050737
+      },
+      "relative_mpjpe": {
+        "numerator": 38488.58361816406,
+        "count": 69888,
+        "nonfinite_prediction_count": 0,
+        "unit": "m",
+        "mean": 0.5507180577232724,
+        "mean_mm": 550.7180577232724
+      },
+      "absolute_velocity_error": {
+        "numerator": 25850.867549052768,
+        "count": 66352,
+        "nonfinite_prediction_count": 0,
+        "unit": "m/s",
+        "mean": 0.38960193436599905
+      },
+      "relative_velocity_error": {
+        "numerator": 21013.899641796917,
+        "count": 63336,
+        "nonfinite_prediction_count": 0,
+        "unit": "m/s",
+        "mean": 0.33178444552540287
+      },
+      "root_speed_mae": {
+        "numerator": 559.9438559073702,
+        "count": 3016,
+        "nonfinite_prediction_count": 0,
+        "unit": "m/s",
+        "mean": 0.1856577771576161
+      },
+      "bone_length_mae": {
+        "numerator": 1075.289132118225,
+        "count": 69888,
+        "nonfinite_prediction_count": 0,
+        "unit": "m",
+        "mean": 0.0153858907411605,
+        "mean_mm": 15.3858907411605
+      },
+      "zero_velocity_error": {
+        "numerator": 23305.985737127598,
+        "count": 66352,
+        "nonfinite_prediction_count": 0,
+        "unit": "m/s",
+        "mean": 0.3512476750833072
+      }
+    }
+  },
+  "per_window": [
+    {
+      "window_uid": "02c8fb6e49cc8c6e4636ac2262a0839f15a2981303f3a41d32174a62222f3683",
+      "split": "train",
+      "subject_id": "1",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1295.179931640625,
+          "count": 1408,
+          "mean": 0.9198721105402167,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9198721051216125,
+          "mean_mm": 919.8721105402167
+        },
+        "root_position_error": {
+          "numerator": 61.745338439941406,
+          "count": 64,
+          "mean": 0.9647709131240845,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9647709131240845,
+          "mean_mm": 964.7709131240845
+        },
+        "relative_mpjpe": {
+          "numerator": 744.4393310546875,
+          "count": 1344,
+          "mean": 0.5538983117966425,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5538983345031738,
+          "mean_mm": 553.8983117966425
+        },
+        "absolute_velocity_error": {
+          "numerator": 385.6416263601484,
+          "count": 1276,
+          "mean": 0.3022269799060724,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3022269799060724
+        },
+        "relative_velocity_error": {
+          "numerator": 396.5624626488755,
+          "count": 1218,
+          "mean": 0.3255849447035103,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3255849447035103
+        },
+        "root_speed_mae": {
+          "numerator": 2.818069982961195,
+          "count": 58,
+          "mean": 0.04858741349933095,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.04858741349933095
+        },
+        "bone_length_mae": {
+          "numerator": 18.70292091369629,
+          "count": 1344,
+          "mean": 0.013915863775071643,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.013915863819420338,
+          "mean_mm": 13.915863775071642
+        },
+        "zero_velocity_error": {
+          "numerator": 476.91943576935745,
+          "count": 1276,
+          "mean": 0.37376131329886947,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.37376131329886947
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "5124434e85659a508c3d2e2887e8428f14fe65e36ccc0da17a1a6f37ae5b4db3",
+      "split": "train",
+      "subject_id": "2",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1261.177001953125,
+          "count": 1408,
+          "mean": 0.8957223025235262,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.8957223296165466,
+          "mean_mm": 895.7223025235262
+        },
+        "root_position_error": {
+          "numerator": 64.00587463378906,
+          "count": 64,
+          "mean": 1.000091791152954,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.000091791152954,
+          "mean_mm": 1000.0917911529541
+        },
+        "relative_mpjpe": {
+          "numerator": 663.580078125,
+          "count": 1344,
+          "mean": 0.4937351771763393,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4937351644039154,
+          "mean_mm": 493.7351771763393
+        },
+        "absolute_velocity_error": {
+          "numerator": 219.9589841898491,
+          "count": 1276,
+          "mean": 0.17238164905160588,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.17238164905160588
+        },
+        "relative_velocity_error": {
+          "numerator": 222.34600200578245,
+          "count": 1218,
+          "mean": 0.18255008374858986,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.18255008374858986
+        },
+        "root_speed_mae": {
+          "numerator": 1.6969693474739953,
+          "count": 58,
+          "mean": 0.029258092197827504,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.029258092197827504
+        },
+        "bone_length_mae": {
+          "numerator": 18.055362701416016,
+          "count": 1344,
+          "mean": 0.013434049629029773,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.013434049673378468,
+          "mean_mm": 13.434049629029772
+        },
+        "zero_velocity_error": {
+          "numerator": 332.33711676371576,
+          "count": 1276,
+          "mean": 0.260452285864981,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.260452285864981
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "0d0ba5ac62d19e3ac3191bd10b2c1826c5cf3259583e6f7b1c81345e611e4008",
+      "split": "train",
+      "subject_id": "4",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 957.122802734375,
+          "count": 1408,
+          "mean": 0.6797747178511186,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6797747015953064,
+          "mean_mm": 679.7747178511187
+        },
+        "root_position_error": {
+          "numerator": 44.13853454589844,
+          "count": 64,
+          "mean": 0.6896646022796631,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6896646022796631,
+          "mean_mm": 689.6646022796631
+        },
+        "relative_mpjpe": {
+          "numerator": 643.0717163085938,
+          "count": 1344,
+          "mean": 0.4784759793962751,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.47847598791122437,
+          "mean_mm": 478.47597939627514
+        },
+        "absolute_velocity_error": {
+          "numerator": 219.29138048403547,
+          "count": 1276,
+          "mean": 0.17185844865520022,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.17185844865520022
+        },
+        "relative_velocity_error": {
+          "numerator": 216.5349658033369,
+          "count": 1218,
+          "mean": 0.17777911806513702,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.17777911806513702
+        },
+        "root_speed_mae": {
+          "numerator": 1.4071201525417203,
+          "count": 58,
+          "mean": 0.024260692285202074,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.024260692285202074
+        },
+        "bone_length_mae": {
+          "numerator": 21.715238571166992,
+          "count": 1344,
+          "mean": 0.016157171555927823,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.01615717075765133,
+          "mean_mm": 16.15717155592782
+        },
+        "zero_velocity_error": {
+          "numerator": 357.9469454979011,
+          "count": 1276,
+          "mean": 0.2805226845594836,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2805226845594836
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "dfc944f29c78d9b9592d006ce4d0bfde9931522fca1ee4babe6aba10b47e8a47",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1343.878662109375,
+          "count": 1408,
+          "mean": 0.9544592770663175,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9544592499732971,
+          "mean_mm": 954.4592770663176
+        },
+        "root_position_error": {
+          "numerator": 61.76959991455078,
+          "count": 64,
+          "mean": 0.965149998664856,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.965149998664856,
+          "mean_mm": 965.149998664856
+        },
+        "relative_mpjpe": {
+          "numerator": 723.068359375,
+          "count": 1344,
+          "mean": 0.5379972912016369,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.537997305393219,
+          "mean_mm": 537.9972912016368
+        },
+        "absolute_velocity_error": {
+          "numerator": 296.11271314590203,
+          "count": 1276,
+          "mean": 0.23206325481653764,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.23206325481653764
+        },
+        "relative_velocity_error": {
+          "numerator": 297.16232127442447,
+          "count": 1218,
+          "mean": 0.24397563323023355,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.24397563323023355
+        },
+        "root_speed_mae": {
+          "numerator": 1.4204245350489222,
+          "count": 58,
+          "mean": 0.024490078190498657,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.024490078190498657
+        },
+        "bone_length_mae": {
+          "numerator": 19.171154022216797,
+          "count": 1344,
+          "mean": 0.014264251504625593,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.014264251105487347,
+          "mean_mm": 14.264251504625593
+        },
+        "zero_velocity_error": {
+          "numerator": 343.13085392818505,
+          "count": 1276,
+          "mean": 0.2689113275299256,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2689113275299256
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "327c1ff0ab2bd264f48ce746cea4dfcf994bfa3f09001fd806d4d5e35cee5c4f",
+      "split": "train",
+      "subject_id": "6",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1300.7806396484375,
+          "count": 1408,
+          "mean": 0.9238498861139471,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.923849880695343,
+          "mean_mm": 923.8498861139472
+        },
+        "root_position_error": {
+          "numerator": 64.53254699707031,
+          "count": 64,
+          "mean": 1.0083210468292236,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0083210468292236,
+          "mean_mm": 1008.3210468292236
+        },
+        "relative_mpjpe": {
+          "numerator": 721.4876708984375,
+          "count": 1344,
+          "mean": 0.5368211837041945,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.536821186542511,
+          "mean_mm": 536.8211837041945
+        },
+        "absolute_velocity_error": {
+          "numerator": 212.8041772726637,
+          "count": 1276,
+          "mean": 0.16677443359926622,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.16677443359926622
+        },
+        "relative_velocity_error": {
+          "numerator": 219.7549948008473,
+          "count": 1218,
+          "mean": 0.18042282003353638,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.18042282003353638
+        },
+        "root_speed_mae": {
+          "numerator": 2.017848505328409,
+          "count": 58,
+          "mean": 0.03479049147117947,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.03479049147117947
+        },
+        "bone_length_mae": {
+          "numerator": 20.263078689575195,
+          "count": 1344,
+          "mean": 0.015076695453552972,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.015076695010066032,
+          "mean_mm": 15.076695453552972
+        },
+        "zero_velocity_error": {
+          "numerator": 335.94350299758923,
+          "count": 1276,
+          "mean": 0.26327860736488184,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.26327860736488184
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "7561824cfb929a3244ccc2c39c9373915d7d6d6321d969a6d26e516e3095349a",
+      "split": "train",
+      "subject_id": "7",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1253.4644775390625,
+          "count": 1408,
+          "mean": 0.8902446573430841,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.8902446627616882,
+          "mean_mm": 890.2446573430841
+        },
+        "root_position_error": {
+          "numerator": 65.31259155273438,
+          "count": 64,
+          "mean": 1.0205092430114746,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0205092430114746,
+          "mean_mm": 1020.5092430114746
+        },
+        "relative_mpjpe": {
+          "numerator": 686.464599609375,
+          "count": 1344,
+          "mean": 0.5107623508998326,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5107623338699341,
+          "mean_mm": 510.7623508998326
+        },
+        "absolute_velocity_error": {
+          "numerator": 175.62911415574425,
+          "count": 1276,
+          "mean": 0.13764037159541084,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.13764037159541084
+        },
+        "relative_velocity_error": {
+          "numerator": 173.2640191776397,
+          "count": 1218,
+          "mean": 0.142252889308407,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.142252889308407
+        },
+        "root_speed_mae": {
+          "numerator": 0.6867520411021137,
+          "count": 58,
+          "mean": 0.011840552432795064,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.011840552432795064
+        },
+        "bone_length_mae": {
+          "numerator": 19.58717155456543,
+          "count": 1344,
+          "mean": 0.014573788359051659,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.014573788270354271,
+          "mean_mm": 14.573788359051658
+        },
+        "zero_velocity_error": {
+          "numerator": 383.94107282079517,
+          "count": 1276,
+          "mean": 0.30089425769654793,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.30089425769654793
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "c9c4ba47cd565e925f59d526134d456b94084364cc6098952166d6646e6c1a41",
+      "split": "train",
+      "subject_id": "8",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1328.419921875,
+          "count": 1408,
+          "mean": 0.9434800581498579,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9434800744056702,
+          "mean_mm": 943.4800581498579
+        },
+        "root_position_error": {
+          "numerator": 66.823974609375,
+          "count": 64,
+          "mean": 1.0441246032714844,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0441246032714844,
+          "mean_mm": 1044.1246032714844
+        },
+        "relative_mpjpe": {
+          "numerator": 685.9794311523438,
+          "count": 1344,
+          "mean": 0.5104013624645415,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5104013681411743,
+          "mean_mm": 510.4013624645415
+        },
+        "absolute_velocity_error": {
+          "numerator": 219.02592156408662,
+          "count": 1276,
+          "mean": 0.1716504087492842,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.1716504087492842
+        },
+        "relative_velocity_error": {
+          "numerator": 219.13139589373478,
+          "count": 1218,
+          "mean": 0.17991083406710573,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.17991083406710573
+        },
+        "root_speed_mae": {
+          "numerator": 0.9829673331623832,
+          "count": 58,
+          "mean": 0.016947712640730743,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.016947712640730743
+        },
+        "bone_length_mae": {
+          "numerator": 14.741250991821289,
+          "count": 1344,
+          "mean": 0.010968192702247984,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.010968192480504513,
+          "mean_mm": 10.968192702247984
+        },
+        "zero_velocity_error": {
+          "numerator": 310.34065777628086,
+          "count": 1276,
+          "mean": 0.24321368164285334,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.24321368164285334
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "8e0778dabb2c5cf6b33b004d3553dc35371b4d4a70b98be9612d4765367cd63c",
+      "split": "train",
+      "subject_id": "9",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1364.84423828125,
+          "count": 1408,
+          "mean": 0.9693496010520242,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9693496227264404,
+          "mean_mm": 969.3496010520241
+        },
+        "root_position_error": {
+          "numerator": 70.28713989257812,
+          "count": 64,
+          "mean": 1.0982365608215332,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0982365608215332,
+          "mean_mm": 1098.2365608215332
+        },
+        "relative_mpjpe": {
+          "numerator": 708.06689453125,
+          "count": 1344,
+          "mean": 0.5268354870024181,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5268355011940002,
+          "mean_mm": 526.8354870024181
+        },
+        "absolute_velocity_error": {
+          "numerator": 283.11464943860136,
+          "count": 1276,
+          "mean": 0.22187668451301046,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.22187668451301046
+        },
+        "relative_velocity_error": {
+          "numerator": 274.83495957272737,
+          "count": 1218,
+          "mean": 0.2256444659874609,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2256444659874609
+        },
+        "root_speed_mae": {
+          "numerator": 2.211413989369396,
+          "count": 58,
+          "mean": 0.038127827402920624,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.038127827402920624
+        },
+        "bone_length_mae": {
+          "numerator": 23.005020141601562,
+          "count": 1344,
+          "mean": 0.017116830462501162,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.017116829752922058,
+          "mean_mm": 17.116830462501163
+        },
+        "zero_velocity_error": {
+          "numerator": 515.95918056944,
+          "count": 1276,
+          "mean": 0.40435672458420063,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.40435672458420063
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "fa012d23591fab09447ed4d54976116d285f851930af920aec3733f621ec0bdc",
+      "split": "train",
+      "subject_id": "10",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1373.79248046875,
+          "count": 1408,
+          "mean": 0.9757048866965554,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9757049083709717,
+          "mean_mm": 975.7048866965554
+        },
+        "root_position_error": {
+          "numerator": 68.34715270996094,
+          "count": 64,
+          "mean": 1.0679242610931396,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0679242610931396,
+          "mean_mm": 1067.9242610931396
+        },
+        "relative_mpjpe": {
+          "numerator": 693.0440063476562,
+          "count": 1344,
+          "mean": 0.5156577428181967,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5156577229499817,
+          "mean_mm": 515.6577428181967
+        },
+        "absolute_velocity_error": {
+          "numerator": 322.1639217468942,
+          "count": 1276,
+          "mean": 0.252479562497566,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.252479562497566
+        },
+        "relative_velocity_error": {
+          "numerator": 316.21433576632757,
+          "count": 1218,
+          "mean": 0.2596176812531425,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2596176812531425
+        },
+        "root_speed_mae": {
+          "numerator": 1.364334308039185,
+          "count": 58,
+          "mean": 0.02352300531102043,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.02352300531102043
+        },
+        "bone_length_mae": {
+          "numerator": 21.832839965820312,
+          "count": 1344,
+          "mean": 0.016244672593616304,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.01624467223882675,
+          "mean_mm": 16.244672593616304
+        },
+        "zero_velocity_error": {
+          "numerator": 549.1615949870298,
+          "count": 1276,
+          "mean": 0.4303774255384246,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4303774255384246
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "8375748d18732c83373d1551fcc33953df2828687d8d1e540a175422474898cf",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1458.5361328125,
+          "count": 1408,
+          "mean": 1.0358921397816052,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.035892128944397,
+          "mean_mm": 1035.8921397816052
+        },
+        "root_position_error": {
+          "numerator": 65.88185119628906,
+          "count": 64,
+          "mean": 1.0294039249420166,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0294039249420166,
+          "mean_mm": 1029.4039249420166
+        },
+        "relative_mpjpe": {
+          "numerator": 733.2962646484375,
+          "count": 1344,
+          "mean": 0.5456073397681827,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.545607328414917,
+          "mean_mm": 545.6073397681827
+        },
+        "absolute_velocity_error": {
+          "numerator": 251.39459408352835,
+          "count": 1276,
+          "mean": 0.19701770696201282,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.19701770696201282
+        },
+        "relative_velocity_error": {
+          "numerator": 250.38435986352323,
+          "count": 1218,
+          "mean": 0.20557008198975635,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.20557008198975635
+        },
+        "root_speed_mae": {
+          "numerator": 1.1830216762079089,
+          "count": 58,
+          "mean": 0.020396925451860497,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.020396925451860497
+        },
+        "bone_length_mae": {
+          "numerator": 21.109426498413086,
+          "count": 1344,
+          "mean": 0.015706418525604976,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.015706418082118034,
+          "mean_mm": 15.706418525604976
+        },
+        "zero_velocity_error": {
+          "numerator": 276.3560733284477,
+          "count": 1276,
+          "mean": 0.21657999477151071,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.21657999477151071
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "c5b39d6cca0a9a34359e6b28538e1d167bdd9e05e4c4ad92535c2bd3ecfeda80",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1313.638671875,
+          "count": 1408,
+          "mean": 0.9329820112748579,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9329820275306702,
+          "mean_mm": 932.9820112748579
+        },
+        "root_position_error": {
+          "numerator": 66.63404083251953,
+          "count": 64,
+          "mean": 1.0411568880081177,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0411568880081177,
+          "mean_mm": 1041.1568880081177
+        },
+        "relative_mpjpe": {
+          "numerator": 716.2947998046875,
+          "count": 1344,
+          "mean": 0.5329574403308687,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5329574346542358,
+          "mean_mm": 532.9574403308686
+        },
+        "absolute_velocity_error": {
+          "numerator": 339.23719209471705,
+          "count": 1276,
+          "mean": 0.26585986841278764,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.26585986841278764
+        },
+        "relative_velocity_error": {
+          "numerator": 337.3390570010462,
+          "count": 1218,
+          "mean": 0.27696145894995583,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.27696145894995583
+        },
+        "root_speed_mae": {
+          "numerator": 2.4840876408992294,
+          "count": 58,
+          "mean": 0.04282909725688327,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.04282909725688327
+        },
+        "bone_length_mae": {
+          "numerator": 19.092052459716797,
+          "count": 1344,
+          "mean": 0.014205396175384521,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.014205396175384521,
+          "mean_mm": 14.205396175384521
+        },
+        "zero_velocity_error": {
+          "numerator": 447.0708065169249,
+          "count": 1276,
+          "mean": 0.3503689706245493,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3503689706245493
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "ce692edda53fd99d226e44c4c9269c4857651e998ab9568481844c3d3796faa3",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1716.5791015625,
+          "count": 1408,
+          "mean": 1.2191612937233665,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.2191612720489502,
+          "mean_mm": 1219.1612937233665
+        },
+        "root_position_error": {
+          "numerator": 75.89251708984375,
+          "count": 64,
+          "mean": 1.1858205795288086,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.1858205795288086,
+          "mean_mm": 1185.8205795288086
+        },
+        "relative_mpjpe": {
+          "numerator": 708.207763671875,
+          "count": 1344,
+          "mean": 0.5269403003510975,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5269402861595154,
+          "mean_mm": 526.9403003510976
+        },
+        "absolute_velocity_error": {
+          "numerator": 345.5704753062151,
+          "count": 1276,
+          "mean": 0.27082325650957295,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.27082325650957295
+        },
+        "relative_velocity_error": {
+          "numerator": 349.13471795979495,
+          "count": 1218,
+          "mean": 0.2866459096550041,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2866459096550041
+        },
+        "root_speed_mae": {
+          "numerator": 3.0676785192008746,
+          "count": 58,
+          "mean": 0.05289100895173922,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.05289100895173922
+        },
+        "bone_length_mae": {
+          "numerator": 25.90186309814453,
+          "count": 1344,
+          "mean": 0.019272219567071824,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.019272219389677048,
+          "mean_mm": 19.272219567071822
+        },
+        "zero_velocity_error": {
+          "numerator": 462.89413594143116,
+          "count": 1276,
+          "mean": 0.3627696990136608,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3627696990136608
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "7ef63a59ee7a390a6027c02a8774a13c998714e65690b94a438f95229bdbd93b",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1324.158935546875,
+          "count": 1408,
+          "mean": 0.9404537894509055,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9404537677764893,
+          "mean_mm": 940.4537894509056
+        },
+        "root_position_error": {
+          "numerator": 65.033447265625,
+          "count": 64,
+          "mean": 1.0161476135253906,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0161476135253906,
+          "mean_mm": 1016.1476135253906
+        },
+        "relative_mpjpe": {
+          "numerator": 781.2919311523438,
+          "count": 1344,
+          "mean": 0.5813184011550176,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5813183784484863,
+          "mean_mm": 581.3184011550177
+        },
+        "absolute_velocity_error": {
+          "numerator": 487.8703366354222,
+          "count": 1276,
+          "mean": 0.38234352400895155,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.38234352400895155
+        },
+        "relative_velocity_error": {
+          "numerator": 482.4128281905048,
+          "count": 1218,
+          "mean": 0.39606964547660495,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.39606964547660495
+        },
+        "root_speed_mae": {
+          "numerator": 4.867086815267154,
+          "count": 58,
+          "mean": 0.08391528991839921,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.08391528991839921
+        },
+        "bone_length_mae": {
+          "numerator": 23.17557716369629,
+          "count": 1344,
+          "mean": 0.017243733008702595,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.017243733629584312,
+          "mean_mm": 17.243733008702595
+        },
+        "zero_velocity_error": {
+          "numerator": 450.13824266977343,
+          "count": 1276,
+          "mean": 0.3527729174528005,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3527729174528005
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "5f0ffabbcb6b94f1273b1bd0391e47f67ee44344af0bec33a54d768d62dbd3f7",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1276.22509765625,
+          "count": 1408,
+          "mean": 0.9064098704944957,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9064098596572876,
+          "mean_mm": 906.4098704944957
+        },
+        "root_position_error": {
+          "numerator": 68.26617431640625,
+          "count": 64,
+          "mean": 1.0666589736938477,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0666589736938477,
+          "mean_mm": 1066.6589736938477
+        },
+        "relative_mpjpe": {
+          "numerator": 751.857666015625,
+          "count": 1344,
+          "mean": 0.5594179062616258,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5594179034233093,
+          "mean_mm": 559.4179062616258
+        },
+        "absolute_velocity_error": {
+          "numerator": 380.51482914742587,
+          "count": 1276,
+          "mean": 0.2982091137519012,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2982091137519012
+        },
+        "relative_velocity_error": {
+          "numerator": 385.09088921309376,
+          "count": 1218,
+          "mean": 0.31616657570861556,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.31616657570861556
+        },
+        "root_speed_mae": {
+          "numerator": 2.4910359898604817,
+          "count": 58,
+          "mean": 0.042948896376904855,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.042948896376904855
+        },
+        "bone_length_mae": {
+          "numerator": 19.324087142944336,
+          "count": 1344,
+          "mean": 0.01437804102897644,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.01437804102897644,
+          "mean_mm": 14.37804102897644
+        },
+        "zero_velocity_error": {
+          "numerator": 331.8645095331923,
+          "count": 1276,
+          "mean": 0.26008190402287795,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.26008190402287795
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "e05e0df691991d118edb4fa1237962660f0fb8bf28262bea2aacd454eb9f7f68",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1411.996337890625,
+          "count": 1408,
+          "mean": 1.0028383081609553,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0028382539749146,
+          "mean_mm": 1002.8383081609553
+        },
+        "root_position_error": {
+          "numerator": 64.61119079589844,
+          "count": 64,
+          "mean": 1.009549856185913,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.009549856185913,
+          "mean_mm": 1009.5498561859131
+        },
+        "relative_mpjpe": {
+          "numerator": 764.71533203125,
+          "count": 1344,
+          "mean": 0.568984622047061,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5689846277236938,
+          "mean_mm": 568.9846220470611
+        },
+        "absolute_velocity_error": {
+          "numerator": 370.0717040479824,
+          "count": 1276,
+          "mean": 0.2900248464325881,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2900248464325881
+        },
+        "relative_velocity_error": {
+          "numerator": 379.6043844847386,
+          "count": 1218,
+          "mean": 0.3116620562272074,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3116620562272074
+        },
+        "root_speed_mae": {
+          "numerator": 2.8794274967804885,
+          "count": 58,
+          "mean": 0.04964530166862911,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.04964530166862911
+        },
+        "bone_length_mae": {
+          "numerator": 19.146564483642578,
+          "count": 1344,
+          "mean": 0.014245955716995965,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.014245955273509026,
+          "mean_mm": 14.245955716995965
+        },
+        "zero_velocity_error": {
+          "numerator": 333.6427225929882,
+          "count": 1276,
+          "mean": 0.2614754879255394,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2614754879255394
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "9a75f180723fd72a5024628ba36d203a20c43c1f51c830427cc78b29785cf04d",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1335.7186279296875,
+          "count": 1408,
+          "mean": 0.9486637982455167,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9486637711524963,
+          "mean_mm": 948.6637982455168
+        },
+        "root_position_error": {
+          "numerator": 60.323238372802734,
+          "count": 64,
+          "mean": 0.9425505995750427,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9425505995750427,
+          "mean_mm": 942.5505995750427
+        },
+        "relative_mpjpe": {
+          "numerator": 785.470703125,
+          "count": 1344,
+          "mean": 0.5844276064918155,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5844275951385498,
+          "mean_mm": 584.4276064918155
+        },
+        "absolute_velocity_error": {
+          "numerator": 440.4862410915079,
+          "count": 1276,
+          "mean": 0.34520865289303126,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.34520865289303126
+        },
+        "relative_velocity_error": {
+          "numerator": 440.78138953816483,
+          "count": 1218,
+          "mean": 0.3618894823794457,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3618894823794457
+        },
+        "root_speed_mae": {
+          "numerator": 3.2971588617265506,
+          "count": 58,
+          "mean": 0.05684756658149225,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.05684756658149225
+        },
+        "bone_length_mae": {
+          "numerator": 18.410701751708984,
+          "count": 1344,
+          "mean": 0.013698438803354899,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.013698439113795757,
+          "mean_mm": 13.698438803354898
+        },
+        "zero_velocity_error": {
+          "numerator": 362.6259660363178,
+          "count": 1276,
+          "mean": 0.284189628555108,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.284189628555108
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "dcc535753eee7417383eb37dc822857a4afa158946d06f77c1ba97ee5d5372f5",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1082.9404296875,
+          "count": 1408,
+          "mean": 0.769133827903054,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.7691338062286377,
+          "mean_mm": 769.133827903054
+        },
+        "root_position_error": {
+          "numerator": 45.3642692565918,
+          "count": 64,
+          "mean": 0.7088167071342468,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.7088167071342468,
+          "mean_mm": 708.8167071342468
+        },
+        "relative_mpjpe": {
+          "numerator": 644.275146484375,
+          "count": 1344,
+          "mean": 0.4793713887532552,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.47937139868736267,
+          "mean_mm": 479.3713887532552
+        },
+        "absolute_velocity_error": {
+          "numerator": 316.13488985995946,
+          "count": 1276,
+          "mean": 0.24775461587771117,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.24775461587771117
+        },
+        "relative_velocity_error": {
+          "numerator": 306.63311462055077,
+          "count": 1218,
+          "mean": 0.2517513256326361,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2517513256326361
+        },
+        "root_speed_mae": {
+          "numerator": 1.9000665010464366,
+          "count": 58,
+          "mean": 0.03275976725942132,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.03275976725942132
+        },
+        "bone_length_mae": {
+          "numerator": 23.75506019592285,
+          "count": 1344,
+          "mean": 0.017674895979109265,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.017674896866083145,
+          "mean_mm": 17.674895979109266
+        },
+        "zero_velocity_error": {
+          "numerator": 198.83727269676356,
+          "count": 1276,
+          "mean": 0.15582858361815327,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.15582858361815327
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "d487f941a3f23cc531ed41f5c420b84a26d9297e0c917db51945365745183bee",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 952.5090942382812,
+          "count": 1408,
+          "mean": 0.6764979362487793,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6764979362487793,
+          "mean_mm": 676.4979362487793
+        },
+        "root_position_error": {
+          "numerator": 39.93925476074219,
+          "count": 64,
+          "mean": 0.6240508556365967,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6240508556365967,
+          "mean_mm": 624.0508556365967
+        },
+        "relative_mpjpe": {
+          "numerator": 632.9139404296875,
+          "count": 1344,
+          "mean": 0.4709181104387556,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.47091811895370483,
+          "mean_mm": 470.9181104387556
+        },
+        "absolute_velocity_error": {
+          "numerator": 286.5225439944752,
+          "count": 1276,
+          "mean": 0.22454744827153228,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.22454744827153228
+        },
+        "relative_velocity_error": {
+          "numerator": 273.08218706734726,
+          "count": 1218,
+          "mean": 0.22420540810127032,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.22420540810127032
+        },
+        "root_speed_mae": {
+          "numerator": 1.904883573239734,
+          "count": 58,
+          "mean": 0.03284282022827128,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.03284282022827128
+        },
+        "bone_length_mae": {
+          "numerator": 20.613021850585938,
+          "count": 1344,
+          "mean": 0.015337069829305014,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.015337069518864155,
+          "mean_mm": 15.337069829305014
+        },
+        "zero_velocity_error": {
+          "numerator": 157.18744933437534,
+          "count": 1276,
+          "mean": 0.1231876562181625,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.1231876562181625
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "7796459b0b171db6d0908dbeb2b320cb2a200ee29d766af013ad13387088efc6",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1153.37939453125,
+          "count": 1408,
+          "mean": 0.8191615017977628,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.8191614747047424,
+          "mean_mm": 819.1615017977629
+        },
+        "root_position_error": {
+          "numerator": 46.957664489746094,
+          "count": 64,
+          "mean": 0.7337135076522827,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.7337135076522827,
+          "mean_mm": 733.7135076522827
+        },
+        "relative_mpjpe": {
+          "numerator": 647.25341796875,
+          "count": 1344,
+          "mean": 0.48158736456008183,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.48158735036849976,
+          "mean_mm": 481.5873645600818
+        },
+        "absolute_velocity_error": {
+          "numerator": 418.80979360146137,
+          "count": 1276,
+          "mean": 0.3282208413804556,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3282208413804556
+        },
+        "relative_velocity_error": {
+          "numerator": 411.9966685011216,
+          "count": 1218,
+          "mean": 0.33825670648696354,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.33825670648696354
+        },
+        "root_speed_mae": {
+          "numerator": 2.069741310618828,
+          "count": 58,
+          "mean": 0.03568519501066945,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.03568519501066945
+        },
+        "bone_length_mae": {
+          "numerator": 20.29494857788086,
+          "count": 1344,
+          "mean": 0.015100408168066116,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.015100408345460892,
+          "mean_mm": 15.100408168066116
+        },
+        "zero_velocity_error": {
+          "numerator": 214.15004107929207,
+          "count": 1276,
+          "mean": 0.16782918579881823,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.16782918579881823
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "f824fe2f92ce4ce217125ce69adf29486be53a7dbaa51ddd5ffb9e6f8c03bab4",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 973.7401123046875,
+          "count": 1408,
+          "mean": 0.6915767843073065,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6915767788887024,
+          "mean_mm": 691.5767843073065
+        },
+        "root_position_error": {
+          "numerator": 37.264404296875,
+          "count": 64,
+          "mean": 0.5822563171386719,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5822563171386719,
+          "mean_mm": 582.2563171386719
+        },
+        "relative_mpjpe": {
+          "numerator": 645.0697631835938,
+          "count": 1344,
+          "mean": 0.4799626214163644,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.47996261715888977,
+          "mean_mm": 479.9626214163644
+        },
+        "absolute_velocity_error": {
+          "numerator": 278.82986450254407,
+          "count": 1276,
+          "mean": 0.2185187025882007,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2185187025882007
+        },
+        "relative_velocity_error": {
+          "numerator": 271.122468215554,
+          "count": 1218,
+          "mean": 0.22259644352672744,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.22259644352672744
+        },
+        "root_speed_mae": {
+          "numerator": 1.960583795879649,
+          "count": 58,
+          "mean": 0.03380316889447671,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.03380316889447671
+        },
+        "bone_length_mae": {
+          "numerator": 18.689739227294922,
+          "count": 1344,
+          "mean": 0.013906055972689674,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.013906056061387062,
+          "mean_mm": 13.906055972689675
+        },
+        "zero_velocity_error": {
+          "numerator": 199.34586010453137,
+          "count": 1276,
+          "mean": 0.15622716309132553,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.15622716309132553
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "6d484a9eefaba7c3c8c6082f01f389530344630c6b1f3a111f097b9a865c2b96",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1444.27734375,
+          "count": 1408,
+          "mean": 1.0257651589133523,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0257651805877686,
+          "mean_mm": 1025.7651589133523
+        },
+        "root_position_error": {
+          "numerator": 67.21996307373047,
+          "count": 64,
+          "mean": 1.0503119230270386,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0503119230270386,
+          "mean_mm": 1050.3119230270386
+        },
+        "relative_mpjpe": {
+          "numerator": 754.1947631835938,
+          "count": 1344,
+          "mean": 0.5611568178449359,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5611568093299866,
+          "mean_mm": 561.1568178449359
+        },
+        "absolute_velocity_error": {
+          "numerator": 145.33746894690617,
+          "count": 1276,
+          "mean": 0.11390083773268508,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.11390083773268508
+        },
+        "relative_velocity_error": {
+          "numerator": 144.41228184479496,
+          "count": 1218,
+          "mean": 0.11856509182659684,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.11856509182659684
+        },
+        "root_speed_mae": {
+          "numerator": 0.5554412333085812,
+          "count": 58,
+          "mean": 0.009576572988078987,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.009576572988078987
+        },
+        "bone_length_mae": {
+          "numerator": 25.214235305786133,
+          "count": 1344,
+          "mean": 0.018760591745376587,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.018760591745376587,
+          "mean_mm": 18.760591745376587
+        },
+        "zero_velocity_error": {
+          "numerator": 111.08160561894036,
+          "count": 1276,
+          "mean": 0.08705454985810374,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.08705454985810374
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "239cc095c27edd5f06eefa4118cf7859c4abbe0e48d33e0cc7d47e56b48b85af",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1330.652587890625,
+          "count": 1408,
+          "mean": 0.9450657584450461,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9450657367706299,
+          "mean_mm": 945.0657584450462
+        },
+        "root_position_error": {
+          "numerator": 67.90433502197266,
+          "count": 64,
+          "mean": 1.0610052347183228,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0610052347183228,
+          "mean_mm": 1061.0052347183228
+        },
+        "relative_mpjpe": {
+          "numerator": 736.2914428710938,
+          "count": 1344,
+          "mean": 0.5478358949933734,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5478358864784241,
+          "mean_mm": 547.8358949933734
+        },
+        "absolute_velocity_error": {
+          "numerator": 130.65532649958175,
+          "count": 1276,
+          "mean": 0.10239445650437441,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.10239445650437441
+        },
+        "relative_velocity_error": {
+          "numerator": 133.35106812518362,
+          "count": 1218,
+          "mean": 0.10948363557075831,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.10948363557075831
+        },
+        "root_speed_mae": {
+          "numerator": 0.961401520385456,
+          "count": 58,
+          "mean": 0.01657588828250786,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.01657588828250786
+        },
+        "bone_length_mae": {
+          "numerator": 19.336101531982422,
+          "count": 1344,
+          "mean": 0.01438698030653454,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.0143869798630476,
+          "mean_mm": 14.38698030653454
+        },
+        "zero_velocity_error": {
+          "numerator": 108.58942900932294,
+          "count": 1276,
+          "mean": 0.08510143339288631,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.08510143339288631
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "fb607b415c3841fa5bb2a34eabe6185a3c06c06b4119fc7cd4c800af381bdada",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1297.501220703125,
+          "count": 1408,
+          "mean": 0.9215207533402876,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9215207695960999,
+          "mean_mm": 921.5207533402876
+        },
+        "root_position_error": {
+          "numerator": 64.05496215820312,
+          "count": 64,
+          "mean": 1.0008587837219238,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0008587837219238,
+          "mean_mm": 1000.8587837219238
+        },
+        "relative_mpjpe": {
+          "numerator": 751.730224609375,
+          "count": 1344,
+          "mean": 0.5593230837867373,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5593230724334717,
+          "mean_mm": 559.3230837867374
+        },
+        "absolute_velocity_error": {
+          "numerator": 145.23217107351704,
+          "count": 1276,
+          "mean": 0.11381831588833624,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.11381831588833624
+        },
+        "relative_velocity_error": {
+          "numerator": 143.9012502172919,
+          "count": 1218,
+          "mean": 0.11814552562996052,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.11814552562996052
+        },
+        "root_speed_mae": {
+          "numerator": 0.6151851299314861,
+          "count": 58,
+          "mean": 0.010606640171232518,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.010606640171232518
+        },
+        "bone_length_mae": {
+          "numerator": 17.041004180908203,
+          "count": 1344,
+          "mean": 0.01267931858698527,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.012679318897426128,
+          "mean_mm": 12.67931858698527
+        },
+        "zero_velocity_error": {
+          "numerator": 107.0065601286029,
+          "count": 1276,
+          "mean": 0.08386094053965744,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.08386094053965744
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "037b02739bacbde90fc36bd63d732c6bdb6ca0817d4f0882cd6f55b27090273f",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1355.3992919921875,
+          "count": 1408,
+          "mean": 0.9626415426080878,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9626415371894836,
+          "mean_mm": 962.6415426080878
+        },
+        "root_position_error": {
+          "numerator": 60.82159423828125,
+          "count": 64,
+          "mean": 0.9503374099731445,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9503374099731445,
+          "mean_mm": 950.3374099731445
+        },
+        "relative_mpjpe": {
+          "numerator": 748.0143432617188,
+          "count": 1344,
+          "mean": 0.5565582911173502,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5565583109855652,
+          "mean_mm": 556.5582911173502
+        },
+        "absolute_velocity_error": {
+          "numerator": 159.55956794402326,
+          "count": 1276,
+          "mean": 0.125046683341711,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.125046683341711
+        },
+        "relative_velocity_error": {
+          "numerator": 161.39968422398388,
+          "count": 1218,
+          "mean": 0.13251205601312305,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.13251205601312305
+        },
+        "root_speed_mae": {
+          "numerator": 0.8126518157513946,
+          "count": 58,
+          "mean": 0.01401123820261025,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.01401123820261025
+        },
+        "bone_length_mae": {
+          "numerator": 19.11768341064453,
+          "count": 1344,
+          "mean": 0.014224466823396228,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.014224466867744923,
+          "mean_mm": 14.224466823396227
+        },
+        "zero_velocity_error": {
+          "numerator": 103.54353602655553,
+          "count": 1276,
+          "mean": 0.0811469718076454,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.0811469718076454
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "f0c5d3b1edb0c0ed1261317d079b1656371eb6241f13dd7253f40489bf78e17b",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 2264.4326171875,
+          "count": 1408,
+          "mean": 1.6082618019797585,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.6082618236541748,
+          "mean_mm": 1608.2618019797585
+        },
+        "root_position_error": {
+          "numerator": 98.8399887084961,
+          "count": 64,
+          "mean": 1.5443748235702515,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.5443748235702515,
+          "mean_mm": 1544.3748235702515
+        },
+        "relative_mpjpe": {
+          "numerator": 782.837890625,
+          "count": 1344,
+          "mean": 0.5824686686197916,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5824686884880066,
+          "mean_mm": 582.4686686197916
+        },
+        "absolute_velocity_error": {
+          "numerator": 1740.6084290239687,
+          "count": 1276,
+          "mean": 1.3641131888902576,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.3641131888902576
+        },
+        "relative_velocity_error": {
+          "numerator": 1178.1591362137904,
+          "count": 1218,
+          "mean": 0.9672899312100085,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9672899312100085
+        },
+        "root_speed_mae": {
+          "numerator": 56.93375739049008,
+          "count": 58,
+          "mean": 0.9816165067325876,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9816165067325876
+        },
+        "bone_length_mae": {
+          "numerator": 25.649398803710938,
+          "count": 1344,
+          "mean": 0.019084374109903973,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.019084373489022255,
+          "mean_mm": 19.084374109903973
+        },
+        "zero_velocity_error": {
+          "numerator": 1703.262608997184,
+          "count": 1276,
+          "mean": 1.3348453048567273,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.3348453048567273
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "5441f2cf924f95563ee38402a9712c8d54de781794d046fc034f90b5b430ac0e",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1494.2041015625,
+          "count": 1408,
+          "mean": 1.0612245039506392,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0612244606018066,
+          "mean_mm": 1061.2245039506392
+        },
+        "root_position_error": {
+          "numerator": 69.89060974121094,
+          "count": 64,
+          "mean": 1.092040777206421,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.092040777206421,
+          "mean_mm": 1092.040777206421
+        },
+        "relative_mpjpe": {
+          "numerator": 762.51220703125,
+          "count": 1344,
+          "mean": 0.5673453921363467,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.567345380783081,
+          "mean_mm": 567.3453921363467
+        },
+        "absolute_velocity_error": {
+          "numerator": 883.0042603668799,
+          "count": 1276,
+          "mean": 0.6920096084379936,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6920096084379936
+        },
+        "relative_velocity_error": {
+          "numerator": 697.1199019486976,
+          "count": 1218,
+          "mean": 0.5723480311565662,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5723480311565662
+        },
+        "root_speed_mae": {
+          "numerator": 17.390005754368804,
+          "count": 58,
+          "mean": 0.2998276854201518,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2998276854201518
+        },
+        "bone_length_mae": {
+          "numerator": 22.891061782836914,
+          "count": 1344,
+          "mean": 0.01703204001699175,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.017032040283083916,
+          "mean_mm": 17.03204001699175
+        },
+        "zero_velocity_error": {
+          "numerator": 771.5947934141798,
+          "count": 1276,
+          "mean": 0.604698113960956,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.604698113960956
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "5ba76568a7a529f54977228e844e1b02e891ed0c810775b68e2e0e7d700b0528",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1593.9798583984375,
+          "count": 1408,
+          "mean": 1.1320879676125266,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.1320879459381104,
+          "mean_mm": 1132.0879676125267
+        },
+        "root_position_error": {
+          "numerator": 70.44735717773438,
+          "count": 64,
+          "mean": 1.1007399559020996,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.1007399559020996,
+          "mean_mm": 1100.7399559020996
+        },
+        "relative_mpjpe": {
+          "numerator": 765.9190063476562,
+          "count": 1344,
+          "mean": 0.5698802130562919,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5698801875114441,
+          "mean_mm": 569.8802130562918
+        },
+        "absolute_velocity_error": {
+          "numerator": 1104.2826654562823,
+          "count": 1276,
+          "mean": 0.8654252864077447,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.8654252864077447
+        },
+        "relative_velocity_error": {
+          "numerator": 789.4005268155449,
+          "count": 1218,
+          "mean": 0.648112090981564,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.648112090981564
+        },
+        "root_speed_mae": {
+          "numerator": 34.80656242502264,
+          "count": 58,
+          "mean": 0.600113145259011,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.600113145259011
+        },
+        "bone_length_mae": {
+          "numerator": 22.92005157470703,
+          "count": 1344,
+          "mean": 0.0170536098026094,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.01705360971391201,
+          "mean_mm": 17.0536098026094
+        },
+        "zero_velocity_error": {
+          "numerator": 1041.6064655017271,
+          "count": 1276,
+          "mean": 0.8163060074464946,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.8163060074464946
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "1dc2ef5eb0ae8245ff6b0e5aa3f54a0cdddb1c40bbf0dffcf71f923886e40ad5",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1435.964599609375,
+          "count": 1408,
+          "mean": 1.0198612213134766,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0198612213134766,
+          "mean_mm": 1019.8612213134766
+        },
+        "root_position_error": {
+          "numerator": 61.38005447387695,
+          "count": 64,
+          "mean": 0.9590633511543274,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9590633511543274,
+          "mean_mm": 959.0633511543274
+        },
+        "relative_mpjpe": {
+          "numerator": 754.73095703125,
+          "count": 1344,
+          "mean": 0.5615557716006324,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5615557432174683,
+          "mean_mm": 561.5557716006324
+        },
+        "absolute_velocity_error": {
+          "numerator": 943.294447301053,
+          "count": 1276,
+          "mean": 0.7392589712390697,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.7392589712390697
+        },
+        "relative_velocity_error": {
+          "numerator": 818.5767540261556,
+          "count": 1218,
+          "mean": 0.6720663005140851,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6720663005140851
+        },
+        "root_speed_mae": {
+          "numerator": 25.30885963862688,
+          "count": 58,
+          "mean": 0.43635964894184276,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.43635964894184276
+        },
+        "bone_length_mae": {
+          "numerator": 24.342037200927734,
+          "count": 1344,
+          "mean": 0.01811163482211885,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.018111634999513626,
+          "mean_mm": 18.11163482211885
+        },
+        "zero_velocity_error": {
+          "numerator": 893.0794055238193,
+          "count": 1276,
+          "mean": 0.699905490222429,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.699905490222429
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "c0ede064795f866f4198019ca2224a24c880e2846d141e43f8b149372cc0dc79",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1307.5697021484375,
+          "count": 1408,
+          "mean": 0.9286716634576971,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.928671658039093,
+          "mean_mm": 928.6716634576972
+        },
+        "root_position_error": {
+          "numerator": 63.124908447265625,
+          "count": 64,
+          "mean": 0.9863266944885254,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9863266944885254,
+          "mean_mm": 986.3266944885254
+        },
+        "relative_mpjpe": {
+          "numerator": 735.7197265625,
+          "count": 1344,
+          "mean": 0.5474105108351934,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5474104881286621,
+          "mean_mm": 547.4105108351935
+        },
+        "absolute_velocity_error": {
+          "numerator": 264.8059151327578,
+          "count": 1276,
+          "mean": 0.20752814665576627,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.20752814665576627
+        },
+        "relative_velocity_error": {
+          "numerator": 230.56361849145665,
+          "count": 1218,
+          "mean": 0.1892968953131828,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.1892968953131828
+        },
+        "root_speed_mae": {
+          "numerator": 4.692094845349979,
+          "count": 58,
+          "mean": 0.08089818698879275,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.08089818698879275
+        },
+        "bone_length_mae": {
+          "numerator": 25.636505126953125,
+          "count": 1344,
+          "mean": 0.01907478060041155,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.019074780866503716,
+          "mean_mm": 19.07478060041155
+        },
+        "zero_velocity_error": {
+          "numerator": 199.84455458164496,
+          "count": 1276,
+          "mean": 0.15661798948404776,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.15661798948404776
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "a5111360e6ed224196ef889d30e36f84faf8ff7e256c1a74c46ff2a14e56dfe8",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1355.99755859375,
+          "count": 1408,
+          "mean": 0.9630664478648793,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9630664587020874,
+          "mean_mm": 963.0664478648793
+        },
+        "root_position_error": {
+          "numerator": 67.95619201660156,
+          "count": 64,
+          "mean": 1.0618155002593994,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0618155002593994,
+          "mean_mm": 1061.8155002593994
+        },
+        "relative_mpjpe": {
+          "numerator": 706.103271484375,
+          "count": 1344,
+          "mean": 0.5253744579496837,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5253744721412659,
+          "mean_mm": 525.3744579496837
+        },
+        "absolute_velocity_error": {
+          "numerator": 1404.4217382166019,
+          "count": 1276,
+          "mean": 1.1006439954675562,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.1006439954675562
+        },
+        "relative_velocity_error": {
+          "numerator": 1122.464591021722,
+          "count": 1218,
+          "mean": 0.9215637036303137,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9215637036303137
+        },
+        "root_speed_mae": {
+          "numerator": 31.54952361554356,
+          "count": 58,
+          "mean": 0.5439573037162683,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5439573037162683
+        },
+        "bone_length_mae": {
+          "numerator": 20.552221298217773,
+          "count": 1344,
+          "mean": 0.0152918313230787,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.015291831456124783,
+          "mean_mm": 15.2918313230787
+        },
+        "zero_velocity_error": {
+          "numerator": 1388.722660242739,
+          "count": 1276,
+          "mean": 1.0883406428234632,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0883406428234632
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "426fb81242f760b15d269980dfe21d6066cbedb109ce27d3263b15750f1ecfcc",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1409.3360595703125,
+          "count": 1408,
+          "mean": 1.0009489059448242,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0009489059448242,
+          "mean_mm": 1000.9489059448242
+        },
+        "root_position_error": {
+          "numerator": 62.267799377441406,
+          "count": 64,
+          "mean": 0.972934365272522,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.972934365272522,
+          "mean_mm": 972.934365272522
+        },
+        "relative_mpjpe": {
+          "numerator": 716.7572021484375,
+          "count": 1344,
+          "mean": 0.5333014896937779,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5333014726638794,
+          "mean_mm": 533.3014896937779
+        },
+        "absolute_velocity_error": {
+          "numerator": 448.5794139731337,
+          "count": 1276,
+          "mean": 0.351551264869227,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.351551264869227
+        },
+        "relative_velocity_error": {
+          "numerator": 347.0731574605401,
+          "count": 1218,
+          "mean": 0.28495333124839084,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.28495333124839084
+        },
+        "root_speed_mae": {
+          "numerator": 8.79112041707239,
+          "count": 58,
+          "mean": 0.1515710416736619,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.1515710416736619
+        },
+        "bone_length_mae": {
+          "numerator": 17.119369506835938,
+          "count": 1344,
+          "mean": 0.012737626121157692,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.01273762620985508,
+          "mean_mm": 12.737626121157692
+        },
+        "zero_velocity_error": {
+          "numerator": 405.9276672026601,
+          "count": 1276,
+          "mean": 0.3181251310365675,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3181251310365675
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "660af5691cb6bb2a5887f92ef1d0bf735c9abaa9e9445da3c1da1423a1f71e31",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1325.605224609375,
+          "count": 1408,
+          "mean": 0.9414809833873402,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9414809942245483,
+          "mean_mm": 941.4809833873402
+        },
+        "root_position_error": {
+          "numerator": 57.57810974121094,
+          "count": 64,
+          "mean": 0.8996579647064209,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.8996579647064209,
+          "mean_mm": 899.6579647064209
+        },
+        "relative_mpjpe": {
+          "numerator": 718.5068359375,
+          "count": 1344,
+          "mean": 0.5346033005487352,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5346032977104187,
+          "mean_mm": 534.6033005487352
+        },
+        "absolute_velocity_error": {
+          "numerator": 477.28340777562516,
+          "count": 1276,
+          "mean": 0.37404655781788804,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.37404655781788804
+        },
+        "relative_velocity_error": {
+          "numerator": 329.42079799161013,
+          "count": 1218,
+          "mean": 0.2704604252804681,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2704604252804681
+        },
+        "root_speed_mae": {
+          "numerator": 14.487800584654838,
+          "count": 58,
+          "mean": 0.24978966525266963,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.24978966525266963
+        },
+        "bone_length_mae": {
+          "numerator": 18.110015869140625,
+          "count": 1344,
+          "mean": 0.01347471418834868,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.013474714010953903,
+          "mean_mm": 13.47471418834868
+        },
+        "zero_velocity_error": {
+          "numerator": 413.9555440023955,
+          "count": 1276,
+          "mean": 0.3244165705347927,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3244165705347927
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "5bd22444b5eb5455f6092443f2a3d775021ed2b11c1106f90376d979af039727",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 2055.890625,
+          "count": 1408,
+          "mean": 1.4601495916193181,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.4601496458053589,
+          "mean_mm": 1460.149591619318
+        },
+        "root_position_error": {
+          "numerator": 89.94154357910156,
+          "count": 64,
+          "mean": 1.405336618423462,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.405336618423462,
+          "mean_mm": 1405.336618423462
+        },
+        "relative_mpjpe": {
+          "numerator": 799.4140625,
+          "count": 1344,
+          "mean": 0.5948021298363095,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5948021411895752,
+          "mean_mm": 594.8021298363095
+        },
+        "absolute_velocity_error": {
+          "numerator": 760.4237263998075,
+          "count": 1276,
+          "mean": 0.5959433592474981,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5959433592474981
+        },
+        "relative_velocity_error": {
+          "numerator": 512.5416131608711,
+          "count": 1218,
+          "mean": 0.4208059221353621,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4208059221353621
+        },
+        "root_speed_mae": {
+          "numerator": 24.875339572101065,
+          "count": 58,
+          "mean": 0.42888516503622526,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.42888516503622526
+        },
+        "bone_length_mae": {
+          "numerator": 23.119306564331055,
+          "count": 1344,
+          "mean": 0.01720186500322251,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.0172018650919199,
+          "mean_mm": 17.201865003222508
+        },
+        "zero_velocity_error": {
+          "numerator": 668.9202669050956,
+          "count": 1276,
+          "mean": 0.5242321840949025,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5242321840949025
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "3743301764356ef4732558c844ecd681b86173ff9ecfd945e19cdc610864dfef",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1360.471435546875,
+          "count": 1408,
+          "mean": 0.9662439172918146,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9662439227104187,
+          "mean_mm": 966.2439172918146
+        },
+        "root_position_error": {
+          "numerator": 63.27831268310547,
+          "count": 64,
+          "mean": 0.988723635673523,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.988723635673523,
+          "mean_mm": 988.723635673523
+        },
+        "relative_mpjpe": {
+          "numerator": 815.18798828125,
+          "count": 1344,
+          "mean": 0.6065386817568824,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6065386533737183,
+          "mean_mm": 606.5386817568824
+        },
+        "absolute_velocity_error": {
+          "numerator": 635.6793437614789,
+          "count": 1276,
+          "mean": 0.49818130388830634,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.49818130388830634
+        },
+        "relative_velocity_error": {
+          "numerator": 407.4149401337553,
+          "count": 1218,
+          "mean": 0.33449502474035736,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.33449502474035736
+        },
+        "root_speed_mae": {
+          "numerator": 23.237845730595158,
+          "count": 58,
+          "mean": 0.4006525125964682,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4006525125964682
+        },
+        "bone_length_mae": {
+          "numerator": 20.17522621154785,
+          "count": 1344,
+          "mean": 0.015011329026449294,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.01501132920384407,
+          "mean_mm": 15.011329026449294
+        },
+        "zero_velocity_error": {
+          "numerator": 601.7349864359489,
+          "count": 1276,
+          "mean": 0.4715791429748816,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4715791429748816
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "5222f4eae57900e4f5336c155e1145b980ea45fdb6f26f1ec95cc50e43141225",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1955.8785400390625,
+          "count": 1408,
+          "mean": 1.3891182812777432,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.3891183137893677,
+          "mean_mm": 1389.118281277743
+        },
+        "root_position_error": {
+          "numerator": 80.62907409667969,
+          "count": 64,
+          "mean": 1.2598292827606201,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.2598292827606201,
+          "mean_mm": 1259.8292827606201
+        },
+        "relative_mpjpe": {
+          "numerator": 834.3564453125,
+          "count": 1344,
+          "mean": 0.6208009265718006,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6208009123802185,
+          "mean_mm": 620.8009265718007
+        },
+        "absolute_velocity_error": {
+          "numerator": 908.1563994645488,
+          "count": 1276,
+          "mean": 0.7117213161947875,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.7117213161947875
+        },
+        "relative_velocity_error": {
+          "numerator": 644.9983545247349,
+          "count": 1218,
+          "mean": 0.5295552992813916,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5295552992813916
+        },
+        "root_speed_mae": {
+          "numerator": 27.749869541603065,
+          "count": 58,
+          "mean": 0.4784460265793632,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4784460265793632
+        },
+        "bone_length_mae": {
+          "numerator": 19.044857025146484,
+          "count": 1344,
+          "mean": 0.014170280524662562,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.014170280657708645,
+          "mean_mm": 14.170280524662562
+        },
+        "zero_velocity_error": {
+          "numerator": 824.3546151247642,
+          "count": 1276,
+          "mean": 0.6460459366181538,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6460459366181538
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "ee95f8a577602387767bd6cce487e72f43182e8b8c91c7eb1f3514eb4b1d6cb6",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1483.2841796875,
+          "count": 1408,
+          "mean": 1.0534688776189631,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0534688234329224,
+          "mean_mm": 1053.4688776189632
+        },
+        "root_position_error": {
+          "numerator": 69.1192626953125,
+          "count": 64,
+          "mean": 1.0799884796142578,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0799884796142578,
+          "mean_mm": 1079.9884796142578
+        },
+        "relative_mpjpe": {
+          "numerator": 784.955322265625,
+          "count": 1344,
+          "mean": 0.5840441385904948,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5840441584587097,
+          "mean_mm": 584.0441385904948
+        },
+        "absolute_velocity_error": {
+          "numerator": 762.2332035917362,
+          "count": 1276,
+          "mean": 0.5973614448211099,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5973614448211099
+        },
+        "relative_velocity_error": {
+          "numerator": 529.4120770595123,
+          "count": 1218,
+          "mean": 0.4346568777171694,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4346568777171694
+        },
+        "root_speed_mae": {
+          "numerator": 23.533488539408083,
+          "count": 58,
+          "mean": 0.40574980240358766,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.40574980240358766
+        },
+        "bone_length_mae": {
+          "numerator": 19.157594680786133,
+          "count": 1344,
+          "mean": 0.014254162708918253,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.014254163019359112,
+          "mean_mm": 14.254162708918253
+        },
+        "zero_velocity_error": {
+          "numerator": 645.6248591627209,
+          "count": 1276,
+          "mean": 0.5059755949551105,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5059755949551105
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "4d20c67bdeca44127394f31532fd65c4de8bc745e5af4783f3a57f4b4be58780",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1066.91943359375,
+          "count": 1408,
+          "mean": 0.7577552795410156,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.7577552795410156,
+          "mean_mm": 757.7552795410156
+        },
+        "root_position_error": {
+          "numerator": 44.736228942871094,
+          "count": 64,
+          "mean": 0.6990035772323608,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6990035772323608,
+          "mean_mm": 699.0035772323608
+        },
+        "relative_mpjpe": {
+          "numerator": 628.349853515625,
+          "count": 1344,
+          "mean": 0.467522212437221,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.46752220392227173,
+          "mean_mm": 467.52221243722096
+        },
+        "absolute_velocity_error": {
+          "numerator": 190.93116533101664,
+          "count": 1276,
+          "mean": 0.14963257471082808,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.14963257471082808
+        },
+        "relative_velocity_error": {
+          "numerator": 189.80689972908584,
+          "count": 1218,
+          "mean": 0.15583489304522646,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.15583489304522646
+        },
+        "root_speed_mae": {
+          "numerator": 1.7246920464754745,
+          "count": 58,
+          "mean": 0.029736069766818526,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.029736069766818526
+        },
+        "bone_length_mae": {
+          "numerator": 21.802200317382812,
+          "count": 1344,
+          "mean": 0.016221875236147924,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.016221875324845314,
+          "mean_mm": 16.221875236147923
+        },
+        "zero_velocity_error": {
+          "numerator": 76.38834540339003,
+          "count": 1276,
+          "mean": 0.059865474454067424,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.059865474454067424
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "8c110e6599eb0b053a79de4f422fe18ab32fcc60ec5d0045dc2d0d2b2766d3c0",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 944.0551147460938,
+          "count": 1408,
+          "mean": 0.6704936894503507,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6704936623573303,
+          "mean_mm": 670.4936894503508
+        },
+        "root_position_error": {
+          "numerator": 40.11078643798828,
+          "count": 64,
+          "mean": 0.6267310380935669,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6267310380935669,
+          "mean_mm": 626.7310380935669
+        },
+        "relative_mpjpe": {
+          "numerator": 634.8668823242188,
+          "count": 1344,
+          "mean": 0.47237119220551993,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4723711907863617,
+          "mean_mm": 472.37119220551995
+        },
+        "absolute_velocity_error": {
+          "numerator": 224.01250707558353,
+          "count": 1276,
+          "mean": 0.17555839112506547,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.17555839112506547
+        },
+        "relative_velocity_error": {
+          "numerator": 223.65043070431346,
+          "count": 1218,
+          "mean": 0.18362104327119333,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.18362104327119333
+        },
+        "root_speed_mae": {
+          "numerator": 1.9799270247044976,
+          "count": 58,
+          "mean": 0.034136672839732714,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.034136672839732714
+        },
+        "bone_length_mae": {
+          "numerator": 21.00300407409668,
+          "count": 1344,
+          "mean": 0.015627235174179077,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.015627235174179077,
+          "mean_mm": 15.627235174179077
+        },
+        "zero_velocity_error": {
+          "numerator": 79.52355905609528,
+          "count": 1276,
+          "mean": 0.062322538445215736,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.062322538445215736
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "605dd2be177b64ddd1275baddf6d61993d55850e2a8a3ed484efeead4c511130",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1016.2848510742188,
+          "count": 1408,
+          "mean": 0.7217932180924849,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.7217932343482971,
+          "mean_mm": 721.7932180924848
+        },
+        "root_position_error": {
+          "numerator": 41.74915313720703,
+          "count": 64,
+          "mean": 0.6523305177688599,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6523305177688599,
+          "mean_mm": 652.3305177688599
+        },
+        "relative_mpjpe": {
+          "numerator": 619.84375,
+          "count": 1344,
+          "mean": 0.4611932663690476,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4611932635307312,
+          "mean_mm": 461.1932663690476
+        },
+        "absolute_velocity_error": {
+          "numerator": 137.3508989730946,
+          "count": 1276,
+          "mean": 0.1076417703550898,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.1076417703550898
+        },
+        "relative_velocity_error": {
+          "numerator": 135.30090284526418,
+          "count": 1218,
+          "mean": 0.11108448509463396,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.11108448509463396
+        },
+        "root_speed_mae": {
+          "numerator": 0.9707418886450034,
+          "count": 58,
+          "mean": 0.016736929114569025,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.016736929114569025
+        },
+        "bone_length_mae": {
+          "numerator": 16.869770050048828,
+          "count": 1344,
+          "mean": 0.012551912239619665,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.012551912106573582,
+          "mean_mm": 12.551912239619664
+        },
+        "zero_velocity_error": {
+          "numerator": 58.4200718314044,
+          "count": 1276,
+          "mean": 0.0457837553537652,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.0457837553537652
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "c21b2b6820bdce3357d5b3e21c5d4822090dcb5ef83310bf0c2fdc906f2ee5e4",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 826.0474853515625,
+          "count": 1408,
+          "mean": 0.586681452664462,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5866814255714417,
+          "mean_mm": 586.6814526644621
+        },
+        "root_position_error": {
+          "numerator": 31.094301223754883,
+          "count": 64,
+          "mean": 0.48584845662117004,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.48584845662117004,
+          "mean_mm": 485.84845662117004
+        },
+        "relative_mpjpe": {
+          "numerator": 606.3026123046875,
+          "count": 1344,
+          "mean": 0.45111801510765437,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.45111802220344543,
+          "mean_mm": 451.11801510765434
+        },
+        "absolute_velocity_error": {
+          "numerator": 194.39815503753115,
+          "count": 1276,
+          "mean": 0.15234965128333164,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.15234965128333164
+        },
+        "relative_velocity_error": {
+          "numerator": 193.12761075520893,
+          "count": 1218,
+          "mean": 0.15856125677767566,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.15856125677767566
+        },
+        "root_speed_mae": {
+          "numerator": 1.4259527341611706,
+          "count": 58,
+          "mean": 0.024585391968296046,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.024585391968296046
+        },
+        "bone_length_mae": {
+          "numerator": 18.010814666748047,
+          "count": 1344,
+          "mean": 0.01340090376990182,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.013400903902947903,
+          "mean_mm": 13.40090376990182
+        },
+        "zero_velocity_error": {
+          "numerator": 83.6240220673114,
+          "count": 1276,
+          "mean": 0.06553606745087101,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.06553606745087101
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "74929c3120d4859506aa9a3e1c8ba9f79c1c34b63c1c9723abd9cbb609e9c008",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1383.2125244140625,
+          "count": 1408,
+          "mean": 0.9823952588168058,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9823952317237854,
+          "mean_mm": 982.3952588168058
+        },
+        "root_position_error": {
+          "numerator": 65.76167297363281,
+          "count": 64,
+          "mean": 1.0275261402130127,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0275261402130127,
+          "mean_mm": 1027.5261402130127
+        },
+        "relative_mpjpe": {
+          "numerator": 748.5933837890625,
+          "count": 1344,
+          "mean": 0.5569891248430524,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5569891333580017,
+          "mean_mm": 556.9891248430524
+        },
+        "absolute_velocity_error": {
+          "numerator": 802.990959635478,
+          "count": 1276,
+          "mean": 0.6293032599024122,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6293032599024122
+        },
+        "relative_velocity_error": {
+          "numerator": 396.5980796932947,
+          "count": 1218,
+          "mean": 0.32561418694030764,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.32561418694030764
+        },
+        "root_speed_mae": {
+          "numerator": 32.14145468539966,
+          "count": 58,
+          "mean": 0.5541630118172355,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5541630118172355
+        },
+        "bone_length_mae": {
+          "numerator": 22.226131439208984,
+          "count": 1344,
+          "mean": 0.016537300177982876,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.016537299379706383,
+          "mean_mm": 16.537300177982875
+        },
+        "zero_velocity_error": {
+          "numerator": 787.4399934568264,
+          "count": 1276,
+          "mean": 0.6171159823329361,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6171159823329361
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "d7713a7989b356eee5a19d81c807cb2a13d61aa2494186edab4235f5f5dbf922",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1350.6427001953125,
+          "count": 1408,
+          "mean": 0.9592632813887163,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.959263265132904,
+          "mean_mm": 959.2632813887163
+        },
+        "root_position_error": {
+          "numerator": 65.44505310058594,
+          "count": 64,
+          "mean": 1.0225789546966553,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0225789546966553,
+          "mean_mm": 1022.5789546966553
+        },
+        "relative_mpjpe": {
+          "numerator": 751.39111328125,
+          "count": 1344,
+          "mean": 0.5590707688104539,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5590707659721375,
+          "mean_mm": 559.070768810454
+        },
+        "absolute_velocity_error": {
+          "numerator": 242.39962029976184,
+          "count": 1276,
+          "mean": 0.189968354466898,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.189968354466898
+        },
+        "relative_velocity_error": {
+          "numerator": 242.02824979218082,
+          "count": 1218,
+          "mean": 0.19870956468980364,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.19870956468980364
+        },
+        "root_speed_mae": {
+          "numerator": 1.6832222094620797,
+          "count": 58,
+          "mean": 0.029021072576932407,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.029021072576932407
+        },
+        "bone_length_mae": {
+          "numerator": 19.306777954101562,
+          "count": 1344,
+          "mean": 0.01436516216823033,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.014365161769092083,
+          "mean_mm": 14.365162168230329
+        },
+        "zero_velocity_error": {
+          "numerator": 237.7982695252005,
+          "count": 1276,
+          "mean": 0.18636228019216342,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.18636228019216342
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "efa3ceb23415ea9aff8ebd65caecbafb46199b31ca7ab259c223fcf92efd993d",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1452.800048828125,
+          "count": 1408,
+          "mean": 1.0318182164972478,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0318182706832886,
+          "mean_mm": 1031.8182164972477
+        },
+        "root_position_error": {
+          "numerator": 68.02908325195312,
+          "count": 64,
+          "mean": 1.0629544258117676,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0629544258117676,
+          "mean_mm": 1062.9544258117676
+        },
+        "relative_mpjpe": {
+          "numerator": 734.8331298828125,
+          "count": 1344,
+          "mean": 0.5467508406866164,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5467508435249329,
+          "mean_mm": 546.7508406866164
+        },
+        "absolute_velocity_error": {
+          "numerator": 596.397047184999,
+          "count": 1276,
+          "mean": 0.4673958050039177,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4673958050039177
+        },
+        "relative_velocity_error": {
+          "numerator": 379.96547308278446,
+          "count": 1218,
+          "mean": 0.3119585164883288,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3119585164883288
+        },
+        "root_speed_mae": {
+          "numerator": 19.49725109391665,
+          "count": 58,
+          "mean": 0.33615950161925257,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.33615950161925257
+        },
+        "bone_length_mae": {
+          "numerator": 17.504392623901367,
+          "count": 1344,
+          "mean": 0.013024101654688517,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.013024101965129375,
+          "mean_mm": 13.024101654688517
+        },
+        "zero_velocity_error": {
+          "numerator": 556.0904302425624,
+          "count": 1276,
+          "mean": 0.4358075472120395,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4358075472120395
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "2b671e0bad8c2af443a7529a7cdadf53855818e412f4767285a19e264542561c",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1213.520751953125,
+          "count": 1408,
+          "mean": 0.8618755340576172,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.8618755340576172,
+          "mean_mm": 861.8755340576172
+        },
+        "root_position_error": {
+          "numerator": 56.510169982910156,
+          "count": 64,
+          "mean": 0.8829714059829712,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.8829714059829712,
+          "mean_mm": 882.9714059829712
+        },
+        "relative_mpjpe": {
+          "numerator": 733.044921875,
+          "count": 1344,
+          "mean": 0.5454203287760416,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5454203486442566,
+          "mean_mm": 545.4203287760416
+        },
+        "absolute_velocity_error": {
+          "numerator": 629.9346256903311,
+          "count": 1276,
+          "mean": 0.493679173738504,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.493679173738504
+        },
+        "relative_velocity_error": {
+          "numerator": 384.4593106848673,
+          "count": 1218,
+          "mean": 0.3156480383291193,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3156480383291193
+        },
+        "root_speed_mae": {
+          "numerator": 25.140849253852554,
+          "count": 58,
+          "mean": 0.43346291816987165,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.43346291816987165
+        },
+        "bone_length_mae": {
+          "numerator": 19.952741622924805,
+          "count": 1344,
+          "mean": 0.014845789898009528,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.014845790341496468,
+          "mean_mm": 14.845789898009528
+        },
+        "zero_velocity_error": {
+          "numerator": 621.1628287279834,
+          "count": 1276,
+          "mean": 0.486804724708451,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.486804724708451
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "49329e9cb9c72567ed265526f6225dd3f743e04e32f1ca22e79f9152aafb2d90",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1496.6318359375,
+          "count": 1408,
+          "mean": 1.0629487471147017,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0629487037658691,
+          "mean_mm": 1062.9487471147017
+        },
+        "root_position_error": {
+          "numerator": 74.57215881347656,
+          "count": 64,
+          "mean": 1.1651899814605713,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.1651899814605713,
+          "mean_mm": 1165.1899814605713
+        },
+        "relative_mpjpe": {
+          "numerator": 757.548095703125,
+          "count": 1344,
+          "mean": 0.563651856921968,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5636518597602844,
+          "mean_mm": 563.6518569219679
+        },
+        "absolute_velocity_error": {
+          "numerator": 458.71805357349444,
+          "count": 1276,
+          "mean": 0.359496907189259,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.359496907189259
+        },
+        "relative_velocity_error": {
+          "numerator": 463.2894589592119,
+          "count": 1218,
+          "mean": 0.38036901392381933,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.38036901392381933
+        },
+        "root_speed_mae": {
+          "numerator": 3.5448538909744634,
+          "count": 58,
+          "mean": 0.06111817053404247,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.06111817053404247
+        },
+        "bone_length_mae": {
+          "numerator": 24.30193519592285,
+          "count": 1344,
+          "mean": 0.01808179702077593,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.018081797286868095,
+          "mean_mm": 18.08179702077593
+        },
+        "zero_velocity_error": {
+          "numerator": 438.8365618845604,
+          "count": 1276,
+          "mean": 0.343915800849969,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.343915800849969
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "2943eee915bc2c00d7be7b6893a6c0843c9f4e5903a9eb434c960126c21644ef",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1300.0234375,
+          "count": 1408,
+          "mean": 0.9233121004971591,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9233121275901794,
+          "mean_mm": 923.312100497159
+        },
+        "root_position_error": {
+          "numerator": 65.50877380371094,
+          "count": 64,
+          "mean": 1.0235745906829834,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0235745906829834,
+          "mean_mm": 1023.5745906829834
+        },
+        "relative_mpjpe": {
+          "numerator": 764.8466186523438,
+          "count": 1344,
+          "mean": 0.5690823055448986,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5690823197364807,
+          "mean_mm": 569.0823055448985
+        },
+        "absolute_velocity_error": {
+          "numerator": 435.65142451824926,
+          "count": 1276,
+          "mean": 0.34141961169141793,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.34141961169141793
+        },
+        "relative_velocity_error": {
+          "numerator": 438.0662891025538,
+          "count": 1218,
+          "mean": 0.35966033588058605,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.35966033588058605
+        },
+        "root_speed_mae": {
+          "numerator": 2.027404152871487,
+          "count": 58,
+          "mean": 0.03495524401502564,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.03495524401502564
+        },
+        "bone_length_mae": {
+          "numerator": 21.75619125366211,
+          "count": 1344,
+          "mean": 0.016187642301831926,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.0161876417696476,
+          "mean_mm": 16.187642301831925
+        },
+        "zero_velocity_error": {
+          "numerator": 413.97780457599947,
+          "count": 1276,
+          "mean": 0.3244340161253914,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3244340161253914
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "1a8e3cf624438ae1b5a10bbf31b8ce57f60a3aca14b2d81a3d283e431a35085c",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1302.58349609375,
+          "count": 1408,
+          "mean": 0.9251303239302202,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.925130307674408,
+          "mean_mm": 925.1303239302202
+        },
+        "root_position_error": {
+          "numerator": 62.025733947753906,
+          "count": 64,
+          "mean": 0.9691520929336548,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9691520929336548,
+          "mean_mm": 969.1520929336548
+        },
+        "relative_mpjpe": {
+          "numerator": 760.71337890625,
+          "count": 1344,
+          "mean": 0.5660069783528646,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5660069584846497,
+          "mean_mm": 566.0069783528646
+        },
+        "absolute_velocity_error": {
+          "numerator": 431.04764613001237,
+          "count": 1276,
+          "mean": 0.3378116348981288,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3378116348981288
+        },
+        "relative_velocity_error": {
+          "numerator": 433.0991917745101,
+          "count": 1218,
+          "mean": 0.35558225925657644,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.35558225925657644
+        },
+        "root_speed_mae": {
+          "numerator": 2.984314331528176,
+          "count": 58,
+          "mean": 0.051453695371175445,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.051453695371175445
+        },
+        "bone_length_mae": {
+          "numerator": 18.879589080810547,
+          "count": 1344,
+          "mean": 0.014047313304174514,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.01404731348156929,
+          "mean_mm": 14.047313304174514
+        },
+        "zero_velocity_error": {
+          "numerator": 418.32221655331836,
+          "count": 1276,
+          "mean": 0.32783872770636235,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.32783872770636235
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "05701d9712f7d5a69fea04dd839bf104b46d612e845e43650bb9cb714e47a00c",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1318.393310546875,
+          "count": 1408,
+          "mean": 0.9363588853315874,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9363588690757751,
+          "mean_mm": 936.3588853315874
+        },
+        "root_position_error": {
+          "numerator": 60.71129608154297,
+          "count": 64,
+          "mean": 0.9486140012741089,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9486140012741089,
+          "mean_mm": 948.6140012741089
+        },
+        "relative_mpjpe": {
+          "numerator": 760.8651123046875,
+          "count": 1344,
+          "mean": 0.566119875226702,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5661198496818542,
+          "mean_mm": 566.119875226702
+        },
+        "absolute_velocity_error": {
+          "numerator": 446.05078474418576,
+          "count": 1276,
+          "mean": 0.3495695805205218,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3495695805205218
+        },
+        "relative_velocity_error": {
+          "numerator": 455.1546619286358,
+          "count": 1218,
+          "mean": 0.3736901986277798,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3736901986277798
+        },
+        "root_speed_mae": {
+          "numerator": 2.2640707315681725,
+          "count": 58,
+          "mean": 0.039035702268416766,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.039035702268416766
+        },
+        "bone_length_mae": {
+          "numerator": 19.42597198486328,
+          "count": 1344,
+          "mean": 0.014453848203023275,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.014453847892582417,
+          "mean_mm": 14.453848203023275
+        },
+        "zero_velocity_error": {
+          "numerator": 427.1572660160968,
+          "count": 1276,
+          "mean": 0.33476274766151787,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.33476274766151787
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "deb5b1ebdcfc64e5eb5adfeeb6c4692fad4c5edfb0aa331b2ec7446dae878da7",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 2092.64013671875,
+          "count": 1408,
+          "mean": 1.486250097101385,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.4862500429153442,
+          "mean_mm": 1486.250097101385
+        },
+        "root_position_error": {
+          "numerator": 96.55313110351562,
+          "count": 64,
+          "mean": 1.5086426734924316,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.5086426734924316,
+          "mean_mm": 1508.6426734924316
+        },
+        "relative_mpjpe": {
+          "numerator": 837.397216796875,
+          "count": 1344,
+          "mean": 0.6230634053548177,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6230633854866028,
+          "mean_mm": 623.0634053548177
+        },
+        "absolute_velocity_error": {
+          "numerator": 889.6947378725671,
+          "count": 1276,
+          "mean": 0.6972529293672156,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6972529293672156
+        },
+        "relative_velocity_error": {
+          "numerator": 545.8974640752792,
+          "count": 1218,
+          "mean": 0.44819167822272515,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.44819167822272515
+        },
+        "root_speed_mae": {
+          "numerator": 31.250840980516895,
+          "count": 58,
+          "mean": 0.5388076031123602,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5388076031123602
+        },
+        "bone_length_mae": {
+          "numerator": 23.784337997436523,
+          "count": 1344,
+          "mean": 0.01769668005761646,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.0176966805011034,
+          "mean_mm": 17.696680057616458
+        },
+        "zero_velocity_error": {
+          "numerator": 823.9748535505605,
+          "count": 1276,
+          "mean": 0.6457483178295929,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6457483178295929
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "a85035d77e45cafe61d559831bb202191be4f76d8ef4178d9b9c8463e38d8687",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1748.1845703125,
+          "count": 1408,
+          "mean": 1.241608359596946,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.2416083812713623,
+          "mean_mm": 1241.608359596946
+        },
+        "root_position_error": {
+          "numerator": 85.89971160888672,
+          "count": 64,
+          "mean": 1.342182993888855,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.342182993888855,
+          "mean_mm": 1342.182993888855
+        },
+        "relative_mpjpe": {
+          "numerator": 788.4814453125,
+          "count": 1344,
+          "mean": 0.5866677420479911,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5866677165031433,
+          "mean_mm": 586.667742047991
+        },
+        "absolute_velocity_error": {
+          "numerator": 669.1936624501175,
+          "count": 1276,
+          "mean": 0.5244464439264244,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5244464439264244
+        },
+        "relative_velocity_error": {
+          "numerator": 430.6350953565602,
+          "count": 1218,
+          "mean": 0.3535591915899509,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3535591915899509
+        },
+        "root_speed_mae": {
+          "numerator": 23.536930751999027,
+          "count": 58,
+          "mean": 0.40580915089653496,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.40580915089653496
+        },
+        "bone_length_mae": {
+          "numerator": 21.591739654541016,
+          "count": 1344,
+          "mean": 0.016065282481057302,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.016065282747149467,
+          "mean_mm": 16.065282481057302
+        },
+        "zero_velocity_error": {
+          "numerator": 641.237978223131,
+          "count": 1276,
+          "mean": 0.5025376004883472,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5025376004883472
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "0d239e4edf09c2094ecb6ad2c0464c4083495d8af02ad40340cd4a97e72ecbff",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 2008.8138427734375,
+          "count": 1408,
+          "mean": 1.426714376969771,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.4267144203186035,
+          "mean_mm": 1426.714376969771
+        },
+        "root_position_error": {
+          "numerator": 86.28397369384766,
+          "count": 64,
+          "mean": 1.3481870889663696,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.3481870889663696,
+          "mean_mm": 1348.1870889663696
+        },
+        "relative_mpjpe": {
+          "numerator": 815.4160766601562,
+          "count": 1344,
+          "mean": 0.6067083903721401,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6067084074020386,
+          "mean_mm": 606.7083903721401
+        },
+        "absolute_velocity_error": {
+          "numerator": 648.0946707011232,
+          "count": 1276,
+          "mean": 0.5079111839350495,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5079111839350495
+        },
+        "relative_velocity_error": {
+          "numerator": 489.0511538807816,
+          "count": 1218,
+          "mean": 0.4015198307723987,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4015198307723987
+        },
+        "root_speed_mae": {
+          "numerator": 17.594696224745874,
+          "count": 58,
+          "mean": 0.3033568314611358,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.3033568314611358
+        },
+        "bone_length_mae": {
+          "numerator": 18.44251251220703,
+          "count": 1344,
+          "mean": 0.013722107523963564,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.013722107745707035,
+          "mean_mm": 13.722107523963563
+        },
+        "zero_velocity_error": {
+          "numerator": 586.3152889440793,
+          "count": 1276,
+          "mean": 0.45949474055178624,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.45949474055178624
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "94ef7c43c658cac963af0ad43685bb09953260c29a71009f53f6a5763649355c",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 2096.46826171875,
+          "count": 1408,
+          "mean": 1.488968935879794,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.4889689683914185,
+          "mean_mm": 1488.968935879794
+        },
+        "root_position_error": {
+          "numerator": 99.31961059570312,
+          "count": 64,
+          "mean": 1.5518689155578613,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.5518689155578613,
+          "mean_mm": 1551.8689155578613
+        },
+        "relative_mpjpe": {
+          "numerator": 802.744384765625,
+          "count": 1344,
+          "mean": 0.5972800481887091,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5972800254821777,
+          "mean_mm": 597.2800481887091
+        },
+        "absolute_velocity_error": {
+          "numerator": 860.5200562032762,
+          "count": 1276,
+          "mean": 0.674388758779997,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.674388758779997
+        },
+        "relative_velocity_error": {
+          "numerator": 542.2338027802248,
+          "count": 1218,
+          "mean": 0.4451837461249793,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4451837461249793
+        },
+        "root_speed_mae": {
+          "numerator": 29.936906841293922,
+          "count": 58,
+          "mean": 0.5161535662292056,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5161535662292056
+        },
+        "bone_length_mae": {
+          "numerator": 18.961776733398438,
+          "count": 1344,
+          "mean": 0.014108464831397646,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.014108465053141117,
+          "mean_mm": 14.108464831397646
+        },
+        "zero_velocity_error": {
+          "numerator": 796.1564982012083,
+          "count": 1276,
+          "mean": 0.6239470989037682,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.6239470989037682
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "e44a0da107e77f4ba0bc2114225fa5d92556deeee2f07edf8ea20dd411429535",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1412.7410888671875,
+          "count": 1408,
+          "mean": 1.0033672506159002,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.003367304801941,
+          "mean_mm": 1003.3672506159002
+        },
+        "root_position_error": {
+          "numerator": 67.30415344238281,
+          "count": 64,
+          "mean": 1.0516273975372314,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0516273975372314,
+          "mean_mm": 1051.6273975372314
+        },
+        "relative_mpjpe": {
+          "numerator": 785.908203125,
+          "count": 1344,
+          "mean": 0.5847531273251488,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.584753155708313,
+          "mean_mm": 584.7531273251489
+        },
+        "absolute_velocity_error": {
+          "numerator": 284.53999166262656,
+          "count": 1276,
+          "mean": 0.22299372387353178,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.22299372387353178
+        },
+        "relative_velocity_error": {
+          "numerator": 283.08799693036036,
+          "count": 1218,
+          "mean": 0.23242035872771788,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.23242035872771788
+        },
+        "root_speed_mae": {
+          "numerator": 1.0557963349977573,
+          "count": 58,
+          "mean": 0.018203385086168228,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.018203385086168228
+        },
+        "bone_length_mae": {
+          "numerator": 25.167766571044922,
+          "count": 1344,
+          "mean": 0.018726016793932234,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.018726017326116562,
+          "mean_mm": 18.726016793932235
+        },
+        "zero_velocity_error": {
+          "numerator": 210.56758046832854,
+          "count": 1276,
+          "mean": 0.16502161478709135,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.16502161478709135
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "5e692d8498039f1bb4ac4ddcebdc76c743b8f829de60b2fc235ef533de8b436c",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1313.337646484375,
+          "count": 1408,
+          "mean": 0.9327682148326527,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9327682256698608,
+          "mean_mm": 932.7682148326527
+        },
+        "root_position_error": {
+          "numerator": 65.13599395751953,
+          "count": 64,
+          "mean": 1.0177499055862427,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0177499055862427,
+          "mean_mm": 1017.7499055862427
+        },
+        "relative_mpjpe": {
+          "numerator": 755.0559692382812,
+          "count": 1344,
+          "mean": 0.5617975961594355,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5617976188659668,
+          "mean_mm": 561.7975961594354
+        },
+        "absolute_velocity_error": {
+          "numerator": 219.81293948972603,
+          "count": 1276,
+          "mean": 0.17226719395746554,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.17226719395746554
+        },
+        "relative_velocity_error": {
+          "numerator": 225.7370556648267,
+          "count": 1218,
+          "mean": 0.1853342000532239,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.1853342000532239
+        },
+        "root_speed_mae": {
+          "numerator": 1.5594656984049005,
+          "count": 58,
+          "mean": 0.026887339627670696,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.026887339627670696
+        },
+        "bone_length_mae": {
+          "numerator": 19.309490203857422,
+          "count": 1344,
+          "mean": 0.014367180211203439,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.014367179945111275,
+          "mean_mm": 14.367180211203438
+        },
+        "zero_velocity_error": {
+          "numerator": 161.58530938727347,
+          "count": 1276,
+          "mean": 0.12663425500570022,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.12663425500570022
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "9221820c8a5d70b4c020ebb2d044613fe20f76208697feaff5367c24bd12c5b9",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1392.12939453125,
+          "count": 1408,
+          "mean": 0.9887282631613992,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9887282848358154,
+          "mean_mm": 988.7282631613991
+        },
+        "root_position_error": {
+          "numerator": 64.29901885986328,
+          "count": 64,
+          "mean": 1.0046721696853638,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0046721696853638,
+          "mean_mm": 1004.6721696853638
+        },
+        "relative_mpjpe": {
+          "numerator": 766.912353515625,
+          "count": 1344,
+          "mean": 0.5706193106515067,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5706192851066589,
+          "mean_mm": 570.6193106515067
+        },
+        "absolute_velocity_error": {
+          "numerator": 180.38753890206561,
+          "count": 1276,
+          "mean": 0.14136954459409531,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.14136954459409531
+        },
+        "relative_velocity_error": {
+          "numerator": 194.2550681456885,
+          "count": 1218,
+          "mean": 0.1594869196598428,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.1594869196598428
+        },
+        "root_speed_mae": {
+          "numerator": 2.532649524179619,
+          "count": 58,
+          "mean": 0.04366637110654516,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.04366637110654516
+        },
+        "bone_length_mae": {
+          "numerator": 15.951743125915527,
+          "count": 1344,
+          "mean": 0.011868856492496672,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.011868856847286224,
+          "mean_mm": 11.868856492496672
+        },
+        "zero_velocity_error": {
+          "numerator": 152.1957562516164,
+          "count": 1276,
+          "mean": 0.11927567104358651,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.11927567104358651
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "6b34648985b1e01504621314a0b954e8fdd3a498868efaebc4b12c7d5e3b9382",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1284.3822021484375,
+          "count": 1408,
+          "mean": 0.9122032685713335,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9122032523155212,
+          "mean_mm": 912.2032685713335
+        },
+        "root_position_error": {
+          "numerator": 59.66676330566406,
+          "count": 64,
+          "mean": 0.932293176651001,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.932293176651001,
+          "mean_mm": 932.293176651001
+        },
+        "relative_mpjpe": {
+          "numerator": 758.0960693359375,
+          "count": 1344,
+          "mean": 0.5640595753987631,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5640595555305481,
+          "mean_mm": 564.0595753987631
+        },
+        "absolute_velocity_error": {
+          "numerator": 265.9551764452747,
+          "count": 1276,
+          "mean": 0.20842882166557578,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.20842882166557578
+        },
+        "relative_velocity_error": {
+          "numerator": 269.40021422714034,
+          "count": 1218,
+          "mean": 0.22118244189420389,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.22118244189420389
+        },
+        "root_speed_mae": {
+          "numerator": 1.9736671419472904,
+          "count": 58,
+          "mean": 0.03402874382667742,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.03402874382667742
+        },
+        "bone_length_mae": {
+          "numerator": 18.453399658203125,
+          "count": 1344,
+          "mean": 0.013730208079020182,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.01373020838946104,
+          "mean_mm": 13.730208079020182
+        },
+        "zero_velocity_error": {
+          "numerator": 177.09369331334085,
+          "count": 1276,
+          "mean": 0.13878816090387214,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.13878816090387214
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "f0d961b3ff0b3421cefb7414ab96ca0cfe31a43edd4f84750dbab4a0ded757fc",
+      "split": "val",
+      "subject_id": "16",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1315.603515625,
+          "count": 1408,
+          "mean": 0.9343774968927557,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9343774914741516,
+          "mean_mm": 934.3774968927557
+        },
+        "root_position_error": {
+          "numerator": 68.99620819091797,
+          "count": 64,
+          "mean": 1.0780657529830933,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0780657529830933,
+          "mean_mm": 1078.0657529830933
+        },
+        "relative_mpjpe": {
+          "numerator": 768.299072265625,
+          "count": 1344,
+          "mean": 0.5716510954357329,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5716511011123657,
+          "mean_mm": 571.6510954357329
+        },
+        "absolute_velocity_error": {
+          "numerator": 339.8825485723577,
+          "count": 1276,
+          "mean": 0.2663656336773963,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2663656336773963
+        },
+        "relative_velocity_error": {
+          "numerator": 290.9351432740373,
+          "count": 1218,
+          "mean": 0.2388630076141521,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2388630076141521
+        },
+        "root_speed_mae": {
+          "numerator": 5.705992820386751,
+          "count": 58,
+          "mean": 0.09837918655839226,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.09837918655839226
+        },
+        "bone_length_mae": {
+          "numerator": 23.282894134521484,
+          "count": 1344,
+          "mean": 0.017323581945328487,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.017323581501841545,
+          "mean_mm": 17.32358194532849
+        },
+        "zero_velocity_error": {
+          "numerator": 328.0810599853818,
+          "count": 1276,
+          "mean": 0.2571168181703619,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.2571168181703619
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "45ab08478873d8b2460e591b52089c72d65cac983ffa42561d55ac184947a345",
+      "split": "val",
+      "subject_id": "17",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1385.59375,
+          "count": 1408,
+          "mean": 0.9840864701704546,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9840864539146423,
+          "mean_mm": 984.0864701704546
+        },
+        "root_position_error": {
+          "numerator": 66.37602996826172,
+          "count": 64,
+          "mean": 1.0371254682540894,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0371254682540894,
+          "mean_mm": 1037.1254682540894
+        },
+        "relative_mpjpe": {
+          "numerator": 755.437744140625,
+          "count": 1344,
+          "mean": 0.5620816548665365,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5620816349983215,
+          "mean_mm": 562.0816548665365
+        },
+        "absolute_velocity_error": {
+          "numerator": 164.05097063390613,
+          "count": 1276,
+          "mean": 0.12856659140588256,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.12856659140588256
+        },
+        "relative_velocity_error": {
+          "numerator": 168.45737813637265,
+          "count": 1218,
+          "mean": 0.1383065501940662,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.1383065501940662
+        },
+        "root_speed_mae": {
+          "numerator": 1.5936840417008755,
+          "count": 58,
+          "mean": 0.0274773110638082,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.0274773110638082
+        },
+        "bone_length_mae": {
+          "numerator": 20.2358455657959,
+          "count": 1344,
+          "mean": 0.015056432712645758,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.015056433156132698,
+          "mean_mm": 15.056432712645758
+        },
+        "zero_velocity_error": {
+          "numerator": 157.723253341624,
+          "count": 1276,
+          "mean": 0.12360756531475235,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.12360756531475235
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "3f66fdf87d0c04bccec4df0239f041c47272600ae49df197c6f7ea4669240fe8",
+      "split": "val",
+      "subject_id": "19",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1300.3236083984375,
+          "count": 1408,
+          "mean": 0.9235252900557085,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9235252737998962,
+          "mean_mm": 923.5252900557085
+        },
+        "root_position_error": {
+          "numerator": 64.53560638427734,
+          "count": 64,
+          "mean": 1.0083688497543335,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 1.0083688497543335,
+          "mean_mm": 1008.3688497543335
+        },
+        "relative_mpjpe": {
+          "numerator": 731.5946044921875,
+          "count": 1344,
+          "mean": 0.5443412235804966,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5443412065505981,
+          "mean_mm": 544.3412235804966
+        },
+        "absolute_velocity_error": {
+          "numerator": 659.2028626947663,
+          "count": 1276,
+          "mean": 0.516616663553892,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.516616663553892
+        },
+        "relative_velocity_error": {
+          "numerator": 600.4614155571776,
+          "count": 1218,
+          "mean": 0.4929896679451376,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.4929896679451376
+        },
+        "root_speed_mae": {
+          "numerator": 9.516933688792195,
+          "count": 58,
+          "mean": 0.16408506359986544,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.16408506359986544
+        },
+        "bone_length_mae": {
+          "numerator": 20.22956657409668,
+          "count": 1344,
+          "mean": 0.015051760843821935,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.015051760710775852,
+          "mean_mm": 15.051760843821935
+        },
+        "zero_velocity_error": {
+          "numerator": 650.6062719569629,
+          "count": 1276,
+          "mean": 0.5098795234772436,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5098795234772436
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    },
+    {
+      "window_uid": "52627da174f54df13265f6ea6f90e4e703fcef0425bdad27bdd41b4b8e9cf960",
+      "split": "val",
+      "subject_id": "5",
+      "status": "valid",
+      "aggregation": "valid_window_endpoint_joint_with_overlap",
+      "metrics": {
+        "global_mpjpe": {
+          "numerator": 1186.6470947265625,
+          "count": 1408,
+          "mean": 0.8427891297773882,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.8427891135215759,
+          "mean_mm": 842.7891297773882
+        },
+        "root_position_error": {
+          "numerator": 59.35527038574219,
+          "count": 64,
+          "mean": 0.9274260997772217,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.9274260997772217,
+          "mean_mm": 927.4260997772217
+        },
+        "relative_mpjpe": {
+          "numerator": 721.0948486328125,
+          "count": 1344,
+          "mean": 0.5365289052327474,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5365288853645325,
+          "mean_mm": 536.5289052327474
+        },
+        "absolute_velocity_error": {
+          "numerator": 754.536842792176,
+          "count": 1276,
+          "mean": 0.5913298141004514,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5913298141004514
+        },
+        "relative_velocity_error": {
+          "numerator": 664.2471555270465,
+          "count": 1218,
+          "mean": 0.545358912583782,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.545358912583782
+        },
+        "root_speed_mae": {
+          "numerator": 12.475413344855914,
+          "count": 58,
+          "mean": 0.21509333353199853,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.21509333353199853
+        },
+        "bone_length_mae": {
+          "numerator": 20.727672576904297,
+          "count": 1344,
+          "mean": 0.015422375429244269,
+          "unit": "m",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.015422375872731209,
+          "mean_mm": 15.42237542924427
+        },
+        "zero_velocity_error": {
+          "numerator": 655.6133325228095,
+          "count": 1276,
+          "mean": 0.5138035521338633,
+          "unit": "m/s",
+          "nonfinite_prediction_count": 0,
+          "failure_rate": 0.0,
+          "finite_subset_mean_diagnostic": 0.5138035521338633
+        }
+      },
+      "nonfinite_sensor_position_count": 0,
+      "nonfinite_sensor_velocity_count": 0,
+      "nonfinite_sensor_position_rate": 0.0,
+      "nonfinite_sensor_velocity_rate": 0.0
+    }
+  ],
+  "cache_max_absolute_error": 0.0,
+  "resource": {
+    "wall_seconds": 2.1223461000045063,
+    "device": "cuda",
+    "peak_allocated_bytes": 164627968,
+    "peak_reserved_bytes": 203423744,
+    "minimum_free_cuda_bytes": 11562647552,
+    "minimum_available_ram_bytes": 6898376704,
+    "peak_process_rss_bytes_sampled": 1188524032,
+    "resource_guard_passed": true,
+    "sampling": "At each microbatch/optimizer boundary; not continuous OS telemetry."
+  },
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "failures": [],
+  "criterion": "Every validation generation must terminate with the strict schema/enum; no parser repair.",
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false
+}

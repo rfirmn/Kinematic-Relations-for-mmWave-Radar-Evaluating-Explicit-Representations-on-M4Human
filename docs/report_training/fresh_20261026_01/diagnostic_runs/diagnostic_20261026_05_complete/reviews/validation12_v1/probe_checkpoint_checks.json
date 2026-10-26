@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "source": "Y",
+      "status": "diagnostic",
+      "step": 50,
+      "checkpoint_sha256": "d53235d137c50bebed5a2217a4d2001c066ae73d7fde1b07df201da1438d8d19",
+      "reload_passed": true,
+      "parameter_hash": "366697b0241747832855352cdc040375bac847d690e4994c74fdcfe5a94df0e4"
+    },
+    {
+      "source": "Z_R",
+      "status": "diagnostic",
+      "step": 50,
+      "checkpoint_sha256": "da36661a1f554122663ee93eab80f2a929fa0a12f02b6739c75f42ae4d68bdf8",
+      "reload_passed": true,
+      "parameter_hash": "4b6367e8f6c0495f9ad2b61856800a8f0b177316fee3fefacbf9bc3e48b3cbce"
+    }
+  ],
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false
+}

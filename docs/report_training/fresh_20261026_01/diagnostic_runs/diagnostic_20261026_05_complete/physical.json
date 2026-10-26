@@ -1,0 +1,148 @@
+{
+  "stage": "physical",
+  "run_id": "diagnostic_20261026_05_complete",
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false,
+  "artifact_generation_id": "fresh_20261026_01",
+  "plan_hash": "621765149b4dec385ef0c36eed3c98e2e1471dfac78cea1ef07a6d25021c3d99",
+  "module_sha256": "8a18c03fe0dd18e7126bac54874d35857a3a49099e45bd16b9b982c6dc499064",
+  "source_snapshot": "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_05_complete\\source_snapshots\\8a18c03fe0dd18e7126bac54874d35857a3a49099e45bd16b9b982c6dc499064.txt",
+  "started_utc": "2026-10-26T13:32:16.632901+00:00",
+  "optimizer_steps": 100,
+  "initial": {
+    "train": {
+      "components": {
+        "position": {
+          "numerator": 93054.181640625,
+          "denominator": 165312.0,
+          "mean": 0.5629003438384691
+        },
+        "root_velocity": {
+          "numerator": 226.74944496154785,
+          "denominator": 1872.0,
+          "mean": 0.1211268402572371
+        },
+        "relative_velocity": {
+          "numerator": 49268.0859375,
+          "denominator": 151632.0,
+          "mean": 0.3249187898167933
+        },
+        "bone_length": {
+          "numerator": 3088.4095764160156,
+          "denominator": 14112.0,
+          "mean": 0.21884988495011448
+        }
+      },
+      "L_phys": 4.855422213192816,
+      "no_supervision": false
+    },
+    "val": {
+      "components": {
+        "position": {
+          "numerator": 46003.59765625,
+          "denominator": 82656.0,
+          "mean": 0.5565669480285763
+        },
+        "root_velocity": {
+          "numerator": 124.61063575744629,
+          "denominator": 936.0,
+          "mean": 0.1331310211083828
+        },
+        "relative_velocity": {
+          "numerator": 24739.3447265625,
+          "denominator": 75816.0,
+          "mean": 0.3263077018909267
+        },
+        "bone_length": {
+          "numerator": 1592.7845458984375,
+          "denominator": 7056.0,
+          "mean": 0.22573477124410962
+        }
+      },
+      "L_phys": 4.936768614967977,
+      "no_supervision": false
+    }
+  },
+  "final": {
+    "step": 100,
+    "gradient_norm": 10.273445129394531,
+    "train": {
+      "components": {
+        "position": {
+          "numerator": 42881.798828125,
+          "denominator": 165312.0,
+          "mean": 0.2593991895816698
+        },
+        "root_velocity": {
+          "numerator": 34.96464681625366,
+          "denominator": 1872.0,
+          "mean": 0.018677695948853452
+        },
+        "relative_velocity": {
+          "numerator": 21091.434326171875,
+          "denominator": 151632.0,
+          "mean": 0.13909619556671332
+        },
+        "bone_length": {
+          "numerator": 208.17771911621094,
+          "denominator": 14112.0,
+          "mean": 0.0147518224997315
+        }
+      },
+      "L_phys": 1.7732532699925334,
+      "no_supervision": false
+    },
+    "val": {
+      "components": {
+        "position": {
+          "numerator": 30090.9462890625,
+          "denominator": 82656.0,
+          "mean": 0.3640503567685649
+        },
+        "root_velocity": {
+          "numerator": 23.075119495391846,
+          "denominator": 936.0,
+          "mean": 0.02465290544379471
+        },
+        "relative_velocity": {
+          "numerator": 13063.30322265625,
+          "denominator": 75816.0,
+          "mean": 0.1723027226793322
+        },
+        "bone_length": {
+          "numerator": 110.11033058166504,
+          "denominator": 7056.0,
+          "mean": 0.015605205581301735
+        }
+      },
+      "L_phys": 2.241552521943464,
+      "no_supervision": false
+    }
+  },
+  "parameters_changed_in_this_invocation": true,
+  "checkpoint_reload_passed": true,
+  "precision": "torch.bfloat16",
+  "resource": {
+    "wall_seconds": 100.65476699999999,
+    "device": "cuda",
+    "peak_allocated_bytes": 584147968,
+    "peak_reserved_bytes": 729808896,
+    "minimum_free_cuda_bytes": 11019485184,
+    "minimum_available_ram_bytes": 6332542976,
+    "peak_process_rss_bytes_sampled": 1579012096,
+    "resource_guard_passed": true,
+    "sampling": "At each microbatch/optimizer boundary; not continuous OS telemetry."
+  },
+  "files": {
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\checkpoints\\m4human_relational64\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_05_complete\\physical\\diagnostic.pt": "7498fc7f2ef3df96378a29cfb168de7dda1108c520fae8a9777a1750be2a2f89",
+    "C:\\Users\\Rio Aslab\\Documents\\ChatGPT\\tugas akhir V2\\docs\\report_training\\fresh_20261026_01\\diagnostic_runs\\diagnostic_20261026_05_complete\\physical_history.json": "43b0a149118d2e610e9321c377584144d45d85269350d0468d8f4c971799ff7a"
+  },
+  "status": "passed",
+  "completed_utc": "2026-10-26T13:33:59.644313+00:00"
+}

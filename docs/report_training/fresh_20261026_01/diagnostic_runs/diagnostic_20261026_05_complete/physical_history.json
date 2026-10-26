@@ -1,0 +1,5666 @@
+{
+  "initial": {
+    "train": {
+      "components": {
+        "position": {
+          "numerator": 93054.181640625,
+          "denominator": 165312.0,
+          "mean": 0.5629003438384691
+        },
+        "root_velocity": {
+          "numerator": 226.74944496154785,
+          "denominator": 1872.0,
+          "mean": 0.1211268402572371
+        },
+        "relative_velocity": {
+          "numerator": 49268.0859375,
+          "denominator": 151632.0,
+          "mean": 0.3249187898167933
+        },
+        "bone_length": {
+          "numerator": 3088.4095764160156,
+          "denominator": 14112.0,
+          "mean": 0.21884988495011448
+        }
+      },
+      "L_phys": 4.855422213192816,
+      "no_supervision": false
+    },
+    "val": {
+      "components": {
+        "position": {
+          "numerator": 46003.59765625,
+          "denominator": 82656.0,
+          "mean": 0.5565669480285763
+        },
+        "root_velocity": {
+          "numerator": 124.61063575744629,
+          "denominator": 936.0,
+          "mean": 0.1331310211083828
+        },
+        "relative_velocity": {
+          "numerator": 24739.3447265625,
+          "denominator": 75816.0,
+          "mean": 0.3263077018909267
+        },
+        "bone_length": {
+          "numerator": 1592.7845458984375,
+          "denominator": 7056.0,
+          "mean": 0.22573477124410962
+        }
+      },
+      "L_phys": 4.936768614967977,
+      "no_supervision": false
+    }
+  },
+  "history": [
+    {
+      "step": 1,
+      "gradient_norm": 49.60798645019531,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 83351.3837890625,
+            "denominator": 165312.0,
+            "mean": 0.5042064931103761
+          },
+          "root_velocity": {
+            "numerator": 111.36675453186035,
+            "denominator": 1872.0,
+            "mean": 0.05949078767727583
+          },
+          "relative_velocity": {
+            "numerator": 38114.16259765625,
+            "denominator": 151632.0,
+            "mean": 0.25135962460203815
+          },
+          "bone_length": {
+            "numerator": 2413.442138671875,
+            "denominator": 14112.0,
+            "mean": 0.17102055971314306
+          }
+        },
+        "L_phys": 3.657297796943423,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 43157.37890625,
+            "denominator": 82656.0,
+            "mean": 0.5221324393419715
+          },
+          "root_velocity": {
+            "numerator": 49.21430492401123,
+            "denominator": 936.0,
+            "mean": 0.0525793856025761
+          },
+          "relative_velocity": {
+            "numerator": 18173.5595703125,
+            "denominator": 75816.0,
+            "mean": 0.23970612496455235
+          },
+          "bone_length": {
+            "numerator": 1169.2963256835938,
+            "denominator": 7056.0,
+            "mean": 0.16571659944495376
+          }
+        },
+        "L_phys": 3.513523815890283,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 2,
+      "gradient_norm": 13.279379844665527,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 83836.521484375,
+            "denominator": 165312.0,
+            "mean": 0.5071411723551527
+          },
+          "root_velocity": {
+            "numerator": 68.89502573013306,
+            "denominator": 1872.0,
+            "mean": 0.036802898360113814
+          },
+          "relative_velocity": {
+            "numerator": 35361.302978515625,
+            "denominator": 151632.0,
+            "mean": 0.23320475215334246
+          },
+          "bone_length": {
+            "numerator": 1384.7830810546875,
+            "denominator": 14112.0,
+            "mean": 0.09812805279582536
+          }
+        },
+        "L_phys": 3.219459291280797,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 41769.451171875,
+            "denominator": 82656.0,
+            "mean": 0.5053408242822662
+          },
+          "root_velocity": {
+            "numerator": 28.949459552764893,
+            "denominator": 936.0,
+            "mean": 0.03092890977859497
+          },
+          "relative_velocity": {
+            "numerator": 16805.23046875,
+            "denominator": 75816.0,
+            "mean": 0.22165809946119552
+          },
+          "bone_length": {
+            "numerator": 679.4295959472656,
+            "denominator": 7056.0,
+            "mean": 0.0962910425095331
+          }
+        },
+        "L_phys": 3.0691484528062625,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 3,
+      "gradient_norm": 6.296961307525635,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 82195.36328125,
+            "denominator": 165312.0,
+            "mean": 0.4972135312696598
+          },
+          "root_velocity": {
+            "numerator": 64.57842683792114,
+            "denominator": 1872.0,
+            "mean": 0.03449702288350488
+          },
+          "relative_velocity": {
+            "numerator": 35068.74609375,
+            "denominator": 151632.0,
+            "mean": 0.23127536465752613
+          },
+          "bone_length": {
+            "numerator": 809.5963973999023,
+            "denominator": 14112.0,
+            "mean": 0.05736935922618355
+          }
+        },
+        "L_phys": 3.0971910107148126,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 40848.0078125,
+            "denominator": 82656.0,
+            "mean": 0.49419289358909213
+          },
+          "root_velocity": {
+            "numerator": 28.17822551727295,
+            "denominator": 936.0,
+            "mean": 0.03010494179195828
+          },
+          "relative_velocity": {
+            "numerator": 16668.33544921875,
+            "denominator": 75816.0,
+            "mean": 0.2198524776988861
+          },
+          "bone_length": {
+            "numerator": 407.06717681884766,
+            "denominator": 7056.0,
+            "mean": 0.05769092641990471
+          }
+        },
+        "L_phys": 2.958624232377554,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 4,
+      "gradient_norm": 4.665148735046387,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 80713.884765625,
+            "denominator": 165312.0,
+            "mean": 0.4882518193816843
+          },
+          "root_velocity": {
+            "numerator": 63.57841968536377,
+            "denominator": 1872.0,
+            "mean": 0.033962831028506286
+          },
+          "relative_velocity": {
+            "numerator": 34998.924072265625,
+            "denominator": 151632.0,
+            "mean": 0.23081489443036843
+          },
+          "bone_length": {
+            "numerator": 574.4983825683594,
+            "denominator": 14112.0,
+            "mean": 0.04070991939968533
+          }
+        },
+        "L_phys": 3.0476347576272707,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 40330.3203125,
+            "denominator": 82656.0,
+            "mean": 0.487929736649487
+          },
+          "root_velocity": {
+            "numerator": 28.2978515625,
+            "denominator": 936.0,
+            "mean": 0.030232747395833332
+          },
+          "relative_velocity": {
+            "numerator": 16656.494140625,
+            "denominator": 75816.0,
+            "mean": 0.21969629287518466
+          },
+          "bone_length": {
+            "numerator": 288.81520080566406,
+            "denominator": 7056.0,
+            "mean": 0.04093185952461225
+          }
+        },
+        "L_phys": 2.917920121429725,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 5,
+      "gradient_norm": 3.8651373386383057,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 80150.68359375,
+            "denominator": 165312.0,
+            "mean": 0.48484492108104676
+          },
+          "root_velocity": {
+            "numerator": 64.07757043838501,
+            "denominator": 1872.0,
+            "mean": 0.03422947138802618
+          },
+          "relative_velocity": {
+            "numerator": 35029.5205078125,
+            "denominator": 151632.0,
+            "mean": 0.23101667529157763
+          },
+          "bone_length": {
+            "numerator": 515.430118560791,
+            "denominator": 14112.0,
+            "mean": 0.036524243095294145
+          }
+        },
+        "L_phys": 3.039207517127542,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 40236.8984375,
+            "denominator": 82656.0,
+            "mean": 0.48679948748427215
+          },
+          "root_velocity": {
+            "numerator": 27.988877058029175,
+            "denominator": 936.0,
+            "mean": 0.02990264642951835
+          },
+          "relative_velocity": {
+            "numerator": 16655.03369140625,
+            "denominator": 75816.0,
+            "mean": 0.21967702980117984
+          },
+          "bone_length": {
+            "numerator": 293.23938751220703,
+            "denominator": 7056.0,
+            "mean": 0.041558870112274236
+          }
+        },
+        "L_phys": 2.9162007578682108,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 6,
+      "gradient_norm": 3.297844409942627,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 80023.45654296875,
+            "denominator": 165312.0,
+            "mean": 0.4840753033232237
+          },
+          "root_velocity": {
+            "numerator": 63.68191623687744,
+            "denominator": 1872.0,
+            "mean": 0.03401811764790462
+          },
+          "relative_velocity": {
+            "numerator": 35022.18505859375,
+            "denominator": 151632.0,
+            "mean": 0.23096829863481158
+          },
+          "bone_length": {
+            "numerator": 449.4454154968262,
+            "denominator": 14112.0,
+            "mean": 0.031848456313550606
+          }
+        },
+        "L_phys": 3.0275457905379635,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 40173.6552734375,
+            "denominator": 82656.0,
+            "mean": 0.4860343504819674
+          },
+          "root_velocity": {
+            "numerator": 28.112426042556763,
+            "denominator": 936.0,
+            "mean": 0.030034643207859788
+          },
+          "relative_velocity": {
+            "numerator": 16647.69775390625,
+            "denominator": 75816.0,
+            "mean": 0.21958027004730202
+          },
+          "bone_length": {
+            "numerator": 278.03607177734375,
+            "denominator": 7056.0,
+            "mean": 0.03940420518386391
+          }
+        },
+        "L_phys": 2.9108186773620144,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 7,
+      "gradient_norm": 2.7740039825439453,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 79300.9599609375,
+            "denominator": 165312.0,
+            "mean": 0.4797048003831392
+          },
+          "root_velocity": {
+            "numerator": 63.621803283691406,
+            "denominator": 1872.0,
+            "mean": 0.03398600602761293
+          },
+          "relative_velocity": {
+            "numerator": 35009.24560546875,
+            "denominator": 151632.0,
+            "mean": 0.23088296405421513
+          },
+          "bone_length": {
+            "numerator": 388.7012596130371,
+            "denominator": 14112.0,
+            "mean": 0.02754402349865626
+          }
+        },
+        "L_phys": 3.0135525180606675,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 40016.287109375,
+            "denominator": 82656.0,
+            "mean": 0.48413045767246177
+          },
+          "root_velocity": {
+            "numerator": 28.08065414428711,
+            "denominator": 936.0,
+            "mean": 0.030000698872101612
+          },
+          "relative_velocity": {
+            "numerator": 16644.55419921875,
+            "denominator": 75816.0,
+            "mean": 0.21953880710165072
+          },
+          "bone_length": {
+            "numerator": 192.6583709716797,
+            "denominator": 7056.0,
+            "mean": 0.027304190897346894
+          }
+        },
+        "L_phys": 2.884130404844171,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 8,
+      "gradient_norm": 2.753075122833252,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 78363.10791015625,
+            "denominator": 165312.0,
+            "mean": 0.4740315761115724
+          },
+          "root_velocity": {
+            "numerator": 63.93602466583252,
+            "denominator": 1872.0,
+            "mean": 0.03415385933003874
+          },
+          "relative_velocity": {
+            "numerator": 35040.562255859375,
+            "denominator": 151632.0,
+            "mean": 0.2310894946703821
+          },
+          "bone_length": {
+            "numerator": 287.58007431030273,
+            "denominator": 14112.0,
+            "mean": 0.020378406626296964
+          }
+        },
+        "L_phys": 2.996452632718181,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 39820.7705078125,
+            "denominator": 82656.0,
+            "mean": 0.4817650322760901
+          },
+          "root_velocity": {
+            "numerator": 28.117252349853516,
+            "denominator": 936.0,
+            "mean": 0.03003979951907427
+          },
+          "relative_velocity": {
+            "numerator": 16658.4755859375,
+            "denominator": 75816.0,
+            "mean": 0.21972242779805715
+          },
+          "bone_length": {
+            "numerator": 149.63651275634766,
+            "denominator": 7056.0,
+            "mean": 0.021206988769323646
+          }
+        },
+        "L_phys": 2.87160228539068,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 9,
+      "gradient_norm": 2.102504253387451,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 77459.2734375,
+            "denominator": 165312.0,
+            "mean": 0.46856412987260454
+          },
+          "root_velocity": {
+            "numerator": 63.946956157684326,
+            "denominator": 1872.0,
+            "mean": 0.034159698802181795
+          },
+          "relative_velocity": {
+            "numerator": 35035.3798828125,
+            "denominator": 151632.0,
+            "mean": 0.23105531736580998
+          },
+          "bone_length": {
+            "numerator": 289.0609016418457,
+            "denominator": 14112.0,
+            "mean": 0.020483340535845076
+          }
+        },
+        "L_phys": 2.9908824786133037,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 39494.1728515625,
+            "denominator": 82656.0,
+            "mean": 0.4778137443326861
+          },
+          "root_velocity": {
+            "numerator": 28.21934962272644,
+            "denominator": 936.0,
+            "mean": 0.030148877802058164
+          },
+          "relative_velocity": {
+            "numerator": 16651.074462890625,
+            "denominator": 75816.0,
+            "mean": 0.21962480825802766
+          },
+          "bone_length": {
+            "numerator": 144.5381965637207,
+            "denominator": 7056.0,
+            "mean": 0.02048443828850917
+          }
+        },
+        "L_phys": 2.8657750925002716,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 10,
+      "gradient_norm": 2.2279412746429443,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 76535.51611328125,
+            "denominator": 165312.0,
+            "mean": 0.4629761669647772
+          },
+          "root_velocity": {
+            "numerator": 63.68296432495117,
+            "denominator": 1872.0,
+            "mean": 0.03401867752401238
+          },
+          "relative_velocity": {
+            "numerator": 35013.92724609375,
+            "denominator": 151632.0,
+            "mean": 0.2309138390715268
+          },
+          "bone_length": {
+            "numerator": 254.9479522705078,
+            "denominator": 14112.0,
+            "mean": 0.01806603970170832
+          }
+        },
+        "L_phys": 2.978340024703524,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 39063.28515625,
+            "denominator": 82656.0,
+            "mean": 0.4726007205314799
+          },
+          "root_velocity": {
+            "numerator": 28.161773443222046,
+            "denominator": 936.0,
+            "mean": 0.030087364789767142
+          },
+          "relative_velocity": {
+            "numerator": 16657.8203125,
+            "denominator": 75816.0,
+            "mean": 0.2197137848541205
+          },
+          "bone_length": {
+            "numerator": 164.9870376586914,
+            "denominator": 7056.0,
+            "mean": 0.02338251667498461
+          }
+        },
+        "L_phys": 2.8669404263714897,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 11,
+      "gradient_norm": 1.8451322317123413,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 75608.15234375,
+            "denominator": 165312.0,
+            "mean": 0.4573663880646898
+          },
+          "root_velocity": {
+            "numerator": 63.605021476745605,
+            "denominator": 1872.0,
+            "mean": 0.03397704138715043
+          },
+          "relative_velocity": {
+            "numerator": 35022.56591796875,
+            "denominator": 151632.0,
+            "mean": 0.23097081036963668
+          },
+          "bone_length": {
+            "numerator": 262.9430389404297,
+            "denominator": 14112.0,
+            "mean": 0.018632584958930675
+          }
+        },
+        "L_phys": 2.97422486861467,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 38739.2421875,
+            "denominator": 82656.0,
+            "mean": 0.4686803400539586
+          },
+          "root_velocity": {
+            "numerator": 28.25606894493103,
+            "denominator": 936.0,
+            "mean": 0.030188107847148538
+          },
+          "relative_velocity": {
+            "numerator": 16669.10400390625,
+            "denominator": 75816.0,
+            "mean": 0.2198626148030264
+          },
+          "bone_length": {
+            "numerator": 160.9174575805664,
+            "denominator": 7056.0,
+            "mean": 0.02280576212876508
+          }
+        },
+        "L_phys": 2.8638585515774952,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 12,
+      "gradient_norm": 1.8891226053237915,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 74907.443359375,
+            "denominator": 165312.0,
+            "mean": 0.4531276819551817
+          },
+          "root_velocity": {
+            "numerator": 64.15002727508545,
+            "denominator": 1872.0,
+            "mean": 0.034268176963186674
+          },
+          "relative_velocity": {
+            "numerator": 35050.95556640625,
+            "denominator": 151632.0,
+            "mean": 0.23115803765963813
+          },
+          "bone_length": {
+            "numerator": 252.07537651062012,
+            "denominator": 14112.0,
+            "mean": 0.017862484163167526
+          }
+        },
+        "L_phys": 2.9717739116938313,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 38506.408203125,
+            "denominator": 82656.0,
+            "mean": 0.4658634364489571
+          },
+          "root_velocity": {
+            "numerator": 28.175511598587036,
+            "denominator": 936.0,
+            "mean": 0.03010204230618273
+          },
+          "relative_velocity": {
+            "numerator": 16657.31689453125,
+            "denominator": 75816.0,
+            "mean": 0.21970714485769824
+          },
+          "bone_length": {
+            "numerator": 149.64347076416016,
+            "denominator": 7056.0,
+            "mean": 0.021207974881541972
+          }
+        },
+        "L_phys": 2.855861046319937,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 13,
+      "gradient_norm": 1.6951789855957031,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 74227.8896484375,
+            "denominator": 165312.0,
+            "mean": 0.4490169476410515
+          },
+          "root_velocity": {
+            "numerator": 63.07882642745972,
+            "denominator": 1872.0,
+            "mean": 0.03369595428817292
+          },
+          "relative_velocity": {
+            "numerator": 34980.4091796875,
+            "denominator": 151632.0,
+            "mean": 0.23069279030605347
+          },
+          "bone_length": {
+            "numerator": 238.83967208862305,
+            "denominator": 14112.0,
+            "mean": 0.016924579938252766
+          }
+        },
+        "L_phys": 2.9582737820189564,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 38263.5810546875,
+            "denominator": 82656.0,
+            "mean": 0.46292563219472876
+          },
+          "root_velocity": {
+            "numerator": 28.014426231384277,
+            "denominator": 936.0,
+            "mean": 0.029929942554897733
+          },
+          "relative_velocity": {
+            "numerator": 16641.5791015625,
+            "denominator": 75816.0,
+            "mean": 0.21949956607526774
+          },
+          "bone_length": {
+            "numerator": 142.96729850769043,
+            "denominator": 7056.0,
+            "mean": 0.020261805344060434
+          }
+        },
+        "L_phys": 2.8480946164100156,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 14,
+      "gradient_norm": 1.598878026008606,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 73284.447265625,
+            "denominator": 165312.0,
+            "mean": 0.44330990651389496
+          },
+          "root_velocity": {
+            "numerator": 62.87604999542236,
+            "denominator": 1872.0,
+            "mean": 0.033587633544563227
+          },
+          "relative_velocity": {
+            "numerator": 34964.638916015625,
+            "denominator": 151632.0,
+            "mean": 0.23058878677334352
+          },
+          "bone_length": {
+            "numerator": 227.75398063659668,
+            "denominator": 14112.0,
+            "mean": 0.016139029240121647
+          }
+        },
+        "L_phys": 2.9494140004503895,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 38009.2685546875,
+            "denominator": 82656.0,
+            "mean": 0.45984887430661414
+          },
+          "root_velocity": {
+            "numerator": 27.895986080169678,
+            "denominator": 936.0,
+            "mean": 0.029803403931805212
+          },
+          "relative_velocity": {
+            "numerator": 16633.565185546875,
+            "denominator": 75816.0,
+            "mean": 0.219393863901378
+          },
+          "bone_length": {
+            "numerator": 107.31066703796387,
+            "denominator": 7056.0,
+            "mean": 0.015208427868192159
+          }
+        },
+        "L_phys": 2.8332213887158044,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 15,
+      "gradient_norm": 1.470292091369629,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 72261.7431640625,
+            "denominator": 165312.0,
+            "mean": 0.4371233979630184
+          },
+          "root_velocity": {
+            "numerator": 63.14643335342407,
+            "denominator": 1872.0,
+            "mean": 0.03373206909905132
+          },
+          "relative_velocity": {
+            "numerator": 34990.130859375,
+            "denominator": 151632.0,
+            "mean": 0.23075690394755066
+          },
+          "bone_length": {
+            "numerator": 228.25802421569824,
+            "denominator": 14112.0,
+            "mean": 0.016174746613924196
+          }
+        },
+        "L_phys": 2.94570227616163,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 37696.8984375,
+            "denominator": 82656.0,
+            "mean": 0.45606971590084205
+          },
+          "root_velocity": {
+            "numerator": 27.84418272972107,
+            "denominator": 936.0,
+            "mean": 0.02974805847192422
+          },
+          "relative_velocity": {
+            "numerator": 16644.028076171875,
+            "denominator": 75816.0,
+            "mean": 0.21953186762915314
+          },
+          "bone_length": {
+            "numerator": 106.76822280883789,
+            "denominator": 7056.0,
+            "mean": 0.015131550851592672
+          }
+        },
+        "L_phys": 2.83039178625518,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 16,
+      "gradient_norm": 1.4375020265579224,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 71223.74755859375,
+            "denominator": 165312.0,
+            "mean": 0.4308443885416289
+          },
+          "root_velocity": {
+            "numerator": 62.51460599899292,
+            "denominator": 1872.0,
+            "mean": 0.03339455448664152
+          },
+          "relative_velocity": {
+            "numerator": 34957.208740234375,
+            "denominator": 151632.0,
+            "mean": 0.23053978540304404
+          },
+          "bone_length": {
+            "numerator": 204.14956092834473,
+            "denominator": 14112.0,
+            "mean": 0.014466380451271594
+          }
+        },
+        "L_phys": 2.93214777590782,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 37437.232421875,
+            "denominator": 82656.0,
+            "mean": 0.452928189385828
+          },
+          "root_velocity": {
+            "numerator": 27.834858655929565,
+            "denominator": 936.0,
+            "mean": 0.029738096854625605
+          },
+          "relative_velocity": {
+            "numerator": 16643.42041015625,
+            "denominator": 75816.0,
+            "mean": 0.2195238526189228
+          },
+          "bone_length": {
+            "numerator": 130.05322456359863,
+            "denominator": 7056.0,
+            "mean": 0.018431579444954455
+          }
+        },
+        "L_phys": 2.833720358738093,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 17,
+      "gradient_norm": 1.2208421230316162,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 69905.5810546875,
+            "denominator": 165312.0,
+            "mean": 0.422870578389273
+          },
+          "root_velocity": {
+            "numerator": 61.644161224365234,
+            "denominator": 1872.0,
+            "mean": 0.03292957330361391
+          },
+          "relative_velocity": {
+            "numerator": 35000.1708984375,
+            "denominator": 151632.0,
+            "mean": 0.23082311714174777
+          },
+          "bone_length": {
+            "numerator": 208.3047924041748,
+            "denominator": 14112.0,
+            "mean": 0.014760827126146174
+          }
+        },
+        "L_phys": 2.9252712705771127,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 37176.85205078125,
+            "denominator": 82656.0,
+            "mean": 0.4497780203588517
+          },
+          "root_velocity": {
+            "numerator": 27.45656394958496,
+            "denominator": 936.0,
+            "mean": 0.029333935843573675
+          },
+          "relative_velocity": {
+            "numerator": 16642.552001953125,
+            "denominator": 75816.0,
+            "mean": 0.21951239846408574
+          },
+          "bone_length": {
+            "numerator": 122.02804946899414,
+            "denominator": 7056.0,
+            "mean": 0.017294224697986697
+          }
+        },
+        "L_phys": 2.826160133613551,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 18,
+      "gradient_norm": 1.288400411605835,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 68584.548828125,
+            "denominator": 165312.0,
+            "mean": 0.41487943300017543
+          },
+          "root_velocity": {
+            "numerator": 59.771695613861084,
+            "denominator": 1872.0,
+            "mean": 0.031929324580054
+          },
+          "relative_velocity": {
+            "numerator": 34918.427001953125,
+            "denominator": 151632.0,
+            "mean": 0.23028402317421867
+          },
+          "bone_length": {
+            "numerator": 215.6374111175537,
+            "denominator": 14112.0,
+            "mean": 0.015280428792343658
+          }
+        },
+        "L_phys": 2.9079271452273194,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 36957.7041015625,
+            "denominator": 82656.0,
+            "mean": 0.44712669499567487
+          },
+          "root_velocity": {
+            "numerator": 26.734420776367188,
+            "denominator": 936.0,
+            "mean": 0.028562415359366652
+          },
+          "relative_velocity": {
+            "numerator": 16609.539306640625,
+            "denominator": 75816.0,
+            "mean": 0.2190769666909442
+          },
+          "bone_length": {
+            "numerator": 121.1498031616211,
+            "denominator": 7056.0,
+            "mean": 0.017169756683903217
+          }
+        },
+        "L_phys": 2.815047952069756,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 19,
+      "gradient_norm": 1.367964267730713,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 67120.40185546875,
+            "denominator": 165312.0,
+            "mean": 0.40602256252098307
+          },
+          "root_velocity": {
+            "numerator": 56.047128677368164,
+            "denominator": 1872.0,
+            "mean": 0.029939705490047097
+          },
+          "relative_velocity": {
+            "numerator": 34862.671630859375,
+            "denominator": 151632.0,
+            "mean": 0.22991632129668788
+          },
+          "bone_length": {
+            "numerator": 210.4146614074707,
+            "denominator": 14112.0,
+            "mean": 0.014910335984089477
+          }
+        },
+        "L_phys": 2.8847049749062763,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 36731.65673828125,
+            "denominator": 82656.0,
+            "mean": 0.44439189820800973
+          },
+          "root_velocity": {
+            "numerator": 25.58456325531006,
+            "denominator": 936.0,
+            "mean": 0.027333935101826985
+          },
+          "relative_velocity": {
+            "numerator": 16589.648681640625,
+            "denominator": 75816.0,
+            "mean": 0.21881461276828934
+          },
+          "bone_length": {
+            "numerator": 122.54721260070801,
+            "denominator": 7056.0,
+            "mean": 0.017367802239329367
+          }
+        },
+        "L_phys": 2.803943305878697,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 20,
+      "gradient_norm": 1.3442915678024292,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 65721.76025390625,
+            "denominator": 165312.0,
+            "mean": 0.3975619450124991
+          },
+          "root_velocity": {
+            "numerator": 54.462098598480225,
+            "denominator": 1872.0,
+            "mean": 0.029093001388077043
+          },
+          "relative_velocity": {
+            "numerator": 34761.38623046875,
+            "denominator": 151632.0,
+            "mean": 0.229248352791421
+          },
+          "bone_length": {
+            "numerator": 208.95186042785645,
+            "denominator": 14112.0,
+            "mean": 0.014806679452087333
+          }
+        },
+        "L_phys": 2.865123838771269,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 36542.09228515625,
+            "denominator": 82656.0,
+            "mean": 0.44209848389900613
+          },
+          "root_velocity": {
+            "numerator": 26.27751350402832,
+            "denominator": 936.0,
+            "mean": 0.02807426656413282
+          },
+          "relative_velocity": {
+            "numerator": 16605.9521484375,
+            "denominator": 75816.0,
+            "mean": 0.21902965269121955
+          },
+          "bone_length": {
+            "numerator": 132.24388122558594,
+            "denominator": 7056.0,
+            "mean": 0.018742046658954924
+          }
+        },
+        "L_phys": 2.810250436949776,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 21,
+      "gradient_norm": 1.3907740116119385,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 64407.984375,
+            "denominator": 165312.0,
+            "mean": 0.3896146944867886
+          },
+          "root_velocity": {
+            "numerator": 52.909595012664795,
+            "denominator": 1872.0,
+            "mean": 0.028263672549500424
+          },
+          "relative_velocity": {
+            "numerator": 34602.690185546875,
+            "denominator": 151632.0,
+            "mean": 0.2282017660226527
+          },
+          "bone_length": {
+            "numerator": 218.8206901550293,
+            "denominator": 14112.0,
+            "mean": 0.01550600128649584
+          }
+        },
+        "L_phys": 2.8439627200338093,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 36326.9423828125,
+            "denominator": 82656.0,
+            "mean": 0.4394955282473444
+          },
+          "root_velocity": {
+            "numerator": 27.650282382965088,
+            "denominator": 936.0,
+            "mean": 0.029540899981800307
+          },
+          "relative_velocity": {
+            "numerator": 16644.174560546875,
+            "denominator": 75816.0,
+            "mean": 0.21953379973286477
+          },
+          "bone_length": {
+            "numerator": 143.6315689086914,
+            "denominator": 7056.0,
+            "mean": 0.020355947974587785
+          }
+        },
+        "L_phys": 2.823249921434169,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 22,
+      "gradient_norm": 1.4884190559387207,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 63103.494140625,
+            "denominator": 165312.0,
+            "mean": 0.38172361438144237
+          },
+          "root_velocity": {
+            "numerator": 53.484177112579346,
+            "denominator": 1872.0,
+            "mean": 0.02857060743193341
+          },
+          "relative_velocity": {
+            "numerator": 34491.998291015625,
+            "denominator": 151632.0,
+            "mean": 0.2274717624974651
+          },
+          "bone_length": {
+            "numerator": 209.69947052001953,
+            "denominator": 14112.0,
+            "mean": 0.014859656357711134
+          }
+        },
+        "L_phys": 2.8290135892311827,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 36114.86181640625,
+            "denominator": 82656.0,
+            "mean": 0.436929706450908
+          },
+          "root_velocity": {
+            "numerator": 28.187089443206787,
+            "denominator": 936.0,
+            "mean": 0.03011441179829785
+          },
+          "relative_velocity": {
+            "numerator": 16656.024169921875,
+            "denominator": 75816.0,
+            "mean": 0.21969009404244322
+          },
+          "bone_length": {
+            "numerator": 130.74172973632812,
+            "denominator": 7056.0,
+            "mean": 0.018529156708663282
+          }
+        },
+        "L_phys": 2.821461019284156,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 23,
+      "gradient_norm": 1.3428329229354858,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 61948.123046875,
+            "denominator": 165312.0,
+            "mean": 0.3747345809552543
+          },
+          "root_velocity": {
+            "numerator": 52.43922805786133,
+            "denominator": 1872.0,
+            "mean": 0.02801240815056695
+          },
+          "relative_velocity": {
+            "numerator": 34306.50048828125,
+            "denominator": 151632.0,
+            "mean": 0.2262484204408123
+          },
+          "bone_length": {
+            "numerator": 220.58914947509766,
+            "denominator": 14112.0,
+            "mean": 0.015631317281398643
+          }
+        },
+        "L_phys": 2.8085434606790094,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 35895.7421875,
+            "denominator": 82656.0,
+            "mean": 0.4342787237163666
+          },
+          "root_velocity": {
+            "numerator": 27.09175395965576,
+            "denominator": 936.0,
+            "mean": 0.028944181580828805
+          },
+          "relative_velocity": {
+            "numerator": 16568.740966796875,
+            "denominator": 75816.0,
+            "mean": 0.21853884360553016
+          },
+          "bone_length": {
+            "numerator": 127.75889778137207,
+            "denominator": 7056.0,
+            "mean": 0.018106419753595816
+          }
+        },
+        "L_phys": 2.800600907183004,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 24,
+      "gradient_norm": 1.4930665493011475,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 60895.44384765625,
+            "denominator": 165312.0,
+            "mean": 0.3683667480137936
+          },
+          "root_velocity": {
+            "numerator": 53.65622329711914,
+            "denominator": 1872.0,
+            "mean": 0.028662512445042275
+          },
+          "relative_velocity": {
+            "numerator": 34126.968994140625,
+            "denominator": 151632.0,
+            "mean": 0.2250644256762466
+          },
+          "bone_length": {
+            "numerator": 226.42316818237305,
+            "denominator": 14112.0,
+            "mean": 0.016044725636506028
+          }
+        },
+        "L_phys": 2.794413018274483,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 35662.0185546875,
+            "denominator": 82656.0,
+            "mean": 0.4314510568462967
+          },
+          "root_velocity": {
+            "numerator": 25.78859043121338,
+            "denominator": 936.0,
+            "mean": 0.02755191285386045
+          },
+          "relative_velocity": {
+            "numerator": 16470.57763671875,
+            "denominator": 75816.0,
+            "mean": 0.21724408616543672
+          },
+          "bone_length": {
+            "numerator": 136.121337890625,
+            "denominator": 7056.0,
+            "mean": 0.019291572830303996
+          }
+        },
+        "L_phys": 2.7802346284305743,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 25,
+      "gradient_norm": 1.6540805101394653,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 59929.87744140625,
+            "denominator": 165312.0,
+            "mean": 0.3625258749601133
+          },
+          "root_velocity": {
+            "numerator": 54.659613609313965,
+            "denominator": 1872.0,
+            "mean": 0.029198511543436948
+          },
+          "relative_velocity": {
+            "numerator": 34131.93212890625,
+            "denominator": 151632.0,
+            "mean": 0.22509715712320782
+          },
+          "bone_length": {
+            "numerator": 227.22886085510254,
+            "denominator": 14112.0,
+            "mean": 0.016101818371251596
+          }
+        },
+        "L_phys": 2.7916936406518795,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 35447.06787109375,
+            "denominator": 82656.0,
+            "mean": 0.42885051140986435
+          },
+          "root_velocity": {
+            "numerator": 25.717087268829346,
+            "denominator": 936.0,
+            "mean": 0.027475520586356137
+          },
+          "relative_velocity": {
+            "numerator": 16431.6416015625,
+            "denominator": 75816.0,
+            "mean": 0.21673052655854305
+          },
+          "bone_length": {
+            "numerator": 127.84864234924316,
+            "denominator": 7056.0,
+            "mean": 0.01811913865493809
+          }
+        },
+        "L_phys": 2.7697716572369515,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 26,
+      "gradient_norm": 1.8795928955078125,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 59088.455078125,
+            "denominator": 165312.0,
+            "mean": 0.3574359700331797
+          },
+          "root_velocity": {
+            "numerator": 52.528565406799316,
+            "denominator": 1872.0,
+            "mean": 0.0280601310933757
+          },
+          "relative_velocity": {
+            "numerator": 34011.84033203125,
+            "denominator": 151632.0,
+            "mean": 0.22430516205043297
+          },
+          "bone_length": {
+            "numerator": 237.99316787719727,
+            "denominator": 14112.0,
+            "mean": 0.01686459522939323
+          }
+        },
+        "L_phys": 2.7745174364631744,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 35265.1953125,
+            "denominator": 82656.0,
+            "mean": 0.42665015621975416
+          },
+          "root_velocity": {
+            "numerator": 24.963806629180908,
+            "denominator": 936.0,
+            "mean": 0.02667073357818473
+          },
+          "relative_velocity": {
+            "numerator": 16400.47021484375,
+            "denominator": 75816.0,
+            "mean": 0.21631938132905654
+          },
+          "bone_length": {
+            "numerator": 113.2927417755127,
+            "denominator": 7056.0,
+            "mean": 0.016056227575894658
+          }
+        },
+        "L_phys": 2.7553100925530325,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 27,
+      "gradient_norm": 1.5428632497787476,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 58327.75830078125,
+            "denominator": 165312.0,
+            "mean": 0.3528343877079779
+          },
+          "root_velocity": {
+            "numerator": 52.02242636680603,
+            "denominator": 1872.0,
+            "mean": 0.027789757674575873
+          },
+          "relative_velocity": {
+            "numerator": 33798.034912109375,
+            "denominator": 151632.0,
+            "mean": 0.22289513369281796
+          },
+          "bone_length": {
+            "numerator": 233.3431625366211,
+            "denominator": 14112.0,
+            "mean": 0.01653508804822995
+          }
+        },
+        "L_phys": 2.753804689105497,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 35124.708984375,
+            "denominator": 82656.0,
+            "mean": 0.42495050552137775
+          },
+          "root_velocity": {
+            "numerator": 26.121246814727783,
+            "denominator": 936.0,
+            "mean": 0.02790731497299977
+          },
+          "relative_velocity": {
+            "numerator": 16409.3076171875,
+            "denominator": 75816.0,
+            "mean": 0.21643594514597841
+          },
+          "bone_length": {
+            "numerator": 107.817626953125,
+            "denominator": 7056.0,
+            "mean": 0.015280275928730868
+          }
+        },
+        "L_phys": 2.7594070837036226,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 28,
+      "gradient_norm": 1.520106315612793,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 57606.8603515625,
+            "denominator": 165312.0,
+            "mean": 0.34847355516576234
+          },
+          "root_velocity": {
+            "numerator": 51.069833278656006,
+            "denominator": 1872.0,
+            "mean": 0.0272808938454359
+          },
+          "relative_velocity": {
+            "numerator": 33620.317138671875,
+            "denominator": 151632.0,
+            "mean": 0.2217231002603136
+          },
+          "bone_length": {
+            "numerator": 232.6348705291748,
+            "denominator": 14112.0,
+            "mean": 0.01648489728806511
+          }
+        },
+        "L_phys": 2.735078821572208,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 34955.9482421875,
+            "denominator": 82656.0,
+            "mean": 0.4229087814821368
+          },
+          "root_velocity": {
+            "numerator": 26.00688362121582,
+            "denominator": 936.0,
+            "mean": 0.027785132073948525
+          },
+          "relative_velocity": {
+            "numerator": 16311.260498046875,
+            "denominator": 75816.0,
+            "mean": 0.21514272050816285
+          },
+          "bone_length": {
+            "numerator": 125.28470230102539,
+            "denominator": 7056.0,
+            "mean": 0.01775576846669861
+          }
+        },
+        "L_phys": 2.748773183866905,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 29,
+      "gradient_norm": 1.8954373598098755,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 56843.27294921875,
+            "denominator": 165312.0,
+            "mean": 0.343854486965367
+          },
+          "root_velocity": {
+            "numerator": 53.57124710083008,
+            "denominator": 1872.0,
+            "mean": 0.028617119177793846
+          },
+          "relative_velocity": {
+            "numerator": 33285.061767578125,
+            "denominator": 151632.0,
+            "mean": 0.219512119919134
+          },
+          "bone_length": {
+            "numerator": 224.3970832824707,
+            "denominator": 14112.0,
+            "mean": 0.015901153860719296
+          }
+        },
+        "L_phys": 2.713863589767115,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 34652.8447265625,
+            "denominator": 82656.0,
+            "mean": 0.4192417335288727
+          },
+          "root_velocity": {
+            "numerator": 26.993162155151367,
+            "denominator": 936.0,
+            "mean": 0.0288388484563583
+          },
+          "relative_velocity": {
+            "numerator": 16207.893798828125,
+            "denominator": 75816.0,
+            "mean": 0.2137793315240599
+          },
+          "bone_length": {
+            "numerator": 134.95191764831543,
+            "denominator": 7056.0,
+            "mean": 0.019125838668978944
+          }
+        },
+        "L_phys": 2.7394809683892207,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 30,
+      "gradient_norm": 1.8632851839065552,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 56144.15478515625,
+            "denominator": 165312.0,
+            "mean": 0.33962540399460567
+          },
+          "root_velocity": {
+            "numerator": 49.33173394203186,
+            "denominator": 1872.0,
+            "mean": 0.02635242197758112
+          },
+          "relative_velocity": {
+            "numerator": 33007.230224609375,
+            "denominator": 151632.0,
+            "mean": 0.21767984478612282
+          },
+          "bone_length": {
+            "numerator": 218.38231468200684,
+            "denominator": 14112.0,
+            "mean": 0.015474937264881437
+          }
+        },
+        "L_phys": 2.6791358362735025,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 34420.8095703125,
+            "denominator": 82656.0,
+            "mean": 0.4164344944143498
+          },
+          "root_velocity": {
+            "numerator": 24.792564868927002,
+            "denominator": 936.0,
+            "mean": 0.026487782979622867
+          },
+          "relative_velocity": {
+            "numerator": 16141.4296875,
+            "denominator": 75816.0,
+            "mean": 0.2129026813271605
+          },
+          "bone_length": {
+            "numerator": 128.9683437347412,
+            "denominator": 7056.0,
+            "mean": 0.01827782649301888
+          }
+        },
+        "L_phys": 2.714455875570107,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 31,
+      "gradient_norm": 1.7748641967773438,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 55503.1728515625,
+            "denominator": 165312.0,
+            "mean": 0.33574799682758966
+          },
+          "root_velocity": {
+            "numerator": 51.759350299835205,
+            "denominator": 1872.0,
+            "mean": 0.027649225587518807
+          },
+          "relative_velocity": {
+            "numerator": 32592.504150390625,
+            "denominator": 151632.0,
+            "mean": 0.2149447619921298
+          },
+          "bone_length": {
+            "numerator": 215.85174369812012,
+            "denominator": 14112.0,
+            "mean": 0.015295616758653636
+          }
+        },
+        "L_phys": 2.654032978203789,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 34210.1748046875,
+            "denominator": 82656.0,
+            "mean": 0.41388616440049725
+          },
+          "root_velocity": {
+            "numerator": 25.915036916732788,
+            "denominator": 936.0,
+            "mean": 0.027687005252919644
+          },
+          "relative_velocity": {
+            "numerator": 16086.97412109375,
+            "denominator": 75816.0,
+            "mean": 0.21218442177236665
+          },
+          "bone_length": {
+            "numerator": 122.20712661743164,
+            "denominator": 7056.0,
+            "mean": 0.017319604112447796
+          }
+        },
+        "L_phys": 2.7088046166136577,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 32,
+      "gradient_norm": 2.818788766860962,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 54951.39990234375,
+            "denominator": 165312.0,
+            "mean": 0.3324102297615645
+          },
+          "root_velocity": {
+            "numerator": 49.530553340911865,
+            "denominator": 1872.0,
+            "mean": 0.02645862892142728
+          },
+          "relative_velocity": {
+            "numerator": 32142.88232421875,
+            "denominator": 151632.0,
+            "mean": 0.21197954471495958
+          },
+          "bone_length": {
+            "numerator": 222.53841972351074,
+            "denominator": 14112.0,
+            "mean": 0.015769445842085512
+          }
+        },
+        "L_phys": 2.6160377132024677,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 34019.568359375,
+            "denominator": 82656.0,
+            "mean": 0.41158014372066154
+          },
+          "root_velocity": {
+            "numerator": 24.558650970458984,
+            "denominator": 936.0,
+            "mean": 0.026237874968439087
+          },
+          "relative_velocity": {
+            "numerator": 15960.506591796875,
+            "denominator": 75816.0,
+            "mean": 0.21051633681276874
+          },
+          "bone_length": {
+            "numerator": 132.71499061584473,
+            "denominator": 7056.0,
+            "mean": 0.018808813862789785
+          }
+        },
+        "L_phys": 2.685550514416124,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 33,
+      "gradient_norm": 3.554544687271118,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 54499.9990234375,
+            "denominator": 165312.0,
+            "mean": 0.3296796301746848
+          },
+          "root_velocity": {
+            "numerator": 50.56532669067383,
+            "denominator": 1872.0,
+            "mean": 0.02701139246296679
+          },
+          "relative_velocity": {
+            "numerator": 31884.865234375,
+            "denominator": 151632.0,
+            "mean": 0.2102779441963108
+          },
+          "bone_length": {
+            "numerator": 226.04703903198242,
+            "denominator": 14112.0,
+            "mean": 0.016018072493762928
+          }
+        },
+        "L_phys": 2.5995521794401526,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 33947.1650390625,
+            "denominator": 82656.0,
+            "mean": 0.41070418407692727
+          },
+          "root_velocity": {
+            "numerator": 25.062999963760376,
+            "denominator": 936.0,
+            "mean": 0.026776709362991855
+          },
+          "relative_velocity": {
+            "numerator": 15879.1416015625,
+            "denominator": 75816.0,
+            "mean": 0.2094431465859779
+          },
+          "bone_length": {
+            "numerator": 128.54405784606934,
+            "denominator": 7056.0,
+            "mean": 0.01821769527296901
+          }
+        },
+        "L_phys": 2.6754545872976037,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 34,
+      "gradient_norm": 5.123776435852051,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 54086.3466796875,
+            "denominator": 165312.0,
+            "mean": 0.3271773778049234
+          },
+          "root_velocity": {
+            "numerator": 49.28957176208496,
+            "denominator": 1872.0,
+            "mean": 0.026329899445558205
+          },
+          "relative_velocity": {
+            "numerator": 31041.470947265625,
+            "denominator": 151632.0,
+            "mean": 0.2047158314027753
+          },
+          "bone_length": {
+            "numerator": 229.09936714172363,
+            "denominator": 14112.0,
+            "mean": 0.0162343655854396
+          }
+        },
+        "L_phys": 2.5384539202313467,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 33830.70947265625,
+            "denominator": 82656.0,
+            "mean": 0.40929526559059537
+          },
+          "root_velocity": {
+            "numerator": 25.755364894866943,
+            "denominator": 936.0,
+            "mean": 0.027516415485968955
+          },
+          "relative_velocity": {
+            "numerator": 15813.85986328125,
+            "denominator": 75816.0,
+            "mean": 0.2085820916862041
+          },
+          "bone_length": {
+            "numerator": 129.5988941192627,
+            "denominator": 7056.0,
+            "mean": 0.018367190209646073
+          }
+        },
+        "L_phys": 2.6694326403017734,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 35,
+      "gradient_norm": 3.5412421226501465,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 53715.3017578125,
+            "denominator": 165312.0,
+            "mean": 0.3249328648725592
+          },
+          "root_velocity": {
+            "numerator": 44.998156785964966,
+            "denominator": 1872.0,
+            "mean": 0.024037476915579576
+          },
+          "relative_velocity": {
+            "numerator": 30379.307373046875,
+            "denominator": 151632.0,
+            "mean": 0.20034891957533288
+          },
+          "bone_length": {
+            "numerator": 225.22385597229004,
+            "denominator": 14112.0,
+            "mean": 0.015959740360848216
+          }
+        },
+        "L_phys": 2.480528925925482,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 33664.26318359375,
+            "denominator": 82656.0,
+            "mean": 0.4072815425812252
+          },
+          "root_velocity": {
+            "numerator": 24.159866333007812,
+            "denominator": 936.0,
+            "mean": 0.02581182300535023
+          },
+          "relative_velocity": {
+            "numerator": 15842.236083984375,
+            "denominator": 75816.0,
+            "mean": 0.2089563691567001
+          },
+          "bone_length": {
+            "numerator": 129.74511909484863,
+            "denominator": 7056.0,
+            "mean": 0.018387913703918457
+          }
+        },
+        "L_phys": 2.662680176582814,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 36,
+      "gradient_norm": 3.75553297996521,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 53370.63330078125,
+            "denominator": 165312.0,
+            "mean": 0.32284790759764115
+          },
+          "root_velocity": {
+            "numerator": 64.86405658721924,
+            "denominator": 1872.0,
+            "mean": 0.03464960287778805
+          },
+          "relative_velocity": {
+            "numerator": 29721.586669921875,
+            "denominator": 151632.0,
+            "mean": 0.19601130810067713
+          },
+          "bone_length": {
+            "numerator": 220.8116111755371,
+            "denominator": 14112.0,
+            "mean": 0.015647081290783526
+          }
+        },
+        "L_phys": 2.48750316557492,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 33481.89453125,
+            "denominator": 82656.0,
+            "mean": 0.4050751854826026
+          },
+          "root_velocity": {
+            "numerator": 28.229296445846558,
+            "denominator": 936.0,
+            "mean": 0.030159504749836065
+          },
+          "relative_velocity": {
+            "numerator": 16029.554443359375,
+            "denominator": 75816.0,
+            "mean": 0.21142706609896822
+          },
+          "bone_length": {
+            "numerator": 131.45069122314453,
+            "denominator": 7056.0,
+            "mean": 0.018629633109856086
+          }
+        },
+        "L_phys": 2.707402636441177,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 37,
+      "gradient_norm": 7.885866165161133,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 53021.09716796875,
+            "denominator": 165312.0,
+            "mean": 0.3207335049359318
+          },
+          "root_velocity": {
+            "numerator": 47.08636236190796,
+            "denominator": 1872.0,
+            "mean": 0.025152971347173054
+          },
+          "relative_velocity": {
+            "numerator": 29318.27197265625,
+            "denominator": 151632.0,
+            "mean": 0.19335148235633803
+          },
+          "bone_length": {
+            "numerator": 224.99889373779297,
+            "denominator": 14112.0,
+            "mean": 0.015943799159424104
+          }
+        },
+        "L_phys": 2.4119007835540254,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 33369.482421875,
+            "denominator": 82656.0,
+            "mean": 0.40371518609508084
+          },
+          "root_velocity": {
+            "numerator": 25.754232168197632,
+            "denominator": 936.0,
+            "mean": 0.027515205307903454
+          },
+          "relative_velocity": {
+            "numerator": 15984.244384765625,
+            "denominator": 75816.0,
+            "mean": 0.21082943421923636
+          },
+          "bone_length": {
+            "numerator": 137.16009712219238,
+            "denominator": 7056.0,
+            "mean": 0.01943878927468713
+          }
+        },
+        "L_phys": 2.6884631333763362,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 38,
+      "gradient_norm": 4.558386325836182,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 52726.48095703125,
+            "denominator": 165312.0,
+            "mean": 0.3189513220881197
+          },
+          "root_velocity": {
+            "numerator": 56.66757297515869,
+            "denominator": 1872.0,
+            "mean": 0.030271139409806993
+          },
+          "relative_velocity": {
+            "numerator": 28753.7255859375,
+            "denominator": 151632.0,
+            "mean": 0.1896283474856066
+          },
+          "bone_length": {
+            "numerator": 235.34683990478516,
+            "denominator": 14112.0,
+            "mean": 0.01667707198871777
+          }
+        },
+        "L_phys": 2.3999446379706564,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 33277.39404296875,
+            "denominator": 82656.0,
+            "mean": 0.40260107001268813
+          },
+          "root_velocity": {
+            "numerator": 31.59579849243164,
+            "denominator": 936.0,
+            "mean": 0.033756194970546625
+          },
+          "relative_velocity": {
+            "numerator": 16067.353271484375,
+            "denominator": 75816.0,
+            "mean": 0.21192562614071403
+          },
+          "bone_length": {
+            "numerator": 134.31353187561035,
+            "denominator": 7056.0,
+            "mean": 0.019035364494842735
+          }
+        },
+        "L_phys": 2.728709035262247,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 39,
+      "gradient_norm": 9.738576889038086,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 52441.63037109375,
+            "denominator": 165312.0,
+            "mean": 0.3172282131429887
+          },
+          "root_velocity": {
+            "numerator": 57.23916053771973,
+            "denominator": 1872.0,
+            "mean": 0.030576474646217804
+          },
+          "relative_velocity": {
+            "numerator": 27997.750732421875,
+            "denominator": 151632.0,
+            "mean": 0.18464275833875352
+          },
+          "bone_length": {
+            "numerator": 239.17683601379395,
+            "denominator": 14112.0,
+            "mean": 0.016948471939752973
+          }
+        },
+        "L_phys": 2.350435113641119,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 33177.87353515625,
+            "denominator": 82656.0,
+            "mean": 0.4013970375430247
+          },
+          "root_velocity": {
+            "numerator": 33.695791721343994,
+            "denominator": 936.0,
+            "mean": 0.03599977748006837
+          },
+          "relative_velocity": {
+            "numerator": 16112.3466796875,
+            "denominator": 75816.0,
+            "mean": 0.21251908145625595
+          },
+          "bone_length": {
+            "numerator": 133.7497673034668,
+            "denominator": 7056.0,
+            "mean": 0.018955465887679535
+          }
+        },
+        "L_phys": 2.744497671281285,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 40,
+      "gradient_norm": 7.685420989990234,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 52180.05908203125,
+            "denominator": 165312.0,
+            "mean": 0.31564592456706864
+          },
+          "root_velocity": {
+            "numerator": 50.16741752624512,
+            "denominator": 1872.0,
+            "mean": 0.026798834148635212
+          },
+          "relative_velocity": {
+            "numerator": 27592.976318359375,
+            "denominator": 151632.0,
+            "mean": 0.1819733058876713
+          },
+          "bone_length": {
+            "numerator": 233.4143886566162,
+            "denominator": 14112.0,
+            "mean": 0.016540135250610558
+          }
+        },
+        "L_phys": 2.3024534246881787,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 33041.13525390625,
+            "denominator": 82656.0,
+            "mean": 0.3997427319723462
+          },
+          "root_velocity": {
+            "numerator": 30.617246627807617,
+            "denominator": 936.0,
+            "mean": 0.03271073357671754
+          },
+          "relative_velocity": {
+            "numerator": 16057.697509765625,
+            "denominator": 75816.0,
+            "mean": 0.21179826830438991
+          },
+          "bone_length": {
+            "numerator": 127.93390846252441,
+            "denominator": 7056.0,
+            "mean": 0.01813122285466616
+          }
+        },
+        "L_phys": 2.7175415286091655,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 41,
+      "gradient_norm": 3.7162926197052,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 52014.75390625,
+            "denominator": 165312.0,
+            "mean": 0.3146459658479118
+          },
+          "root_velocity": {
+            "numerator": 57.10943269729614,
+            "denominator": 1872.0,
+            "mean": 0.03050717558616247
+          },
+          "relative_velocity": {
+            "numerator": 27328.913818359375,
+            "denominator": 151632.0,
+            "mean": 0.1802318364089333
+          },
+          "bone_length": {
+            "numerator": 229.04289436340332,
+            "denominator": 14112.0,
+            "mean": 0.016230363829606246
+          }
+        },
+        "L_phys": 2.3019609355272697,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32933.4111328125,
+            "denominator": 82656.0,
+            "mean": 0.39843944943878845
+          },
+          "root_velocity": {
+            "numerator": 29.180099964141846,
+            "denominator": 936.0,
+            "mean": 0.03117532047451052
+          },
+          "relative_velocity": {
+            "numerator": 16007.04345703125,
+            "denominator": 75816.0,
+            "mean": 0.2111301500610854
+          },
+          "bone_length": {
+            "numerator": 120.65035629272461,
+            "denominator": 7056.0,
+            "mean": 0.017098973397494985
+          }
+        },
+        "L_phys": 2.699815499217185,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 42,
+      "gradient_norm": 10.216381072998047,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 51788.08740234375,
+            "denominator": 165312.0,
+            "mean": 0.31327482216864927
+          },
+          "root_velocity": {
+            "numerator": 50.379294872283936,
+            "denominator": 1872.0,
+            "mean": 0.026912016491604667
+          },
+          "relative_velocity": {
+            "numerator": 26985.531982421875,
+            "denominator": 151632.0,
+            "mean": 0.17796726273096625
+          },
+          "bone_length": {
+            "numerator": 235.5503273010254,
+            "denominator": 14112.0,
+            "mean": 0.016691491447068125
+          }
+        },
+        "L_phys": 2.2608905148304714,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32900.0009765625,
+            "denominator": 82656.0,
+            "mean": 0.3980352421670841
+          },
+          "root_velocity": {
+            "numerator": 29.600311756134033,
+            "denominator": 936.0,
+            "mean": 0.03162426469672439
+          },
+          "relative_velocity": {
+            "numerator": 15942.114501953125,
+            "denominator": 75816.0,
+            "mean": 0.21027374831108375
+          },
+          "bone_length": {
+            "numerator": 119.19621467590332,
+            "denominator": 7056.0,
+            "mean": 0.016892887567446616
+          }
+        },
+        "L_phys": 2.692679823896437,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 43,
+      "gradient_norm": 9.708357810974121,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 51513.52099609375,
+            "denominator": 165312.0,
+            "mean": 0.3116139239504316
+          },
+          "root_velocity": {
+            "numerator": 45.05069279670715,
+            "denominator": 1872.0,
+            "mean": 0.024065541023882028
+          },
+          "relative_velocity": {
+            "numerator": 26435.4033203125,
+            "denominator": 151632.0,
+            "mean": 0.1743392115141428
+          },
+          "bone_length": {
+            "numerator": 245.75342750549316,
+            "denominator": 14112.0,
+            "mean": 0.01741450024840513
+          }
+        },
+        "L_phys": 2.21016274470808,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32945.84814453125,
+            "denominator": 82656.0,
+            "mean": 0.3985899165763072
+          },
+          "root_velocity": {
+            "numerator": 28.68683385848999,
+            "denominator": 936.0,
+            "mean": 0.030648326771891016
+          },
+          "relative_velocity": {
+            "numerator": 15913.598388671875,
+            "denominator": 75816.0,
+            "mean": 0.20989762568154313
+          },
+          "bone_length": {
+            "numerator": 116.52117347717285,
+            "denominator": 7056.0,
+            "mean": 0.01651377175130001
+          }
+        },
+        "L_phys": 2.6838353507537938,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 44,
+      "gradient_norm": 7.478481769561768,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 51266.78857421875,
+            "denominator": 165312.0,
+            "mean": 0.3101213981696353
+          },
+          "root_velocity": {
+            "numerator": 49.74764585494995,
+            "denominator": 1872.0,
+            "mean": 0.026574597144738223
+          },
+          "relative_velocity": {
+            "numerator": 25876.285888671875,
+            "denominator": 151632.0,
+            "mean": 0.17065188013527405
+          },
+          "bone_length": {
+            "numerator": 245.38369369506836,
+            "denominator": 14112.0,
+            "mean": 0.017388300290183414
+          }
+        },
+        "L_phys": 2.184289785826434,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32979.12451171875,
+            "denominator": 82656.0,
+            "mean": 0.39899250522307816
+          },
+          "root_velocity": {
+            "numerator": 30.067072868347168,
+            "denominator": 936.0,
+            "mean": 0.032122941098661505
+          },
+          "relative_velocity": {
+            "numerator": 15550.7236328125,
+            "denominator": 75816.0,
+            "mean": 0.20511137006453123
+          },
+          "bone_length": {
+            "numerator": 115.10976791381836,
+            "denominator": 7056.0,
+            "mean": 0.016313742618171537
+          }
+        },
+        "L_phys": 2.643348396598041,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 45,
+      "gradient_norm": 7.200688362121582,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 50952.27734375,
+            "denominator": 165312.0,
+            "mean": 0.3082188670135864
+          },
+          "root_velocity": {
+            "numerator": 41.560715198516846,
+            "denominator": 1872.0,
+            "mean": 0.02220123675134447
+          },
+          "relative_velocity": {
+            "numerator": 25709.02587890625,
+            "denominator": 151632.0,
+            "mean": 0.16954881475484232
+          },
+          "bone_length": {
+            "numerator": 240.25396156311035,
+            "denominator": 14112.0,
+            "mean": 0.01702479886359909
+          }
+        },
+        "L_phys": 2.14876279604593,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32796.26220703125,
+            "denominator": 82656.0,
+            "mean": 0.39678017575289454
+          },
+          "root_velocity": {
+            "numerator": 25.37012028694153,
+            "denominator": 936.0,
+            "mean": 0.027104829366390523
+          },
+          "relative_velocity": {
+            "numerator": 15253.827392578125,
+            "denominator": 75816.0,
+            "mean": 0.20119535972061472
+          },
+          "bone_length": {
+            "numerator": 113.27801895141602,
+            "denominator": 7056.0,
+            "mean": 0.016054141007853743
+          }
+        },
+        "L_phys": 2.5763662018067017,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 46,
+      "gradient_norm": 4.199036598205566,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 50828.97802734375,
+            "denominator": 165312.0,
+            "mean": 0.30747300877942163
+          },
+          "root_velocity": {
+            "numerator": 54.91034007072449,
+            "denominator": 1872.0,
+            "mean": 0.029332446618976757
+          },
+          "relative_velocity": {
+            "numerator": 25048.35009765625,
+            "denominator": 151632.0,
+            "mean": 0.16519171479408207
+          },
+          "bone_length": {
+            "numerator": 231.68309020996094,
+            "denominator": 14112.0,
+            "mean": 0.01641745253755392
+          }
+        },
+        "L_phys": 2.138887294890234,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32797.24169921875,
+            "denominator": 82656.0,
+            "mean": 0.39679202597777236
+          },
+          "root_velocity": {
+            "numerator": 29.78146457672119,
+            "denominator": 936.0,
+            "mean": 0.03181780403495854
+          },
+          "relative_velocity": {
+            "numerator": 15199.1357421875,
+            "denominator": 75816.0,
+            "mean": 0.2004739862586723
+          },
+          "bone_length": {
+            "numerator": 115.29169845581055,
+            "denominator": 7056.0,
+            "mean": 0.01633952642514322
+          }
+        },
+        "L_phys": 2.593299961589574,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 47,
+      "gradient_norm": 11.182456016540527,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 50727.3115234375,
+            "denominator": 165312.0,
+            "mean": 0.3068580110544758
+          },
+          "root_velocity": {
+            "numerator": 43.17566633224487,
+            "denominator": 1872.0,
+            "mean": 0.023063924322780382
+          },
+          "relative_velocity": {
+            "numerator": 24600.741455078125,
+            "denominator": 151632.0,
+            "mean": 0.1622397742895835
+          },
+          "bone_length": {
+            "numerator": 231.13955688476562,
+            "denominator": 14112.0,
+            "mean": 0.016378936854079196
+          }
+        },
+        "L_phys": 2.077333249272371,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32818.26904296875,
+            "denominator": 82656.0,
+            "mean": 0.39704642183227773
+          },
+          "root_velocity": {
+            "numerator": 25.794403076171875,
+            "denominator": 936.0,
+            "mean": 0.02755812294462807
+          },
+          "relative_velocity": {
+            "numerator": 14798.53515625,
+            "denominator": 75816.0,
+            "mean": 0.19519013343159755
+          },
+          "bone_length": {
+            "numerator": 128.7132110595703,
+            "denominator": 7056.0,
+            "mean": 0.01824166823406609
+          }
+        },
+        "L_phys": 2.5232217073395256,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 48,
+      "gradient_norm": 7.902137756347656,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 50563.8359375,
+            "denominator": 165312.0,
+            "mean": 0.30586911983098625
+          },
+          "root_velocity": {
+            "numerator": 55.809579372406006,
+            "denominator": 1872.0,
+            "mean": 0.029812809493806627
+          },
+          "relative_velocity": {
+            "numerator": 25090.492919921875,
+            "denominator": 151632.0,
+            "mean": 0.16546964308273895
+          },
+          "bone_length": {
+            "numerator": 241.1004409790039,
+            "denominator": 14112.0,
+            "mean": 0.017084781815405604
+          }
+        },
+        "L_phys": 2.14379916175822,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32790.625,
+            "denominator": 82656.0,
+            "mean": 0.3967119749322493
+          },
+          "root_velocity": {
+            "numerator": 30.394896507263184,
+            "denominator": 936.0,
+            "mean": 0.03247318002912733
+          },
+          "relative_velocity": {
+            "numerator": 14695.660400390625,
+            "denominator": 75816.0,
+            "mean": 0.19383323309579278
+          },
+          "bone_length": {
+            "numerator": 147.50033950805664,
+            "denominator": 7056.0,
+            "mean": 0.020904243127559046
+          }
+        },
+        "L_phys": 2.539218692290932,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 49,
+      "gradient_norm": 15.082822799682617,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 50393.66650390625,
+            "denominator": 165312.0,
+            "mean": 0.30483973640090406
+          },
+          "root_velocity": {
+            "numerator": 50.6057505607605,
+            "denominator": 1872.0,
+            "mean": 0.02703298641066266
+          },
+          "relative_velocity": {
+            "numerator": 24490.24853515625,
+            "denominator": 151632.0,
+            "mean": 0.16151108298483335
+          },
+          "bone_length": {
+            "numerator": 248.88879013061523,
+            "denominator": 14112.0,
+            "mean": 0.017636677305173983
+          }
+        },
+        "L_phys": 2.090388852912899,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32763.24267578125,
+            "denominator": 82656.0,
+            "mean": 0.3963806943934046
+          },
+          "root_velocity": {
+            "numerator": 28.642239093780518,
+            "denominator": 936.0,
+            "mean": 0.030600682792500552
+          },
+          "relative_velocity": {
+            "numerator": 14385.731201171875,
+            "denominator": 75816.0,
+            "mean": 0.1897453202644808
+          },
+          "bone_length": {
+            "numerator": 157.47084426879883,
+            "denominator": 7056.0,
+            "mean": 0.02231729652335584
+          }
+        },
+        "L_phys": 2.491471904047427,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 50,
+      "gradient_norm": 11.654804229736328,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 50215.18310546875,
+            "denominator": 165312.0,
+            "mean": 0.3037600604037744
+          },
+          "root_velocity": {
+            "numerator": 51.0460422039032,
+            "denominator": 1872.0,
+            "mean": 0.027268184937982477
+          },
+          "relative_velocity": {
+            "numerator": 24558.724609375,
+            "denominator": 151632.0,
+            "mean": 0.1619626768055226
+          },
+          "bone_length": {
+            "numerator": 247.52843475341797,
+            "denominator": 14112.0,
+            "mean": 0.01754028024046329
+          }
+        },
+        "L_phys": 2.0948083136298394,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32723.38671875,
+            "denominator": 82656.0,
+            "mean": 0.395898503662771
+          },
+          "root_velocity": {
+            "numerator": 26.597814083099365,
+            "denominator": 936.0,
+            "mean": 0.028416468037499323
+          },
+          "relative_velocity": {
+            "numerator": 14227.89892578125,
+            "denominator": 75816.0,
+            "mean": 0.18766353969849703
+          },
+          "bone_length": {
+            "numerator": 158.23297500610352,
+            "denominator": 7056.0,
+            "mean": 0.02242530824916433
+          }
+        },
+        "L_phys": 2.4594668573335667,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 51,
+      "gradient_norm": 14.717904090881348,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 50006.68115234375,
+            "denominator": 165312.0,
+            "mean": 0.30249879713719363
+          },
+          "root_velocity": {
+            "numerator": 51.62067985534668,
+            "denominator": 1872.0,
+            "mean": 0.0275751494953775
+          },
+          "relative_velocity": {
+            "numerator": 24539.495849609375,
+            "denominator": 151632.0,
+            "mean": 0.16183586478849699
+          },
+          "bone_length": {
+            "numerator": 246.24881553649902,
+            "denominator": 14112.0,
+            "mean": 0.017449604275545566
+          }
+        },
+        "L_phys": 2.093632401050142,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32707.7294921875,
+            "denominator": 82656.0,
+            "mean": 0.3957090772864341
+          },
+          "root_velocity": {
+            "numerator": 25.820981979370117,
+            "denominator": 936.0,
+            "mean": 0.027586519208728757
+          },
+          "relative_velocity": {
+            "numerator": 14248.44482421875,
+            "denominator": 75816.0,
+            "mean": 0.18793453656508852
+          },
+          "bone_length": {
+            "numerator": 158.15159225463867,
+            "denominator": 7056.0,
+            "mean": 0.022413774412505482
+          }
+        },
+        "L_phys": 2.457814587805974,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 52,
+      "gradient_norm": 13.498712539672852,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 49795.41943359375,
+            "denominator": 165312.0,
+            "mean": 0.3012208395857152
+          },
+          "root_velocity": {
+            "numerator": 44.04087543487549,
+            "denominator": 1872.0,
+            "mean": 0.02352610867247622
+          },
+          "relative_velocity": {
+            "numerator": 24133.738525390625,
+            "denominator": 151632.0,
+            "mean": 0.15915993012946228
+          },
+          "bone_length": {
+            "numerator": 241.70626258850098,
+            "denominator": 14112.0,
+            "mean": 0.017127711351225976
+          }
+        },
+        "L_phys": 2.044706106945171,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32702.916015625,
+            "denominator": 82656.0,
+            "mean": 0.3956508422331712
+          },
+          "root_velocity": {
+            "numerator": 26.42290687561035,
+            "denominator": 936.0,
+            "mean": 0.028229601362831574
+          },
+          "relative_velocity": {
+            "numerator": 14188.180908203125,
+            "denominator": 75816.0,
+            "mean": 0.18713966587795616
+          },
+          "bone_length": {
+            "numerator": 155.7274398803711,
+            "denominator": 7056.0,
+            "mean": 0.022070215402546924
+          }
+        },
+        "L_phys": 2.4523359386319847,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 53,
+      "gradient_norm": 9.062324523925781,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 49572.60009765625,
+            "denominator": 165312.0,
+            "mean": 0.2998729680704138
+          },
+          "root_velocity": {
+            "numerator": 41.801494121551514,
+            "denominator": 1872.0,
+            "mean": 0.02232985797091427
+          },
+          "relative_velocity": {
+            "numerator": 24137.35009765625,
+            "denominator": 151632.0,
+            "mean": 0.15918374813796726
+          },
+          "bone_length": {
+            "numerator": 233.9560661315918,
+            "denominator": 14112.0,
+            "mean": 0.016578519425424588
+          }
+        },
+        "L_phys": 2.036516778155507,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32646.3779296875,
+            "denominator": 82656.0,
+            "mean": 0.394966825514028
+          },
+          "root_velocity": {
+            "numerator": 25.104619026184082,
+            "denominator": 936.0,
+            "mean": 0.026821174173273593
+          },
+          "relative_velocity": {
+            "numerator": 14146.798828125,
+            "denominator": 75816.0,
+            "mean": 0.18659384335925133
+          },
+          "bone_length": {
+            "numerator": 146.88238143920898,
+            "denominator": 7056.0,
+            "mean": 0.020816664036169073
+          }
+        },
+        "L_phys": 2.4366444580452473,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 54,
+      "gradient_norm": 9.869965553283691,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 49377.08935546875,
+            "denominator": 165312.0,
+            "mean": 0.29869029081656956
+          },
+          "root_velocity": {
+            "numerator": 43.78899025917053,
+            "denominator": 1872.0,
+            "mean": 0.023391554625625283
+          },
+          "relative_velocity": {
+            "numerator": 23568.431884765625,
+            "denominator": 151632.0,
+            "mean": 0.15543178144959918
+          },
+          "bone_length": {
+            "numerator": 229.58337211608887,
+            "denominator": 14112.0,
+            "mean": 0.016268662990085662
+          }
+        },
+        "L_phys": 2.002503204420859,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32573.52294921875,
+            "denominator": 82656.0,
+            "mean": 0.3940854015342958
+          },
+          "root_velocity": {
+            "numerator": 27.407097816467285,
+            "denominator": 936.0,
+            "mean": 0.029281087410755646
+          },
+          "relative_velocity": {
+            "numerator": 14021.20068359375,
+            "denominator": 75816.0,
+            "mean": 0.1849372254351819
+          },
+          "bone_length": {
+            "numerator": 132.1342887878418,
+            "denominator": 7056.0,
+            "mean": 0.01872651485088461
+          }
+        },
+        "L_phys": 2.427316122641662,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 55,
+      "gradient_norm": 9.074224472045898,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 49290.82568359375,
+            "denominator": 165312.0,
+            "mean": 0.2981684674046273
+          },
+          "root_velocity": {
+            "numerator": 52.270488023757935,
+            "denominator": 1872.0,
+            "mean": 0.027922269243460435
+          },
+          "relative_velocity": {
+            "numerator": 23466.728759765625,
+            "denominator": 151632.0,
+            "mean": 0.15476105808645685
+          },
+          "bone_length": {
+            "numerator": 242.26869201660156,
+            "denominator": 14112.0,
+            "mean": 0.017167566044260316
+          }
+        },
+        "L_phys": 2.019725526575019,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32561.763671875,
+            "denominator": 82656.0,
+            "mean": 0.3939431338544691
+          },
+          "root_velocity": {
+            "numerator": 27.63328790664673,
+            "denominator": 936.0,
+            "mean": 0.029522743490007188
+          },
+          "relative_velocity": {
+            "numerator": 13821.37255859375,
+            "denominator": 75816.0,
+            "mean": 0.1823015268359416
+          },
+          "bone_length": {
+            "numerator": 123.50985717773438,
+            "denominator": 7056.0,
+            "mean": 0.017504231459429476
+          }
+        },
+        "L_phys": 2.39958058258278,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 56,
+      "gradient_norm": 14.351936340332031,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 49204.62646484375,
+            "denominator": 165312.0,
+            "mean": 0.2976470338804427
+          },
+          "root_velocity": {
+            "numerator": 44.55557870864868,
+            "denominator": 1872.0,
+            "mean": 0.02380105700248327
+          },
+          "relative_velocity": {
+            "numerator": 23375.857177734375,
+            "denominator": 151632.0,
+            "mean": 0.15416176781770585
+          },
+          "bone_length": {
+            "numerator": 247.10573196411133,
+            "denominator": 14112.0,
+            "mean": 0.017510326811515826
+          }
+        },
+        "L_phys": 1.9932906506929493,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32598.87548828125,
+            "denominator": 82656.0,
+            "mean": 0.394392125051796
+          },
+          "root_velocity": {
+            "numerator": 25.28928518295288,
+            "denominator": 936.0,
+            "mean": 0.02701846707580436
+          },
+          "relative_velocity": {
+            "numerator": 13727.32568359375,
+            "denominator": 75816.0,
+            "mean": 0.18106106473031747
+          },
+          "bone_length": {
+            "numerator": 123.27348327636719,
+            "denominator": 7056.0,
+            "mean": 0.01747073175685476
+          }
+        },
+        "L_phys": 2.375036571247702,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 57,
+      "gradient_norm": 13.126320838928223,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 48981.326171875,
+            "denominator": 165312.0,
+            "mean": 0.2962962529754343
+          },
+          "root_velocity": {
+            "numerator": 41.475770711898804,
+            "denominator": 1872.0,
+            "mean": 0.022155860423022866
+          },
+          "relative_velocity": {
+            "numerator": 23519.778076171875,
+            "denominator": 151632.0,
+            "mean": 0.155110913766038
+          },
+          "bone_length": {
+            "numerator": 242.2115077972412,
+            "denominator": 14112.0,
+            "mean": 0.01716351387452106
+          }
+        },
+        "L_phys": 1.992511720499971,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32522.11083984375,
+            "denominator": 82656.0,
+            "mean": 0.3934634005981871
+          },
+          "root_velocity": {
+            "numerator": 25.228901863098145,
+            "denominator": 936.0,
+            "mean": 0.026953954981942464
+          },
+          "relative_velocity": {
+            "numerator": 13784.04541015625,
+            "denominator": 75816.0,
+            "mean": 0.18180918816814723
+          },
+          "bone_length": {
+            "numerator": 123.36654663085938,
+            "denominator": 7056.0,
+            "mean": 0.017483921007774853
+          }
+        },
+        "L_phys": 2.3812928992049214,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 58,
+      "gradient_norm": 11.271684646606445,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 48678.96044921875,
+            "denominator": 165312.0,
+            "mean": 0.2944671920321498
+          },
+          "root_velocity": {
+            "numerator": 46.75641107559204,
+            "denominator": 1872.0,
+            "mean": 0.024976715318158142
+          },
+          "relative_velocity": {
+            "numerator": 23312.909545898438,
+            "denominator": 151632.0,
+            "mean": 0.15374663359909807
+          },
+          "bone_length": {
+            "numerator": 240.67028427124023,
+            "denominator": 14112.0,
+            "mean": 0.017054300189288565
+          }
+        },
+        "L_phys": 1.9909257049924982,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32321.3896484375,
+            "denominator": 82656.0,
+            "mean": 0.39103500832894766
+          },
+          "root_velocity": {
+            "numerator": 27.617769956588745,
+            "denominator": 936.0,
+            "mean": 0.029506164483534984
+          },
+          "relative_velocity": {
+            "numerator": 13945.927001953125,
+            "denominator": 75816.0,
+            "mean": 0.1839443785210658
+          },
+          "bone_length": {
+            "numerator": 119.60103797912598,
+            "denominator": 7056.0,
+            "mean": 0.016950260484570007
+          }
+        },
+        "L_phys": 2.4119101369264206,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 59,
+      "gradient_norm": 14.520838737487793,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 48472.99658203125,
+            "denominator": 165312.0,
+            "mean": 0.29322128207287584
+          },
+          "root_velocity": {
+            "numerator": 39.92738962173462,
+            "denominator": 1872.0,
+            "mean": 0.021328733772294134
+          },
+          "relative_velocity": {
+            "numerator": 22921.2314453125,
+            "denominator": 151632.0,
+            "mean": 0.1511635502091412
+          },
+          "bone_length": {
+            "numerator": 236.20582580566406,
+            "denominator": 14112.0,
+            "mean": 0.016737941171036285
+          }
+        },
+        "L_phys": 1.944976335367831,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32234.83447265625,
+            "denominator": 82656.0,
+            "mean": 0.3899878347930731
+          },
+          "root_velocity": {
+            "numerator": 25.773796558380127,
+            "denominator": 936.0,
+            "mean": 0.027536107434166804
+          },
+          "relative_velocity": {
+            "numerator": 13961.734130859375,
+            "denominator": 75816.0,
+            "mean": 0.18415287183258647
+          },
+          "bone_length": {
+            "numerator": 115.46184921264648,
+            "denominator": 7056.0,
+            "mean": 0.01636364076142949
+          }
+        },
+        "L_phys": 2.4019243718126306,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 60,
+      "gradient_norm": 7.153319358825684,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 48334.81396484375,
+            "denominator": 165312.0,
+            "mean": 0.29238539225733007
+          },
+          "root_velocity": {
+            "numerator": 46.56640696525574,
+            "denominator": 1872.0,
+            "mean": 0.024875217395969946
+          },
+          "relative_velocity": {
+            "numerator": 22968.91748046875,
+            "denominator": 151632.0,
+            "mean": 0.15147803551010836
+          },
+          "bone_length": {
+            "numerator": 223.3299617767334,
+            "denominator": 14112.0,
+            "mean": 0.015825535840188025
+          }
+        },
+        "L_phys": 1.9631929060186395,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32292.32080078125,
+            "denominator": 82656.0,
+            "mean": 0.39068332366411695
+          },
+          "root_velocity": {
+            "numerator": 26.068203449249268,
+            "denominator": 936.0,
+            "mean": 0.027850644710736398
+          },
+          "relative_velocity": {
+            "numerator": 13900.58544921875,
+            "denominator": 75816.0,
+            "mean": 0.18334633123903596
+          },
+          "bone_length": {
+            "numerator": 115.19445419311523,
+            "denominator": 7056.0,
+            "mean": 0.016325744641881412
+          }
+        },
+        "L_phys": 2.3960513488919215,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 61,
+      "gradient_norm": 13.146238327026367,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 48221.97900390625,
+            "denominator": 165312.0,
+            "mean": 0.2917028346635831
+          },
+          "root_velocity": {
+            "numerator": 47.78834772109985,
+            "denominator": 1872.0,
+            "mean": 0.025527963526228555
+          },
+          "relative_velocity": {
+            "numerator": 23328.68603515625,
+            "denominator": 151632.0,
+            "mean": 0.15385067818901188
+          },
+          "bone_length": {
+            "numerator": 214.1363410949707,
+            "denominator": 14112.0,
+            "mean": 0.015174060451741122
+          }
+        },
+        "L_phys": 1.9881975550883269,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32299.39501953125,
+            "denominator": 82656.0,
+            "mean": 0.3907689099343212
+          },
+          "root_velocity": {
+            "numerator": 26.215048789978027,
+            "denominator": 936.0,
+            "mean": 0.028007530758523535
+          },
+          "relative_velocity": {
+            "numerator": 13822.911865234375,
+            "denominator": 75816.0,
+            "mean": 0.18232183002577787
+          },
+          "bone_length": {
+            "numerator": 119.56990814208984,
+            "denominator": 7056.0,
+            "mean": 0.01694584865959323
+          }
+        },
+        "L_phys": 2.387916561303904,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 62,
+      "gradient_norm": 11.957322120666504,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 48052.6416015625,
+            "denominator": 165312.0,
+            "mean": 0.2906784843300093
+          },
+          "root_velocity": {
+            "numerator": 37.8657112121582,
+            "denominator": 1872.0,
+            "mean": 0.020227409835554596
+          },
+          "relative_velocity": {
+            "numerator": 22421.745727539062,
+            "denominator": 151632.0,
+            "mean": 0.14786948485503762
+          },
+          "bone_length": {
+            "numerator": 215.36684799194336,
+            "denominator": 14112.0,
+            "mean": 0.015261256235256758
+          }
+        },
+        "L_phys": 1.9010328945286719,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32186.15185546875,
+            "denominator": 82656.0,
+            "mean": 0.38939885616856307
+          },
+          "root_velocity": {
+            "numerator": 24.51416015625,
+            "denominator": 936.0,
+            "mean": 0.02619034204727564
+          },
+          "relative_velocity": {
+            "numerator": 13649.156005859375,
+            "denominator": 75816.0,
+            "mean": 0.18003002012582273
+          },
+          "bone_length": {
+            "numerator": 123.93215560913086,
+            "denominator": 7056.0,
+            "mean": 0.01756408101036435
+          }
+        },
+        "L_phys": 2.3557789296838973,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 63,
+      "gradient_norm": 2.9849488735198975,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 47957.8779296875,
+            "denominator": 165312.0,
+            "mean": 0.29010524299317353
+          },
+          "root_velocity": {
+            "numerator": 69.16226482391357,
+            "denominator": 1872.0,
+            "mean": 0.03694565428627862
+          },
+          "relative_velocity": {
+            "numerator": 25243.283203125,
+            "denominator": 151632.0,
+            "mean": 0.16647728186085392
+          },
+          "bone_length": {
+            "numerator": 228.36866569519043,
+            "denominator": 14112.0,
+            "mean": 0.016182586854817917
+          }
+        },
+        "L_phys": 2.1719715067427416,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31905.2021484375,
+            "denominator": 82656.0,
+            "mean": 0.38599983241915287
+          },
+          "root_velocity": {
+            "numerator": 32.180790424346924,
+            "denominator": 936.0,
+            "mean": 0.034381186350797996
+          },
+          "relative_velocity": {
+            "numerator": 14097.214599609375,
+            "denominator": 75816.0,
+            "mean": 0.18593983591338734
+          },
+          "bone_length": {
+            "numerator": 113.05301856994629,
+            "denominator": 7056.0,
+            "mean": 0.016022253198688535
+          }
+        },
+        "L_phys": 2.449348629704393,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 64,
+      "gradient_norm": 23.293798446655273,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 47915.38623046875,
+            "denominator": 165312.0,
+            "mean": 0.28984820358152313
+          },
+          "root_velocity": {
+            "numerator": 77.07144546508789,
+            "denominator": 1872.0,
+            "mean": 0.041170643945025585
+          },
+          "relative_velocity": {
+            "numerator": 27283.689453125,
+            "denominator": 151632.0,
+            "mean": 0.17993358560940304
+          },
+          "bone_length": {
+            "numerator": 241.21331977844238,
+            "denominator": 14112.0,
+            "mean": 0.017092780596544954
+          }
+        },
+        "L_phys": 2.3292228405937716,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31792.572265625,
+            "denominator": 82656.0,
+            "mean": 0.38463719833557153
+          },
+          "root_velocity": {
+            "numerator": 33.53314018249512,
+            "denominator": 936.0,
+            "mean": 0.03582600446847769
+          },
+          "relative_velocity": {
+            "numerator": 14448.306640625,
+            "denominator": 75816.0,
+            "mean": 0.19057067954818244
+          },
+          "bone_length": {
+            "numerator": 105.12161064147949,
+            "denominator": 7056.0,
+            "mean": 0.014898187449189271
+          }
+        },
+        "L_phys": 2.499270391058163,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 65,
+      "gradient_norm": 26.703744888305664,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 47654.52978515625,
+            "denominator": 165312.0,
+            "mean": 0.2882702392152793
+          },
+          "root_velocity": {
+            "numerator": 44.49682092666626,
+            "denominator": 1872.0,
+            "mean": 0.02376966929843283
+          },
+          "relative_velocity": {
+            "numerator": 25029.598876953125,
+            "denominator": 151632.0,
+            "mean": 0.1650680521061064
+          },
+          "bone_length": {
+            "numerator": 235.0408878326416,
+            "denominator": 14112.0,
+            "mean": 0.01665539171149671
+          }
+        },
+        "L_phys": 2.091109890191501,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31786.376953125,
+            "denominator": 82656.0,
+            "mean": 0.3845622453678499
+          },
+          "root_velocity": {
+            "numerator": 26.13247299194336,
+            "denominator": 936.0,
+            "mean": 0.02791930875207624
+          },
+          "relative_velocity": {
+            "numerator": 14105.76904296875,
+            "denominator": 75816.0,
+            "mean": 0.18605266754997296
+          },
+          "bone_length": {
+            "numerator": 104.1338005065918,
+            "denominator": 7056.0,
+            "mean": 0.014758191681773215
+          }
+        },
+        "L_phys": 2.414201847991507,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 66,
+      "gradient_norm": 10.156862258911133,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 47379.87744140625,
+            "denominator": 165312.0,
+            "mean": 0.28660882114671804
+          },
+          "root_velocity": {
+            "numerator": 57.97460746765137,
+            "denominator": 1872.0,
+            "mean": 0.03096934159596761
+          },
+          "relative_velocity": {
+            "numerator": 23888.7529296875,
+            "denominator": 151632.0,
+            "mean": 0.1575442711939927
+          },
+          "bone_length": {
+            "numerator": 221.2624969482422,
+            "denominator": 14112.0,
+            "mean": 0.015679031813225778
+          }
+        },
+        "L_phys": 2.0482563046929347,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31916.81005859375,
+            "denominator": 82656.0,
+            "mean": 0.3861402688079964
+          },
+          "root_velocity": {
+            "numerator": 27.66477870941162,
+            "denominator": 936.0,
+            "mean": 0.02955638751005515
+          },
+          "relative_velocity": {
+            "numerator": 13845.556884765625,
+            "denominator": 75816.0,
+            "mean": 0.18262051393855683
+          },
+          "bone_length": {
+            "numerator": 110.18493843078613,
+            "denominator": 7056.0,
+            "mean": 0.015615779256063795
+          }
+        },
+        "L_phys": 2.391358904255968,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 67,
+      "gradient_norm": 17.888492584228516,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 47302.41796875,
+            "denominator": 165312.0,
+            "mean": 0.2861402558117378
+          },
+          "root_velocity": {
+            "numerator": 67.43443155288696,
+            "denominator": 1872.0,
+            "mean": 0.03602266642782423
+          },
+          "relative_velocity": {
+            "numerator": 25266.780517578125,
+            "denominator": 151632.0,
+            "mean": 0.16663224462895776
+          },
+          "bone_length": {
+            "numerator": 217.07208824157715,
+            "denominator": 14112.0,
+            "mean": 0.01538209242074668
+          }
+        },
+        "L_phys": 2.1633402190819297,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32036.88720703125,
+            "denominator": 82656.0,
+            "mean": 0.3875930024079468
+          },
+          "root_velocity": {
+            "numerator": 30.562151432037354,
+            "denominator": 936.0,
+            "mean": 0.0326518711880741
+          },
+          "relative_velocity": {
+            "numerator": 14013.90087890625,
+            "denominator": 75816.0,
+            "mean": 0.18484094226688627
+          },
+          "bone_length": {
+            "numerator": 117.38434791564941,
+            "denominator": 7056.0,
+            "mean": 0.01663610372954215
+          }
+        },
+        "L_phys": 2.4325339884762642,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 68,
+      "gradient_norm": 15.904473304748535,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 47221.2626953125,
+            "denominator": 165312.0,
+            "mean": 0.28564933395828795
+          },
+          "root_velocity": {
+            "numerator": 58.35813903808594,
+            "denominator": 1872.0,
+            "mean": 0.031174219571627103
+          },
+          "relative_velocity": {
+            "numerator": 25980.933349609375,
+            "denominator": 151632.0,
+            "mean": 0.17134202114071814
+          },
+          "bone_length": {
+            "numerator": 217.59331893920898,
+            "denominator": 14112.0,
+            "mean": 0.015419027702608347
+          }
+        },
+        "L_phys": 2.1857786986288215,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32073.66357421875,
+            "denominator": 82656.0,
+            "mean": 0.3880379352281595
+          },
+          "root_velocity": {
+            "numerator": 27.34511089324951,
+            "denominator": 936.0,
+            "mean": 0.029214862065437514
+          },
+          "relative_velocity": {
+            "numerator": 14170.41943359375,
+            "denominator": 75816.0,
+            "mean": 0.18690539508274967
+          },
+          "bone_length": {
+            "numerator": 123.15492820739746,
+            "denominator": 7056.0,
+            "mean": 0.017453929734608485
+          }
+        },
+        "L_phys": 2.438074055852061,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 69,
+      "gradient_norm": 12.145227432250977,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 47087.724609375,
+            "denominator": 165312.0,
+            "mean": 0.2848415396908573
+          },
+          "root_velocity": {
+            "numerator": 41.07322978973389,
+            "denominator": 1872.0,
+            "mean": 0.02194082787913135
+          },
+          "relative_velocity": {
+            "numerator": 25216.23486328125,
+            "denominator": 151632.0,
+            "mean": 0.16629890038567882
+          },
+          "bone_length": {
+            "numerator": 217.63945388793945,
+            "denominator": 14112.0,
+            "mean": 0.015422296902490041
+          }
+        },
+        "L_phys": 2.0883792767482823,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 32037.41650390625,
+            "denominator": 82656.0,
+            "mean": 0.3875994060189974
+          },
+          "root_velocity": {
+            "numerator": 23.69620370864868,
+            "denominator": 936.0,
+            "mean": 0.02531645695368449
+          },
+          "relative_velocity": {
+            "numerator": 14111.610595703125,
+            "denominator": 75816.0,
+            "mean": 0.18612971662581942
+          },
+          "bone_length": {
+            "numerator": 126.2200984954834,
+            "denominator": 7056.0,
+            "mean": 0.017888335954575313
+          }
+        },
+        "L_phys": 2.4112555289547646,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 70,
+      "gradient_norm": 7.883538246154785,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 46911.7197265625,
+            "denominator": 165312.0,
+            "mean": 0.28377685665022806
+          },
+          "root_velocity": {
+            "numerator": 47.08988666534424,
+            "denominator": 1872.0,
+            "mean": 0.025154853987897564
+          },
+          "relative_velocity": {
+            "numerator": 24116.8017578125,
+            "denominator": 151632.0,
+            "mean": 0.15904823360380724
+          },
+          "bone_length": {
+            "numerator": 215.64707565307617,
+            "denominator": 14112.0,
+            "mean": 0.015281113637547914
+          }
+        },
+        "L_phys": 2.030595689902884,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31929.45068359375,
+            "denominator": 82656.0,
+            "mean": 0.3862931993272569
+          },
+          "root_velocity": {
+            "numerator": 25.12948989868164,
+            "denominator": 936.0,
+            "mean": 0.026847745618249617
+          },
+          "relative_velocity": {
+            "numerator": 14050.982421875,
+            "denominator": 75816.0,
+            "mean": 0.18533004144079085
+          },
+          "bone_length": {
+            "numerator": 123.29804229736328,
+            "denominator": 7056.0,
+            "mean": 0.017474212343730623
+          }
+        },
+        "L_phys": 2.4087807665138747,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 71,
+      "gradient_norm": 8.998381614685059,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 46751.3505859375,
+            "denominator": 165312.0,
+            "mean": 0.28280675683518136
+          },
+          "root_velocity": {
+            "numerator": 69.28416061401367,
+            "denominator": 1872.0,
+            "mean": 0.03701076955876799
+          },
+          "relative_velocity": {
+            "numerator": 24334.9892578125,
+            "denominator": 151632.0,
+            "mean": 0.16048716140268873
+          },
+          "bone_length": {
+            "numerator": 215.16141319274902,
+            "denominator": 14112.0,
+            "mean": 0.015246698780665322
+          }
+        },
+        "L_phys": 2.103225616217239,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31797.1171875,
+            "denominator": 82656.0,
+            "mean": 0.384692184324187
+          },
+          "root_velocity": {
+            "numerator": 30.0981764793396,
+            "denominator": 936.0,
+            "mean": 0.0321561714522859
+          },
+          "relative_velocity": {
+            "numerator": 14072.37548828125,
+            "denominator": 75816.0,
+            "mean": 0.1856122123071812
+          },
+          "bone_length": {
+            "numerator": 119.11963272094727,
+            "denominator": 7056.0,
+            "mean": 0.016882034115780507
+          }
+        },
+        "L_phys": 2.4353592328889895,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 72,
+      "gradient_norm": 15.340795516967773,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 46572.21484375,
+            "denominator": 165312.0,
+            "mean": 0.2817231347013526
+          },
+          "root_velocity": {
+            "numerator": 75.82177925109863,
+            "denominator": 1872.0,
+            "mean": 0.04050308720678346
+          },
+          "relative_velocity": {
+            "numerator": 24160.59716796875,
+            "denominator": 151632.0,
+            "mean": 0.15933706056748412
+          },
+          "bone_length": {
+            "numerator": 216.63706970214844,
+            "denominator": 14112.0,
+            "mean": 0.01535126627707968
+          }
+        },
+        "L_phys": 2.1083117089642704,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31645.60009765625,
+            "denominator": 82656.0,
+            "mean": 0.38285907977226397
+          },
+          "root_velocity": {
+            "numerator": 30.178275108337402,
+            "denominator": 936.0,
+            "mean": 0.03224174691061688
+          },
+          "relative_velocity": {
+            "numerator": 14018.2431640625,
+            "denominator": 75816.0,
+            "mean": 0.18489821626124434
+          },
+          "bone_length": {
+            "numerator": 116.57835388183594,
+            "denominator": 7056.0,
+            "mean": 0.016521875550146815
+          }
+        },
+        "L_phys": 2.426093728038085,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 73,
+      "gradient_norm": 17.32015609741211,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 46409.35791015625,
+            "denominator": 165312.0,
+            "mean": 0.2807379858095979
+          },
+          "root_velocity": {
+            "numerator": 59.73876953125,
+            "denominator": 1872.0,
+            "mean": 0.03191173586071047
+          },
+          "relative_velocity": {
+            "numerator": 23327.749267578125,
+            "denominator": 151632.0,
+            "mean": 0.153844500287394
+          },
+          "bone_length": {
+            "numerator": 221.4446792602539,
+            "denominator": 14112.0,
+            "mean": 0.015691941557557675
+          }
+        },
+        "L_phys": 2.0101255511022056,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31482.99267578125,
+            "denominator": 82656.0,
+            "mean": 0.3808918006651816
+          },
+          "root_velocity": {
+            "numerator": 26.777058601379395,
+            "denominator": 936.0,
+            "mean": 0.028607968591217302
+          },
+          "relative_velocity": {
+            "numerator": 13955.75048828125,
+            "denominator": 75816.0,
+            "mean": 0.18407394861613974
+          },
+          "bone_length": {
+            "numerator": 115.81748580932617,
+            "denominator": 7056.0,
+            "mean": 0.01641404277343058
+          }
+        },
+        "L_phys": 2.397499215329527,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 74,
+      "gradient_norm": 14.719669342041016,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 46314.1552734375,
+            "denominator": 165312.0,
+            "mean": 0.2801620891008366
+          },
+          "root_velocity": {
+            "numerator": 38.85430669784546,
+            "denominator": 1872.0,
+            "mean": 0.020755505714661036
+          },
+          "relative_velocity": {
+            "numerator": 22857.200439453125,
+            "denominator": 151632.0,
+            "mean": 0.1507412712320165
+          },
+          "bone_length": {
+            "numerator": 228.54365921020508,
+            "denominator": 14112.0,
+            "mean": 0.016194987188931767
+          }
+        },
+        "L_phys": 1.9237423043721704,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31359.06982421875,
+            "denominator": 82656.0,
+            "mean": 0.3793925404594797
+          },
+          "root_velocity": {
+            "numerator": 23.300800323486328,
+            "denominator": 936.0,
+            "mean": 0.024894017439622145
+          },
+          "relative_velocity": {
+            "numerator": 14036.857421875,
+            "denominator": 75816.0,
+            "mean": 0.18514373512022528
+          },
+          "bone_length": {
+            "numerator": 115.40267181396484,
+            "denominator": 7056.0,
+            "mean": 0.016355253941888442
+          }
+        },
+        "L_phys": 2.38801048674362,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 75,
+      "gradient_norm": 4.293179988861084,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 46285.92724609375,
+            "denominator": 165312.0,
+            "mean": 0.2799913330314421
+          },
+          "root_velocity": {
+            "numerator": 52.91104435920715,
+            "denominator": 1872.0,
+            "mean": 0.028264446773080744
+          },
+          "relative_velocity": {
+            "numerator": 23167.67138671875,
+            "denominator": 151632.0,
+            "mean": 0.15278880042945256
+          },
+          "bone_length": {
+            "numerator": 214.15352249145508,
+            "denominator": 14112.0,
+            "mean": 0.015175277954326466
+          }
+        },
+        "L_phys": 1.9795521271000243,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31404.34423828125,
+            "denominator": 82656.0,
+            "mean": 0.3799402854999183
+          },
+          "root_velocity": {
+            "numerator": 27.5492525100708,
+            "denominator": 936.0,
+            "mean": 0.029432962083408974
+          },
+          "relative_velocity": {
+            "numerator": 13698.989990234375,
+            "denominator": 75816.0,
+            "mean": 0.18068732180851502
+          },
+          "bone_length": {
+            "numerator": 118.5876407623291,
+            "denominator": 7056.0,
+            "mean": 0.016806638430035305
+          }
+        },
+        "L_phys": 2.367591590862184,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 76,
+      "gradient_norm": 15.265959739685059,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 46271.244140625,
+            "denominator": 165312.0,
+            "mean": 0.27990251246506603
+          },
+          "root_velocity": {
+            "numerator": 63.604045391082764,
+            "denominator": 1872.0,
+            "mean": 0.033976519973868996
+          },
+          "relative_velocity": {
+            "numerator": 23745.494140625,
+            "denominator": 151632.0,
+            "mean": 0.1565994918000488
+          },
+          "bone_length": {
+            "numerator": 207.9253635406494,
+            "denominator": 14112.0,
+            "mean": 0.014733940160193412
+          }
+        },
+        "L_phys": 2.045247910655286,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31480.0341796875,
+            "denominator": 82656.0,
+            "mean": 0.3808560077875472
+          },
+          "root_velocity": {
+            "numerator": 30.556837558746338,
+            "denominator": 936.0,
+            "mean": 0.03264619397301959
+          },
+          "relative_velocity": {
+            "numerator": 13858.958251953125,
+            "denominator": 75816.0,
+            "mean": 0.18279727566678702
+          },
+          "bone_length": {
+            "numerator": 124.45052146911621,
+            "denominator": 7056.0,
+            "mean": 0.017637545559682003
+          }
+        },
+        "L_phys": 2.4073348254398796,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 77,
+      "gradient_norm": 17.573734283447266,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 46268.1689453125,
+            "denominator": 165312.0,
+            "mean": 0.2798839100931118
+          },
+          "root_velocity": {
+            "numerator": 59.52290868759155,
+            "denominator": 1872.0,
+            "mean": 0.031796425580978394
+          },
+          "relative_velocity": {
+            "numerator": 23926.224609375,
+            "denominator": 151632.0,
+            "mean": 0.1577913936990543
+          },
+          "bone_length": {
+            "numerator": 209.77914237976074,
+            "denominator": 14112.0,
+            "mean": 0.014865302039382139
+          }
+        },
+        "L_phys": 2.046510579067311,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31548.626953125,
+            "denominator": 82656.0,
+            "mean": 0.38168586615762923
+          },
+          "root_velocity": {
+            "numerator": 28.874510288238525,
+            "denominator": 936.0,
+            "mean": 0.030848835778032612
+          },
+          "relative_velocity": {
+            "numerator": 13868.320068359375,
+            "denominator": 75816.0,
+            "mean": 0.1829207564149965
+          },
+          "bone_length": {
+            "numerator": 129.6884479522705,
+            "denominator": 7056.0,
+            "mean": 0.018379882079403418
+          }
+        },
+        "L_phys": 2.4018973733565643,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 78,
+      "gradient_norm": 14.917922973632812,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 46211.3837890625,
+            "denominator": 165312.0,
+            "mean": 0.2795404071638024
+          },
+          "root_velocity": {
+            "numerator": 44.924686908721924,
+            "denominator": 1872.0,
+            "mean": 0.023998230186283078
+          },
+          "relative_velocity": {
+            "numerator": 23309.6875,
+            "denominator": 151632.0,
+            "mean": 0.15372538448348633
+          },
+          "bone_length": {
+            "numerator": 219.42838096618652,
+            "denominator": 14112.0,
+            "mean": 0.015549063277082378
+          }
+        },
+        "L_phys": 1.9678835294842456,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31541.95263671875,
+            "denominator": 82656.0,
+            "mean": 0.38160511804005454
+          },
+          "root_velocity": {
+            "numerator": 24.681206464767456,
+            "denominator": 936.0,
+            "mean": 0.026368810325606257
+          },
+          "relative_velocity": {
+            "numerator": 14037.04248046875,
+            "denominator": 75816.0,
+            "mean": 0.18514617601124764
+          },
+          "bone_length": {
+            "numerator": 133.07014846801758,
+            "denominator": 7056.0,
+            "mean": 0.018859148025512695
+          }
+        },
+        "L_phys": 2.4026292258315873,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 79,
+      "gradient_norm": 11.996574401855469,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 46082.876953125,
+            "denominator": 165312.0,
+            "mean": 0.27876304777103295
+          },
+          "root_velocity": {
+            "numerator": 39.78669023513794,
+            "denominator": 1872.0,
+            "mean": 0.02125357384355659
+          },
+          "relative_velocity": {
+            "numerator": 22703.811157226562,
+            "denominator": 151632.0,
+            "mean": 0.1497296821068545
+          },
+          "bone_length": {
+            "numerator": 230.4779815673828,
+            "denominator": 14112.0,
+            "mean": 0.016332056516963067
+          }
+        },
+        "L_phys": 1.9149918510912871,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31450.16455078125,
+            "denominator": 82656.0,
+            "mean": 0.3804946350026768
+          },
+          "root_velocity": {
+            "numerator": 26.7481689453125,
+            "denominator": 936.0,
+            "mean": 0.028577103574051816
+          },
+          "relative_velocity": {
+            "numerator": 14315.467041015625,
+            "denominator": 75816.0,
+            "mean": 0.18881854807712917
+          },
+          "bone_length": {
+            "numerator": 132.0349884033203,
+            "denominator": 7056.0,
+            "mean": 0.018712441667137234
+          }
+        },
+        "L_phys": 2.448990516978502,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 80,
+      "gradient_norm": 7.141864776611328,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 45863.16748046875,
+            "denominator": 165312.0,
+            "mean": 0.27743398834004035
+          },
+          "root_velocity": {
+            "numerator": 49.15972089767456,
+            "denominator": 1872.0,
+            "mean": 0.026260534667561196
+          },
+          "relative_velocity": {
+            "numerator": 22884.845703125,
+            "denominator": 151632.0,
+            "mean": 0.150923589368504
+          },
+          "bone_length": {
+            "numerator": 218.69427108764648,
+            "denominator": 14112.0,
+            "mean": 0.015497043019249326
+          }
+        },
+        "L_phys": 1.948966641401385,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31282.2470703125,
+            "denominator": 82656.0,
+            "mean": 0.3784631130264288
+          },
+          "root_velocity": {
+            "numerator": 28.42743968963623,
+            "denominator": 936.0,
+            "mean": 0.03037119624961136
+          },
+          "relative_velocity": {
+            "numerator": 14512.93017578125,
+            "denominator": 75816.0,
+            "mean": 0.19142305286194536
+          },
+          "bone_length": {
+            "numerator": 117.60773086547852,
+            "denominator": 7056.0,
+            "mean": 0.016667762310867137
+          }
+        },
+        "L_phys": 2.4778851475156736,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 81,
+      "gradient_norm": 13.86885929107666,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 45724.3935546875,
+            "denominator": 165312.0,
+            "mean": 0.2765945215996873
+          },
+          "root_velocity": {
+            "numerator": 44.41630506515503,
+            "denominator": 1872.0,
+            "mean": 0.02372665868865119
+          },
+          "relative_velocity": {
+            "numerator": 22916.956420898438,
+            "denominator": 151632.0,
+            "mean": 0.15113535679077264
+          },
+          "bone_length": {
+            "numerator": 206.16670036315918,
+            "denominator": 14112.0,
+            "mean": 0.014609318336391666
+          }
+        },
+        "L_phys": 1.9358000196234528,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31122.25341796875,
+            "denominator": 82656.0,
+            "mean": 0.3765274561794516
+          },
+          "root_velocity": {
+            "numerator": 26.25397777557373,
+            "denominator": 936.0,
+            "mean": 0.02804912155510014
+          },
+          "relative_velocity": {
+            "numerator": 14497.907470703125,
+            "denominator": 75816.0,
+            "mean": 0.1912249059658004
+          },
+          "bone_length": {
+            "numerator": 107.28521919250488,
+            "denominator": 7056.0,
+            "mean": 0.01520482131413051
+          }
+        },
+        "L_phys": 2.4594317662412175,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 82,
+      "gradient_norm": 9.250795364379883,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 45628.62841796875,
+            "denominator": 165312.0,
+            "mean": 0.2760152222341315
+          },
+          "root_velocity": {
+            "numerator": 39.71299505233765,
+            "denominator": 1872.0,
+            "mean": 0.021214206758727375
+          },
+          "relative_velocity": {
+            "numerator": 23013.197265625,
+            "denominator": 151632.0,
+            "mean": 0.15177005688525508
+          },
+          "bone_length": {
+            "numerator": 210.1568260192871,
+            "denominator": 14112.0,
+            "mean": 0.014892065335833838
+          }
+        },
+        "L_phys": 1.9295709555519869,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30997.775390625,
+            "denominator": 82656.0,
+            "mean": 0.3750214792710148
+          },
+          "root_velocity": {
+            "numerator": 24.357714891433716,
+            "denominator": 936.0,
+            "mean": 0.026023199670335166
+          },
+          "relative_velocity": {
+            "numerator": 14429.60888671875,
+            "denominator": 75816.0,
+            "mean": 0.19032405939008587
+          },
+          "bone_length": {
+            "numerator": 109.04866409301758,
+            "denominator": 7056.0,
+            "mean": 0.015454742643568251
+          }
+        },
+        "L_phys": 2.4392875568106858,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 83,
+      "gradient_norm": 6.933557987213135,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 45439.2705078125,
+            "denominator": 165312.0,
+            "mean": 0.2748697644926714
+          },
+          "root_velocity": {
+            "numerator": 38.02490019798279,
+            "denominator": 1872.0,
+            "mean": 0.020312446686956618
+          },
+          "relative_velocity": {
+            "numerator": 22106.915649414062,
+            "denominator": 151632.0,
+            "mean": 0.1457932075644591
+          },
+          "bone_length": {
+            "numerator": 219.5524082183838,
+            "denominator": 14112.0,
+            "mean": 0.015557852056291368
+          }
+        },
+        "L_phys": 1.8654797776846284,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30973.47509765625,
+            "denominator": 82656.0,
+            "mean": 0.3747274861795423
+          },
+          "root_velocity": {
+            "numerator": 24.007585525512695,
+            "denominator": 936.0,
+            "mean": 0.02564912983494946
+          },
+          "relative_velocity": {
+            "numerator": 13886.88818359375,
+            "denominator": 75816.0,
+            "mean": 0.1831656666613083
+          },
+          "bone_length": {
+            "numerator": 118.8519401550293,
+            "denominator": 7056.0,
+            "mean": 0.016844095826959934
+          }
+        },
+        "L_phys": 2.3683179936212926,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 84,
+      "gradient_norm": 6.667201995849609,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 45250.7138671875,
+            "denominator": 165312.0,
+            "mean": 0.27372915376492635
+          },
+          "root_velocity": {
+            "numerator": 42.03529500961304,
+            "denominator": 1872.0,
+            "mean": 0.02245475160769927
+          },
+          "relative_velocity": {
+            "numerator": 22308.201904296875,
+            "denominator": 151632.0,
+            "mean": 0.14712067310526059
+          },
+          "bone_length": {
+            "numerator": 222.9480209350586,
+            "denominator": 14112.0,
+            "mean": 0.01579847087124848
+          }
+        },
+        "L_phys": 1.8888065845985256,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30997.748046875,
+            "denominator": 82656.0,
+            "mean": 0.3750211484571598
+          },
+          "root_velocity": {
+            "numerator": 26.169304847717285,
+            "denominator": 936.0,
+            "mean": 0.02795865902533898
+          },
+          "relative_velocity": {
+            "numerator": 13611.9228515625,
+            "denominator": 75816.0,
+            "mean": 0.1795389212245766
+          },
+          "bone_length": {
+            "numerator": 124.21100425720215,
+            "denominator": 7056.0,
+            "mean": 0.017603600376587605
+          }
+        },
+        "L_phys": 2.345410856582796,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 85,
+      "gradient_norm": 13.834785461425781,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 45110.388671875,
+            "denominator": 165312.0,
+            "mean": 0.27288030313513234
+          },
+          "root_velocity": {
+            "numerator": 41.75802755355835,
+            "denominator": 1872.0,
+            "mean": 0.0223066386504051
+          },
+          "relative_velocity": {
+            "numerator": 22305.104614257812,
+            "denominator": 151632.0,
+            "mean": 0.14710024674381272
+          },
+          "bone_length": {
+            "numerator": 224.7784366607666,
+            "denominator": 14112.0,
+            "mean": 0.01592817720101804
+          }
+        },
+        "L_phys": 1.8872723182273212,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31006.92724609375,
+            "denominator": 82656.0,
+            "mean": 0.3751322014868098
+          },
+          "root_velocity": {
+            "numerator": 25.709108591079712,
+            "denominator": 936.0,
+            "mean": 0.027466996357991144
+          },
+          "relative_velocity": {
+            "numerator": 13148.061279296875,
+            "denominator": 75816.0,
+            "mean": 0.17342066686842983
+          },
+          "bone_length": {
+            "numerator": 130.6582546234131,
+            "denominator": 7056.0,
+            "mean": 0.01851732633551773
+          }
+        },
+        "L_phys": 2.2837085046320995,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 86,
+      "gradient_norm": 13.405778884887695,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 44987.396484375,
+            "denominator": 165312.0,
+            "mean": 0.2721363027752069
+          },
+          "root_velocity": {
+            "numerator": 39.194934606552124,
+            "denominator": 1872.0,
+            "mean": 0.02093746506760263
+          },
+          "relative_velocity": {
+            "numerator": 22440.633911132812,
+            "denominator": 151632.0,
+            "mean": 0.14799405080149844
+          },
+          "bone_length": {
+            "numerator": 223.4581356048584,
+            "denominator": 14112.0,
+            "mean": 0.015834618452725227
+          }
+        },
+        "L_phys": 1.8884333730336549,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31028.95556640625,
+            "denominator": 82656.0,
+            "mean": 0.37539870749136484
+          },
+          "root_velocity": {
+            "numerator": 23.53596258163452,
+            "denominator": 936.0,
+            "mean": 0.02514525916841295
+          },
+          "relative_velocity": {
+            "numerator": 12832.4345703125,
+            "denominator": 75816.0,
+            "mean": 0.16925760486325445
+          },
+          "bone_length": {
+            "numerator": 136.99947929382324,
+            "denominator": 7056.0,
+            "mean": 0.019416025977015767
+          }
+        },
+        "L_phys": 2.2325331039200056,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 87,
+      "gradient_norm": 11.606039047241211,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 44881.12109375,
+            "denominator": 165312.0,
+            "mean": 0.27149342512189073
+          },
+          "root_velocity": {
+            "numerator": 35.22788095474243,
+            "denominator": 1872.0,
+            "mean": 0.01881831247582395
+          },
+          "relative_velocity": {
+            "numerator": 22208.702026367188,
+            "denominator": 151632.0,
+            "mean": 0.14646447996707282
+          },
+          "bone_length": {
+            "numerator": 223.2711124420166,
+            "denominator": 14112.0,
+            "mean": 0.01582136567758054
+          }
+        },
+        "L_phys": 1.8618725185268996,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31068.10888671875,
+            "denominator": 82656.0,
+            "mean": 0.3758723974874026
+          },
+          "root_velocity": {
+            "numerator": 22.76161289215088,
+            "denominator": 936.0,
+            "mean": 0.024317962491614185
+          },
+          "relative_velocity": {
+            "numerator": 12651.98486328125,
+            "denominator": 75816.0,
+            "mean": 0.1668775042640241
+          },
+          "bone_length": {
+            "numerator": 141.00815963745117,
+            "denominator": 7056.0,
+            "mean": 0.01998414960848231
+          }
+        },
+        "L_phys": 2.206205551802679,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 88,
+      "gradient_norm": 6.420779228210449,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 44711.98681640625,
+            "denominator": 165312.0,
+            "mean": 0.27047030352549273
+          },
+          "root_velocity": {
+            "numerator": 42.32980918884277,
+            "denominator": 1872.0,
+            "mean": 0.022612077558142506
+          },
+          "relative_velocity": {
+            "numerator": 22258.565795898438,
+            "denominator": 151632.0,
+            "mean": 0.146793327238963
+          },
+          "bone_length": {
+            "numerator": 224.04055976867676,
+            "denominator": 14112.0,
+            "mean": 0.015875890006283783
+          }
+        },
+        "L_phys": 1.8832157437184027,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 31012.478515625,
+            "denominator": 82656.0,
+            "mean": 0.3751993626067678
+          },
+          "root_velocity": {
+            "numerator": 27.005022048950195,
+            "denominator": 936.0,
+            "mean": 0.028851519283066448
+          },
+          "relative_velocity": {
+            "numerator": 12857.353515625,
+            "denominator": 75816.0,
+            "mean": 0.16958628146598342
+          },
+          "bone_length": {
+            "numerator": 135.68396759033203,
+            "denominator": 7056.0,
+            "mean": 0.01922958724352778
+          }
+        },
+        "L_phys": 2.2537789481689896,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 89,
+      "gradient_norm": 12.384803771972656,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 44517.3310546875,
+            "denominator": 165312.0,
+            "mean": 0.26929279819182816
+          },
+          "root_velocity": {
+            "numerator": 41.707844257354736,
+            "denominator": 1872.0,
+            "mean": 0.022279831334057018
+          },
+          "relative_velocity": {
+            "numerator": 22208.80078125,
+            "denominator": 151632.0,
+            "mean": 0.14646513124703228
+          },
+          "bone_length": {
+            "numerator": 226.27663230895996,
+            "denominator": 14112.0,
+            "mean": 0.016034341858628114
+          }
+        },
+        "L_phys": 1.8774119510496923,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30904.75830078125,
+            "denominator": 82656.0,
+            "mean": 0.3738961273323322
+          },
+          "root_velocity": {
+            "numerator": 26.896747589111328,
+            "denominator": 936.0,
+            "mean": 0.028735841441358257
+          },
+          "relative_velocity": {
+            "numerator": 12807.46533203125,
+            "denominator": 75816.0,
+            "mean": 0.16892826490491783
+          },
+          "bone_length": {
+            "numerator": 126.85343170166016,
+            "denominator": 7056.0,
+            "mean": 0.017978094062026665
+          }
+        },
+        "L_phys": 2.242814171712355,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 90,
+      "gradient_norm": 11.58581256866455,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 44329.35595703125,
+            "denominator": 165312.0,
+            "mean": 0.2681557053149877
+          },
+          "root_velocity": {
+            "numerator": 39.04210948944092,
+            "denominator": 1872.0,
+            "mean": 0.02085582771871844
+          },
+          "relative_velocity": {
+            "numerator": 22021.069091796875,
+            "denominator": 151632.0,
+            "mean": 0.14522705689957843
+          },
+          "bone_length": {
+            "numerator": 219.19665336608887,
+            "denominator": 14112.0,
+            "mean": 0.015532642670499494
+          }
+        },
+        "L_phys": 1.8557706982453632,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30782.39892578125,
+            "denominator": 82656.0,
+            "mean": 0.3724157825902687
+          },
+          "root_velocity": {
+            "numerator": 24.54559087753296,
+            "denominator": 936.0,
+            "mean": 0.02622392187770615
+          },
+          "relative_velocity": {
+            "numerator": 12637.46630859375,
+            "denominator": 75816.0,
+            "mean": 0.16668600702481995
+          },
+          "bone_length": {
+            "numerator": 115.96066856384277,
+            "denominator": 7056.0,
+            "mean": 0.016434335113923296
+          }
+        },
+        "L_phys": 2.2032641324548456,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 91,
+      "gradient_norm": 10.853200912475586,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 44189.46142578125,
+            "denominator": 165312.0,
+            "mean": 0.267309459844302
+          },
+          "root_velocity": {
+            "numerator": 36.645867347717285,
+            "denominator": 1872.0,
+            "mean": 0.01957578383959257
+          },
+          "relative_velocity": {
+            "numerator": 21924.800048828125,
+            "denominator": 151632.0,
+            "mean": 0.14459217084011372
+          },
+          "bone_length": {
+            "numerator": 217.7471523284912,
+            "denominator": 14112.0,
+            "mean": 0.01542992859470601
+          }
+        },
+        "L_phys": 1.841969944632814,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30679.95947265625,
+            "denominator": 82656.0,
+            "mean": 0.3711764357415826
+          },
+          "root_velocity": {
+            "numerator": 22.30803680419922,
+            "denominator": 936.0,
+            "mean": 0.023833372654058993
+          },
+          "relative_velocity": {
+            "numerator": 12651.08251953125,
+            "denominator": 75816.0,
+            "mean": 0.16686560250516053
+          },
+          "bone_length": {
+            "numerator": 110.6941146850586,
+            "denominator": 7056.0,
+            "mean": 0.015687941423619414
+          }
+        },
+        "L_phys": 2.1903752069107214,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 92,
+      "gradient_norm": 7.789947509765625,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 44061.095458984375,
+            "denominator": 165312.0,
+            "mean": 0.26653295259257875
+          },
+          "root_velocity": {
+            "numerator": 37.47749638557434,
+            "denominator": 1872.0,
+            "mean": 0.020020030120499115
+          },
+          "relative_velocity": {
+            "numerator": 21906.98095703125,
+            "denominator": 151632.0,
+            "mean": 0.14447465546211385
+          },
+          "bone_length": {
+            "numerator": 212.74531173706055,
+            "denominator": 14112.0,
+            "mean": 0.015075489777286037
+          }
+        },
+        "L_phys": 1.8415306373707852,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30590.3701171875,
+            "denominator": 82656.0,
+            "mean": 0.37009255368258204
+          },
+          "root_velocity": {
+            "numerator": 23.997246265411377,
+            "denominator": 936.0,
+            "mean": 0.025638083616892498
+          },
+          "relative_velocity": {
+            "numerator": 12856.298583984375,
+            "denominator": 75816.0,
+            "mean": 0.16957236709908693
+          },
+          "bone_length": {
+            "numerator": 109.13758850097656,
+            "denominator": 7056.0,
+            "mean": 0.015467345309095317
+          }
+        },
+        "L_phys": 2.224941333376105,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 93,
+      "gradient_norm": 9.482696533203125,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 43959.35546875,
+            "denominator": 165312.0,
+            "mean": 0.2659175103365152
+          },
+          "root_velocity": {
+            "numerator": 37.18092894554138,
+            "denominator": 1872.0,
+            "mean": 0.01986160734270373
+          },
+          "relative_velocity": {
+            "numerator": 21737.820922851562,
+            "denominator": 151632.0,
+            "mean": 0.14335905958406908
+          },
+          "bone_length": {
+            "numerator": 210.05827522277832,
+            "denominator": 14112.0,
+            "mean": 0.014885081861024541
+          }
+        },
+        "L_phys": 1.8285863066127737,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30488.76953125,
+            "denominator": 82656.0,
+            "mean": 0.3688633557303765
+          },
+          "root_velocity": {
+            "numerator": 23.36373281478882,
+            "denominator": 936.0,
+            "mean": 0.02496125300725301
+          },
+          "relative_velocity": {
+            "numerator": 12843.8603515625,
+            "denominator": 75816.0,
+            "mean": 0.16940830895276063
+          },
+          "bone_length": {
+            "numerator": 112.9305248260498,
+            "denominator": 7056.0,
+            "mean": 0.016004892974213408
+          }
+        },
+        "L_phys": 2.2197624962426747,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 94,
+      "gradient_norm": 10.461990356445312,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 43868.32861328125,
+            "denominator": 165312.0,
+            "mean": 0.2653668736285403
+          },
+          "root_velocity": {
+            "numerator": 35.85468006134033,
+            "denominator": 1872.0,
+            "mean": 0.019153141058408298
+          },
+          "relative_velocity": {
+            "numerator": 21674.257690429688,
+            "denominator": 151632.0,
+            "mean": 0.14293986553253724
+          },
+          "bone_length": {
+            "numerator": 213.51955604553223,
+            "denominator": 14112.0,
+            "mean": 0.0151303540281698
+          }
+        },
+        "L_phys": 1.8207919423022938,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30390.8408203125,
+            "denominator": 82656.0,
+            "mean": 0.3676785813529871
+          },
+          "root_velocity": {
+            "numerator": 24.300938606262207,
+            "denominator": 936.0,
+            "mean": 0.02596254124600663
+          },
+          "relative_velocity": {
+            "numerator": 12825.94775390625,
+            "denominator": 75816.0,
+            "mean": 0.1691720448705583
+          },
+          "bone_length": {
+            "numerator": 117.1353588104248,
+            "denominator": 7056.0,
+            "mean": 0.016600816157940023
+          }
+        },
+        "L_phys": 2.2224133686044834,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 95,
+      "gradient_norm": 4.403692722320557,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 43731.0380859375,
+            "denominator": 165312.0,
+            "mean": 0.26453638021400444
+          },
+          "root_velocity": {
+            "numerator": 34.36140155792236,
+            "denominator": 1872.0,
+            "mean": 0.018355449550172202
+          },
+          "relative_velocity": {
+            "numerator": 21366.881469726562,
+            "denominator": 151632.0,
+            "mean": 0.14091274579064156
+          },
+          "bone_length": {
+            "numerator": 206.41093635559082,
+            "denominator": 14112.0,
+            "mean": 0.014626625308644474
+          }
+        },
+        "L_phys": 1.7946943364885701,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30401.69482421875,
+            "denominator": 82656.0,
+            "mean": 0.36780989673125664
+          },
+          "root_velocity": {
+            "numerator": 25.493976593017578,
+            "denominator": 936.0,
+            "mean": 0.027237154479719635
+          },
+          "relative_velocity": {
+            "numerator": 12886.22998046875,
+            "denominator": 75816.0,
+            "mean": 0.1699671570706546
+          },
+          "bone_length": {
+            "numerator": 119.60895729064941,
+            "denominator": 7056.0,
+            "mean": 0.01695138283597639
+          }
+        },
+        "L_phys": 2.2375700055083536,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 96,
+      "gradient_norm": 5.493666172027588,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 43578.18994140625,
+            "denominator": 165312.0,
+            "mean": 0.2636117761651075
+          },
+          "root_velocity": {
+            "numerator": 32.664490938186646,
+            "denominator": 1872.0,
+            "mean": 0.01744898020202278
+          },
+          "relative_velocity": {
+            "numerator": 21408.731079101562,
+            "denominator": 151632.0,
+            "mean": 0.14118874036550044
+          },
+          "bone_length": {
+            "numerator": 205.5663299560547,
+            "denominator": 14112.0,
+            "mean": 0.014566775081919975
+          }
+        },
+        "L_phys": 1.7918776309940658,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30399.17626953125,
+            "denominator": 82656.0,
+            "mean": 0.3677794264122538
+          },
+          "root_velocity": {
+            "numerator": 23.537232398986816,
+            "denominator": 936.0,
+            "mean": 0.02514661581088335
+          },
+          "relative_velocity": {
+            "numerator": 12894.902099609375,
+            "denominator": 75816.0,
+            "mean": 0.17008154083055524
+          },
+          "bone_length": {
+            "numerator": 120.82619857788086,
+            "denominator": 7056.0,
+            "mean": 0.01712389435627563
+          }
+        },
+        "L_phys": 2.228575702484774,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 97,
+      "gradient_norm": 4.2410888671875,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 43398.52099609375,
+            "denominator": 165312.0,
+            "mean": 0.26252492859619236
+          },
+          "root_velocity": {
+            "numerator": 34.23721194267273,
+            "denominator": 1872.0,
+            "mean": 0.018289108943735432
+          },
+          "relative_velocity": {
+            "numerator": 21432.0078125,
+            "denominator": 151632.0,
+            "mean": 0.1413422484205181
+          },
+          "bone_length": {
+            "numerator": 207.50354385375977,
+            "denominator": 14112.0,
+            "mean": 0.014704049309365063
+          }
+        },
+        "L_phys": 1.7968010561387806,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30294.85205078125,
+            "denominator": 82656.0,
+            "mean": 0.3665172770371328
+          },
+          "root_velocity": {
+            "numerator": 23.385812282562256,
+            "denominator": 936.0,
+            "mean": 0.02498484218222463
+          },
+          "relative_velocity": {
+            "numerator": 12970.291015625,
+            "denominator": 75816.0,
+            "mean": 0.17107590766625777
+          },
+          "bone_length": {
+            "numerator": 119.07081413269043,
+            "denominator": 7056.0,
+            "mean": 0.016875115381617123
+          }
+        },
+        "L_phys": 2.235950795374068,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 98,
+      "gradient_norm": 5.256791591644287,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 43216.212890625,
+            "denominator": 165312.0,
+            "mean": 0.26142211630507767
+          },
+          "root_velocity": {
+            "numerator": 34.14243412017822,
+            "denominator": 1872.0,
+            "mean": 0.018238479765052468
+          },
+          "relative_velocity": {
+            "numerator": 21365.606689453125,
+            "denominator": 151632.0,
+            "mean": 0.1409043387243664
+          },
+          "bone_length": {
+            "numerator": 210.39432334899902,
+            "denominator": 14112.0,
+            "mean": 0.01490889479513882
+          }
+        },
+        "L_phys": 1.7914756919642816,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30169.3740234375,
+            "denominator": 82656.0,
+            "mean": 0.364999201793427
+          },
+          "root_velocity": {
+            "numerator": 23.29115867614746,
+            "denominator": 936.0,
+            "mean": 0.02488371653434558
+          },
+          "relative_velocity": {
+            "numerator": 13030.816650390625,
+            "denominator": 75816.0,
+            "mean": 0.1718742303786882
+          },
+          "bone_length": {
+            "numerator": 116.63986587524414,
+            "denominator": 7056.0,
+            "mean": 0.016530593236287434
+          }
+        },
+        "L_phys": 2.241221274724612,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 99,
+      "gradient_norm": 3.9988908767700195,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 43049.776123046875,
+            "denominator": 165312.0,
+            "mean": 0.2604153123974477
+          },
+          "root_velocity": {
+            "numerator": 34.79443693161011,
+            "denominator": 1872.0,
+            "mean": 0.01858677186517634
+          },
+          "relative_velocity": {
+            "numerator": 21240.080078125,
+            "denominator": 151632.0,
+            "mean": 0.14007650151765458
+          },
+          "bone_length": {
+            "numerator": 206.98908042907715,
+            "denominator": 14112.0,
+            "mean": 0.014667593567820093
+          }
+        },
+        "L_phys": 1.7834493740355155,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30115.03857421875,
+            "denominator": 82656.0,
+            "mean": 0.36434183331178316
+          },
+          "root_velocity": {
+            "numerator": 22.60723304748535,
+            "denominator": 936.0,
+            "mean": 0.024153026760133922
+          },
+          "relative_velocity": {
+            "numerator": 13012.6474609375,
+            "denominator": 75816.0,
+            "mean": 0.17163458189481773
+          },
+          "bone_length": {
+            "numerator": 114.35669326782227,
+            "denominator": 7056.0,
+            "mean": 0.016207014352015627
+          }
+        },
+        "L_phys": 2.2338668147646614,
+        "no_supervision": false
+      }
+    },
+    {
+      "step": 100,
+      "gradient_norm": 10.273445129394531,
+      "train": {
+        "components": {
+          "position": {
+            "numerator": 42881.798828125,
+            "denominator": 165312.0,
+            "mean": 0.2593991895816698
+          },
+          "root_velocity": {
+            "numerator": 34.96464681625366,
+            "denominator": 1872.0,
+            "mean": 0.018677695948853452
+          },
+          "relative_velocity": {
+            "numerator": 21091.434326171875,
+            "denominator": 151632.0,
+            "mean": 0.13909619556671332
+          },
+          "bone_length": {
+            "numerator": 208.17771911621094,
+            "denominator": 14112.0,
+            "mean": 0.0147518224997315
+          }
+        },
+        "L_phys": 1.7732532699925334,
+        "no_supervision": false
+      },
+      "val": {
+        "components": {
+          "position": {
+            "numerator": 30090.9462890625,
+            "denominator": 82656.0,
+            "mean": 0.3640503567685649
+          },
+          "root_velocity": {
+            "numerator": 23.075119495391846,
+            "denominator": 936.0,
+            "mean": 0.02465290544379471
+          },
+          "relative_velocity": {
+            "numerator": 13063.30322265625,
+            "denominator": 75816.0,
+            "mean": 0.1723027226793322
+          },
+          "bone_length": {
+            "numerator": 110.11033058166504,
+            "denominator": 7056.0,
+            "mean": 0.015605205581301735
+          }
+        },
+        "L_phys": 2.241552521943464,
+        "no_supervision": false
+      }
+    }
+  ],
+  "actual_M4Human": true,
+  "synthetic_data": false,
+  "diagnostic_only": true,
+  "target_status": "candidate_direct_joints_first22_not_reference_verified",
+  "time_status": "provisional_nominal_12Hz",
+  "G0_passed": false,
+  "scientific_acceptance": false,
+  "eligible_for_test_selection": false
+}
